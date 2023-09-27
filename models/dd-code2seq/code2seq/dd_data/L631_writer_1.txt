@@ -1,0 +1,21 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TextView_writer_0.java
+method_name = writer
+method_body = @Override public PrintWriter writer() { response().setContentType(contentType); return super.writer(); }
+predict, score, loss = writer, 0.598003625869751, 0.8570809960365295
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:05:01.196001", "score": "0.598", "loss": "0.8571", "code": "@Override public PrintWriter writer() { response().setContentType(contentType); return super.writer(); }", "n_tokens": 33, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:05:03.021627", "score": "0.6455", "loss": "0.8496", "code": " PrintWriter writer() { response().setContentType(contentType); return super.writer(); }", "n_tokens": 29, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:05:05.555563", "score": "0.5723", "loss": "0.8702", "code": " PrintWriter writer() { response.setContentType(contentType); return super.writer(); }", "n_tokens": 27, "n_pass": [46, 3, 3]}
+{"time": "2023-09-24 02:05:07.140928", "score": "0.8462", "loss": "0.375", "code": " PrintWriter writer() { response(contentType); return super.writer(); }", "n_tokens": 25, "n_pass": [47, 4, 4]}
+{"time": "2023-09-24 02:05:08.804471", "score": "0.3449", "loss": "1.6671", "code": " PrintWriter writer() { response(contentType); super.writer(); }", "n_tokens": 23, "n_pass": [50, 5, 5]}
+{"time": "2023-09-24 02:05:13.206422", "score": "0.7676", "loss": "0.4444", "code": " PrintWriter writer() {(contentType); super.writer(); }", "n_tokens": 21, "n_pass": [59, 7, 6]}
+{"time": "2023-09-24 02:05:19.631673", "score": "0.7676", "loss": "0.4444", "code": " PrintWriter writer() {(contentType);super.writer(); }", "n_tokens": 20, "n_pass": [94, 9, 7]}
+{"time": "2023-09-24 02:05:22.928446", "score": "0.7676", "loss": "0.4444", "code": "PrintWriter writer() {(contentType);super.writer(); }", "n_tokens": 19, "n_pass": [101, 11, 8]}
+{"time": "2023-09-24 02:05:25.521294", "score": "0.7676", "loss": "0.4444", "code": "PrintWriter writer(){(contentType);super.writer(); }", "n_tokens": 18, "n_pass": [107, 12, 9]}
+{"time": "2023-09-24 02:05:30.488633", "score": "0.7676", "loss": "0.4444", "code": "PrintWriter writer(){(contentType);super.writer();}", "n_tokens": 17, "n_pass": [127, 14, 10]}
+
+Minimal simplified code:
+PrintWriter writer(){(contentType);super.writer();}
+

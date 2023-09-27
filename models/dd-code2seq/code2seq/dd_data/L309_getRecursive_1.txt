@@ -1,0 +1,28 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_getRecursive_0.java
+method_name = getRecursive
+method_body = public boolean getRecursive() { GetQueueInfoRequestProtoOrBuilder p = viaProto ? proto : builder; return (p.hasRecursive()) ? p.getRecursive() : false; }
+predict, score, loss = getRecursive, 0.8465621471405029, 0.4195573329925537
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:27:02.477158", "score": "0.8466", "loss": "0.4196", "code": "public boolean getRecursive() { GetQueueInfoRequestProtoOrBuilder p = viaProto ? proto : builder; return (p.hasRecursive()) ? p.getRecursive() : false; }", "n_tokens": 51, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:27:04.237231", "score": "0.7405", "loss": "0.8388", "code": "public boolean getRecursive() { GetQueueInfoRequestProtoOrBuilder ; return (p.hasRecursive()) ? p.getRecursive() : false; }", "n_tokens": 38, "n_pass": [9, 2, 2]}
+{"time": "2023-09-24 00:27:09.860627", "score": "0.7405", "loss": "0.8388", "code": "public boolean getRecursive() {GetQueueInfoRequestProtoOrBuilder ; return (p.hasRecursive()) ? p.getRecursive() : false; }", "n_tokens": 37, "n_pass": [73, 4, 3]}
+{"time": "2023-09-24 00:27:11.901918", "score": "0.89", "loss": "0.5114", "code": "public boolean getRecursive() {GetQueueInfoRequestProtoOrBuilder ; return (p()) ? p.getRecursive() : false; }", "n_tokens": 35, "n_pass": [77, 5, 4]}
+{"time": "2023-09-24 00:27:13.659021", "score": "0.9128", "loss": "0.4171", "code": "public boolean getRecursive() {GetQueueInfoRequestProtoOrBuilder ; return (p) ? p.getRecursive() : false; }", "n_tokens": 33, "n_pass": [78, 6, 5]}
+{"time": "2023-09-24 00:27:15.335913", "score": "0.7946", "loss": "1.1147", "code": "public boolean getRecursive() {GetQueueInfoRequestProtoOrBuilder ; return (p) ? getRecursive() : false; }", "n_tokens": 31, "n_pass": [81, 7, 6]}
+{"time": "2023-09-24 00:27:16.899274", "score": "0.7946", "loss": "1.1147", "code": " boolean getRecursive() {GetQueueInfoRequestProtoOrBuilder ; return (p) ? getRecursive() : false; }", "n_tokens": 30, "n_pass": [87, 8, 7]}
+{"time": "2023-09-24 00:27:18.639812", "score": "0.7946", "loss": "1.1147", "code": "boolean getRecursive() {GetQueueInfoRequestProtoOrBuilder ; return (p) ? getRecursive() : false; }", "n_tokens": 29, "n_pass": [88, 9, 8]}
+{"time": "2023-09-24 00:27:20.898798", "score": "0.7946", "loss": "1.1147", "code": "boolean getRecursive(){GetQueueInfoRequestProtoOrBuilder ; return (p) ? getRecursive() : false; }", "n_tokens": 28, "n_pass": [94, 10, 9]}
+{"time": "2023-09-24 00:27:22.643343", "score": "0.7747", "loss": "0.7715", "code": "boolean getRecursive(){; return (p) ? getRecursive() : false; }", "n_tokens": 26, "n_pass": [96, 11, 10]}
+{"time": "2023-09-24 00:27:24.230016", "score": "0.7747", "loss": "0.7715", "code": "boolean getRecursive(){return (p) ? getRecursive() : false; }", "n_tokens": 24, "n_pass": [97, 12, 11]}
+{"time": "2023-09-24 00:27:28.974009", "score": "0.7747", "loss": "0.7715", "code": "boolean getRecursive(){return (p)? getRecursive() : false; }", "n_tokens": 23, "n_pass": [133, 13, 12]}
+{"time": "2023-09-24 00:27:30.626728", "score": "0.7747", "loss": "0.7715", "code": "boolean getRecursive(){return (p)?getRecursive() : false; }", "n_tokens": 22, "n_pass": [135, 14, 13]}
+{"time": "2023-09-24 00:27:32.252014", "score": "0.7747", "loss": "0.7715", "code": "boolean getRecursive(){return (p)?getRecursive(): false; }", "n_tokens": 21, "n_pass": [139, 15, 14]}
+{"time": "2023-09-24 00:27:33.905742", "score": "0.7747", "loss": "0.7715", "code": "boolean getRecursive(){return (p)?getRecursive():false; }", "n_tokens": 20, "n_pass": [141, 16, 15]}
+{"time": "2023-09-24 00:27:35.480359", "score": "0.7747", "loss": "0.7715", "code": "boolean getRecursive(){return (p)?getRecursive():false;}", "n_tokens": 19, "n_pass": [144, 17, 16]}
+{"time": "2023-09-24 00:27:38.001465", "score": "0.7747", "loss": "0.7715", "code": "boolean getRecursive(){return(p)?getRecursive():false;}", "n_tokens": 18, "n_pass": [153, 18, 17]}
+
+Minimal simplified code:
+boolean getRecursive(){return(p)?getRecursive():false;}
+

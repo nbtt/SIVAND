@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_getChildren_0.java
+method_name = getChildren
+method_body = Set<Queue> getChildren() { return children; }
+predict, score, loss = getChildren, 0.9451645016670227, 0.1545225977897644
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:18:51.544171", "score": "0.9452", "loss": "0.1545", "code": "Set<Queue> getChildren() { return children; }", "n_tokens": 17, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:18:53.988320", "score": "0.8338", "loss": "0.7158", "code": "Set<Queue> getChildren() { children; }", "n_tokens": 15, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 00:18:58.454757", "score": "0.8338", "loss": "0.7158", "code": "Set<Queue> getChildren() {children; }", "n_tokens": 14, "n_pass": [46, 4, 3]}
+{"time": "2023-09-24 00:19:00.410943", "score": "0.8338", "loss": "0.7158", "code": "Set<Queue>getChildren() {children; }", "n_tokens": 13, "n_pass": [53, 5, 4]}
+{"time": "2023-09-24 00:19:01.954946", "score": "0.8338", "loss": "0.7158", "code": "Set<Queue>getChildren(){children; }", "n_tokens": 12, "n_pass": [57, 6, 5]}
+{"time": "2023-09-24 00:19:05.945182", "score": "0.8338", "loss": "0.7158", "code": "Set<Queue>getChildren(){children;}", "n_tokens": 11, "n_pass": [71, 8, 6]}
+
+Minimal simplified code:
+Set<Queue>getChildren(){children;}
+

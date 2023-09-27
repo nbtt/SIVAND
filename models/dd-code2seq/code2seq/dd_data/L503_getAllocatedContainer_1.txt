@@ -1,0 +1,16 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ContainerRemoteLaunchEvent_getAllocatedContainer_0.java
+method_name = getAllocatedContainer
+method_body = public Container getAllocatedContainer() { return this.allocatedContainer; }
+predict, score, loss = getAllocatedContainer, 0.8727999329566956, 0.4421008825302124
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:23:38.521900", "score": "0.8728", "loss": "0.4421", "code": "public Container getAllocatedContainer() { return this.allocatedContainer; }", "n_tokens": 18, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:23:40.498645", "score": "0.8728", "loss": "0.4421", "code": "Container getAllocatedContainer() { return this.allocatedContainer; }", "n_tokens": 16, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 01:23:47.621026", "score": "0.8728", "loss": "0.4421", "code": "Container getAllocatedContainer(){ return this.allocatedContainer; }", "n_tokens": 15, "n_pass": [46, 5, 3]}
+{"time": "2023-09-24 01:23:49.185489", "score": "0.8728", "loss": "0.4421", "code": "Container getAllocatedContainer(){return this.allocatedContainer; }", "n_tokens": 14, "n_pass": [48, 6, 4]}
+{"time": "2023-09-24 01:23:57.490907", "score": "0.8728", "loss": "0.4421", "code": "Container getAllocatedContainer(){return this.allocatedContainer;}", "n_tokens": 13, "n_pass": [67, 10, 5]}
+
+Minimal simplified code:
+Container getAllocatedContainer(){return this.allocatedContainer;}
+

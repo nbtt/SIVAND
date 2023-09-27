@@ -1,0 +1,41 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Resource_equals_0.java
+method_name = equals
+method_body = public boolean equals(Object obj) { if (this == obj) return true; if (obj == null) return false; if (!(obj instanceof Resource)) return false; Resource other = (Resource) obj; if (getMemory() != other.getMemory() || getVirtualCores() != other.getVirtualCores()) { return false; } return true; }
+predict, score, loss = equals, 0.9994798302650452, 0.0007397114532068372
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:50:24.812691", "score": "0.9995", "loss": "0.0007", "code": "public boolean equals(Object obj) { if (this == obj) return true; if (obj == null) return false; if (!(obj instanceof Resource)) return false; Resource other = (Resource) obj; if (getMemory() != other.getMemory() || getVirtualCores() != other.getVirtualCores()) { return false; } return true; }", "n_tokens": 124, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:50:26.577603", "score": "0.9992", "loss": "0.0012", "code": "public boolean equals(Object obj) { if  (obj == null) return false; if (!(obj instanceof Resource)) return false; Resource other = (Resource) obj; if (getMemory() != other.getMemory() || getVirtualCores() != other.getVirtualCores()) { return false; } return true; }", "n_tokens": 109, "n_pass": [21, 2, 2]}
+{"time": "2023-09-24 00:50:28.308652", "score": "0.998", "loss": "0.003", "code": "public boolean equals(Object obj) { if  (obj == null) return false; false; Resource other = (Resource) obj; if (getMemory() != other.getMemory() || getVirtualCores() != other.getVirtualCores()) { return false; } return true; }", "n_tokens": 94, "n_pass": [23, 3, 3]}
+{"time": "2023-09-24 00:50:30.004530", "score": "0.9922", "loss": "0.0135", "code": "public boolean equals(Object obj) { if  (obj == null) return false; if (getMemory() != other.getMemory() || getVirtualCores() != other.getVirtualCores()) { return false; } return true; }", "n_tokens": 78, "n_pass": [24, 4, 4]}
+{"time": "2023-09-24 00:50:32.223112", "score": "0.9844", "loss": "0.0248", "code": "public boolean equals(Object obj) { if  (obj == null) return false; if (getMemory= other.getMemory() || getVirtualCores() != other.getVirtualCores()) { return false; } return true; }", "n_tokens": 74, "n_pass": [71, 5, 5]}
+{"time": "2023-09-24 00:50:34.063059", "score": "0.9479", "loss": "0.087", "code": "public boolean equals(Object obj) { if  (obj == null) return false; if (getMemorygetMemory() || getVirtualCores() != other.getVirtualCores()) { return false; } return true; }", "n_tokens": 70, "n_pass": [72, 6, 6]}
+{"time": "2023-09-24 00:50:35.817902", "score": "0.9714", "loss": "0.0445", "code": "public boolean equals(Object obj) { if  (obj == null) return false; if (getMemory|| getVirtualCores() != other.getVirtualCores()) { return false; } return true; }", "n_tokens": 66, "n_pass": [73, 7, 7]}
+{"time": "2023-09-24 00:50:37.598684", "score": "0.9926", "loss": "0.0116", "code": "public boolean equals(Object obj) { if  (obj == null) return false; if (getMemory() != other.getVirtualCores()) { return false; } return true; }", "n_tokens": 62, "n_pass": [74, 8, 8]}
+{"time": "2023-09-24 00:50:39.321486", "score": "0.9649", "loss": "0.059", "code": "public boolean equals(Object obj) { if  (obj == null) return false; if (getMemory= other.getVirtualCores()) { return false; } return true; }", "n_tokens": 58, "n_pass": [75, 9, 9]}
+{"time": "2023-09-24 00:50:40.918090", "score": "0.8347", "loss": "0.2394", "code": "public boolean equals(Object obj) { if  (obj == null) return false; if (getMemorygetVirtualCores()) { return false; } return true; }", "n_tokens": 54, "n_pass": [76, 10, 10]}
+{"time": "2023-09-24 00:50:43.233649", "score": "0.3748", "loss": "1.2813", "code": "public boolean equals(Object obj) { if  (objnull) return false; if (getMemorygetVirtualCores()) { return false; } return true; }", "n_tokens": 50, "n_pass": [87, 11, 11]}
+{"time": "2023-09-24 00:50:46.836944", "score": "0.38", "loss": "1.3626", "code": "public boolean equals(Object obj) { if  (objnull) false; if (getMemorygetVirtualCores()) { return false; } return true; }", "n_tokens": 48, "n_pass": [128, 12, 12]}
+{"time": "2023-09-24 00:50:50.248534", "score": "0.4411", "loss": "1.3686", "code": "public boolean equals(Object obj) { if  (objnull) false; if (getMemorygetVirtualCores()) { false; } return true; }", "n_tokens": 46, "n_pass": [136, 14, 13]}
+{"time": "2023-09-24 00:50:51.967138", "score": "0.3268", "loss": "1.5858", "code": "public boolean equals(Object obj) { if  (objnull) false; if (getMemorygetVirtualCores()) {; } return true; }", "n_tokens": 44, "n_pass": [137, 15, 14]}
+{"time": "2023-09-24 00:50:53.657687", "score": "0.3268", "loss": "1.5858", "code": "public boolean equals(Object obj) { if  (objnull) false; if (getMemorygetVirtualCores()) {} return true; }", "n_tokens": 42, "n_pass": [138, 16, 15]}
+{"time": "2023-09-24 00:50:55.312429", "score": "0.2719", "loss": "2.0144", "code": "public boolean equals(Object obj) { if  (objnull) false; if (getMemorygetVirtualCores()) {} true; }", "n_tokens": 40, "n_pass": [140, 17, 16]}
+{"time": "2023-09-24 00:50:56.926323", "score": "0.4134", "loss": "1.3734", "code": "public boolean equals(Object obj) { if  (objnull) false; if (getMemorygetVirtualCores()) {}  }", "n_tokens": 38, "n_pass": [141, 18, 17]}
+{"time": "2023-09-24 00:50:58.649536", "score": "0.4134", "loss": "1.3734", "code": " boolean equals(Object obj) { if  (objnull) false; if (getMemorygetVirtualCores()) {}  }", "n_tokens": 37, "n_pass": [143, 19, 18]}
+{"time": "2023-09-24 00:51:00.313189", "score": "0.4134", "loss": "1.3734", "code": "boolean equals(Object obj) { if  (objnull) false; if (getMemorygetVirtualCores()) {}  }", "n_tokens": 36, "n_pass": [144, 20, 19]}
+{"time": "2023-09-24 00:51:02.605095", "score": "0.4134", "loss": "1.3734", "code": "boolean equals(Object obj) { if(objnull) false; if (getMemorygetVirtualCores()) {}  }", "n_tokens": 34, "n_pass": [151, 21, 20]}
+{"time": "2023-09-24 00:51:10.187776", "score": "0.5368", "loss": "0.9537", "code": "boolean equals(Object obj) { if(null) false; if (getMemorygetVirtualCores()) {}  }", "n_tokens": 33, "n_pass": [204, 23, 21]}
+{"time": "2023-09-24 00:51:11.940371", "score": "0.5368", "loss": "0.9537", "code": "boolean equals(Object obj) { if(null)false; if (getMemorygetVirtualCores()) {}  }", "n_tokens": 32, "n_pass": [207, 24, 22]}
+{"time": "2023-09-24 00:51:15.234352", "score": "0.5368", "loss": "0.9537", "code": "boolean equals(Object obj) { if(null)false;if (getMemorygetVirtualCores()) {}  }", "n_tokens": 31, "n_pass": [210, 26, 23]}
+{"time": "2023-09-24 00:51:16.950225", "score": "0.5368", "loss": "0.9537", "code": "boolean equals(Object obj) { if(null)false;if(getMemorygetVirtualCores()) {}  }", "n_tokens": 30, "n_pass": [212, 27, 24]}
+{"time": "2023-09-24 00:51:18.566404", "score": "0.5112", "loss": "1.0205", "code": "boolean equals(Object obj) { if(null)false;if(getVirtualCores()) {}  }", "n_tokens": 29, "n_pass": [214, 28, 25]}
+{"time": "2023-09-24 00:51:20.202121", "score": "0.5112", "loss": "1.0205", "code": "boolean equals(Object obj) { if(null)false;if(getVirtualCores()){}  }", "n_tokens": 28, "n_pass": [219, 29, 26]}
+{"time": "2023-09-24 00:51:21.864014", "score": "0.5112", "loss": "1.0205", "code": "boolean equals(Object obj) { if(null)false;if(getVirtualCores()){} }", "n_tokens": 27, "n_pass": [222, 30, 27]}
+{"time": "2023-09-24 00:51:23.462628", "score": "0.5112", "loss": "1.0205", "code": "boolean equals(Object obj) { if(null)false;if(getVirtualCores()){}}", "n_tokens": 26, "n_pass": [223, 31, 28]}
+{"time": "2023-09-24 00:51:25.961894", "score": "0.5112", "loss": "1.0205", "code": "boolean equals(Object obj){ if(null)false;if(getVirtualCores()){}}", "n_tokens": 25, "n_pass": [233, 32, 29]}
+{"time": "2023-09-24 00:51:27.572630", "score": "0.5112", "loss": "1.0205", "code": "boolean equals(Object obj){if(null)false;if(getVirtualCores()){}}", "n_tokens": 24, "n_pass": [235, 33, 30]}
+
+Minimal simplified code:
+boolean equals(Object obj){if(null)false;if(getVirtualCores()){}}
+

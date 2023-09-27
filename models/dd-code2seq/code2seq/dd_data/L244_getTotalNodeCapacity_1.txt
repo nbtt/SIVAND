@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FifoSchedulerInfo_getTotalNodeCapacity_0.java
+method_name = getTotalNodeCapacity
+method_body = public int getTotalNodeCapacity() { return this.totalNodeCapacity; }
+predict, score, loss = getTotalNodeCapacity, 0.9249164462089539, 0.34480440616607666
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:11:52.411489", "score": "0.9249", "loss": "0.3448", "code": "public int getTotalNodeCapacity() { return this.totalNodeCapacity; }", "n_tokens": 18, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:11:54.559443", "score": "0.9249", "loss": "0.3448", "code": "int getTotalNodeCapacity() { return this.totalNodeCapacity; }", "n_tokens": 16, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:11:56.461443", "score": "0.8574", "loss": "0.7772", "code": "int getTotalNodeCapacity() { this.totalNodeCapacity; }", "n_tokens": 14, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:12:03.162256", "score": "0.8574", "loss": "0.7772", "code": "int getTotalNodeCapacity(){ this.totalNodeCapacity; }", "n_tokens": 13, "n_pass": [52, 6, 4]}
+{"time": "2023-09-24 00:12:04.788040", "score": "0.8574", "loss": "0.7772", "code": "int getTotalNodeCapacity(){this.totalNodeCapacity; }", "n_tokens": 12, "n_pass": [54, 7, 5]}
+{"time": "2023-09-24 00:12:09.256472", "score": "0.8574", "loss": "0.7772", "code": "int getTotalNodeCapacity(){this.totalNodeCapacity;}", "n_tokens": 11, "n_pass": [71, 9, 6]}
+
+Minimal simplified code:
+int getTotalNodeCapacity(){this.totalNodeCapacity;}
+

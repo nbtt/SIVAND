@@ -1,0 +1,29 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FileContextPermissionBase_setUp_0.java
+method_name = setUp
+method_body = public void setUp() throws Exception { fileContextTestHelper = getFileContextHelper(); fc = getFileContext(); fc.mkdir(fileContextTestHelper.getTestRootPath(fc), FileContext.DEFAULT_PERM, true); }
+predict, score, loss = setUp, 0.6775582432746887, 1.1536942720413208
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:22:16.984672", "score": "0.6776", "loss": "1.1537", "code": "public void setUp() throws Exception { fileContextTestHelper = getFileContextHelper(); fc = getFileContext(); fc.mkdir(fileContextTestHelper.getTestRootPath(fc), FileContext.DEFAULT_PERM, true); }", "n_tokens": 56, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:22:20.545612", "score": "0.7027", "loss": "0.9859", "code": "public void setUp() throws Exception { fileContextTestHelper = getFileContextHelper(); fc = getFileContext(fileContextTestHelper.getTestRootPath(fc), FileContext.DEFAULT_PERM, true); }", "n_tokens": 49, "n_pass": [24, 3, 2]}
+{"time": "2023-09-24 02:22:22.196235", "score": "0.7186", "loss": "0.9373", "code": "public void setUp() throws Exception { fileContextTestHelper = getFileContextHelper(); fc = getFileContext(fileContextTestHelper.getTestRootPath(fc), true); }", "n_tokens": 42, "n_pass": [25, 4, 3]}
+{"time": "2023-09-24 02:22:24.005535", "score": "0.6664", "loss": "1.2709", "code": "public void setUp() throws Exception { ; fc = getFileContext(fileContextTestHelper.getTestRootPath(fc), true); }", "n_tokens": 35, "n_pass": [29, 5, 4]}
+{"time": "2023-09-24 02:22:28.778823", "score": "0.6664", "loss": "1.2709", "code": "public void setUp() throws Exception { fc = getFileContext(fileContextTestHelper.getTestRootPath(fc), true); }", "n_tokens": 33, "n_pass": [76, 7, 5]}
+{"time": "2023-09-24 02:22:30.537040", "score": "0.6655", "loss": "1.2616", "code": "public void setUp() throws Exception { fc = getFileContext(fileContextTestHelper(fc), true); }", "n_tokens": 31, "n_pass": [81, 8, 6]}
+{"time": "2023-09-24 02:22:32.231359", "score": "0.6655", "loss": "1.2616", "code": " void setUp() throws Exception { fc = getFileContext(fileContextTestHelper(fc), true); }", "n_tokens": 30, "n_pass": [87, 9, 7]}
+{"time": "2023-09-24 02:22:33.901544", "score": "0.6655", "loss": "1.2616", "code": "void setUp() throws Exception { fc = getFileContext(fileContextTestHelper(fc), true); }", "n_tokens": 29, "n_pass": [88, 10, 8]}
+{"time": "2023-09-24 02:22:39.130838", "score": "0.6655", "loss": "1.2616", "code": "void setUp()throws Exception { fc = getFileContext(fileContextTestHelper(fc), true); }", "n_tokens": 28, "n_pass": [133, 11, 9]}
+{"time": "2023-09-24 02:22:40.982802", "score": "0.6655", "loss": "1.2616", "code": "void setUp()throws Exception{ fc = getFileContext(fileContextTestHelper(fc), true); }", "n_tokens": 27, "n_pass": [136, 12, 10]}
+{"time": "2023-09-24 02:22:42.738616", "score": "0.6655", "loss": "1.2616", "code": "void setUp()throws Exception{fc = getFileContext(fileContextTestHelper(fc), true); }", "n_tokens": 26, "n_pass": [138, 13, 11]}
+{"time": "2023-09-24 02:22:44.679385", "score": "0.6655", "loss": "1.2616", "code": "void setUp()throws Exception{fc= getFileContext(fileContextTestHelper(fc), true); }", "n_tokens": 25, "n_pass": [140, 14, 12]}
+{"time": "2023-09-24 02:22:46.370917", "score": "0.6655", "loss": "1.2616", "code": "void setUp()throws Exception{fc=getFileContext(fileContextTestHelper(fc), true); }", "n_tokens": 24, "n_pass": [142, 15, 13]}
+{"time": "2023-09-24 02:22:48.113171", "score": "0.7004", "loss": "1.1243", "code": "void setUp()throws Exception{fc=getFileContext((fc), true); }", "n_tokens": 23, "n_pass": [145, 16, 14]}
+{"time": "2023-09-24 02:22:49.781359", "score": "0.7166", "loss": "0.9967", "code": "void setUp()throws Exception{fc=getFileContext((fc) true); }", "n_tokens": 22, "n_pass": [149, 17, 15]}
+{"time": "2023-09-24 02:22:51.472697", "score": "0.7166", "loss": "0.9967", "code": "void setUp()throws Exception{fc=getFileContext((fc)true); }", "n_tokens": 21, "n_pass": [150, 18, 16]}
+{"time": "2023-09-24 02:22:53.200363", "score": "0.7257", "loss": "1.038", "code": "void setUp()throws Exception{fc=getFileContext((fc)); }", "n_tokens": 20, "n_pass": [151, 19, 17]}
+{"time": "2023-09-24 02:22:54.941779", "score": "0.7257", "loss": "1.038", "code": "void setUp()throws Exception{fc=getFileContext((fc));}", "n_tokens": 19, "n_pass": [154, 20, 18]}
+
+Minimal simplified code:
+void setUp()throws Exception{fc=getFileContext((fc));}
+

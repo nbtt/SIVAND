@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FileHandle_hashCode_0.java
+method_name = hashCode
+method_body = public int hashCode() { return Arrays.hashCode(handle); }
+predict, score, loss = hashCode, 0.9871605038642883, 0.04125590622425079
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:56:23.636692", "score": "0.9872", "loss": "0.0413", "code": "public int hashCode() { return Arrays.hashCode(handle); }", "n_tokens": 21, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:56:26.874415", "score": "0.9872", "loss": "0.0413", "code": "int hashCode() { return Arrays.hashCode(handle); }", "n_tokens": 19, "n_pass": [20, 3, 2]}
+{"time": "2023-09-24 00:56:28.814138", "score": "0.9902", "loss": "0.0672", "code": "int hashCode() {Arrays.hashCode(handle); }", "n_tokens": 16, "n_pass": [24, 4, 3]}
+{"time": "2023-09-24 00:56:32.396526", "score": "0.9774", "loss": "0.0701", "code": "int hashCode() {Arrays.hashCode; }", "n_tokens": 13, "n_pass": [26, 6, 4]}
+{"time": "2023-09-24 00:56:37.332115", "score": "0.9774", "loss": "0.0701", "code": "int hashCode(){Arrays.hashCode; }", "n_tokens": 12, "n_pass": [49, 8, 5]}
+{"time": "2023-09-24 00:56:38.963122", "score": "0.8863", "loss": "0.2744", "code": "int hashCode(){hashCode; }", "n_tokens": 10, "n_pass": [51, 9, 6]}
+{"time": "2023-09-24 00:56:43.287513", "score": "0.8863", "loss": "0.2744", "code": "int hashCode(){hashCode;}", "n_tokens": 9, "n_pass": [65, 11, 7]}
+
+Minimal simplified code:
+int hashCode(){hashCode;}
+

@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ContainerLauncherImpl_createEventProcessor_0.java
+method_name = createEventProcessor
+method_body = protected EventProcessor createEventProcessor(ContainerLauncherEvent event) { return new EventProcessor(event); }
+predict, score, loss = createEventProcessor, 0.7931402325630188, 1.0767951011657715
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:27:08.318920", "score": "0.7931", "loss": "1.0768", "code": "protected EventProcessor createEventProcessor(ContainerLauncherEvent event) { return new EventProcessor(event); }", "n_tokens": 24, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:27:12.041202", "score": "0.7437", "loss": "1.408", "code": "protected EventProcessor createEventProcessor() { return new EventProcessor(event); }", "n_tokens": 21, "n_pass": [22, 3, 2]}
+{"time": "2023-09-24 01:27:13.725349", "score": "0.7447", "loss": "1.3515", "code": "protected EventProcessor createEventProcessor() {new EventProcessor(event); }", "n_tokens": 18, "n_pass": [23, 4, 3]}
+{"time": "2023-09-24 01:27:17.996309", "score": "0.7447", "loss": "1.3515", "code": " EventProcessor createEventProcessor() {new EventProcessor(event); }", "n_tokens": 17, "n_pass": [48, 6, 4]}
+{"time": "2023-09-24 01:27:19.555893", "score": "0.7447", "loss": "1.3515", "code": "EventProcessor createEventProcessor() {new EventProcessor(event); }", "n_tokens": 16, "n_pass": [49, 7, 5]}
+{"time": "2023-09-24 01:27:23.108986", "score": "0.7447", "loss": "1.3515", "code": "EventProcessor createEventProcessor(){new EventProcessor(event); }", "n_tokens": 15, "n_pass": [72, 8, 6]}
+{"time": "2023-09-24 01:27:26.478818", "score": "0.7055", "loss": "1.7193", "code": "EventProcessor createEventProcessor(){newEventProcessor(event); }", "n_tokens": 14, "n_pass": [75, 10, 7]}
+{"time": "2023-09-24 01:27:28.075451", "score": "0.7035", "loss": "1.7703", "code": "EventProcessor createEventProcessor(){newEventProcessor(); }", "n_tokens": 13, "n_pass": [78, 11, 8]}
+{"time": "2023-09-24 01:27:29.632260", "score": "0.7035", "loss": "1.7703", "code": "EventProcessor createEventProcessor(){newEventProcessor();}", "n_tokens": 12, "n_pass": [81, 12, 9]}
+
+Minimal simplified code:
+EventProcessor createEventProcessor(){newEventProcessor();}
+

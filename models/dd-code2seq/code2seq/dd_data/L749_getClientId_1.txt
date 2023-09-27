@@ -1,0 +1,21 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getClientId_0.java
+method_name = getClientId
+method_body = public static byte[] getClientId() { Call call = CurCall.get(); return call != null ? call.clientId : RpcConstants.DUMMY_CLIENT_ID; }
+predict, score, loss = getClientId, 0.9696873426437378, 0.2558845579624176
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:27:26.093302", "score": "0.9697", "loss": "0.2559", "code": "public static byte[] getClientId() { Call call = CurCall.get(); return call != null ? call.clientId : RpcConstants.DUMMY_CLIENT_ID; }", "n_tokens": 54, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:27:28.197816", "score": "0.9792", "loss": "0.1478", "code": "public static byte[] getClientId() { return call != null ? call.clientId : RpcConstants.DUMMY_CLIENT_ID; }", "n_tokens": 41, "n_pass": [9, 2, 2]}
+{"time": "2023-09-24 02:27:29.871380", "score": "0.7981", "loss": "1.7827", "code": "public static byte[] getClientId() {clientId : RpcConstants.DUMMY_CLIENT_ID; }", "n_tokens": 27, "n_pass": [10, 3, 3]}
+{"time": "2023-09-24 02:27:31.442474", "score": "0.9282", "loss": "0.3426", "code": "public static byte[] getClientId() {_CLIENT_ID; }", "n_tokens": 20, "n_pass": [15, 4, 4]}
+{"time": "2023-09-24 02:27:33.129825", "score": "0.9282", "loss": "0.3426", "code": " byte[] getClientId() {_CLIENT_ID; }", "n_tokens": 17, "n_pass": [26, 5, 5]}
+{"time": "2023-09-24 02:27:35.246405", "score": "0.9282", "loss": "0.3426", "code": "byte[] getClientId() {_CLIENT_ID; }", "n_tokens": 16, "n_pass": [41, 6, 6]}
+{"time": "2023-09-24 02:27:39.740870", "score": "0.9282", "loss": "0.3426", "code": "byte[]getClientId() {_CLIENT_ID; }", "n_tokens": 15, "n_pass": [66, 8, 7]}
+{"time": "2023-09-24 02:27:41.389648", "score": "0.9282", "loss": "0.3426", "code": "byte[]getClientId(){_CLIENT_ID; }", "n_tokens": 14, "n_pass": [70, 9, 8]}
+{"time": "2023-09-24 02:27:42.987757", "score": "0.9282", "loss": "0.3426", "code": "byte[]getClientId(){CLIENT_ID; }", "n_tokens": 13, "n_pass": [72, 10, 9]}
+{"time": "2023-09-24 02:27:49.501334", "score": "0.9282", "loss": "0.3426", "code": "byte[]getClientId(){CLIENT_ID;}", "n_tokens": 12, "n_pass": [77, 14, 10]}
+
+Minimal simplified code:
+byte[]getClientId(){CLIENT_ID;}
+

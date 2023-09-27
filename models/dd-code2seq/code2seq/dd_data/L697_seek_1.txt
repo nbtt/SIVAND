@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SequenceFileRecordReader_seek_0.java
+method_name = seek
+method_body = protected synchronized void seek(long pos) throws IOException { in.seek(pos); }
+predict, score, loss = seek, 0.9832705855369568, 0.06076011061668396
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:17:34.904657", "score": "0.9833", "loss": "0.0608", "code": "protected synchronized void seek(long pos) throws IOException { in.seek(pos); }", "n_tokens": 28, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:17:36.831588", "score": "0.9833", "loss": "0.0608", "code": " void seek(long pos) throws IOException { in.seek(pos); }", "n_tokens": 25, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:17:38.956499", "score": "0.9887", "loss": "0.073", "code": " void seek(long pos) { in.seek(pos); }", "n_tokens": 21, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:17:43.241125", "score": "0.9887", "loss": "0.073", "code": "void seek(long pos) { in.seek(pos); }", "n_tokens": 20, "n_pass": [49, 5, 4]}
+{"time": "2023-09-24 02:17:48.870306", "score": "0.9887", "loss": "0.073", "code": "void seek(long pos){ in.seek(pos); }", "n_tokens": 19, "n_pass": [85, 7, 5]}
+{"time": "2023-09-24 02:17:50.541926", "score": "0.9887", "loss": "0.073", "code": "void seek(long pos){in.seek(pos); }", "n_tokens": 18, "n_pass": [86, 8, 6]}
+{"time": "2023-09-24 02:17:53.857280", "score": "0.9149", "loss": "0.2924", "code": "void seek(long pos){in.seek(); }", "n_tokens": 17, "n_pass": [91, 10, 7]}
+{"time": "2023-09-24 02:17:55.422519", "score": "0.9149", "loss": "0.2924", "code": "void seek(long pos){in.seek();}", "n_tokens": 16, "n_pass": [94, 11, 8]}
+
+Minimal simplified code:
+void seek(long pos){in.seek();}
+

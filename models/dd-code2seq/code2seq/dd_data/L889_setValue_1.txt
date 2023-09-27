@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestCombineOutputCollector_setValue_0.java
+method_name = setValue
+method_body = public void setValue(long value) { this.value = value; }
+predict, score, loss = setValue, 0.9205474853515625, 0.19100375473499298
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:03:30.163548", "score": "0.9205", "loss": "0.191", "code": "public void setValue(long value) { this.value = value; }", "n_tokens": 23, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:03:32.272493", "score": "0.9205", "loss": "0.191", "code": "void setValue(long value) { this.value = value; }", "n_tokens": 21, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 03:03:34.285977", "score": "0.7263", "loss": "4.3643", "code": "void setValue(long value) { this.value ; }", "n_tokens": 18, "n_pass": [25, 3, 3]}
+{"time": "2023-09-24 03:03:42.289439", "score": "0.7263", "loss": "4.3643", "code": "void setValue(long value) { this.value ;}", "n_tokens": 17, "n_pass": [69, 6, 4]}
+{"time": "2023-09-24 03:03:44.564419", "score": "0.7263", "loss": "4.3643", "code": "void setValue(long value){ this.value ;}", "n_tokens": 16, "n_pass": [78, 7, 5]}
+{"time": "2023-09-24 03:03:46.160978", "score": "0.7263", "loss": "4.3643", "code": "void setValue(long value){this.value ;}", "n_tokens": 15, "n_pass": [80, 8, 6]}
+{"time": "2023-09-24 03:03:49.313861", "score": "0.7263", "loss": "4.3643", "code": "void setValue(long value){this.value;}", "n_tokens": 14, "n_pass": [84, 10, 7]}
+
+Minimal simplified code:
+void setValue(long value){this.value;}
+

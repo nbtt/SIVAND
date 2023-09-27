@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_setRecursive_0.java
+method_name = setRecursive
+method_body = public void setRecursive(boolean recursive) { maybeInitBuilder(); builder.setRecursive(recursive); }
+predict, score, loss = setRecursive, 0.935828685760498, 0.1850251704454422
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:29:09.518864", "score": "0.9358", "loss": "0.185", "code": "public void setRecursive(boolean recursive) { maybeInitBuilder(); builder.setRecursive(recursive); }", "n_tokens": 27, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:29:15.869534", "score": "0.9358", "loss": "0.185", "code": " void setRecursive(boolean recursive) { maybeInitBuilder(); builder.setRecursive(recursive); }", "n_tokens": 26, "n_pass": [44, 4, 2]}
+{"time": "2023-09-24 00:29:17.596259", "score": "0.9358", "loss": "0.185", "code": "void setRecursive(boolean recursive) { maybeInitBuilder(); builder.setRecursive(recursive); }", "n_tokens": 25, "n_pass": [45, 5, 3]}
+{"time": "2023-09-24 00:29:23.366787", "score": "0.9358", "loss": "0.185", "code": "void setRecursive(boolean recursive){ maybeInitBuilder(); builder.setRecursive(recursive); }", "n_tokens": 24, "n_pass": [86, 7, 4]}
+{"time": "2023-09-24 00:29:24.902406", "score": "0.9358", "loss": "0.185", "code": "void setRecursive(boolean recursive){maybeInitBuilder(); builder.setRecursive(recursive); }", "n_tokens": 23, "n_pass": [88, 8, 5]}
+{"time": "2023-09-24 00:29:26.587939", "score": "0.9358", "loss": "0.185", "code": "void setRecursive(boolean recursive){maybeInitBuilder();builder.setRecursive(recursive); }", "n_tokens": 22, "n_pass": [93, 9, 6]}
+{"time": "2023-09-24 00:29:29.891013", "score": "0.9083", "loss": "0.3034", "code": "void setRecursive(boolean recursive){maybeInitBuilder();builder.setRecursive(); }", "n_tokens": 21, "n_pass": [98, 11, 7]}
+{"time": "2023-09-24 00:29:31.468332", "score": "0.9083", "loss": "0.3034", "code": "void setRecursive(boolean recursive){maybeInitBuilder();builder.setRecursive();}", "n_tokens": 20, "n_pass": [101, 12, 8]}
+
+Minimal simplified code:
+void setRecursive(boolean recursive){maybeInitBuilder();builder.setRecursive();}
+

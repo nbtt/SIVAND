@@ -1,0 +1,29 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_reset_0.java
+method_name = reset
+method_body = public void reset(DataInputStream downStream) { in = downStream; lastChunk = false; remain = 0; closed = false; }
+predict, score, loss = reset, 0.5231224298477173, 1.0456830263137817
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:33:47.757297", "score": "0.5231", "loss": "1.0457", "code": "public void reset(DataInputStream downStream) { in = downStream; lastChunk = false; remain = 0; closed = false; }", "n_tokens": 42, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:33:51.565396", "score": "0.3825", "loss": "1.8633", "code": "public void reset(DataInputStream downStream) { in lastChunk = false; remain = 0; closed = false; }", "n_tokens": 37, "n_pass": [23, 3, 2]}
+{"time": "2023-09-24 00:33:53.380914", "score": "0.3403", "loss": "1.7662", "code": "public void reset(DataInputStream downStream) { in ; remain = 0; closed = false; }", "n_tokens": 32, "n_pass": [24, 4, 3]}
+{"time": "2023-09-24 00:33:55.722213", "score": "0.3953", "loss": "1.5946", "code": "public void reset(DataInputStream downStream) { inremain = 0; closed = false; }", "n_tokens": 29, "n_pass": [43, 5, 4]}
+{"time": "2023-09-24 00:34:00.790930", "score": "0.3953", "loss": "1.5946", "code": "void reset(DataInputStream downStream) { inremain = 0; closed = false; }", "n_tokens": 27, "n_pass": [49, 8, 5]}
+{"time": "2023-09-24 00:34:08.255764", "score": "0.3953", "loss": "1.5946", "code": "void reset(DataInputStream downStream){ inremain = 0; closed = false; }", "n_tokens": 26, "n_pass": [88, 11, 6]}
+{"time": "2023-09-24 00:34:09.947613", "score": "0.3953", "loss": "1.5946", "code": "void reset(DataInputStream downStream){inremain = 0; closed = false; }", "n_tokens": 25, "n_pass": [90, 12, 7]}
+{"time": "2023-09-24 00:34:13.250483", "score": "0.393", "loss": "1.5444", "code": "void reset(DataInputStream downStream){in = 0; closed = false; }", "n_tokens": 24, "n_pass": [92, 14, 8]}
+{"time": "2023-09-24 00:34:18.402361", "score": "0.393", "loss": "1.5444", "code": "void reset(DataInputStream downStream){in = 0;closed = false; }", "n_tokens": 23, "n_pass": [125, 15, 9]}
+{"time": "2023-09-24 00:34:20.169538", "score": "0.393", "loss": "1.5444", "code": "void reset(DataInputStream downStream){in = 0;closed= false; }", "n_tokens": 22, "n_pass": [127, 16, 10]}
+{"time": "2023-09-24 00:34:21.845778", "score": "0.393", "loss": "1.5444", "code": "void reset(DataInputStream downStream){in = 0;closed=false; }", "n_tokens": 21, "n_pass": [129, 17, 11]}
+{"time": "2023-09-24 00:34:23.474763", "score": "0.393", "loss": "1.5444", "code": "void reset(DataInputStream downStream){in = 0;closed=false;}", "n_tokens": 20, "n_pass": [132, 18, 12]}
+{"time": "2023-09-24 00:34:25.770772", "score": "0.393", "loss": "1.5444", "code": "void reset(DataInputStream downStream){in= 0;closed=false;}", "n_tokens": 19, "n_pass": [144, 19, 13]}
+{"time": "2023-09-24 00:34:27.486621", "score": "0.393", "loss": "1.5444", "code": "void reset(DataInputStream downStream){in=0;closed=false;}", "n_tokens": 18, "n_pass": [146, 20, 14]}
+{"time": "2023-09-24 00:34:29.092854", "score": "0.4117", "loss": "1.8634", "code": "void reset(DataInputStream downStream){in=0;closedfalse;}", "n_tokens": 17, "n_pass": [150, 21, 15]}
+{"time": "2023-09-24 00:34:34.719244", "score": "0.5197", "loss": "1.5764", "code": "void reset(DataInputStream downStream){in=0;false;}", "n_tokens": 16, "n_pass": [167, 24, 16]}
+{"time": "2023-09-24 00:34:36.440105", "score": "0.4214", "loss": "1.7903", "code": "void reset(DataInputStream downStream){in=0;;}", "n_tokens": 15, "n_pass": [168, 25, 17]}
+{"time": "2023-09-24 00:34:38.049339", "score": "0.4214", "loss": "1.7903", "code": "void reset(DataInputStream downStream){in=0;}", "n_tokens": 14, "n_pass": [169, 26, 18]}
+
+Minimal simplified code:
+void reset(DataInputStream downStream){in=0;}
+

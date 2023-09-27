@@ -1,0 +1,27 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestOutOfBandAzureBlobOperations_setUp_0.java
+method_name = setUp
+method_body = public void setUp() throws Exception { testAccount = AzureBlobStorageTestAccount.createMock(); fs = testAccount.getFileSystem(); backingStore = testAccount.getMockStorage().getBackingStore(); }
+predict, score, loss = setUp, 0.8136523962020874, 0.5911474823951721
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:15:14.601290", "score": "0.8137", "loss": "0.5911", "code": "public void setUp() throws Exception { testAccount = AzureBlobStorageTestAccount.createMock(); fs = testAccount.getFileSystem(); backingStore = testAccount.getMockStorage().getBackingStore(); }", "n_tokens": 52, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:15:16.546659", "score": "0.8261", "loss": "0.554", "code": "public void setUp() throws Exception { testAccount =  fs = testAccount.getFileSystem(); backingStore = testAccount.getMockStorage().getBackingStore(); }", "n_tokens": 46, "n_pass": [23, 2, 2]}
+{"time": "2023-09-24 03:15:18.230388", "score": "0.7946", "loss": "0.7018", "code": "public void setUp() throws Exception { testAccount = getFileSystem(); backingStore = testAccount.getMockStorage().getBackingStore(); }", "n_tokens": 39, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 03:15:23.909954", "score": "0.8643", "loss": "0.4795", "code": "public void setUp() throws Exception { testAccount = getFileSystem(); backingStore = testAccount.getMockStorage(); }", "n_tokens": 35, "n_pass": [47, 6, 4]}
+{"time": "2023-09-24 03:15:26.198491", "score": "0.842", "loss": "0.6524", "code": "public void setUp() throws Exception { testAccountgetFileSystem(); backingStore = testAccount.getMockStorage(); }", "n_tokens": 32, "n_pass": [54, 7, 5]}
+{"time": "2023-09-24 03:15:27.779271", "score": "0.8528", "loss": "0.6029", "code": "public void setUp() throws Exception { testAccount; backingStore = testAccount.getMockStorage(); }", "n_tokens": 29, "n_pass": [55, 8, 6]}
+{"time": "2023-09-24 03:15:29.545760", "score": "0.8714", "loss": "0.6658", "code": "public void setUp() throws Exception { testAccount = testAccount.getMockStorage(); }", "n_tokens": 26, "n_pass": [56, 9, 7]}
+{"time": "2023-09-24 03:15:33.933418", "score": "0.8889", "loss": "0.3999", "code": "public void setUp() throws Exception { testAccount = getMockStorage(); }", "n_tokens": 24, "n_pass": [83, 11, 8]}
+{"time": "2023-09-24 03:15:35.761840", "score": "0.8889", "loss": "0.3999", "code": " void setUp() throws Exception { testAccount = getMockStorage(); }", "n_tokens": 23, "n_pass": [86, 12, 9]}
+{"time": "2023-09-24 03:15:37.475516", "score": "0.8889", "loss": "0.3999", "code": "void setUp() throws Exception { testAccount = getMockStorage(); }", "n_tokens": 22, "n_pass": [87, 13, 10]}
+{"time": "2023-09-24 03:15:42.502895", "score": "0.8889", "loss": "0.3999", "code": "void setUp()throws Exception { testAccount = getMockStorage(); }", "n_tokens": 21, "n_pass": [120, 14, 11]}
+{"time": "2023-09-24 03:15:44.183440", "score": "0.8889", "loss": "0.3999", "code": "void setUp()throws Exception{ testAccount = getMockStorage(); }", "n_tokens": 20, "n_pass": [124, 15, 12]}
+{"time": "2023-09-24 03:15:45.907634", "score": "0.8889", "loss": "0.3999", "code": "void setUp()throws Exception{testAccount = getMockStorage(); }", "n_tokens": 19, "n_pass": [126, 16, 13]}
+{"time": "2023-09-24 03:15:47.502438", "score": "0.8889", "loss": "0.3999", "code": "void setUp()throws Exception{testAccount= getMockStorage(); }", "n_tokens": 18, "n_pass": [128, 17, 14]}
+{"time": "2023-09-24 03:15:49.152409", "score": "0.8889", "loss": "0.3999", "code": "void setUp()throws Exception{testAccount=getMockStorage(); }", "n_tokens": 17, "n_pass": [130, 18, 15]}
+{"time": "2023-09-24 03:15:50.864391", "score": "0.8889", "loss": "0.3999", "code": "void setUp()throws Exception{testAccount=getMockStorage();}", "n_tokens": 16, "n_pass": [135, 19, 16]}
+
+Minimal simplified code:
+void setUp()throws Exception{testAccount=getMockStorage();}
+

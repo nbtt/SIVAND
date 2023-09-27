@@ -1,0 +1,37 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestAMWebApp_main_0.java
+method_name = main
+method_body = public static void main(String[] args) { WebApps.$for("yarn", AppContext.class, new MockAppContext(0, 8, 88, 4)).at(58888).inDevMode().start(new AMWebApp()).joinThread(); }
+predict, score, loss = main, 0.9999133348464966, 0.00020526786101981997
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:31:27.036859", "score": "0.9999", "loss": "0.0002", "code": "public static void main(String[] args) { WebApps.$for(\"yarn\", AppContext.class, new MockAppContext(0, 8, 88, 4)).at(58888).inDevMode().start(new AMWebApp()).joinThread(); }", "n_tokens": 78, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:31:28.944508", "score": "0.9999", "loss": "0.0002", "code": "void main(String[] args) { WebApps.$for(\"yarn\", AppContext.class, new MockAppContext(0, 8, 88, 4)).at(58888).inDevMode().start(new AMWebApp()).joinThread(); }", "n_tokens": 74, "n_pass": [44, 2, 2]}
+{"time": "2023-09-24 01:31:32.425556", "score": "0.9999", "loss": "0.0003", "code": "void main(String[] args) { WebApps.$for(\"yarn\", AppContext.class, new MockAppContext(0,8, 4)).at(58888).inDevMode().start(new AMWebApp()).joinThread(); }", "n_tokens": 69, "n_pass": [52, 4, 3]}
+{"time": "2023-09-24 01:31:35.943903", "score": "0.9999", "loss": "0.0003", "code": "void main(String[] args) { WebApps.$for(\"yarn\", AppContext.class, MockAppContext(0,8, 4)).at(58888).inDevMode().start(new AMWebApp()).joinThread(); }", "n_tokens": 67, "n_pass": [95, 6, 4]}
+{"time": "2023-09-24 01:31:37.686773", "score": "0.9999", "loss": "0.0003", "code": "void main(String[] args) { WebApps.$for(\"yarn\", AppContext.class, MockAppContext(0,8, 4)).at(58).inDevMode().start(new AMWebApp()).joinThread(); }", "n_tokens": 64, "n_pass": [101, 7, 5]}
+{"time": "2023-09-24 01:31:39.397578", "score": "0.9999", "loss": "0.0002", "code": "void main(String[] args) { WebApps.$for(\"yarn\", AppContext.class, MockAppContext(0,8, 4)).at(58).inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 61, "n_pass": [103, 8, 6]}
+{"time": "2023-09-24 01:31:41.559744", "score": "0.9999", "loss": "0.0003", "code": "void main(String[] args) { WebAppsfor(\"yarn\", AppContext.class, MockAppContext(0,8, 4)).at(58).inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 59, "n_pass": [116, 9, 7]}
+{"time": "2023-09-24 01:31:43.351125", "score": "0.9998", "loss": "0.0004", "code": "void main(String[] args) { WebAppsfor(\"yarn\", AppContext, MockAppContext(0,8, 4)).at(58).inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 57, "n_pass": [121, 10, 8]}
+{"time": "2023-09-24 01:31:45.138778", "score": "0.9998", "loss": "0.0004", "code": "void main(String[] args) { WebAppsfor(\"yarn\", AppContextMockAppContext(0,8, 4)).at(58).inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 55, "n_pass": [122, 11, 9]}
+{"time": "2023-09-24 01:31:47.408016", "score": "0.9998", "loss": "0.0004", "code": "void main(String[] args) { WebAppsfor(\"yarn\",MockAppContext(0,8, 4)).at(58).inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 53, "n_pass": [144, 12, 10]}
+{"time": "2023-09-24 01:31:51.281204", "score": "0.9998", "loss": "0.0004", "code": "void main(String[] args) { WebAppsfor(\"yarn\",MockAppContext(08, 4)).at(58).inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 52, "n_pass": [211, 13, 11]}
+{"time": "2023-09-24 01:31:52.977533", "score": "0.9998", "loss": "0.0004", "code": "void main(String[] args) { WebAppsfor(\"yarn\",MockAppContext(0, 4)).at(58).inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 51, "n_pass": [212, 14, 12]}
+{"time": "2023-09-24 01:31:54.584697", "score": "0.9998", "loss": "0.0004", "code": "void main(String[] args) { WebAppsfor(\"yarn\",MockAppContext(0,4)).at(58).inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 50, "n_pass": [213, 15, 13]}
+{"time": "2023-09-24 01:31:56.306586", "score": "0.9993", "loss": "0.0015", "code": "void main(String[] args) { WebAppsfor(\"yarn\",MockAppContext(0,4)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 48, "n_pass": [219, 16, 14]}
+{"time": "2023-09-24 01:31:58.715012", "score": "0.9993", "loss": "0.0015", "code": "void main(String[]args) { WebAppsfor(\"yarn\",MockAppContext(0,4)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 47, "n_pass": [236, 17, 15]}
+{"time": "2023-09-24 01:32:00.312582", "score": "0.9993", "loss": "0.0015", "code": "void main(String[]args){ WebAppsfor(\"yarn\",MockAppContext(0,4)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 46, "n_pass": [239, 18, 16]}
+{"time": "2023-09-24 01:32:02.005680", "score": "0.9993", "loss": "0.0015", "code": "void main(String[]args){WebAppsfor(\"yarn\",MockAppContext(0,4)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 45, "n_pass": [241, 19, 17]}
+{"time": "2023-09-24 01:32:03.669888", "score": "0.9995", "loss": "0.0011", "code": "void main(String[]args){WebApps(\"yarn\",MockAppContext(0,4)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 44, "n_pass": [243, 20, 18]}
+{"time": "2023-09-24 01:32:05.336366", "score": "0.9995", "loss": "0.0016", "code": "void main(String[]args){WebApps(\"\",MockAppContext(0,4)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 43, "n_pass": [246, 21, 19]}
+{"time": "2023-09-24 01:32:07.066067", "score": "0.9992", "loss": "0.0023", "code": "void main(String[]args){WebApps(\"\",MockAppContext(04)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 42, "n_pass": [252, 22, 20]}
+{"time": "2023-09-24 01:32:08.899693", "score": "0.9991", "loss": "0.0028", "code": "void main(String[]args){WebApps(\"\",MockAppContext(0)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 41, "n_pass": [253, 23, 21]}
+{"time": "2023-09-24 01:32:11.300006", "score": "0.9995", "loss": "0.0013", "code": "void main(String[]args){WebApps(\"\",(0)).at().inDevModestart(new AMWebApp()).joinThread(); }", "n_tokens": 40, "n_pass": [282, 24, 22]}
+{"time": "2023-09-24 01:32:14.810534", "score": "0.9997", "loss": "0.0008", "code": "void main(String[]args){WebApps(\"\",(0)).at().start(new AMWebApp()).joinThread(); }", "n_tokens": 39, "n_pass": [337, 25, 23]}
+{"time": "2023-09-24 01:32:16.541021", "score": "0.9916", "loss": "0.0179", "code": "void main(String[]args){WebApps(\"\",(0)).at().start( AMWebApp()).joinThread(); }", "n_tokens": 38, "n_pass": [339, 26, 24]}
+{"time": "2023-09-24 01:32:18.223580", "score": "0.9916", "loss": "0.0179", "code": "void main(String[]args){WebApps(\"\",(0)).at().start(AMWebApp()).joinThread(); }", "n_tokens": 37, "n_pass": [340, 27, 25]}
+{"time": "2023-09-24 01:32:19.824694", "score": "0.9916", "loss": "0.0179", "code": "void main(String[]args){WebApps(\"\",(0)).at().start(AMWebApp()).joinThread();}", "n_tokens": 36, "n_pass": [350, 28, 26]}
+
+Minimal simplified code:
+void main(String[]args){WebApps("",(0)).at().start(AMWebApp()).joinThread();}
+

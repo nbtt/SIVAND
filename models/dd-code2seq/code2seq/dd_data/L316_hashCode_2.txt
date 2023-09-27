@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_hashCode_0.java
+method_name = hashCode
+method_body = public int hashCode() { return getProto().hashCode(); }
+predict, score, loss = hashCode, 0.9995067119598389, 0.0013219434767961502
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:31:33.102959", "score": "0.9995", "loss": "0.0013", "code": "public int hashCode() { return getProto().hashCode(); }", "n_tokens": 22, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:31:35.026338", "score": "0.8662", "loss": "0.4208", "code": "public int hashCode() { hashCode(); }", "n_tokens": 16, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 00:31:38.437818", "score": "0.8662", "loss": "0.4208", "code": "int hashCode() { hashCode(); }", "n_tokens": 14, "n_pass": [22, 4, 3]}
+{"time": "2023-09-24 00:31:43.496897", "score": "0.8662", "loss": "0.4208", "code": "int hashCode(){ hashCode(); }", "n_tokens": 13, "n_pass": [43, 6, 4]}
+{"time": "2023-09-24 00:31:47.046037", "score": "0.8662", "loss": "0.4208", "code": "int hashCode(){ hashCode();}", "n_tokens": 12, "n_pass": [64, 7, 5]}
+{"time": "2023-09-24 00:31:49.520576", "score": "0.8662", "loss": "0.4208", "code": "int hashCode(){hashCode();}", "n_tokens": 11, "n_pass": [71, 8, 6]}
+
+Minimal simplified code:
+int hashCode(){hashCode();}
+

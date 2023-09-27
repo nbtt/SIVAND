@@ -1,0 +1,32 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ContainerLauncherImpl_serviceStop_0.java
+method_name = serviceStop
+method_body = protected void serviceStop() throws Exception { if (stopped.getAndSet(true)) { return; } shutdownAllContainers(); if (eventHandlingThread != null) { eventHandlingThread.interrupt(); } if (launcherPool != null) { launcherPool.shutdownNow(); } super.serviceStop(); }
+predict, score, loss = serviceStop, 0.787449300289154, 0.5527396202087402
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:26:06.155279", "score": "0.7874", "loss": "0.5527", "code": "protected void serviceStop() throws Exception { if (stopped.getAndSet(true)) { return; } shutdownAllContainers(); if (eventHandlingThread != null) { eventHandlingThread.interrupt(); } if (launcherPool != null) { launcherPool.shutdownNow(); } super.serviceStop(); }", "n_tokens": 89, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:26:07.899582", "score": "0.7847", "loss": "0.5617", "code": "protected void serviceStop() throws Exception { if (stopped.getAndSet(true)) { return; } shutdownAllContainers(); if (eventHandlingThread != null) { launcherPool.shutdownNow(); } super.serviceStop(); }", "n_tokens": 67, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 01:26:10.324646", "score": "0.7708", "loss": "0.6123", "code": "protected void serviceStop() throws Exception { if (stopped.getAndSet(true)) { return; } shutdownAllContainers(); if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 61, "n_pass": [38, 3, 3]}
+{"time": "2023-09-24 01:26:12.126627", "score": "0.8588", "loss": "0.3325", "code": "protected void serviceStop() throws Exception { if (stopped.getAndSet(true))  shutdownAllContainers(); if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 55, "n_pass": [46, 4, 4]}
+{"time": "2023-09-24 01:26:13.893361", "score": "0.8023", "loss": "0.5044", "code": "protected void serviceStop() throws Exception { if (stopped.getAndSet(true)) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 49, "n_pass": [47, 5, 5]}
+{"time": "2023-09-24 01:26:17.434671", "score": "0.8023", "loss": "0.5044", "code": "void serviceStop() throws Exception { if (stopped.getAndSet(true)) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 47, "n_pass": [83, 7, 6]}
+{"time": "2023-09-24 01:26:24.134074", "score": "0.8023", "loss": "0.5044", "code": "void serviceStop()throws Exception { if (stopped.getAndSet(true)) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 46, "n_pass": [140, 9, 7]}
+{"time": "2023-09-24 01:26:25.833093", "score": "0.8023", "loss": "0.5044", "code": "void serviceStop()throws Exception{ if (stopped.getAndSet(true)) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 45, "n_pass": [144, 10, 8]}
+{"time": "2023-09-24 01:26:27.575357", "score": "0.8023", "loss": "0.5044", "code": "void serviceStop()throws Exception{if (stopped.getAndSet(true)) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 44, "n_pass": [146, 11, 9]}
+{"time": "2023-09-24 01:26:29.282576", "score": "0.8023", "loss": "0.5044", "code": "void serviceStop()throws Exception{if(stopped.getAndSet(true)) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 43, "n_pass": [148, 12, 10]}
+{"time": "2023-09-24 01:26:31.041157", "score": "0.7936", "loss": "0.5338", "code": "void serviceStop()throws Exception{if(stoppedgetAndSet(true)) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 42, "n_pass": [151, 13, 11]}
+{"time": "2023-09-24 01:26:32.743513", "score": "0.7488", "loss": "0.6965", "code": "void serviceStop()throws Exception{if(stopped(true)) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 41, "n_pass": [152, 14, 12]}
+{"time": "2023-09-24 01:26:34.449715", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped()) if (eventHandlingThread != null) {; } super.serviceStop(); }", "n_tokens": 40, "n_pass": [154, 15, 13]}
+{"time": "2023-09-24 01:26:37.714824", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped()) if (eventHandlingThread != null) {} super.serviceStop(); }", "n_tokens": 38, "n_pass": [163, 17, 14]}
+{"time": "2023-09-24 01:26:48.122207", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped()) if (eventHandlingThread != null) {} super.serviceStop();}", "n_tokens": 37, "n_pass": [220, 21, 15]}
+{"time": "2023-09-24 01:26:50.636033", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped())if (eventHandlingThread != null) {} super.serviceStop();}", "n_tokens": 36, "n_pass": [236, 22, 16]}
+{"time": "2023-09-24 01:26:52.362776", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped())if(eventHandlingThread != null) {} super.serviceStop();}", "n_tokens": 35, "n_pass": [238, 23, 17]}
+{"time": "2023-09-24 01:26:54.036838", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped())if(eventHandlingThread!= null) {} super.serviceStop();}", "n_tokens": 34, "n_pass": [241, 24, 18]}
+{"time": "2023-09-24 01:26:57.421254", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped())if(eventHandlingThread!=null) {} super.serviceStop();}", "n_tokens": 33, "n_pass": [244, 26, 19]}
+{"time": "2023-09-24 01:26:59.120926", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped())if(eventHandlingThread!=null){} super.serviceStop();}", "n_tokens": 32, "n_pass": [247, 27, 20]}
+{"time": "2023-09-24 01:27:00.780528", "score": "0.81", "loss": "0.4805", "code": "void serviceStop()throws Exception{if(stopped())if(eventHandlingThread!=null){}super.serviceStop();}", "n_tokens": 31, "n_pass": [250, 28, 21]}
+
+Minimal simplified code:
+void serviceStop()throws Exception{if(stopped())if(eventHandlingThread!=null){}super.serviceStop();}
+

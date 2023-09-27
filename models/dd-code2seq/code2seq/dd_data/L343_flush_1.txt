@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_flush_0.java
+method_name = flush
+method_body = public void flush() throws IOException { flushBuffer(); out.flush(); }
+predict, score, loss = flush, 0.9887555241584778, 0.04402667284011841
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:45:43.297428", "score": "0.9888", "loss": "0.044", "code": "public void flush() throws IOException { flushBuffer(); out.flush(); }", "n_tokens": 27, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:45:45.340671", "score": "0.9896", "loss": "0.0766", "code": "public void flush() throws IOException { flushBufferout.flush(); }", "n_tokens": 23, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 00:45:47.989394", "score": "0.636", "loss": "0.8698", "code": "public void flush() throws IOException { flushBufferflush(); }", "n_tokens": 21, "n_pass": [47, 3, 3]}
+{"time": "2023-09-24 00:45:49.693957", "score": "0.636", "loss": "0.8698", "code": " void flush() throws IOException { flushBufferflush(); }", "n_tokens": 20, "n_pass": [50, 4, 4]}
+{"time": "2023-09-24 00:45:51.227620", "score": "0.636", "loss": "0.8698", "code": "void flush() throws IOException { flushBufferflush(); }", "n_tokens": 19, "n_pass": [51, 5, 5]}
+{"time": "2023-09-24 00:45:53.564752", "score": "0.6876", "loss": "0.574", "code": "void flush() throws IOException {flush(); }", "n_tokens": 17, "n_pass": [59, 6, 6]}
+{"time": "2023-09-24 00:45:57.362615", "score": "0.6876", "loss": "0.574", "code": "void flush() throws IOException {flush();}", "n_tokens": 16, "n_pass": [88, 7, 7]}
+{"time": "2023-09-24 00:45:59.562487", "score": "0.6876", "loss": "0.574", "code": "void flush()throws IOException {flush();}", "n_tokens": 15, "n_pass": [94, 8, 8]}
+{"time": "2023-09-24 00:46:01.195352", "score": "0.6876", "loss": "0.574", "code": "void flush()throws IOException{flush();}", "n_tokens": 14, "n_pass": [98, 9, 9]}
+
+Minimal simplified code:
+void flush()throws IOException{flush();}
+

@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestCombineOutputCollector_getValue_0.java
+method_name = getValue
+method_body = public long getValue() { return value; }
+predict, score, loss = getValue, 0.824245035648346, 0.47972527146339417
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:04:37.194047", "score": "0.8242", "loss": "0.4797", "code": "public long getValue() { return value; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:04:39.607111", "score": "0.8242", "loss": "0.4797", "code": "long getValue() { return value; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 03:04:41.435199", "score": "0.7608", "loss": "1.0218", "code": "long getValue() { value; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 03:04:48.290101", "score": "0.7608", "loss": "1.0218", "code": "long getValue() { value;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 03:04:50.630943", "score": "0.7608", "loss": "1.0218", "code": "long getValue(){ value;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 03:04:52.205523", "score": "0.7608", "loss": "1.0218", "code": "long getValue(){value;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+long getValue(){value;}
+

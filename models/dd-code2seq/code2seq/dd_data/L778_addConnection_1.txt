@@ -1,0 +1,22 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_addConnection_0.java
+method_name = addConnection
+method_body = public void addConnection(Connection conn) throws InterruptedException { pendingConnections.put(conn); readSelector.wakeup(); }
+predict, score, loss = addConnection, 0.5390849113464355, 2.5746066570281982
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:42:45.375204", "score": "0.5391", "loss": "2.5746", "code": "public void addConnection(Connection conn) throws InterruptedException { pendingConnections.put(conn); readSelector.wakeup(); }", "n_tokens": 33, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:42:50.799755", "score": "0.5391", "loss": "2.5746", "code": "void addConnection(Connection conn) throws InterruptedException { pendingConnections.put(conn); readSelector.wakeup(); }", "n_tokens": 31, "n_pass": [44, 4, 2]}
+{"time": "2023-09-24 02:42:55.836564", "score": "0.5331", "loss": "2.8297", "code": "void addConnection(Connection conn) throws InterruptedException { pendingConnections.put(conn); readSelector.wakeup; }", "n_tokens": 29, "n_pass": [57, 7, 3]}
+{"time": "2023-09-24 02:42:59.482199", "score": "0.5519", "loss": "2.2712", "code": "void addConnection(Connection conn) throws InterruptedException { pendingConnections.put(conn); readSelector; }", "n_tokens": 27, "n_pass": [71, 9, 4]}
+{"time": "2023-09-24 02:43:03.156900", "score": "0.6618", "loss": "1.3575", "code": "void addConnection(Connection conn) throws InterruptedException { pendingConnections.put(conn);; }", "n_tokens": 25, "n_pass": [84, 11, 5]}
+{"time": "2023-09-24 02:43:09.360899", "score": "0.6618", "loss": "1.3575", "code": "void addConnection(Connection conn) throws InterruptedException { pendingConnections.put(conn); }", "n_tokens": 24, "n_pass": [121, 13, 6]}
+{"time": "2023-09-24 02:43:12.648682", "score": "0.6618", "loss": "1.3575", "code": "void addConnection(Connection conn)throws InterruptedException { pendingConnections.put(conn); }", "n_tokens": 23, "n_pass": [130, 14, 7]}
+{"time": "2023-09-24 02:43:14.405968", "score": "0.6618", "loss": "1.3575", "code": "void addConnection(Connection conn)throws InterruptedException{ pendingConnections.put(conn); }", "n_tokens": 22, "n_pass": [134, 15, 8]}
+{"time": "2023-09-24 02:43:15.996039", "score": "0.6618", "loss": "1.3575", "code": "void addConnection(Connection conn)throws InterruptedException{pendingConnections.put(conn); }", "n_tokens": 21, "n_pass": [136, 16, 9]}
+{"time": "2023-09-24 02:43:19.312424", "score": "0.5936", "loss": "2.1609", "code": "void addConnection(Connection conn)throws InterruptedException{pendingConnections.put(); }", "n_tokens": 20, "n_pass": [141, 18, 10]}
+{"time": "2023-09-24 02:43:23.576280", "score": "0.5936", "loss": "2.1609", "code": "void addConnection(Connection conn)throws InterruptedException{pendingConnections.put();}", "n_tokens": 19, "n_pass": [163, 20, 11]}
+
+Minimal simplified code:
+void addConnection(Connection conn)throws InterruptedException{pendingConnections.put();}
+

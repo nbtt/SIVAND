@@ -1,0 +1,26 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DistCpV1_updateDestStatus_0.java
+method_name = updateDestStatus
+method_body = private void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve_status) { DistCpV1.updateDestStatus(src, dst, preseved, destFileSys); } }
+predict, score, loss = updateDestStatus, 0.724356472492218, 1.7147471904754639
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:08:43.347268", "score": "0.7244", "loss": "1.7147", "code": "private void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve_status) { DistCpV1.updateDestStatus(src, dst, preseved, destFileSys); } }", "n_tokens": 53, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:08:45.207769", "score": "0.7276", "loss": "1.6446", "code": "private void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve_status) { DistCpV1.updateDestStatus(src,destFileSys); } }", "n_tokens": 46, "n_pass": [26, 2, 2]}
+{"time": "2023-09-24 01:08:50.334801", "score": "0.7276", "loss": "1.6446", "code": " void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve_status) { DistCpV1.updateDestStatus(src,destFileSys); } }", "n_tokens": 45, "n_pass": [93, 4, 3]}
+{"time": "2023-09-24 01:08:51.909074", "score": "0.7276", "loss": "1.6446", "code": "void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve_status) { DistCpV1.updateDestStatus(src,destFileSys); } }", "n_tokens": 44, "n_pass": [94, 5, 4]}
+{"time": "2023-09-24 01:08:53.957968", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve) { DistCpV1.updateDestStatus(src,destFileSys); } }", "n_tokens": 42, "n_pass": [110, 6, 5]}
+{"time": "2023-09-24 01:09:03.549248", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve) {DistCpV1.updateDestStatus(src,destFileSys); } }", "n_tokens": 41, "n_pass": [171, 9, 6]}
+{"time": "2023-09-24 01:09:05.310359", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve) {DistCpV.updateDestStatus(src,destFileSys); } }", "n_tokens": 40, "n_pass": [173, 10, 7]}
+{"time": "2023-09-24 01:09:10.380375", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve) {DistCpV.updateDestStatus(src,destFileSys);} }", "n_tokens": 39, "n_pass": [182, 13, 8]}
+{"time": "2023-09-24 01:09:12.046130", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src, FileStatus dst) throws IOException { if (preserve) {DistCpV.updateDestStatus(src,destFileSys);}}", "n_tokens": 38, "n_pass": [184, 14, 9]}
+{"time": "2023-09-24 01:09:14.552915", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src,FileStatus dst) throws IOException { if (preserve) {DistCpV.updateDestStatus(src,destFileSys);}}", "n_tokens": 37, "n_pass": [194, 15, 10]}
+{"time": "2023-09-24 01:09:16.267661", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src,FileStatus dst)throws IOException { if (preserve) {DistCpV.updateDestStatus(src,destFileSys);}}", "n_tokens": 36, "n_pass": [199, 16, 11]}
+{"time": "2023-09-24 01:09:18.001779", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src,FileStatus dst)throws IOException{ if (preserve) {DistCpV.updateDestStatus(src,destFileSys);}}", "n_tokens": 35, "n_pass": [203, 17, 12]}
+{"time": "2023-09-24 01:09:19.761524", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src,FileStatus dst)throws IOException{if (preserve) {DistCpV.updateDestStatus(src,destFileSys);}}", "n_tokens": 34, "n_pass": [205, 18, 13]}
+{"time": "2023-09-24 01:09:21.503004", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src,FileStatus dst)throws IOException{if(preserve) {DistCpV.updateDestStatus(src,destFileSys);}}", "n_tokens": 33, "n_pass": [207, 19, 14]}
+{"time": "2023-09-24 01:09:23.178280", "score": "0.6975", "loss": "1.8317", "code": "void updateDestStatus(FileStatus src,FileStatus dst)throws IOException{if(preserve){DistCpV.updateDestStatus(src,destFileSys);}}", "n_tokens": 32, "n_pass": [211, 20, 15]}
+
+Minimal simplified code:
+void updateDestStatus(FileStatus src,FileStatus dst)throws IOException{if(preserve){DistCpV.updateDestStatus(src,destFileSys);}}
+

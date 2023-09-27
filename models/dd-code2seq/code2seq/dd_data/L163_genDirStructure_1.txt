@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/StructureGenerator_genDirStructure_0.java
+method_name = genDirStructure
+method_body = private void genDirStructure() { root = genDirStructure("", maxDepth); }
+predict, score, loss = genDirStructure, 0.6319108605384827, 2.115450143814087
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:46:36.065384", "score": "0.6319", "loss": "2.1155", "code": "private void genDirStructure() { root = genDirStructure(\"\", maxDepth); }", "n_tokens": 25, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:46:42.053387", "score": "0.6319", "loss": "2.1155", "code": " void genDirStructure() { root = genDirStructure(\"\", maxDepth); }", "n_tokens": 24, "n_pass": [44, 4, 2]}
+{"time": "2023-09-23 23:46:43.746907", "score": "0.6319", "loss": "2.1155", "code": "void genDirStructure() { root = genDirStructure(\"\", maxDepth); }", "n_tokens": 23, "n_pass": [45, 5, 3]}
+{"time": "2023-09-23 23:46:48.001628", "score": "0.6319", "loss": "2.1155", "code": "void genDirStructure(){ root = genDirStructure(\"\", maxDepth); }", "n_tokens": 22, "n_pass": [77, 6, 4]}
+{"time": "2023-09-23 23:46:49.719979", "score": "0.6319", "loss": "2.1155", "code": "void genDirStructure(){root = genDirStructure(\"\", maxDepth); }", "n_tokens": 21, "n_pass": [78, 7, 5]}
+{"time": "2023-09-23 23:46:51.542633", "score": "0.6319", "loss": "2.1155", "code": "void genDirStructure(){root= genDirStructure(\"\", maxDepth); }", "n_tokens": 20, "n_pass": [80, 8, 6]}
+{"time": "2023-09-23 23:46:53.305357", "score": "0.6319", "loss": "2.1155", "code": "void genDirStructure(){root=genDirStructure(\"\", maxDepth); }", "n_tokens": 19, "n_pass": [82, 9, 7]}
+{"time": "2023-09-23 23:46:55.084163", "score": "0.6319", "loss": "2.1155", "code": "void genDirStructure(){root=genDirStructure(\"\",maxDepth); }", "n_tokens": 18, "n_pass": [88, 10, 8]}
+{"time": "2023-09-23 23:46:56.750212", "score": "0.6319", "loss": "2.1155", "code": "void genDirStructure(){root=genDirStructure(\"\",maxDepth);}", "n_tokens": 17, "n_pass": [92, 11, 9]}
+
+Minimal simplified code:
+void genDirStructure(){root=genDirStructure("",maxDepth);}
+

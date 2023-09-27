@@ -1,0 +1,23 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestMapperReducerCleanup_reduce_0.java
+method_name = reduce
+method_body = public void reduce(LongWritable key, Iterable<Text> vals, Context context) throws IOException, InterruptedException { throw new IOException("TestMapperReducerCleanup"); }
+predict, score, loss = reduce, 0.5551806688308716, 0.6574212908744812
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:21:31.214519", "score": "0.5552", "loss": "0.6574", "code": "public void reduce(LongWritable key, Iterable<Text> vals, Context context) throws IOException, InterruptedException { throw new IOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 46, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:21:32.973502", "score": "0.5552", "loss": "0.6574", "code": "void reduce(LongWritable key, Iterable<Text> vals, Context context) throws IOException, InterruptedException { throw new IOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 44, "n_pass": [44, 2, 2]}
+{"time": "2023-09-24 01:21:35.021268", "score": "0.7974", "loss": "0.2688", "code": "void reduce(LongWritable key, Iterable<Text> vals, Context context) throws InterruptedException { throw new IOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 41, "n_pass": [53, 3, 3]}
+{"time": "2023-09-24 01:21:36.625363", "score": "0.5766", "loss": "0.619", "code": "void reduce(LongWritable key, Iterable<Text> vals, Context context) throws InterruptedException { throwIOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 38, "n_pass": [56, 4, 4]}
+{"time": "2023-09-24 01:21:42.787316", "score": "0.5766", "loss": "0.619", "code": "void reduce(LongWritable key,Iterable<Text> vals, Context context) throws InterruptedException { throwIOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 37, "n_pass": [110, 6, 5]}
+{"time": "2023-09-24 01:21:44.492718", "score": "0.5766", "loss": "0.619", "code": "void reduce(LongWritable key,Iterable<Text>vals, Context context) throws InterruptedException { throwIOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 36, "n_pass": [115, 7, 6]}
+{"time": "2023-09-24 01:21:51.114076", "score": "0.5766", "loss": "0.619", "code": "void reduce(LongWritable key,Iterable<Text>vals, Context context)throws InterruptedException { throwIOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 35, "n_pass": [165, 9, 7]}
+{"time": "2023-09-24 01:21:52.776507", "score": "0.5766", "loss": "0.619", "code": "void reduce(LongWritable key,Iterable<Text>vals, Context context)throws InterruptedException{ throwIOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 34, "n_pass": [169, 10, 8]}
+{"time": "2023-09-24 01:21:54.416391", "score": "0.5766", "loss": "0.619", "code": "void reduce(LongWritable key,Iterable<Text>vals, Context context)throws InterruptedException{throwIOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 33, "n_pass": [171, 11, 9]}
+{"time": "2023-09-24 01:21:56.075516", "score": "0.5624", "loss": "0.6331", "code": "void reduce(LongWritable key,Iterable<Text>vals, Context context)throws InterruptedException{IOException(\"TestMapperReducerCleanup\"); }", "n_tokens": 32, "n_pass": [172, 12, 10]}
+{"time": "2023-09-24 01:22:01.081967", "score": "0.5624", "loss": "0.6331", "code": "void reduce(LongWritable key,Iterable<Text>vals, Context context)throws InterruptedException{IOException(\"TestMapperReducerCleanup\");}", "n_tokens": 31, "n_pass": [180, 15, 11]}
+{"time": "2023-09-24 01:22:03.401433", "score": "0.5624", "loss": "0.6331", "code": "void reduce(LongWritable key,Iterable<Text>vals,Context context)throws InterruptedException{IOException(\"TestMapperReducerCleanup\");}", "n_tokens": 30, "n_pass": [196, 16, 12]}
+
+Minimal simplified code:
+void reduce(LongWritable key,Iterable<Text>vals,Context context)throws InterruptedException{IOException("TestMapperReducerCleanup");}
+

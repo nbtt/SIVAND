@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AccessControlList_getGroups_0.java
+method_name = getGroups
+method_body = Collection<String> getGroups() { return groups; }
+predict, score, loss = getGroups, 0.9814971685409546, 0.046710304915905
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:51:13.047461", "score": "0.9815", "loss": "0.0467", "code": "Collection<String> getGroups() { return groups; }", "n_tokens": 17, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:51:15.325895", "score": "0.8823", "loss": "0.4744", "code": "Collection<String> getGroups() { groups; }", "n_tokens": 15, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 01:51:19.803257", "score": "0.8823", "loss": "0.4744", "code": "Collection<String> getGroups() {groups; }", "n_tokens": 14, "n_pass": [46, 4, 3]}
+{"time": "2023-09-24 01:51:21.818277", "score": "0.8823", "loss": "0.4744", "code": "Collection<String>getGroups() {groups; }", "n_tokens": 13, "n_pass": [53, 5, 4]}
+{"time": "2023-09-24 01:51:23.400495", "score": "0.8823", "loss": "0.4744", "code": "Collection<String>getGroups(){groups; }", "n_tokens": 12, "n_pass": [57, 6, 5]}
+{"time": "2023-09-24 01:51:27.196686", "score": "0.8823", "loss": "0.4744", "code": "Collection<String>getGroups(){groups;}", "n_tokens": 11, "n_pass": [71, 8, 6]}
+
+Minimal simplified code:
+Collection<String>getGroups(){groups;}
+

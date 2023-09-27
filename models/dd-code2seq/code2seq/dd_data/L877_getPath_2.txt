@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SharedFileDescriptorFactory_getPath_0.java
+method_name = getPath
+method_body = public String getPath() { return path; }
+predict, score, loss = getPath, 0.9692217111587524, 0.07617128640413284
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:56:27.473154", "score": "0.9692", "loss": "0.0762", "code": "public String getPath() { return path; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:56:29.785753", "score": "0.9692", "loss": "0.0762", "code": "String getPath() { return path; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:56:31.506701", "score": "0.9223", "loss": "0.3678", "code": "String getPath() { path; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:56:38.378255", "score": "0.9223", "loss": "0.3678", "code": "String getPath() { path;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 02:56:40.896696", "score": "0.9223", "loss": "0.3678", "code": "String getPath(){ path;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 02:56:42.487191", "score": "0.9223", "loss": "0.3678", "code": "String getPath(){path;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+String getPath(){path;}
+

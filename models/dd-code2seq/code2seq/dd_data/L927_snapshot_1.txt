@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/MetricsSinkAdapter_snapshot_0.java
+method_name = snapshot
+method_body = void snapshot(MetricsRecordBuilder rb, boolean all) { registry.snapshot(rb, all); }
+predict, score, loss = snapshot, 0.8952004313468933, 0.35066089034080505
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:13:53.578033", "score": "0.8952", "loss": "0.3507", "code": "void snapshot(MetricsRecordBuilder rb, boolean all) { registry.snapshot(rb, all); }", "n_tokens": 28, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:13:58.107019", "score": "0.9639", "loss": "0.145", "code": "void snapshot(MetricsRecordBuilder rb, boolean all) { snapshot(rb, all); }", "n_tokens": 26, "n_pass": [54, 3, 2]}
+{"time": "2023-09-24 03:13:59.702797", "score": "0.3554", "loss": "1.9026", "code": "void snapshot(MetricsRecordBuilder rb, boolean all) { snapshot( all); }", "n_tokens": 24, "n_pass": [55, 4, 3]}
+{"time": "2023-09-24 03:14:06.249419", "score": "0.3554", "loss": "1.9026", "code": "void snapshot(MetricsRecordBuilder rb, boolean all) { snapshot(all); }", "n_tokens": 23, "n_pass": [90, 6, 4]}
+{"time": "2023-09-24 03:14:07.867253", "score": "0.3554", "loss": "1.9026", "code": "void snapshot(MetricsRecordBuilder rb, boolean all) { snapshot(all);}", "n_tokens": 22, "n_pass": [93, 7, 5]}
+{"time": "2023-09-24 03:14:10.247974", "score": "0.3554", "loss": "1.9026", "code": "void snapshot(MetricsRecordBuilder rb,boolean all) { snapshot(all);}", "n_tokens": 21, "n_pass": [103, 8, 6]}
+{"time": "2023-09-24 03:14:11.874713", "score": "0.3554", "loss": "1.9026", "code": "void snapshot(MetricsRecordBuilder rb,boolean all){ snapshot(all);}", "n_tokens": 20, "n_pass": [108, 9, 7]}
+{"time": "2023-09-24 03:14:13.687707", "score": "0.3554", "loss": "1.9026", "code": "void snapshot(MetricsRecordBuilder rb,boolean all){snapshot(all);}", "n_tokens": 19, "n_pass": [110, 10, 8]}
+
+Minimal simplified code:
+void snapshot(MetricsRecordBuilder rb,boolean all){snapshot(all);}
+

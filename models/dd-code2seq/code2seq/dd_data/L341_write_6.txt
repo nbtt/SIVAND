@@ -1,0 +1,22 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_write_4.java
+method_name = write
+method_body = public void write(byte[] b) throws IOException { write(b, 0, b.length); }
+predict, score, loss = write, 0.9991791844367981, 0.004537720233201981
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:44:05.264028", "score": "0.9992", "loss": "0.0045", "code": "public void write(byte[] b) throws IOException { write(b, 0, b.length); }", "n_tokens": 34, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:44:07.575634", "score": "0.9985", "loss": "0.0066", "code": "public void write(byte[] b) { write(b, 0, b.length); }", "n_tokens": 30, "n_pass": [23, 2, 2]}
+{"time": "2023-09-24 00:44:09.200565", "score": "0.9588", "loss": "0.1853", "code": "public void write(byte[] b) { write(b, length); }", "n_tokens": 25, "n_pass": [26, 3, 3]}
+{"time": "2023-09-24 00:44:11.323938", "score": "0.9588", "loss": "0.1853", "code": "void write(byte[] b) { write(b, length); }", "n_tokens": 23, "n_pass": [47, 4, 4]}
+{"time": "2023-09-24 00:44:12.950482", "score": "0.894", "loss": "0.3364", "code": "void write(byte[] b) { write(blength); }", "n_tokens": 21, "n_pass": [55, 5, 5]}
+{"time": "2023-09-24 00:44:18.096382", "score": "0.961", "loss": "0.1268", "code": "void write(byte[] b) { write(b); }", "n_tokens": 20, "n_pass": [86, 7, 6]}
+{"time": "2023-09-24 00:44:20.347358", "score": "0.961", "loss": "0.1268", "code": "void write(byte[]b) { write(b); }", "n_tokens": 19, "n_pass": [96, 8, 7]}
+{"time": "2023-09-24 00:44:22.029043", "score": "0.961", "loss": "0.1268", "code": "void write(byte[]b){ write(b); }", "n_tokens": 18, "n_pass": [99, 9, 8]}
+{"time": "2023-09-24 00:44:23.993859", "score": "0.961", "loss": "0.1268", "code": "void write(byte[]b){write(b); }", "n_tokens": 17, "n_pass": [101, 10, 9]}
+{"time": "2023-09-24 00:44:27.431553", "score": "0.9307", "loss": "0.2027", "code": "void write(byte[]b){write(); }", "n_tokens": 16, "n_pass": [104, 12, 10]}
+{"time": "2023-09-24 00:44:30.078779", "score": "0.9307", "loss": "0.2027", "code": "void write(byte[]b){write();}", "n_tokens": 15, "n_pass": [122, 13, 11]}
+
+Minimal simplified code:
+void write(byte[]b){write();}
+

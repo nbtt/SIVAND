@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_isClosed_0.java
+method_name = isClosed
+method_body = public boolean isClosed() { return closed; }
+predict, score, loss = isClosed, 0.9733123779296875, 0.0626046359539032
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:37:09.539263", "score": "0.9733", "loss": "0.0626", "code": "public boolean isClosed() { return closed; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:37:11.875434", "score": "0.9733", "loss": "0.0626", "code": "boolean isClosed() { return closed; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:37:13.498813", "score": "0.9103", "loss": "0.2786", "code": "boolean isClosed() { closed; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:37:20.124474", "score": "0.9103", "loss": "0.2786", "code": "boolean isClosed() { closed;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 00:37:22.288762", "score": "0.9103", "loss": "0.2786", "code": "boolean isClosed(){ closed;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 00:37:24.113005", "score": "0.9103", "loss": "0.2786", "code": "boolean isClosed(){closed;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+boolean isClosed(){closed;}
+

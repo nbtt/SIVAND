@@ -1,0 +1,34 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_available_0.java
+method_name = available
+method_body = public int available() throws IOException { refCount.reference(); boolean exc = true; try { int nAvailable = DomainSocket.available0(DomainSocket.this.fd); exc = false; return nAvailable; } finally { unreference(exc); } }
+predict, score, loss = available, 0.9619912505149841, 0.10876625776290894
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:06:00.614923", "score": "0.962", "loss": "0.1088", "code": "public int available() throws IOException { refCount.reference(); boolean exc = true; try { int nAvailable = DomainSocket.available0(DomainSocket.this.fd); exc = false; return nAvailable; } finally { unreference(exc); } }", "n_tokens": 80, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:06:02.771967", "score": "0.9303", "loss": "0.1407", "code": "public int available() throws IOException { refCount.reference();try { int nAvailable = DomainSocket.available0(DomainSocket.this.fd); exc = false; return nAvailable; } finally { unreference(exc); } }", "n_tokens": 70, "n_pass": [22, 2, 2]}
+{"time": "2023-09-24 00:06:04.543452", "score": "0.8267", "loss": "0.3074", "code": "public int available() throws IOException { refCount.reference();try { intDomainSocket.available0(DomainSocket.this.fd); exc = false; return nAvailable; } finally { unreference(exc); } }", "n_tokens": 65, "n_pass": [44, 3, 3]}
+{"time": "2023-09-24 00:06:06.420556", "score": "0.8549", "loss": "0.2379", "code": "public int available() throws IOException { refCount.reference();try { intDomainSocket.available0(); exc = false; return nAvailable; } finally { unreference(exc); } }", "n_tokens": 60, "n_pass": [46, 4, 4]}
+{"time": "2023-09-24 00:06:08.082106", "score": "0.5171", "loss": "1.3583", "code": "public int available() throws IOException { refCount.reference();try { intDomainSocket.available0(); exc = false; } finally { unreference(exc); } }", "n_tokens": 55, "n_pass": [49, 5, 5]}
+{"time": "2023-09-24 00:06:09.822024", "score": "0.6135", "loss": "0.9628", "code": "public int available() throws IOException { refCount.reference();try { intDomainSocket.available0(); exc = false; } finally {; } }", "n_tokens": 50, "n_pass": [51, 6, 6]}
+{"time": "2023-09-24 00:06:11.601834", "score": "0.6135", "loss": "0.9628", "code": "int available() throws IOException { refCount.reference();try { intDomainSocket.available0(); exc = false; } finally {; } }", "n_tokens": 48, "n_pass": [84, 7, 7]}
+{"time": "2023-09-24 00:06:13.682665", "score": "0.7146", "loss": "0.6303", "code": "int available() throws IOException { reference();try { intDomainSocket.available0(); exc = false; } finally {; } }", "n_tokens": 46, "n_pass": [91, 8, 8]}
+{"time": "2023-09-24 00:06:18.649902", "score": "0.4782", "loss": "0.9212", "code": "int available() throws IOException { reference();try { intDomainSocket.available0(); exc ; } finally {; } }", "n_tokens": 43, "n_pass": [99, 11, 9]}
+{"time": "2023-09-24 00:06:23.849753", "score": "0.9548", "loss": "0.1271", "code": "int available() throws IOException { reference();try { intDomainSocket.available0();; } finally {; } }", "n_tokens": 40, "n_pass": [116, 14, 10]}
+{"time": "2023-09-24 00:06:32.083481", "score": "0.9548", "loss": "0.1271", "code": "int available() throws IOException { reference();try { intDomainSocket.available0();} finally {; } }", "n_tokens": 38, "n_pass": [167, 17, 11]}
+{"time": "2023-09-24 00:06:34.482289", "score": "0.9548", "loss": "0.1271", "code": "int available()throws IOException { reference();try { intDomainSocket.available0();} finally {; } }", "n_tokens": 37, "n_pass": [178, 18, 12]}
+{"time": "2023-09-24 00:06:36.205828", "score": "0.9548", "loss": "0.1271", "code": "int available()throws IOException{ reference();try { intDomainSocket.available0();} finally {; } }", "n_tokens": 36, "n_pass": [182, 19, 13]}
+{"time": "2023-09-24 00:06:37.991057", "score": "0.9548", "loss": "0.1271", "code": "int available()throws IOException{reference();try { intDomainSocket.available0();} finally {; } }", "n_tokens": 35, "n_pass": [184, 20, 14]}
+{"time": "2023-09-24 00:06:39.730350", "score": "0.9548", "loss": "0.1271", "code": "int available()throws IOException{reference();try{ intDomainSocket.available0();} finally {; } }", "n_tokens": 34, "n_pass": [190, 21, 15]}
+{"time": "2023-09-24 00:06:41.360378", "score": "0.9548", "loss": "0.1271", "code": "int available()throws IOException{reference();try{intDomainSocket.available0();} finally {; } }", "n_tokens": 33, "n_pass": [192, 22, 16]}
+{"time": "2023-09-24 00:06:43.005778", "score": "0.9502", "loss": "0.1383", "code": "int available()throws IOException{reference();try{DomainSocket.available0();} finally {; } }", "n_tokens": 32, "n_pass": [193, 23, 17]}
+{"time": "2023-09-24 00:06:48.912634", "score": "0.9502", "loss": "0.1383", "code": "int available()throws IOException{reference();try{DomainSocket.available0();}finally {; } }", "n_tokens": 31, "n_pass": [237, 25, 18]}
+{"time": "2023-09-24 00:06:50.537658", "score": "0.9502", "loss": "0.1383", "code": "int available()throws IOException{reference();try{DomainSocket.available0();}finally{; } }", "n_tokens": 30, "n_pass": [239, 26, 19]}
+{"time": "2023-09-24 00:06:52.287446", "score": "0.9502", "loss": "0.1383", "code": "int available()throws IOException{reference();try{DomainSocket.available0();}finally{ } }", "n_tokens": 29, "n_pass": [241, 27, 20]}
+{"time": "2023-09-24 00:06:54.063714", "score": "0.9502", "loss": "0.1383", "code": "int available()throws IOException{reference();try{DomainSocket.available0();}finally{} }", "n_tokens": 28, "n_pass": [242, 28, 21]}
+{"time": "2023-09-24 00:06:55.915624", "score": "0.9502", "loss": "0.1383", "code": "int available()throws IOException{reference();try{DomainSocket.available0();}finally{}}", "n_tokens": 27, "n_pass": [244, 29, 22]}
+{"time": "2023-09-24 00:06:59.938807", "score": "0.9502", "loss": "0.1383", "code": "int available()throws IOException{reference();try{DomainSocket.available();}finally{}}", "n_tokens": 26, "n_pass": [264, 31, 23]}
+
+Minimal simplified code:
+int available()throws IOException{reference();try{DomainSocket.available();}finally{}}
+

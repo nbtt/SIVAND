@@ -1,0 +1,32 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getRpcInvoker_0.java
+method_name = getRpcInvoker
+method_body = public static RpcInvoker getRpcInvoker(RPC.RpcKind rpcKind) { RpcKindMapValue val = rpcKindMap.get(rpcKind); return (val == null) ? null : val.rpcInvoker; }
+predict, score, loss = getRpcInvoker, 0.8570690751075745, 0.5378502011299133
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:25:28.492668", "score": "0.8571", "loss": "0.5379", "code": "public static RpcInvoker getRpcInvoker(RPC.RpcKind rpcKind) { RpcKindMapValue val = rpcKindMap.get(rpcKind); return (val == null) ? null : val.rpcInvoker; }", "n_tokens": 54, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:25:34.192089", "score": "0.8571", "loss": "0.5379", "code": " RpcInvoker getRpcInvoker(RPC.RpcKind rpcKind) { RpcKindMapValue val = rpcKindMap.get(rpcKind); return (val == null) ? null : val.rpcInvoker; }", "n_tokens": 51, "n_pass": [44, 4, 2]}
+{"time": "2023-09-24 02:25:37.767523", "score": "0.8911", "loss": "0.4229", "code": " RpcInvoker getRpcInvoker(RPC.RpcKind rpcKind) { RpcKindMapValue val = rpcKindMap.get(rpcKind); return ( null) ? null : val.rpcInvoker; }", "n_tokens": 47, "n_pass": [54, 6, 3]}
+{"time": "2023-09-24 02:25:42.552844", "score": "0.9369", "loss": "0.2729", "code": " RpcInvoker getRpcInvoker(RPC.RpcKind rpcKind) { RpcKindMapValue val = rpcKindMap.get(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 45, "n_pass": [102, 8, 4]}
+{"time": "2023-09-24 02:25:44.299602", "score": "0.9369", "loss": "0.2729", "code": "RpcInvoker getRpcInvoker(RPC.RpcKind rpcKind) { RpcKindMapValue val = rpcKindMap.get(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 44, "n_pass": [105, 9, 5]}
+{"time": "2023-09-24 02:25:47.037418", "score": "0.8793", "loss": "0.5068", "code": "RpcInvoker getRpcInvoker(RPCRpcKind rpcKind) { RpcKindMapValue val = rpcKindMap.get(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 43, "n_pass": [111, 10, 6]}
+{"time": "2023-09-24 02:25:48.749357", "score": "0.9212", "loss": "0.3321", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) { RpcKindMapValue val = rpcKindMap.get(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 42, "n_pass": [112, 11, 7]}
+{"time": "2023-09-24 02:25:50.478528", "score": "0.9032", "loss": "0.4549", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) { val = rpcKindMap.get(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 40, "n_pass": [116, 12, 8]}
+{"time": "2023-09-24 02:25:52.252348", "score": "0.8002", "loss": "1.0673", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) { val = rpcKindMap(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 38, "n_pass": [120, 13, 9]}
+{"time": "2023-09-24 02:25:55.434751", "score": "0.8161", "loss": "0.9835", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) { val =(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 36, "n_pass": [142, 14, 10]}
+{"time": "2023-09-24 02:25:58.648016", "score": "0.7986", "loss": "0.9789", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) { val(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 34, "n_pass": [163, 15, 11]}
+{"time": "2023-09-24 02:26:01.658997", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind); return ( null) ? null : rpcInvoker; }", "n_tokens": 32, "n_pass": [183, 16, 12]}
+{"time": "2023-09-24 02:26:08.060206", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind);return ( null) ? null : rpcInvoker; }", "n_tokens": 31, "n_pass": [230, 17, 13]}
+{"time": "2023-09-24 02:26:09.755380", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind);return( null) ? null : rpcInvoker; }", "n_tokens": 30, "n_pass": [231, 18, 14]}
+{"time": "2023-09-24 02:26:11.320474", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind);return(null) ? null : rpcInvoker; }", "n_tokens": 29, "n_pass": [233, 19, 15]}
+{"time": "2023-09-24 02:26:13.222575", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind);return(null)? null : rpcInvoker; }", "n_tokens": 28, "n_pass": [236, 20, 16]}
+{"time": "2023-09-24 02:26:14.964827", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind);return(null)?null : rpcInvoker; }", "n_tokens": 27, "n_pass": [238, 21, 17]}
+{"time": "2023-09-24 02:26:16.734818", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind);return(null)?null: rpcInvoker; }", "n_tokens": 26, "n_pass": [240, 22, 18]}
+{"time": "2023-09-24 02:26:18.484027", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind);return(null)?null:rpcInvoker; }", "n_tokens": 25, "n_pass": [242, 23, 19]}
+{"time": "2023-09-24 02:26:20.089705", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind) {(rpcKind);return(null)?null:rpcInvoker;}", "n_tokens": 24, "n_pass": [245, 24, 20]}
+{"time": "2023-09-24 02:26:22.716299", "score": "0.8982", "loss": "0.5055", "code": "RpcInvoker getRpcInvoker(RPC rpcKind){(rpcKind);return(null)?null:rpcInvoker;}", "n_tokens": 23, "n_pass": [255, 25, 21]}
+
+Minimal simplified code:
+RpcInvoker getRpcInvoker(RPC rpcKind){(rpcKind);return(null)?null:rpcInvoker;}
+

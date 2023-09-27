@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AbstractLivelinessMonitor_setExpireInterval_0.java
+method_name = setExpireInterval
+method_body = protected void setExpireInterval(int expireInterval) { this.expireInterval = expireInterval; }
+predict, score, loss = setExpireInterval, 0.9867861866950989, 0.045405928045511246
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:11:54.161605", "score": "0.9868", "loss": "0.0454", "code": "protected void setExpireInterval(int expireInterval) { this.expireInterval = expireInterval; }", "n_tokens": 23, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:11:56.180535", "score": "0.9868", "loss": "0.0454", "code": "void setExpireInterval(int expireInterval) { this.expireInterval = expireInterval; }", "n_tokens": 21, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:11:58.268052", "score": "0.9405", "loss": "0.2893", "code": "void setExpireInterval(int expireInterval) { this.expireInterval ; }", "n_tokens": 18, "n_pass": [25, 3, 3]}
+{"time": "2023-09-23 23:11:59.838932", "score": "0.7656", "loss": "1.925", "code": "void setExpireInterval(int expireInterval) { this; }", "n_tokens": 15, "n_pass": [31, 4, 4]}
+{"time": "2023-09-23 23:12:01.772781", "score": "0.873", "loss": "0.934", "code": "void setExpireInterval(int expireInterval) {  }", "n_tokens": 13, "n_pass": [47, 5, 5]}
+{"time": "2023-09-23 23:12:05.238015", "score": "0.873", "loss": "0.934", "code": "void setExpireInterval(int expireInterval) { }", "n_tokens": 12, "n_pass": [65, 6, 6]}
+{"time": "2023-09-23 23:12:07.633488", "score": "0.873", "loss": "0.934", "code": "void setExpireInterval(int expireInterval){ }", "n_tokens": 11, "n_pass": [74, 7, 7]}
+{"time": "2023-09-23 23:12:09.284752", "score": "0.873", "loss": "0.934", "code": "void setExpireInterval(int expireInterval){}", "n_tokens": 10, "n_pass": [76, 8, 8]}
+
+Minimal simplified code:
+void setExpireInterval(int expireInterval){}
+

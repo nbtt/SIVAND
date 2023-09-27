@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AbstractLivelinessMonitor_setMonitorInterval_0.java
+method_name = setMonitorInterval
+method_body = protected void setMonitorInterval(int monitorInterval) { this.monitorInterval = monitorInterval; }
+predict, score, loss = setMonitorInterval, 0.9972397685050964, 0.01361430436372757
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:12:13.144317", "score": "0.9972", "loss": "0.0136", "code": "protected void setMonitorInterval(int monitorInterval) { this.monitorInterval = monitorInterval; }", "n_tokens": 23, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:12:15.226057", "score": "0.9972", "loss": "0.0136", "code": "void setMonitorInterval(int monitorInterval) { this.monitorInterval = monitorInterval; }", "n_tokens": 21, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:12:17.121441", "score": "0.9126", "loss": "0.5706", "code": "void setMonitorInterval(int monitorInterval) { this.monitorInterval ; }", "n_tokens": 18, "n_pass": [25, 3, 3]}
+{"time": "2023-09-23 23:12:18.778567", "score": "0.6531", "loss": "4.0008", "code": "void setMonitorInterval(int monitorInterval) { this; }", "n_tokens": 15, "n_pass": [31, 4, 4]}
+{"time": "2023-09-23 23:12:20.633294", "score": "0.8015", "loss": "1.9272", "code": "void setMonitorInterval(int monitorInterval) {  }", "n_tokens": 13, "n_pass": [47, 5, 5]}
+{"time": "2023-09-23 23:12:24.149796", "score": "0.8015", "loss": "1.9272", "code": "void setMonitorInterval(int monitorInterval) { }", "n_tokens": 12, "n_pass": [65, 6, 6]}
+{"time": "2023-09-23 23:12:26.268428", "score": "0.8015", "loss": "1.9272", "code": "void setMonitorInterval(int monitorInterval){ }", "n_tokens": 11, "n_pass": [74, 7, 7]}
+{"time": "2023-09-23 23:12:27.900093", "score": "0.8015", "loss": "1.9272", "code": "void setMonitorInterval(int monitorInterval){}", "n_tokens": 10, "n_pass": [76, 8, 8]}
+
+Minimal simplified code:
+void setMonitorInterval(int monitorInterval){}
+

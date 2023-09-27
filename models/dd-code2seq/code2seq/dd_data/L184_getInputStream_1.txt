@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_getInputStream_0.java
+method_name = getInputStream
+method_body = public DomainInputStream getInputStream() { return inputStream; }
+predict, score, loss = getInputStream, 0.985693633556366, 0.07101823389530182
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:54:18.617652", "score": "0.9857", "loss": "0.071", "code": "public DomainInputStream getInputStream() { return inputStream; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:54:20.892706", "score": "0.9857", "loss": "0.071", "code": "DomainInputStream getInputStream() { return inputStream; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:54:22.468772", "score": "0.9562", "loss": "0.2309", "code": "DomainInputStream getInputStream() { inputStream; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-23 23:54:24.041158", "score": "0.7954", "loss": "1.5432", "code": "DomainInputStream getInputStream() {  }", "n_tokens": 10, "n_pass": [25, 4, 4]}
+{"time": "2023-09-23 23:54:27.430985", "score": "0.7954", "loss": "1.5432", "code": "DomainInputStream getInputStream() { }", "n_tokens": 9, "n_pass": [41, 5, 5]}
+{"time": "2023-09-23 23:54:29.963627", "score": "0.7954", "loss": "1.5432", "code": "DomainInputStream getInputStream(){ }", "n_tokens": 8, "n_pass": [47, 6, 6]}
+{"time": "2023-09-23 23:54:31.558892", "score": "0.7954", "loss": "1.5432", "code": "DomainInputStream getInputStream(){}", "n_tokens": 7, "n_pass": [49, 7, 7]}
+
+Minimal simplified code:
+DomainInputStream getInputStream(){}
+

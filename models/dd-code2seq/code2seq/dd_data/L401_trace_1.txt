@@ -1,0 +1,29 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SwiftUtils_trace_0.java
+method_name = trace
+method_body = public static void trace(Log log, String text, Object... args) { if (log.isTraceEnabled()) { log.trace(String.format(text, args)); } }
+predict, score, loss = trace, 0.9906829595565796, 0.03383886069059372
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:00:25.211609", "score": "0.9907", "loss": "0.0338", "code": "public static void trace(Log log, String text, Object... args) { if (log.isTraceEnabled()) { log.trace(String.format(text, args)); } }", "n_tokens": 59, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:00:27.000012", "score": "0.9907", "loss": "0.0338", "code": " void trace(Log log, String text, Object... args) { if (log.isTraceEnabled()) { log.trace(String.format(text, args)); } }", "n_tokens": 56, "n_pass": [44, 2, 2]}
+{"time": "2023-09-24 01:00:29.069326", "score": "0.9829", "loss": "0.0588", "code": " void trace(Log log, String ... args) { if (log.isTraceEnabled()) { log.trace(String.format(text, args)); } }", "n_tokens": 52, "n_pass": [49, 3, 3]}
+{"time": "2023-09-24 01:00:30.784857", "score": "0.9829", "loss": "0.0588", "code": " void trace(Log log, String args) { if (log.isTraceEnabled()) { log.trace(String.format(text, args)); } }", "n_tokens": 48, "n_pass": [50, 4, 4]}
+{"time": "2023-09-24 01:00:32.432572", "score": "0.6195", "loss": "0.7032", "code": " void trace(Log log, String args) { if (log.isTraceEnabled()) {(String.format(text, args)); } }", "n_tokens": 44, "n_pass": [55, 5, 5]}
+{"time": "2023-09-24 01:00:35.150251", "score": "0.7072", "loss": "0.5474", "code": " void trace(Log log, String args) { if (log.isTraceEnabled()) {(String(text, args)); } }", "n_tokens": 42, "n_pass": [93, 6, 6]}
+{"time": "2023-09-24 01:00:36.760453", "score": "0.6464", "loss": "0.7375", "code": " void trace(Log log, String args) { if (log.isTraceEnabled()) {(String(textargs)); } }", "n_tokens": 40, "n_pass": [95, 7, 7]}
+{"time": "2023-09-24 01:00:38.543731", "score": "0.6464", "loss": "0.7375", "code": "void trace(Log log, String args) { if (log.isTraceEnabled()) {(String(textargs)); } }", "n_tokens": 39, "n_pass": [100, 8, 8]}
+{"time": "2023-09-24 01:00:40.943760", "score": "0.86", "loss": "0.4476", "code": "void trace(Log log, String args) { if (isTraceEnabled()) {(String(textargs)); } }", "n_tokens": 37, "n_pass": [112, 9, 9]}
+{"time": "2023-09-24 01:00:46.496729", "score": "0.86", "loss": "0.4476", "code": "void trace(Log log, String args) { if (isTraceEnabled()){(String(textargs)); } }", "n_tokens": 36, "n_pass": [170, 10, 10]}
+{"time": "2023-09-24 01:00:48.071874", "score": "0.7756", "loss": "0.5329", "code": "void trace(Log log, String args) { if (isTraceEnabled()){((textargs)); } }", "n_tokens": 35, "n_pass": [172, 11, 11]}
+{"time": "2023-09-24 01:00:49.785568", "score": "0.8089", "loss": "0.4333", "code": "void trace(Log log, String args) { if (isTraceEnabled()){((args)); } }", "n_tokens": 34, "n_pass": [174, 12, 12]}
+{"time": "2023-09-24 01:00:51.416885", "score": "0.8089", "loss": "0.4333", "code": "void trace(Log log, String args) { if (isTraceEnabled()){((args));} }", "n_tokens": 33, "n_pass": [179, 13, 13]}
+{"time": "2023-09-24 01:00:53.037189", "score": "0.8089", "loss": "0.4333", "code": "void trace(Log log, String args) { if (isTraceEnabled()){((args));}}", "n_tokens": 32, "n_pass": [181, 14, 14]}
+{"time": "2023-09-24 01:00:55.623654", "score": "0.8089", "loss": "0.4333", "code": "void trace(Log log,String args) { if (isTraceEnabled()){((args));}}", "n_tokens": 31, "n_pass": [191, 15, 15]}
+{"time": "2023-09-24 01:00:57.430683", "score": "0.8089", "loss": "0.4333", "code": "void trace(Log log,String args){ if (isTraceEnabled()){((args));}}", "n_tokens": 30, "n_pass": [196, 16, 16]}
+{"time": "2023-09-24 01:00:59.103373", "score": "0.8089", "loss": "0.4333", "code": "void trace(Log log,String args){if (isTraceEnabled()){((args));}}", "n_tokens": 29, "n_pass": [198, 17, 17]}
+{"time": "2023-09-24 01:01:00.751141", "score": "0.8089", "loss": "0.4333", "code": "void trace(Log log,String args){if(isTraceEnabled()){((args));}}", "n_tokens": 28, "n_pass": [200, 18, 18]}
+
+Minimal simplified code:
+void trace(Log log,String args){if(isTraceEnabled()){((args));}}
+

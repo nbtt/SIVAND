@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AccessControlList_getUsers_0.java
+method_name = getUsers
+method_body = Collection<String> getUsers() { return users; }
+predict, score, loss = getUsers, 0.9873355627059937, 0.031063999980688095
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:50:53.358178", "score": "0.9873", "loss": "0.0311", "code": "Collection<String> getUsers() { return users; }", "n_tokens": 17, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:50:55.680261", "score": "0.9113", "loss": "0.4138", "code": "Collection<String> getUsers() { users; }", "n_tokens": 15, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 01:51:00.515664", "score": "0.9113", "loss": "0.4138", "code": "Collection<String> getUsers() {users; }", "n_tokens": 14, "n_pass": [46, 4, 3]}
+{"time": "2023-09-24 01:51:02.427905", "score": "0.9113", "loss": "0.4138", "code": "Collection<String>getUsers() {users; }", "n_tokens": 13, "n_pass": [53, 5, 4]}
+{"time": "2023-09-24 01:51:04.028987", "score": "0.9113", "loss": "0.4138", "code": "Collection<String>getUsers(){users; }", "n_tokens": 12, "n_pass": [57, 6, 5]}
+{"time": "2023-09-24 01:51:07.871341", "score": "0.9113", "loss": "0.4138", "code": "Collection<String>getUsers(){users;}", "n_tokens": 11, "n_pass": [71, 8, 6]}
+
+Minimal simplified code:
+Collection<String>getUsers(){users;}
+

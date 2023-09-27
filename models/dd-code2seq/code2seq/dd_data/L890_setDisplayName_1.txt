@@ -1,0 +1,16 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestCombineOutputCollector_setDisplayName_0.java
+method_name = setDisplayName
+method_body = public void setDisplayName(String displayName) { }
+predict, score, loss = setDisplayName, 0.8724339008331299, 1.1074738502502441
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:03:54.993994", "score": "0.8724", "loss": "1.1075", "code": "public void setDisplayName(String displayName) { }", "n_tokens": 14, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:03:57.764117", "score": "0.8724", "loss": "1.1075", "code": " void setDisplayName(String displayName) { }", "n_tokens": 13, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 03:03:59.553830", "score": "0.8724", "loss": "1.1075", "code": "void setDisplayName(String displayName) { }", "n_tokens": 12, "n_pass": [21, 3, 3]}
+{"time": "2023-09-24 03:04:03.140718", "score": "0.8724", "loss": "1.1075", "code": "void setDisplayName(String displayName){ }", "n_tokens": 11, "n_pass": [47, 4, 4]}
+{"time": "2023-09-24 03:04:04.838132", "score": "0.8724", "loss": "1.1075", "code": "void setDisplayName(String displayName){}", "n_tokens": 10, "n_pass": [48, 5, 5]}
+
+Minimal simplified code:
+void setDisplayName(String displayName){}
+

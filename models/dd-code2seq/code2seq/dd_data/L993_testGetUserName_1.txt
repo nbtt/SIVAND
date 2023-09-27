@@ -1,0 +1,26 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestNativeIO_testGetUserName_0.java
+method_name = testGetUserName
+method_body = public void testGetUserName() throws IOException { if (Path.WINDOWS) { return; } assertFalse(NativeIO.POSIX.getUserName(0).isEmpty()); }
+predict, score, loss = testGetUserName, 0.9721083641052246, 0.8806204199790955
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:23:51.742276", "score": "0.9721", "loss": "0.8806", "code": "public void testGetUserName() throws IOException { if (Path.WINDOWS) { return; } assertFalse(NativeIO.POSIX.getUserName(0).isEmpty()); }", "n_tokens": 47, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:23:53.912635", "score": "0.9721", "loss": "0.8806", "code": "void testGetUserName() throws IOException { if (Path.WINDOWS) { return; } assertFalse(NativeIO.POSIX.getUserName(0).isEmpty()); }", "n_tokens": 45, "n_pass": [44, 2, 2]}
+{"time": "2023-09-24 03:23:55.682465", "score": "0.9416", "loss": "1.192", "code": "void testGetUserName()  { if (Path.WINDOWS) { return; } assertFalse(NativeIO.POSIX.getUserName(0).isEmpty()); }", "n_tokens": 42, "n_pass": [46, 3, 3]}
+{"time": "2023-09-24 03:23:57.596960", "score": "0.9416", "loss": "1.192", "code": "void testGetUserName()  { if (Path.WINDOWS) { } assertFalse(NativeIO.POSIX.getUserName(0).isEmpty()); }", "n_tokens": 39, "n_pass": [51, 4, 4]}
+{"time": "2023-09-24 03:24:02.819582", "score": "0.9283", "loss": "1.5551", "code": "void testGetUserName()  { if (Path) { } assertFalse(NativeIO.POSIX.getUserName(0).isEmpty()); }", "n_tokens": 37, "n_pass": [92, 6, 5]}
+{"time": "2023-09-24 03:24:04.522079", "score": "0.9332", "loss": "1.3908", "code": "void testGetUserName()  { if (Path) { } assertFalse(POSIX.getUserName(0).isEmpty()); }", "n_tokens": 35, "n_pass": [97, 7, 6]}
+{"time": "2023-09-24 03:24:06.186375", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName()  { if (Path) { } assertFalse(getUserName(0).isEmpty()); }", "n_tokens": 33, "n_pass": [98, 8, 7]}
+{"time": "2023-09-24 03:24:10.025593", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName() { if (Path) { } assertFalse(getUserName(0).isEmpty()); }", "n_tokens": 32, "n_pass": [110, 10, 8]}
+{"time": "2023-09-24 03:24:11.777806", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName(){ if (Path) { } assertFalse(getUserName(0).isEmpty()); }", "n_tokens": 31, "n_pass": [111, 11, 9]}
+{"time": "2023-09-24 03:24:13.350201", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName(){if (Path) { } assertFalse(getUserName(0).isEmpty()); }", "n_tokens": 30, "n_pass": [113, 12, 10]}
+{"time": "2023-09-24 03:24:15.037984", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName(){if(Path) { } assertFalse(getUserName(0).isEmpty()); }", "n_tokens": 29, "n_pass": [115, 13, 11]}
+{"time": "2023-09-24 03:24:20.568873", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName(){if(Path){ } assertFalse(getUserName(0).isEmpty()); }", "n_tokens": 28, "n_pass": [155, 15, 12]}
+{"time": "2023-09-24 03:24:22.250465", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName(){if(Path){} assertFalse(getUserName(0).isEmpty()); }", "n_tokens": 27, "n_pass": [157, 16, 13]}
+{"time": "2023-09-24 03:24:23.921799", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName(){if(Path){}assertFalse(getUserName(0).isEmpty()); }", "n_tokens": 26, "n_pass": [159, 17, 14]}
+{"time": "2023-09-24 03:24:30.500041", "score": "0.7913", "loss": "1.9068", "code": "void testGetUserName(){if(Path){}assertFalse(getUserName(0).isEmpty());}", "n_tokens": 25, "n_pass": [172, 21, 15]}
+
+Minimal simplified code:
+void testGetUserName(){if(Path){}assertFalse(getUserName(0).isEmpty());}
+

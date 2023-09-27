@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestHDFSContractCreate_createCluster_0.java
+method_name = createCluster
+method_body = public static void createCluster() throws IOException { HDFSContract.createCluster(); }
+predict, score, loss = createCluster, 0.9211797714233398, 0.2734057903289795
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:29:56.383072", "score": "0.9212", "loss": "0.2734", "code": "public static void createCluster() throws IOException { HDFSContract.createCluster(); }", "n_tokens": 24, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:29:58.260994", "score": "0.9212", "loss": "0.2734", "code": " void createCluster() throws IOException { HDFSContract.createCluster(); }", "n_tokens": 21, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:29:59.898187", "score": "0.6857", "loss": "1.4058", "code": " void createCluster() throws IOException {createCluster(); }", "n_tokens": 18, "n_pass": [24, 3, 3]}
+{"time": "2023-09-23 23:30:04.068843", "score": "0.6857", "loss": "1.4058", "code": "void createCluster() throws IOException {createCluster(); }", "n_tokens": 17, "n_pass": [47, 5, 4]}
+{"time": "2023-09-23 23:30:07.896956", "score": "0.6857", "loss": "1.4058", "code": "void createCluster()throws IOException {createCluster(); }", "n_tokens": 16, "n_pass": [71, 6, 5]}
+{"time": "2023-09-23 23:30:09.475748", "score": "0.6857", "loss": "1.4058", "code": "void createCluster()throws IOException{createCluster(); }", "n_tokens": 15, "n_pass": [74, 7, 6]}
+{"time": "2023-09-23 23:30:11.062289", "score": "0.6857", "loss": "1.4058", "code": "void createCluster()throws IOException{createCluster();}", "n_tokens": 14, "n_pass": [80, 8, 7]}
+
+Minimal simplified code:
+void createCluster()throws IOException{createCluster();}
+

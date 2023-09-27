@@ -1,0 +1,38 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_getLeafQueues_0.java
+method_name = getLeafQueues
+method_body = Map<String, Queue> getLeafQueues() { Map<String, Queue> l = new HashMap<String, Queue>(); if (children == null) { l.put(name, this); return l; } for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }
+predict, score, loss = getLeafQueues, 0.9577646851539612, 0.1452571004629135
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:21:29.192087", "score": "0.9578", "loss": "0.1453", "code": "Map<String, Queue> getLeafQueues() { Map<String, Queue> l = new HashMap<String, Queue>(); if (children == null) { l.put(name, this); return l; } for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 104, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:21:30.962202", "score": "0.9602", "loss": "0.137", "code": "Map<String, Queue> getLeafQueues() {new HashMap<String, Queue>(); if (children == null) { l.put(name, this); return l; } for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 91, "n_pass": [21, 2, 2]}
+{"time": "2023-09-24 00:21:32.743085", "score": "0.9643", "loss": "0.1195", "code": "Map<String, Queue> getLeafQueues() {if (children == null) { l.put(name, this); return l; } for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 78, "n_pass": [22, 3, 3]}
+{"time": "2023-09-24 00:21:34.435217", "score": "0.9681", "loss": "0.1039", "code": "Map<String, Queue> getLeafQueues() {if (children == null) { l; } for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 65, "n_pass": [24, 4, 4]}
+{"time": "2023-09-24 00:21:36.538747", "score": "0.9601", "loss": "0.1305", "code": "Map<String, Queue> getLeafQueues() {if (children == null)  for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 59, "n_pass": [40, 5, 5]}
+{"time": "2023-09-24 00:21:38.326955", "score": "0.9758", "loss": "0.0801", "code": "Map<String> getLeafQueues() {if (children == null)  for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 56, "n_pass": [79, 6, 6]}
+{"time": "2023-09-24 00:21:41.754139", "score": "0.9758", "loss": "0.0801", "code": "Map<String>getLeafQueues() {if (children == null)  for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 55, "n_pass": [132, 7, 7]}
+{"time": "2023-09-24 00:21:43.430862", "score": "0.9758", "loss": "0.0801", "code": "Map<String>getLeafQueues(){if (children == null)  for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 54, "n_pass": [136, 8, 8]}
+{"time": "2023-09-24 00:21:45.139225", "score": "0.9758", "loss": "0.0801", "code": "Map<String>getLeafQueues(){if(children == null)  for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 53, "n_pass": [139, 9, 9]}
+{"time": "2023-09-24 00:21:46.897541", "score": "0.9721", "loss": "0.0957", "code": "Map<String>getLeafQueues(){if(children= null)  for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 51, "n_pass": [141, 10, 10]}
+{"time": "2023-09-24 00:21:48.659068", "score": "0.9795", "loss": "0.0795", "code": "Map<String>getLeafQueues(){if(childrennull)  for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 49, "n_pass": [142, 11, 11]}
+{"time": "2023-09-24 00:21:50.566154", "score": "0.9795", "loss": "0.0795", "code": "Map<String>getLeafQueues(){if(childrennull)for (Queue child : children) { l.putAll(child.getLeafQueues()); } return l; }", "n_tokens": 47, "n_pass": [144, 12, 12]}
+{"time": "2023-09-24 00:21:52.408929", "score": "0.9724", "loss": "0.1382", "code": "Map<String>getLeafQueues(){if(childrennull)for (Queue child : children) { putAll(child.getLeafQueues()); } return l; }", "n_tokens": 45, "n_pass": [152, 13, 13]}
+{"time": "2023-09-24 00:21:54.328822", "score": "0.8699", "loss": "0.8024", "code": "Map<String>getLeafQueues(){if(childrennull)for (Queue child : children) { putAll(getLeafQueues()); } return l; }", "n_tokens": 43, "n_pass": [154, 14, 14]}
+{"time": "2023-09-24 00:21:56.020712", "score": "0.7138", "loss": "2.3402", "code": "Map<String>getLeafQueues(){if(childrennull)for (Queue child : children) { putAll(getLeafQueues()); } l; }", "n_tokens": 41, "n_pass": [159, 15, 15]}
+{"time": "2023-09-24 00:22:04.982176", "score": "0.7138", "loss": "2.3402", "code": "Map<String>getLeafQueues(){if(childrennull)for (Queue child : children) { putAll(getLeafQueues()); } l;}", "n_tokens": 40, "n_pass": [219, 18, 16]}
+{"time": "2023-09-24 00:22:06.943828", "score": "0.8786", "loss": "0.8363", "code": "Map<String>getLeafQueues(){if(null)for (Queue child : children) { putAll(getLeafQueues()); } l;}", "n_tokens": 39, "n_pass": [230, 19, 17]}
+{"time": "2023-09-24 00:22:08.754672", "score": "0.8786", "loss": "0.8363", "code": "Map<String>getLeafQueues(){if(null)for(Queue child : children) { putAll(getLeafQueues()); } l;}", "n_tokens": 38, "n_pass": [234, 20, 18]}
+{"time": "2023-09-24 00:22:10.463010", "score": "0.8786", "loss": "0.8363", "code": "Map<String>getLeafQueues(){if(null)for(Queue child: children) { putAll(getLeafQueues()); } l;}", "n_tokens": 37, "n_pass": [239, 21, 19]}
+{"time": "2023-09-24 00:22:12.053422", "score": "0.8786", "loss": "0.8363", "code": "Map<String>getLeafQueues(){if(null)for(Queue child:children) { putAll(getLeafQueues()); } l;}", "n_tokens": 36, "n_pass": [241, 22, 20]}
+{"time": "2023-09-24 00:22:13.773002", "score": "0.8786", "loss": "0.8363", "code": "Map<String>getLeafQueues(){if(null)for(Queue child:children){ putAll(getLeafQueues()); } l;}", "n_tokens": 35, "n_pass": [244, 23, 21]}
+{"time": "2023-09-24 00:22:15.409639", "score": "0.8786", "loss": "0.8363", "code": "Map<String>getLeafQueues(){if(null)for(Queue child:children){putAll(getLeafQueues()); } l;}", "n_tokens": 34, "n_pass": [246, 24, 22]}
+{"time": "2023-09-24 00:22:17.007633", "score": "0.9678", "loss": "0.2074", "code": "Map<String>getLeafQueues(){if(null)for(Queue child:children){(getLeafQueues()); } l;}", "n_tokens": 33, "n_pass": [247, 25, 23]}
+{"time": "2023-09-24 00:22:18.748655", "score": "0.9678", "loss": "0.2074", "code": "Map<String>getLeafQueues(){if(null)for(Queue child:children){(getLeafQueues());} l;}", "n_tokens": 32, "n_pass": [254, 26, 24]}
+{"time": "2023-09-24 00:22:20.368287", "score": "0.9678", "loss": "0.2074", "code": "Map<String>getLeafQueues(){if(null)for(Queue child:children){(getLeafQueues());}l;}", "n_tokens": 31, "n_pass": [256, 27, 25]}
+{"time": "2023-09-24 00:22:21.989313", "score": "0.9198", "loss": "0.7461", "code": "Map<String>getLeafQueues(){if(null)for(Queue child:children){(getLeafQueues());};}", "n_tokens": 30, "n_pass": [257, 28, 26]}
+{"time": "2023-09-24 00:22:23.714175", "score": "0.9198", "loss": "0.7461", "code": "Map<String>getLeafQueues(){if(null)for(Queue child:children){(getLeafQueues());}}", "n_tokens": 29, "n_pass": [258, 29, 27]}
+
+Minimal simplified code:
+Map<String>getLeafQueues(){if(null)for(Queue child:children){(getLeafQueues());}}
+

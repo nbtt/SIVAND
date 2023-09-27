@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_addTerseExceptions_0.java
+method_name = addTerseExceptions
+method_body = public void addTerseExceptions(Class<?>... exceptionClass) { exceptionsHandler.addTerseExceptions(exceptionClass); }
+predict, score, loss = addTerseExceptions, 0.8362346887588501, 0.5735850930213928
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:24:56.883347", "score": "0.8362", "loss": "0.5736", "code": "public void addTerseExceptions(Class<?>... exceptionClass) { exceptionsHandler.addTerseExceptions(exceptionClass); }", "n_tokens": 28, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:24:59.588306", "score": "0.8362", "loss": "0.5736", "code": " void addTerseExceptions(Class<?>... exceptionClass) { exceptionsHandler.addTerseExceptions(exceptionClass); }", "n_tokens": 27, "n_pass": [44, 2, 2]}
+{"time": "2023-09-24 02:25:01.247260", "score": "0.8362", "loss": "0.5736", "code": "void addTerseExceptions(Class<?>... exceptionClass) { exceptionsHandler.addTerseExceptions(exceptionClass); }", "n_tokens": 26, "n_pass": [45, 3, 3]}
+{"time": "2023-09-24 02:25:06.587012", "score": "0.8362", "loss": "0.5736", "code": "void addTerseExceptions(Class<?>...exceptionClass) { exceptionsHandler.addTerseExceptions(exceptionClass); }", "n_tokens": 25, "n_pass": [92, 5, 4]}
+{"time": "2023-09-24 02:25:08.289297", "score": "0.8362", "loss": "0.5736", "code": "void addTerseExceptions(Class<?>...exceptionClass){ exceptionsHandler.addTerseExceptions(exceptionClass); }", "n_tokens": 24, "n_pass": [95, 6, 5]}
+{"time": "2023-09-24 02:25:09.847167", "score": "0.8362", "loss": "0.5736", "code": "void addTerseExceptions(Class<?>...exceptionClass){exceptionsHandler.addTerseExceptions(exceptionClass); }", "n_tokens": 23, "n_pass": [97, 7, 6]}
+{"time": "2023-09-24 02:25:15.239130", "score": "0.8362", "loss": "0.5736", "code": "void addTerseExceptions(Class<?>...exceptionClass){exceptionsHandler.addTerseExceptions(exceptionClass);}", "n_tokens": 22, "n_pass": [105, 10, 7]}
+
+Minimal simplified code:
+void addTerseExceptions(Class<?>...exceptionClass){exceptionsHandler.addTerseExceptions(exceptionClass);}
+

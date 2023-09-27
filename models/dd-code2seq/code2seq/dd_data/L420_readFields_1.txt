@@ -1,0 +1,23 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DistCpV1_readFields_0.java
+method_name = readFields
+method_body = public void readFields(DataInput in) throws IOException { input.readFields(in); output = Text.readString(in); }
+predict, score, loss = readFields, 0.9877472519874573, 0.03325445204973221
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:02:46.209081", "score": "0.9877", "loss": "0.0333", "code": "public void readFields(DataInput in) throws IOException { input.readFields(in); output = Text.readString(in); }", "n_tokens": 38, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:02:48.552996", "score": "0.7378", "loss": "0.869", "code": "public void readFields(DataInput in) throws IOException { input; output = Text.readString(in); }", "n_tokens": 33, "n_pass": [24, 2, 2]}
+{"time": "2023-09-24 01:02:50.598358", "score": "0.856", "loss": "0.4548", "code": "public void readFields(DataInput in) throws IOException {; output = Text.readString(in); }", "n_tokens": 31, "n_pass": [45, 3, 3]}
+{"time": "2023-09-24 01:02:53.890011", "score": "0.6843", "loss": "1.1666", "code": "public void readFields(DataInput in) throws IOException {; output = (in); }", "n_tokens": 28, "n_pass": [48, 5, 4]}
+{"time": "2023-09-24 01:02:55.602631", "score": "0.6843", "loss": "1.1666", "code": "void readFields(DataInput in) throws IOException {; output = (in); }", "n_tokens": 26, "n_pass": [51, 6, 5]}
+{"time": "2023-09-24 01:03:02.420798", "score": "0.6843", "loss": "1.1666", "code": "void readFields(DataInput in)throws IOException {; output = (in); }", "n_tokens": 25, "n_pass": [93, 8, 6]}
+{"time": "2023-09-24 01:03:03.983317", "score": "0.6843", "loss": "1.1666", "code": "void readFields(DataInput in)throws IOException{; output = (in); }", "n_tokens": 24, "n_pass": [96, 9, 7]}
+{"time": "2023-09-24 01:03:05.696234", "score": "0.6843", "loss": "1.1666", "code": "void readFields(DataInput in)throws IOException{ output = (in); }", "n_tokens": 23, "n_pass": [98, 10, 8]}
+{"time": "2023-09-24 01:03:07.345042", "score": "0.6843", "loss": "1.1666", "code": "void readFields(DataInput in)throws IOException{output = (in); }", "n_tokens": 22, "n_pass": [99, 11, 9]}
+{"time": "2023-09-24 01:03:09.012856", "score": "0.6843", "loss": "1.1666", "code": "void readFields(DataInput in)throws IOException{output= (in); }", "n_tokens": 21, "n_pass": [101, 12, 10]}
+{"time": "2023-09-24 01:03:13.944478", "score": "0.6843", "loss": "1.1666", "code": "void readFields(DataInput in)throws IOException{output= (in);}", "n_tokens": 20, "n_pass": [130, 14, 11]}
+{"time": "2023-09-24 01:03:17.947063", "score": "0.6843", "loss": "1.1666", "code": "void readFields(DataInput in)throws IOException{output=(in);}", "n_tokens": 19, "n_pass": [145, 16, 12]}
+
+Minimal simplified code:
+void readFields(DataInput in)throws IOException{output=(in);}
+

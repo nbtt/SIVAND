@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/CopyCommands_processNonexistentPath_0.java
+method_name = processNonexistentPath
+method_body = protected void processNonexistentPath(PathData item) throws IOException { exitCode = 1; super.processNonexistentPath(item); }
+predict, score, loss = processNonexistentPath, 0.9432119727134705, 0.20793837308883667
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:09:41.317983", "score": "0.9432", "loss": "0.2079", "code": "protected void processNonexistentPath(PathData item) throws IOException { exitCode = 1; super.processNonexistentPath(item); }", "n_tokens": 33, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:09:43.075162", "score": "0.8628", "loss": "0.5668", "code": "protected void processNonexistentPath(PathData item) throws IOException {super.processNonexistentPath(item); }", "n_tokens": 25, "n_pass": [10, 2, 2]}
+{"time": "2023-09-23 23:09:47.440870", "score": "0.8628", "loss": "0.5668", "code": "void processNonexistentPath(PathData item) throws IOException {super.processNonexistentPath(item); }", "n_tokens": 23, "n_pass": [41, 4, 3]}
+{"time": "2023-09-23 23:09:53.754972", "score": "0.8628", "loss": "0.5668", "code": "void processNonexistentPath(PathData item)throws IOException {super.processNonexistentPath(item); }", "n_tokens": 22, "n_pass": [82, 6, 4]}
+{"time": "2023-09-23 23:09:55.439140", "score": "0.8628", "loss": "0.5668", "code": "void processNonexistentPath(PathData item)throws IOException{super.processNonexistentPath(item); }", "n_tokens": 21, "n_pass": [85, 7, 5]}
+{"time": "2023-09-23 23:10:01.325883", "score": "0.8628", "loss": "0.5668", "code": "void processNonexistentPath(PathData item)throws IOException{super.processNonexistentPath(item);}", "n_tokens": 20, "n_pass": [108, 10, 6]}
+
+Minimal simplified code:
+void processNonexistentPath(PathData item)throws IOException{super.processNonexistentPath(item);}
+

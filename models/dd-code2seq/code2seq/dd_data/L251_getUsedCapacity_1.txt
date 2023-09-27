@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FifoSchedulerInfo_getUsedCapacity_0.java
+method_name = getUsedCapacity
+method_body = public float getUsedCapacity() { return this.usedCapacity; }
+predict, score, loss = getUsedCapacity, 0.9052295684814453, 0.34075939655303955
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:13:06.380016", "score": "0.9052", "loss": "0.3408", "code": "public float getUsedCapacity() { return this.usedCapacity; }", "n_tokens": 18, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:13:08.413610", "score": "0.9052", "loss": "0.3408", "code": "float getUsedCapacity() { return this.usedCapacity; }", "n_tokens": 16, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:13:10.090012", "score": "0.8898", "loss": "0.4496", "code": "float getUsedCapacity() { this.usedCapacity; }", "n_tokens": 14, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:13:16.768255", "score": "0.8898", "loss": "0.4496", "code": "float getUsedCapacity(){ this.usedCapacity; }", "n_tokens": 13, "n_pass": [52, 6, 4]}
+{"time": "2023-09-24 00:13:18.349087", "score": "0.8898", "loss": "0.4496", "code": "float getUsedCapacity(){this.usedCapacity; }", "n_tokens": 12, "n_pass": [54, 7, 5]}
+{"time": "2023-09-24 00:13:22.859495", "score": "0.8898", "loss": "0.4496", "code": "float getUsedCapacity(){this.usedCapacity;}", "n_tokens": 11, "n_pass": [71, 9, 6]}
+
+Minimal simplified code:
+float getUsedCapacity(){this.usedCapacity;}
+

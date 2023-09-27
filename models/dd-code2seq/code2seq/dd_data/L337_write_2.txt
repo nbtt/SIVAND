@@ -1,0 +1,29 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_write_0.java
+method_name = write
+method_body = public void write(int b) throws IOException { if (count >= buf.length) { flushBuffer(); } buf[count++] = (byte) b; }
+predict, score, loss = write, 0.978337824344635, 0.07394257932901382
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:40:27.755966", "score": "0.9783", "loss": "0.0739", "code": "public void write(int b) throws IOException { if (count >= buf.length) { flushBuffer(); } buf[count++] = (byte) b; }", "n_tokens": 56, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:40:29.997878", "score": "0.9884", "loss": "0.05", "code": "public void write(int b) throws IOException { if (count) { flushBuffer(); } buf[count++] = (byte) b; }", "n_tokens": 49, "n_pass": [23, 2, 2]}
+{"time": "2023-09-24 00:40:31.794253", "score": "0.9883", "loss": "0.0725", "code": "public void write(int b) throws IOException { if (count) {  } buf[count++] = (byte) b; }", "n_tokens": 45, "n_pass": [46, 3, 3]}
+{"time": "2023-09-24 00:40:33.580450", "score": "0.9602", "loss": "0.0703", "code": "public void write(int b) throws IOException { if (count) {  } buf[count++] = b; }", "n_tokens": 41, "n_pass": [50, 4, 4]}
+{"time": "2023-09-24 00:40:35.676292", "score": "0.5659", "loss": "1.7704", "code": "public void write() throws IOException { if (count) {  } buf[count++] = b; }", "n_tokens": 38, "n_pass": [54, 5, 5]}
+{"time": "2023-09-24 00:40:40.381403", "score": "0.5659", "loss": "1.7704", "code": " void write() throws IOException { if (count) {  } buf[count++] = b; }", "n_tokens": 37, "n_pass": [106, 7, 6]}
+{"time": "2023-09-24 00:40:42.047282", "score": "0.5659", "loss": "1.7704", "code": "void write() throws IOException { if (count) {  } buf[count++] = b; }", "n_tokens": 36, "n_pass": [107, 8, 7]}
+{"time": "2023-09-24 00:40:49.627966", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException { if (count) {  } buf[count++] = b; }", "n_tokens": 35, "n_pass": [160, 10, 8]}
+{"time": "2023-09-24 00:40:51.202509", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{ if (count) {  } buf[count++] = b; }", "n_tokens": 34, "n_pass": [164, 11, 9]}
+{"time": "2023-09-24 00:40:52.914180", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if (count) {  } buf[count++] = b; }", "n_tokens": 33, "n_pass": [166, 12, 10]}
+{"time": "2023-09-24 00:40:54.505207", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if(count) {  } buf[count++] = b; }", "n_tokens": 32, "n_pass": [168, 13, 11]}
+{"time": "2023-09-24 00:40:56.275206", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if(count){  } buf[count++] = b; }", "n_tokens": 31, "n_pass": [172, 14, 12]}
+{"time": "2023-09-24 00:40:58.067202", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if(count){ } buf[count++] = b; }", "n_tokens": 30, "n_pass": [174, 15, 13]}
+{"time": "2023-09-24 00:40:59.930810", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if(count){} buf[count++] = b; }", "n_tokens": 29, "n_pass": [175, 16, 14]}
+{"time": "2023-09-24 00:41:01.786356", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if(count){}buf[count++] = b; }", "n_tokens": 28, "n_pass": [177, 17, 15]}
+{"time": "2023-09-24 00:41:03.487263", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if(count){}buf[count++]= b; }", "n_tokens": 27, "n_pass": [184, 18, 16]}
+{"time": "2023-09-24 00:41:05.228553", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if(count){}buf[count++]=b; }", "n_tokens": 26, "n_pass": [186, 19, 17]}
+{"time": "2023-09-24 00:41:06.890920", "score": "0.5659", "loss": "1.7704", "code": "void write()throws IOException{if(count){}buf[count++]=b;}", "n_tokens": 25, "n_pass": [189, 20, 18]}
+
+Minimal simplified code:
+void write()throws IOException{if(count){}buf[count++]=b;}
+

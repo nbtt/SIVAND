@@ -1,0 +1,23 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestOutOfBandAzureBlobOperations_tearDown_0.java
+method_name = tearDown
+method_body = public void tearDown() throws Exception { testAccount.cleanup(); fs = null; backingStore = null; }
+predict, score, loss = tearDown, 0.9539850950241089, 0.13881783187389374
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:15:56.708775", "score": "0.954", "loss": "0.1388", "code": "public void tearDown() throws Exception { testAccount.cleanup(); fs = null; backingStore = null; }", "n_tokens": 36, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:16:00.568533", "score": "0.973", "loss": "0.106", "code": "public void tearDown() throws Exception { testAccount.fs = null; backingStore = null; }", "n_tokens": 31, "n_pass": [24, 3, 2]}
+{"time": "2023-09-24 03:16:02.641338", "score": "0.6608", "loss": "1.4917", "code": "public void tearDown() { testAccount.fs = null; backingStore = null; }", "n_tokens": 27, "n_pass": [30, 4, 3]}
+{"time": "2023-09-24 03:16:09.774969", "score": "0.6608", "loss": "1.4917", "code": "void tearDown() { testAccount.fs = null; backingStore = null; }", "n_tokens": 25, "n_pass": [57, 8, 4]}
+{"time": "2023-09-24 03:16:19.647899", "score": "0.6608", "loss": "1.4917", "code": "void tearDown(){ testAccount.fs = null; backingStore = null; }", "n_tokens": 24, "n_pass": [95, 12, 5]}
+{"time": "2023-09-24 03:16:21.335627", "score": "0.6608", "loss": "1.4917", "code": "void tearDown(){testAccount.fs = null; backingStore = null; }", "n_tokens": 23, "n_pass": [97, 13, 6]}
+{"time": "2023-09-24 03:16:24.855198", "score": "0.6608", "loss": "1.4917", "code": "void tearDown(){testAccount.fs= null; backingStore = null; }", "n_tokens": 22, "n_pass": [101, 15, 7]}
+{"time": "2023-09-24 03:16:26.735874", "score": "0.6608", "loss": "1.4917", "code": "void tearDown(){testAccount.fs=null; backingStore = null; }", "n_tokens": 21, "n_pass": [103, 16, 8]}
+{"time": "2023-09-24 03:16:28.560786", "score": "0.6608", "loss": "1.4917", "code": "void tearDown(){testAccount.fs=null;backingStore = null; }", "n_tokens": 20, "n_pass": [106, 17, 9]}
+{"time": "2023-09-24 03:16:30.262533", "score": "0.6608", "loss": "1.4917", "code": "void tearDown(){testAccount.fs=null;backingStore= null; }", "n_tokens": 19, "n_pass": [108, 18, 10]}
+{"time": "2023-09-24 03:16:40.115400", "score": "0.6608", "loss": "1.4917", "code": "void tearDown(){testAccount.fs=null;backingStore= null;}", "n_tokens": 18, "n_pass": [133, 23, 11]}
+{"time": "2023-09-24 03:16:47.599616", "score": "0.6608", "loss": "1.4917", "code": "void tearDown(){testAccount.fs=null;backingStore=null;}", "n_tokens": 17, "n_pass": [148, 27, 12]}
+
+Minimal simplified code:
+void tearDown(){testAccount.fs=null;backingStore=null;}
+

@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Phase_getDescription_0.java
+method_name = getDescription
+method_body = public String getDescription() { return description; }
+predict, score, loss = getDescription, 0.9902976751327515, 0.021868225187063217
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:23:17.986039", "score": "0.9903", "loss": "0.0219", "code": "public String getDescription() { return description; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:23:20.211054", "score": "0.9903", "loss": "0.0219", "code": "String getDescription() { return description; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:23:21.834004", "score": "0.9655", "loss": "0.1098", "code": "String getDescription() { description; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:23:28.575702", "score": "0.9655", "loss": "0.1098", "code": "String getDescription() { description;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 02:23:31.361249", "score": "0.9655", "loss": "0.1098", "code": "String getDescription(){ description;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 02:23:33.187848", "score": "0.9655", "loss": "0.1098", "code": "String getDescription(){description;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+String getDescription(){description;}
+

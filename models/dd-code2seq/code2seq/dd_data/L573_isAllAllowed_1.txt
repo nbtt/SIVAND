@@ -1,0 +1,16 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AccessControlList_isAllAllowed_0.java
+method_name = isAllAllowed
+method_body = public boolean isAllAllowed() { return allAllowed; }
+predict, score, loss = isAllAllowed, 0.7768849730491638, 0.8632122874259949
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:45:10.176593", "score": "0.7769", "loss": "0.8632", "code": "public boolean isAllAllowed() { return allAllowed; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:45:12.508428", "score": "0.7769", "loss": "0.8632", "code": "boolean isAllAllowed() { return allAllowed; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 01:45:18.156718", "score": "0.7769", "loss": "0.8632", "code": "boolean isAllAllowed(){ return allAllowed; }", "n_tokens": 13, "n_pass": [46, 4, 3]}
+{"time": "2023-09-24 01:45:19.714110", "score": "0.7769", "loss": "0.8632", "code": "boolean isAllAllowed(){return allAllowed; }", "n_tokens": 12, "n_pass": [48, 5, 4]}
+{"time": "2023-09-24 01:45:26.114945", "score": "0.7769", "loss": "0.8632", "code": "boolean isAllAllowed(){return allAllowed;}", "n_tokens": 11, "n_pass": [53, 9, 5]}
+
+Minimal simplified code:
+boolean isAllAllowed(){return allAllowed;}
+

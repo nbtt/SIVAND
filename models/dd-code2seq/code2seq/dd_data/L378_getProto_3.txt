@@ -1,0 +1,26 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/RefreshServiceAclsResponsePBImpl_getProto_0.java
+method_name = getProto
+method_body = public RefreshServiceAclsResponseProto getProto() { proto = viaProto ? proto : builder.build(); viaProto = true; return proto; }
+predict, score, loss = getProto, 0.9977381229400635, 0.007323953788727522
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:51:46.317448", "score": "0.9977", "loss": "0.0073", "code": "public RefreshServiceAclsResponseProto getProto() { proto = viaProto ? proto : builder.build(); viaProto = true; return proto; }", "n_tokens": 42, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:51:50.115458", "score": "0.9977", "loss": "0.0073", "code": "RefreshServiceAclsResponseProto getProto() { proto = viaProto ? proto : builder.build(); viaProto = true; return proto; }", "n_tokens": 40, "n_pass": [44, 3, 2]}
+{"time": "2023-09-24 00:51:52.365803", "score": "0.9981", "loss": "0.0077", "code": "RefreshServiceAclsResponseProto getProto() { proto = viaProto ? proto :build(); viaProto = true; return proto; }", "n_tokens": 37, "n_pass": [53, 4, 3]}
+{"time": "2023-09-24 00:51:54.445277", "score": "0.9943", "loss": "0.0465", "code": "RefreshServiceAclsResponseProto getProto() { proto = viaProto ? proto :build(); viaPrototrue; return proto; }", "n_tokens": 34, "n_pass": [56, 5, 4]}
+{"time": "2023-09-24 00:51:57.693112", "score": "0.9753", "loss": "0.1701", "code": "RefreshServiceAclsResponseProto getProto() { proto = viaProto ? proto :build(); viaPrototrue; ; }", "n_tokens": 31, "n_pass": [58, 7, 5]}
+{"time": "2023-09-24 00:51:59.992381", "score": "0.968", "loss": "0.3608", "code": "RefreshServiceAclsResponseProto getProto() { proto = viaProto ? proto :build(); viaProto; }", "n_tokens": 28, "n_pass": [70, 8, 6]}
+{"time": "2023-09-24 00:52:02.366022", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto() { proto = viaProto ? proto :build(); }", "n_tokens": 25, "n_pass": [81, 9, 7]}
+{"time": "2023-09-24 00:52:07.627653", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto(){ proto = viaProto ? proto :build(); }", "n_tokens": 24, "n_pass": [119, 10, 8]}
+{"time": "2023-09-24 00:52:09.236310", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto(){proto = viaProto ? proto :build(); }", "n_tokens": 23, "n_pass": [121, 11, 9]}
+{"time": "2023-09-24 00:52:10.857428", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto(){proto= viaProto ? proto :build(); }", "n_tokens": 22, "n_pass": [123, 12, 10]}
+{"time": "2023-09-24 00:52:12.542049", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto(){proto=viaProto ? proto :build(); }", "n_tokens": 21, "n_pass": [125, 13, 11]}
+{"time": "2023-09-24 00:52:14.114384", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto(){proto=viaProto? proto :build(); }", "n_tokens": 20, "n_pass": [127, 14, 12]}
+{"time": "2023-09-24 00:52:18.489728", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto(){proto=viaProto? proto:build(); }", "n_tokens": 19, "n_pass": [153, 15, 13]}
+{"time": "2023-09-24 00:52:20.352422", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto(){proto=viaProto? proto:build();}", "n_tokens": 18, "n_pass": [158, 16, 14]}
+{"time": "2023-09-24 00:52:23.335706", "score": "0.897", "loss": "0.3126", "code": "RefreshServiceAclsResponseProto getProto(){proto=viaProto?proto:build();}", "n_tokens": 17, "n_pass": [170, 17, 15]}
+
+Minimal simplified code:
+RefreshServiceAclsResponseProto getProto(){proto=viaProto?proto:build();}
+

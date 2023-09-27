@@ -1,0 +1,35 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/StructureGenerator_outputFiles_0.java
+method_name = outputFiles
+method_body = protected void outputFiles(PrintStream out, String prefix) { prefix = prefix == null ? name : prefix + "/" + name; for (INode child : children) { child.outputFiles(out, prefix); } }
+predict, score, loss = outputFiles, 0.989863932132721, 0.0263325497508049
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:45:30.006774", "score": "0.9899", "loss": "0.0263", "code": "protected void outputFiles(PrintStream out, String prefix) { prefix = prefix == null ? name : prefix + \"/\" + name; for (INode child : children) { child.outputFiles(out, prefix); } }", "n_tokens": 76, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:45:32.092850", "score": "0.9872", "loss": "0.0347", "code": "protected void outputFiles(PrintStream out, String prefix) { prefix = prefix ==  + \"/\" + name; for (INode child : children) { child.outputFiles(out, prefix); } }", "n_tokens": 67, "n_pass": [23, 2, 2]}
+{"time": "2023-09-23 23:45:34.710741", "score": "0.9789", "loss": "0.0572", "code": "protected void outputFiles(PrintStream  prefix) { prefix = prefix ==  + \"/\" + name; for (INode child : children) { child.outputFiles(out, prefix); } }", "n_tokens": 63, "n_pass": [55, 3, 3]}
+{"time": "2023-09-23 23:45:36.732997", "score": "0.9717", "loss": "0.0754", "code": "protected void outputFiles(PrintStream  prefix) { prefix =  + \"/\" + name; for (INode child : children) { child.outputFiles(out, prefix); } }", "n_tokens": 58, "n_pass": [58, 4, 4]}
+{"time": "2023-09-23 23:45:39.559419", "score": "0.9738", "loss": "0.0692", "code": "protected void outputFiles(PrintStream  prefix) { prefix =  \"/\" + name; for (INode child : children) { child.outputFiles(out, prefix); } }", "n_tokens": 56, "n_pass": [96, 5, 5]}
+{"time": "2023-09-23 23:45:41.311405", "score": "0.9697", "loss": "0.0851", "code": "protected void outputFiles(PrintStream  prefix) { prefix =  \"/\" + name; for (INode child : children) {outputFiles(out, prefix); } }", "n_tokens": 53, "n_pass": [106, 6, 6]}
+{"time": "2023-09-23 23:45:43.076480", "score": "0.9565", "loss": "0.1258", "code": "protected void outputFiles(PrintStream  prefix) { prefix =  \"/\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 50, "n_pass": [108, 7, 7]}
+{"time": "2023-09-23 23:45:44.814586", "score": "0.9565", "loss": "0.1258", "code": "void outputFiles(PrintStream  prefix) { prefix =  \"/\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 48, "n_pass": [111, 8, 8]}
+{"time": "2023-09-23 23:45:51.982018", "score": "0.9565", "loss": "0.1258", "code": "void outputFiles(PrintStream prefix) { prefix =  \"/\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 47, "n_pass": [177, 9, 9]}
+{"time": "2023-09-23 23:45:53.726247", "score": "0.9565", "loss": "0.1258", "code": "void outputFiles(PrintStream prefix){ prefix =  \"/\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 46, "n_pass": [181, 10, 10]}
+{"time": "2023-09-23 23:45:55.414415", "score": "0.9565", "loss": "0.1258", "code": "void outputFiles(PrintStream prefix){prefix =  \"/\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 45, "n_pass": [183, 11, 11]}
+{"time": "2023-09-23 23:45:57.107494", "score": "0.9565", "loss": "0.1258", "code": "void outputFiles(PrintStream prefix){prefix=  \"/\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 44, "n_pass": [185, 12, 12]}
+{"time": "2023-09-23 23:45:58.846683", "score": "0.9565", "loss": "0.1258", "code": "void outputFiles(PrintStream prefix){prefix= \"/\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 43, "n_pass": [187, 13, 13]}
+{"time": "2023-09-23 23:46:00.556402", "score": "0.9565", "loss": "0.1258", "code": "void outputFiles(PrintStream prefix){prefix=\"/\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 42, "n_pass": [188, 14, 14]}
+{"time": "2023-09-23 23:46:02.403891", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\" + name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 41, "n_pass": [190, 15, 15]}
+{"time": "2023-09-23 23:46:04.182965", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+ name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 40, "n_pass": [192, 16, 16]}
+{"time": "2023-09-23 23:46:06.203662", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+name; for (INode child : children) {outputFiles(out); } }", "n_tokens": 39, "n_pass": [194, 17, 17]}
+{"time": "2023-09-23 23:46:07.923203", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+name;for (INode child : children) {outputFiles(out); } }", "n_tokens": 38, "n_pass": [197, 18, 18]}
+{"time": "2023-09-23 23:46:09.678358", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+name;for(INode child : children) {outputFiles(out); } }", "n_tokens": 37, "n_pass": [199, 19, 19]}
+{"time": "2023-09-23 23:46:14.061836", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+name;for(INode child: children) {outputFiles(out); } }", "n_tokens": 36, "n_pass": [245, 20, 20]}
+{"time": "2023-09-23 23:46:15.768313", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+name;for(INode child:children) {outputFiles(out); } }", "n_tokens": 35, "n_pass": [246, 21, 21]}
+{"time": "2023-09-23 23:46:17.467305", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+name;for(INode child:children){outputFiles(out); } }", "n_tokens": 34, "n_pass": [249, 22, 22]}
+{"time": "2023-09-23 23:46:22.659859", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+name;for(INode child:children){outputFiles(out);} }", "n_tokens": 33, "n_pass": [256, 25, 23]}
+{"time": "2023-09-23 23:46:24.391440", "score": "0.9658", "loss": "0.0961", "code": "void outputFiles(PrintStream prefix){prefix=\"\"+name;for(INode child:children){outputFiles(out);}}", "n_tokens": 32, "n_pass": [258, 26, 24]}
+
+Minimal simplified code:
+void outputFiles(PrintStream prefix){prefix=""+name;for(INode child:children){outputFiles(out);}}
+

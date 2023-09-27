@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SchedulerNodeReport_getUsedResource_0.java
+method_name = getUsedResource
+method_body = public Resource getUsedResource() { return used; }
+predict, score, loss = getUsedResource, 0.9336612224578857, 4.127498626708984
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:53:42.271632", "score": "0.9337", "loss": "4.1275", "code": "public Resource getUsedResource() { return used; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:53:44.639420", "score": "0.9337", "loss": "4.1275", "code": "Resource getUsedResource() { return used; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 01:53:46.210799", "score": "0.8444", "loss": "2.7008", "code": "Resource getUsedResource() { used; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 01:53:52.912489", "score": "0.8444", "loss": "2.7008", "code": "Resource getUsedResource() { used;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 01:53:55.521421", "score": "0.8444", "loss": "2.7008", "code": "Resource getUsedResource(){ used;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 01:53:57.100935", "score": "0.8444", "loss": "2.7008", "code": "Resource getUsedResource(){used;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+Resource getUsedResource(){used;}
+

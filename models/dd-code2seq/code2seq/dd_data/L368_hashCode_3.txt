@@ -1,0 +1,29 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Resource_hashCode_0.java
+method_name = hashCode
+method_body = public int hashCode() { final int prime = 263167; int result = 3571; result = 939769357 + getMemory(); result = prime * result + getVirtualCores(); return result; }
+predict, score, loss = hashCode, 0.8880448341369629, 0.2985056936740875
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:49:30.828996", "score": "0.888", "loss": "0.2985", "code": "public int hashCode() { final int prime = 263167; int result = 3571; result = 939769357 + getMemory(); result = prime * result + getVirtualCores(); return result; }", "n_tokens": 82, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:49:32.989685", "score": "0.8724", "loss": "0.3443", "code": "public int hashCode() { final int prime = 263167; int result = 3571; result = prime * result + getVirtualCores(); return result; }", "n_tokens": 61, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 00:49:35.102612", "score": "0.8686", "loss": "0.3588", "code": "public int hashCode() { 3167; int result = 3571; result = prime * result + getVirtualCores(); return result; }", "n_tokens": 51, "n_pass": [23, 3, 3]}
+{"time": "2023-09-24 00:49:36.853256", "score": "0.8214", "loss": "0.5109", "code": "public int hashCode() { 3167; int result = prime * result + getVirtualCores(); return result; }", "n_tokens": 41, "n_pass": [25, 4, 4]}
+{"time": "2023-09-24 00:49:40.303203", "score": "0.7754", "loss": "0.6515", "code": "public int hashCode() {  int result = prime * result + getVirtualCores(); return result; }", "n_tokens": 36, "n_pass": [44, 6, 5]}
+{"time": "2023-09-24 00:49:43.871245", "score": "0.7054", "loss": "0.9839", "code": "public int hashCode() {  result = prime * result + getVirtualCores(); return result; }", "n_tokens": 34, "n_pass": [66, 8, 6]}
+{"time": "2023-09-24 00:49:49.491177", "score": "0.9045", "loss": "0.2571", "code": "public int hashCode() {  result = prime * result + getVirtualCores(); ; }", "n_tokens": 31, "n_pass": [72, 11, 7]}
+{"time": "2023-09-24 00:49:51.210078", "score": "0.9045", "loss": "0.2571", "code": "int hashCode() {  result = prime * result + getVirtualCores(); ; }", "n_tokens": 29, "n_pass": [74, 12, 8]}
+{"time": "2023-09-24 00:49:55.254243", "score": "0.7416", "loss": "1.0024", "code": "int hashCode() {  result = prime *  getVirtualCores(); ; }", "n_tokens": 26, "n_pass": [82, 14, 9]}
+{"time": "2023-09-24 00:49:59.933023", "score": "0.7416", "loss": "1.0024", "code": "int hashCode() {  result = prime *getVirtualCores(); ; }", "n_tokens": 24, "n_pass": [114, 15, 10]}
+{"time": "2023-09-24 00:50:01.642176", "score": "0.7416", "loss": "1.0024", "code": "int hashCode() {  result = prime *getVirtualCores(); }", "n_tokens": 22, "n_pass": [117, 16, 11]}
+{"time": "2023-09-24 00:50:03.998192", "score": "0.7416", "loss": "1.0024", "code": "int hashCode(){  result = prime *getVirtualCores(); }", "n_tokens": 21, "n_pass": [124, 17, 12]}
+{"time": "2023-09-24 00:50:05.730817", "score": "0.7416", "loss": "1.0024", "code": "int hashCode(){ result = prime *getVirtualCores(); }", "n_tokens": 20, "n_pass": [126, 18, 13]}
+{"time": "2023-09-24 00:50:07.337672", "score": "0.7416", "loss": "1.0024", "code": "int hashCode(){result = prime *getVirtualCores(); }", "n_tokens": 19, "n_pass": [127, 19, 14]}
+{"time": "2023-09-24 00:50:09.037784", "score": "0.7416", "loss": "1.0024", "code": "int hashCode(){result= prime *getVirtualCores(); }", "n_tokens": 18, "n_pass": [129, 20, 15]}
+{"time": "2023-09-24 00:50:10.703245", "score": "0.7416", "loss": "1.0024", "code": "int hashCode(){result=prime *getVirtualCores(); }", "n_tokens": 17, "n_pass": [131, 21, 16]}
+{"time": "2023-09-24 00:50:16.040227", "score": "0.7416", "loss": "1.0024", "code": "int hashCode(){result=prime *getVirtualCores();}", "n_tokens": 16, "n_pass": [158, 23, 17]}
+{"time": "2023-09-24 00:50:18.583375", "score": "0.7416", "loss": "1.0024", "code": "int hashCode(){result=prime*getVirtualCores();}", "n_tokens": 15, "n_pass": [168, 24, 18]}
+
+Minimal simplified code:
+int hashCode(){result=prime*getVirtualCores();}
+

@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_setAcls_0.java
+method_name = setAcls
+method_body = void setAcls(Map<String, AccessControlList> acls) { this.acls = acls; }
+predict, score, loss = setAcls, 0.9866039752960205, 0.031113451346755028
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:14:32.386850", "score": "0.9866", "loss": "0.0311", "code": "void setAcls(Map<String, AccessControlList> acls) { this.acls = acls; }", "n_tokens": 27, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:14:34.104558", "score": "0.9882", "loss": "0.028", "code": "void setAcls(Map<AccessControlList> acls) { this.acls = acls; }", "n_tokens": 24, "n_pass": [22, 2, 2]}
+{"time": "2023-09-24 00:14:35.705260", "score": "0.8166", "loss": "0.5523", "code": "void setAcls(Map<AccessControlList> acls) { this.acls; }", "n_tokens": 20, "n_pass": [26, 3, 3]}
+{"time": "2023-09-24 00:14:38.621675", "score": "0.6032", "loss": "1.6628", "code": "void setAcls(Map<AccessControlList> acls) { acls; }", "n_tokens": 18, "n_pass": [56, 4, 4]}
+{"time": "2023-09-24 00:14:40.217498", "score": "0.5326", "loss": "1.9323", "code": "void setAcls(Map<AccessControlList> acls) {  }", "n_tokens": 16, "n_pass": [57, 5, 5]}
+{"time": "2023-09-24 00:14:43.708836", "score": "0.5326", "loss": "1.9323", "code": "void setAcls(Map<AccessControlList> acls) { }", "n_tokens": 15, "n_pass": [80, 6, 6]}
+{"time": "2023-09-24 00:14:46.011767", "score": "0.5326", "loss": "1.9323", "code": "void setAcls(Map<AccessControlList>acls) { }", "n_tokens": 14, "n_pass": [89, 7, 7]}
+{"time": "2023-09-24 00:14:47.813133", "score": "0.5326", "loss": "1.9323", "code": "void setAcls(Map<AccessControlList>acls){ }", "n_tokens": 13, "n_pass": [92, 8, 8]}
+{"time": "2023-09-24 00:14:49.413484", "score": "0.5326", "loss": "1.9323", "code": "void setAcls(Map<AccessControlList>acls){}", "n_tokens": 12, "n_pass": [94, 9, 9]}
+
+Minimal simplified code:
+void setAcls(Map<AccessControlList>acls){}
+

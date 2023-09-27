@@ -1,0 +1,37 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_start_0.java
+method_name = start
+method_body = public synchronized void start() { responder.start(); listener.start(); handlers = new Handler[handlerCount]; for (int i = 0; i < handlerCount; i++) { handlers[i] = new Handler(i); handlers[i].start(); } }
+predict, score, loss = start, 0.9729793667793274, 0.35569053888320923
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:50:39.493642", "score": "0.973", "loss": "0.3557", "code": "public synchronized void start() { responder.start(); listener.start(); handlers = new Handler[handlerCount]; for (int i = 0; i < handlerCount; i++) { handlers[i] = new Handler(i); handlers[i].start(); } }", "n_tokens": 92, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:50:41.436045", "score": "0.9763", "loss": "0.1585", "code": "public synchronized void start() { responder.start(); listener.start[handlerCount]; for (int i = 0; i < handlerCount; i++) { handlers[i] = new Handler(i); handlers[i].start(); } }", "n_tokens": 81, "n_pass": [22, 2, 2]}
+{"time": "2023-09-24 02:50:43.227454", "score": "0.9786", "loss": "0.1042", "code": "public synchronized void start() { responder.start(); listener.start[handlerCount]; for (int i = 0; i < handlerCount; i++) { handlers[i][i].start(); } }", "n_tokens": 69, "n_pass": [26, 3, 3]}
+{"time": "2023-09-24 02:50:45.548702", "score": "0.9784", "loss": "0.1422", "code": "public synchronized void start() { responder.startstart[handlerCount]; for (int i = 0; i < handlerCount; i++) { handlers[i][i].start(); } }", "n_tokens": 63, "n_pass": [50, 4, 4]}
+{"time": "2023-09-24 02:50:47.808792", "score": "0.973", "loss": "0.1403", "code": "public synchronized void start() { responder.startstart[handlerCount]; for (int i0; i < handlerCount; i++) { handlers[i][i].start(); } }", "n_tokens": 60, "n_pass": [88, 5, 5]}
+{"time": "2023-09-24 02:50:49.521709", "score": "0.9724", "loss": "0.2064", "code": "public synchronized void start() { responder.startstart[handlerCount]; for (int i0;  handlerCount; i++) { handlers[i][i].start(); } }", "n_tokens": 57, "n_pass": [89, 6, 6]}
+{"time": "2023-09-24 02:50:51.255783", "score": "0.978", "loss": "0.2129", "code": "public synchronized void start() { responder.startstart[handlerCount]; for (int i0;  handlerCount; i++) { handlers[i].start(); } }", "n_tokens": 54, "n_pass": [94, 7, 7]}
+{"time": "2023-09-24 02:50:52.958567", "score": "0.9431", "loss": "0.4979", "code": "public synchronized void start() { responder.startstart[handlerCount]; for (int i0;  handlerCount; i++) { handlers.start(); } }", "n_tokens": 51, "n_pass": [95, 8, 8]}
+{"time": "2023-09-24 02:50:54.804753", "score": "0.9431", "loss": "0.4979", "code": "synchronized void start() { responder.startstart[handlerCount]; for (int i0;  handlerCount; i++) { handlers.start(); } }", "n_tokens": 49, "n_pass": [99, 9, 9]}
+{"time": "2023-09-24 02:50:56.517430", "score": "0.9431", "loss": "0.4979", "code": "void start() { responder.startstart[handlerCount]; for (int i0;  handlerCount; i++) { handlers.start(); } }", "n_tokens": 47, "n_pass": [100, 10, 10]}
+{"time": "2023-09-24 02:50:58.561238", "score": "0.9714", "loss": "0.2335", "code": "void start() { start[handlerCount]; for (int i0;  handlerCount; i++) { handlers.start(); } }", "n_tokens": 44, "n_pass": [104, 11, 11]}
+{"time": "2023-09-24 02:51:00.246028", "score": "0.9893", "loss": "0.1304", "code": "void start() { start[handlerCount]; for (0;  handlerCount; i++) { handlers.start(); } }", "n_tokens": 41, "n_pass": [108, 12, 12]}
+{"time": "2023-09-24 02:51:04.246567", "score": "0.9893", "loss": "0.1304", "code": "void start() { start[handlerCount];for (0;  handlerCount; i++) { handlers.start(); } }", "n_tokens": 40, "n_pass": [152, 13, 13]}
+{"time": "2023-09-24 02:51:06.202787", "score": "0.9893", "loss": "0.1304", "code": "void start() { start[handlerCount];for (0;handlerCount; i++) { handlers.start(); } }", "n_tokens": 38, "n_pass": [156, 14, 14]}
+{"time": "2023-09-24 02:51:07.879784", "score": "0.9911", "loss": "0.181", "code": "void start() { start[handlerCount];for (0;handlerCount; i) { handlers.start(); } }", "n_tokens": 36, "n_pass": [159, 15, 15]}
+{"time": "2023-09-24 02:51:09.580319", "score": "0.9792", "loss": "0.2263", "code": "void start() { start[handlerCount];for (0;handlerCount; i) { start(); } }", "n_tokens": 34, "n_pass": [162, 16, 16]}
+{"time": "2023-09-24 02:51:11.822051", "score": "0.9792", "loss": "0.2263", "code": "void start(){ start[handlerCount];for (0;handlerCount; i) { start(); } }", "n_tokens": 33, "n_pass": [172, 17, 17]}
+{"time": "2023-09-24 02:51:13.418468", "score": "0.9792", "loss": "0.2263", "code": "void start(){start[handlerCount];for (0;handlerCount; i) { start(); } }", "n_tokens": 32, "n_pass": [174, 18, 18]}
+{"time": "2023-09-24 02:51:15.125556", "score": "0.9732", "loss": "0.2188", "code": "void start(){start[handlerCount];for (0;handlerCount;) { start(); } }", "n_tokens": 30, "n_pass": [184, 19, 19]}
+{"time": "2023-09-24 02:51:19.908160", "score": "0.9732", "loss": "0.2188", "code": "void start(){start[handlerCount];for (0;handlerCount;) {start(); } }", "n_tokens": 29, "n_pass": [224, 20, 20]}
+{"time": "2023-09-24 02:51:21.483391", "score": "0.9732", "loss": "0.2188", "code": "void start(){start[handlerCount];for (0;handlerCount;) {start();} }", "n_tokens": 28, "n_pass": [229, 21, 21]}
+{"time": "2023-09-24 02:51:23.155847", "score": "0.9732", "loss": "0.2188", "code": "void start(){start[handlerCount];for (0;handlerCount;) {start();}}", "n_tokens": 27, "n_pass": [231, 22, 22]}
+{"time": "2023-09-24 02:51:25.513706", "score": "0.9732", "loss": "0.2188", "code": "void start(){start[handlerCount];for(0;handlerCount;) {start();}}", "n_tokens": 26, "n_pass": [245, 23, 23]}
+{"time": "2023-09-24 02:51:27.156033", "score": "0.9649", "loss": "0.2832", "code": "void start(){start[handlerCount];for(;handlerCount;) {start();}}", "n_tokens": 25, "n_pass": [247, 24, 24]}
+{"time": "2023-09-24 02:51:28.858974", "score": "0.9557", "loss": "0.2281", "code": "void start(){start[handlerCount];for(;;) {start();}}", "n_tokens": 24, "n_pass": [249, 25, 25]}
+{"time": "2023-09-24 02:51:30.460596", "score": "0.9557", "loss": "0.2281", "code": "void start(){start[handlerCount];for(;;){start();}}", "n_tokens": 23, "n_pass": [252, 26, 26]}
+
+Minimal simplified code:
+void start(){start[handlerCount];for(;;){start();}}
+

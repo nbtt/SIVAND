@@ -1,0 +1,32 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_maybeInitBuilder_0.java
+method_name = maybeInitBuilder
+method_body = private void maybeInitBuilder() { if (viaProto || builder == null) { builder = GetQueueInfoRequestProto.newBuilder(proto); } viaProto = false; }
+predict, score, loss = maybeInitBuilder, 0.9559155106544495, 0.1840674728155136
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:29:37.358838", "score": "0.9559", "loss": "0.1841", "code": "private void maybeInitBuilder() { if (viaProto || builder == null) { builder = GetQueueInfoRequestProto.newBuilder(proto); } viaProto = false; }", "n_tokens": 50, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:29:39.552894", "score": "0.9611", "loss": "0.1573", "code": "private void maybeInitBuilder() { if (viaProto || builder == null) { builder .newBuilder(proto); } viaProto = false; }", "n_tokens": 47, "n_pass": [54, 2, 2]}
+{"time": "2023-09-24 00:29:41.303909", "score": "0.9208", "loss": "0.406", "code": "private void maybeInitBuilder() { if (viaProto || builder == null) { builder .newBuilder(proto); } false; }", "n_tokens": 43, "n_pass": [57, 3, 3]}
+{"time": "2023-09-24 00:29:45.260806", "score": "0.9334", "loss": "0.3152", "code": "private void maybeInitBuilder() { if (viaProto || builder == null) { builder .newBuilder(proto); }  }", "n_tokens": 41, "n_pass": [100, 4, 4]}
+{"time": "2023-09-24 00:29:46.973555", "score": "0.9334", "loss": "0.3152", "code": " void maybeInitBuilder() { if (viaProto || builder == null) { builder .newBuilder(proto); }  }", "n_tokens": 40, "n_pass": [101, 5, 5]}
+{"time": "2023-09-24 00:29:48.642766", "score": "0.9334", "loss": "0.3152", "code": "void maybeInitBuilder() { if (viaProto || builder == null) { builder .newBuilder(proto); }  }", "n_tokens": 39, "n_pass": [102, 6, 6]}
+{"time": "2023-09-24 00:29:50.864617", "score": "0.9334", "loss": "0.3152", "code": "void maybeInitBuilder(){ if (viaProto || builder == null) { builder .newBuilder(proto); }  }", "n_tokens": 38, "n_pass": [108, 7, 7]}
+{"time": "2023-09-24 00:29:52.576429", "score": "0.9334", "loss": "0.3152", "code": "void maybeInitBuilder(){if (viaProto || builder == null) { builder .newBuilder(proto); }  }", "n_tokens": 37, "n_pass": [110, 8, 8]}
+{"time": "2023-09-24 00:29:54.308666", "score": "0.9334", "loss": "0.3152", "code": "void maybeInitBuilder(){if(viaProto || builder == null) { builder .newBuilder(proto); }  }", "n_tokens": 36, "n_pass": [112, 9, 9]}
+{"time": "2023-09-24 00:30:02.392200", "score": "0.9257", "loss": "0.3231", "code": "void maybeInitBuilder(){if(viaProto | builder == null) { builder .newBuilder(proto); }  }", "n_tokens": 35, "n_pass": [163, 11, 10]}
+{"time": "2023-09-24 00:30:04.115197", "score": "0.9257", "loss": "0.3231", "code": "void maybeInitBuilder(){if(viaProto |builder == null) { builder .newBuilder(proto); }  }", "n_tokens": 34, "n_pass": [164, 12, 11]}
+{"time": "2023-09-24 00:30:05.805749", "score": "0.9257", "loss": "0.3231", "code": "void maybeInitBuilder(){if(viaProto |builder== null) { builder .newBuilder(proto); }  }", "n_tokens": 33, "n_pass": [166, 13, 12]}
+{"time": "2023-09-24 00:30:08.195708", "score": "0.9257", "loss": "0.3231", "code": "void maybeInitBuilder(){if(viaProto |builder==null) { builder .newBuilder(proto); }  }", "n_tokens": 32, "n_pass": [169, 14, 13]}
+{"time": "2023-09-24 00:30:10.098121", "score": "0.9257", "loss": "0.3231", "code": "void maybeInitBuilder(){if(viaProto |builder==null){ builder .newBuilder(proto); }  }", "n_tokens": 31, "n_pass": [172, 15, 14]}
+{"time": "2023-09-24 00:30:11.948924", "score": "0.9257", "loss": "0.3231", "code": "void maybeInitBuilder(){if(viaProto |builder==null){builder .newBuilder(proto); }  }", "n_tokens": 30, "n_pass": [174, 16, 15]}
+{"time": "2023-09-24 00:30:14.041308", "score": "0.9257", "loss": "0.3231", "code": "void maybeInitBuilder(){if(viaProto |builder==null){builder.newBuilder(proto); }  }", "n_tokens": 29, "n_pass": [176, 17, 16]}
+{"time": "2023-09-24 00:30:17.479034", "score": "0.77", "loss": "1.1124", "code": "void maybeInitBuilder(){if(viaProto |builder==null){builder.newBuilder(); }  }", "n_tokens": 28, "n_pass": [180, 19, 17]}
+{"time": "2023-09-24 00:30:19.334968", "score": "0.77", "loss": "1.1124", "code": "void maybeInitBuilder(){if(viaProto |builder==null){builder.newBuilder();}  }", "n_tokens": 27, "n_pass": [183, 20, 18]}
+{"time": "2023-09-24 00:30:21.292462", "score": "0.77", "loss": "1.1124", "code": "void maybeInitBuilder(){if(viaProto |builder==null){builder.newBuilder();} }", "n_tokens": 26, "n_pass": [185, 21, 19]}
+{"time": "2023-09-24 00:30:23.508784", "score": "0.77", "loss": "1.1124", "code": "void maybeInitBuilder(){if(viaProto |builder==null){builder.newBuilder();}}", "n_tokens": 25, "n_pass": [186, 22, 20]}
+{"time": "2023-09-24 00:30:26.785208", "score": "0.77", "loss": "1.1124", "code": "void maybeInitBuilder(){if(viaProto|builder==null){builder.newBuilder();}}", "n_tokens": 24, "n_pass": [197, 23, 21]}
+
+Minimal simplified code:
+void maybeInitBuilder(){if(viaProto|builder==null){builder.newBuilder();}}
+

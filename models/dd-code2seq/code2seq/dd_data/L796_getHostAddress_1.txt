@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getHostAddress_0.java
+method_name = getHostAddress
+method_body = public String getHostAddress() { return hostAddress; }
+predict, score, loss = getHostAddress, 0.971235454082489, 0.09344299137592316
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:44:09.327459", "score": "0.9712", "loss": "0.0934", "code": "public String getHostAddress() { return hostAddress; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:44:11.557427", "score": "0.9712", "loss": "0.0934", "code": "String getHostAddress() { return hostAddress; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:44:13.253483", "score": "0.9496", "loss": "0.2106", "code": "String getHostAddress() { hostAddress; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:44:20.369605", "score": "0.9496", "loss": "0.2106", "code": "String getHostAddress() { hostAddress;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 02:44:22.916379", "score": "0.9496", "loss": "0.2106", "code": "String getHostAddress(){ hostAddress;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 02:44:24.513026", "score": "0.9496", "loss": "0.2106", "code": "String getHostAddress(){hostAddress;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+String getHostAddress(){hostAddress;}
+

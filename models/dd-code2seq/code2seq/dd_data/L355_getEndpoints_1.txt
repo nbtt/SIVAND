@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Catalog_getEndpoints_0.java
+method_name = getEndpoints
+method_body = public List<Endpoint> getEndpoints() { return endpoints; }
+predict, score, loss = getEndpoints, 0.9236721992492676, 0.17560411989688873
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:47:22.768910", "score": "0.9237", "loss": "0.1756", "code": "public List<Endpoint> getEndpoints() { return endpoints; }", "n_tokens": 19, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:47:24.402766", "score": "0.9237", "loss": "0.1756", "code": "List<Endpoint> getEndpoints() { return endpoints; }", "n_tokens": 17, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:47:29.010370", "score": "0.9237", "loss": "0.1756", "code": "List<Endpoint>getEndpoints() { return endpoints; }", "n_tokens": 16, "n_pass": [45, 4, 3]}
+{"time": "2023-09-24 00:47:30.606555", "score": "0.9237", "loss": "0.1756", "code": "List<Endpoint>getEndpoints(){ return endpoints; }", "n_tokens": 15, "n_pass": [48, 5, 4]}
+{"time": "2023-09-24 00:47:32.190425", "score": "0.9237", "loss": "0.1756", "code": "List<Endpoint>getEndpoints(){return endpoints; }", "n_tokens": 14, "n_pass": [50, 6, 5]}
+{"time": "2023-09-24 00:47:33.889082", "score": "0.7476", "loss": "0.9095", "code": "List<Endpoint>getEndpoints(){endpoints; }", "n_tokens": 12, "n_pass": [51, 7, 6]}
+{"time": "2023-09-24 00:47:38.048555", "score": "0.7476", "loss": "0.9095", "code": "List<Endpoint>getEndpoints(){endpoints;}", "n_tokens": 11, "n_pass": [67, 9, 7]}
+
+Minimal simplified code:
+List<Endpoint>getEndpoints(){endpoints;}
+

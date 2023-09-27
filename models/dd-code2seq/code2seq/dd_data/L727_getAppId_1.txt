@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/MockApp_getAppId_0.java
+method_name = getAppId
+method_body = public ApplicationId getAppId() { return appId; }
+predict, score, loss = getAppId, 0.8958001136779785, 0.36692672967910767
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:24:19.747654", "score": "0.8958", "loss": "0.3669", "code": "public ApplicationId getAppId() { return appId; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:24:21.994308", "score": "0.8958", "loss": "0.3669", "code": "ApplicationId getAppId() { return appId; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:24:23.733130", "score": "0.8243", "loss": "0.7776", "code": "ApplicationId getAppId() { appId; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:24:30.734982", "score": "0.8243", "loss": "0.7776", "code": "ApplicationId getAppId() { appId;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 02:24:33.385014", "score": "0.8243", "loss": "0.7776", "code": "ApplicationId getAppId(){ appId;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 02:24:34.956658", "score": "0.8243", "loss": "0.7776", "code": "ApplicationId getAppId(){appId;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+ApplicationId getAppId(){appId;}
+

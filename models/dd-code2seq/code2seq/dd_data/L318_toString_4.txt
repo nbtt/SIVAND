@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_toString_0.java
+method_name = toString
+method_body = public String toString() { return TextFormat.shortDebugString(getProto()); }
+predict, score, loss = toString, 0.8430169820785522, 0.37848764657974243
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:33:21.718358", "score": "0.843", "loss": "0.3785", "code": "public String toString() { return TextFormat.shortDebugString(getProto()); }", "n_tokens": 23, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:33:23.366928", "score": "0.843", "loss": "0.3785", "code": "String toString() { return TextFormat.shortDebugString(getProto()); }", "n_tokens": 21, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:33:28.379867", "score": "0.843", "loss": "0.3785", "code": "String toString(){ return TextFormat.shortDebugString(getProto()); }", "n_tokens": 20, "n_pass": [46, 4, 3]}
+{"time": "2023-09-24 00:33:30.134342", "score": "0.8509", "loss": "0.3663", "code": "String toString(){ TextFormat.shortDebugString(getProto()); }", "n_tokens": 18, "n_pass": [48, 5, 4]}
+{"time": "2023-09-24 00:33:31.867291", "score": "0.7434", "loss": "0.7171", "code": "String toString(){ TextFormat(getProto()); }", "n_tokens": 16, "n_pass": [50, 6, 5]}
+{"time": "2023-09-24 00:33:38.918423", "score": "0.7434", "loss": "0.7171", "code": "String toString(){ TextFormat(getProto());}", "n_tokens": 15, "n_pass": [76, 9, 6]}
+{"time": "2023-09-24 00:33:41.644130", "score": "0.7434", "loss": "0.7171", "code": "String toString(){TextFormat(getProto());}", "n_tokens": 14, "n_pass": [83, 10, 7]}
+
+Minimal simplified code:
+String toString(){TextFormat(getProto());}
+

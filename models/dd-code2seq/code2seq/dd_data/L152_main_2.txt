@@ -1,0 +1,28 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TeraValidate_main_0.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { int res = ToolRunner.run(new Configuration(), new TeraValidate(), args); System.exit(res); }
+predict, score, loss = main, 0.9935218691825867, 0.006959682330489159
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:43:02.975767", "score": "0.9935", "loss": "0.007", "code": "public static void main(String[] args) throws Exception { int res = ToolRunner.run(new Configuration(), new TeraValidate(), args); System.exit(res); }", "n_tokens": 58, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:43:04.873547", "score": "0.9958", "loss": "0.0047", "code": "public static void main(String[] args) throws Exception { int res = ToolRunner.run(new Configuration(), args); System.exit(res); }", "n_tokens": 51, "n_pass": [25, 2, 2]}
+{"time": "2023-09-23 23:43:06.746637", "score": "0.9958", "loss": "0.0047", "code": " void main(String[] args) throws Exception { int res = ToolRunner.run(new Configuration(), args); System.exit(res); }", "n_tokens": 48, "n_pass": [51, 3, 3]}
+{"time": "2023-09-23 23:43:08.844092", "score": "0.9967", "loss": "0.0038", "code": " void main(String[] args) { int res = ToolRunner.run(new Configuration(), args); System.exit(res); }", "n_tokens": 44, "n_pass": [56, 4, 4]}
+{"time": "2023-09-23 23:43:11.613232", "score": "0.9925", "loss": "0.0087", "code": " void main(String[] args) { res = ToolRunner.run(new Configuration(), args); System.exit(res); }", "n_tokens": 42, "n_pass": [94, 5, 5]}
+{"time": "2023-09-23 23:43:13.332249", "score": "0.9933", "loss": "0.0075", "code": " void main(String[] args) { res = run(new Configuration(), args); System.exit(res); }", "n_tokens": 40, "n_pass": [97, 6, 6]}
+{"time": "2023-09-23 23:43:15.237916", "score": "0.9811", "loss": "0.021", "code": " void main(String[] args) { res = run(Configuration(), args); System.exit(res); }", "n_tokens": 38, "n_pass": [99, 7, 7]}
+{"time": "2023-09-23 23:43:17.047026", "score": "0.988", "loss": "0.0137", "code": " void main(String[] args) { res = run(Configuration(), args); System(res); }", "n_tokens": 36, "n_pass": [105, 8, 8]}
+{"time": "2023-09-23 23:43:18.626575", "score": "0.988", "loss": "0.0137", "code": "void main(String[] args) { res = run(Configuration(), args); System(res); }", "n_tokens": 35, "n_pass": [109, 9, 9]}
+{"time": "2023-09-23 23:43:21.100939", "score": "0.9614", "loss": "0.0488", "code": "void main(String args) { res = run(Configuration(), args); System(res); }", "n_tokens": 33, "n_pass": [114, 10, 10]}
+{"time": "2023-09-23 23:43:22.737016", "score": "0.8031", "loss": "0.2517", "code": "void main(String args) { res = run(Configuration(), args);(res); }", "n_tokens": 31, "n_pass": [125, 11, 11]}
+{"time": "2023-09-23 23:43:28.172761", "score": "0.8031", "loss": "0.2517", "code": "void main(String args) { res = run(Configuration(), args);(res);}", "n_tokens": 30, "n_pass": [175, 12, 12]}
+{"time": "2023-09-23 23:43:30.495573", "score": "0.8031", "loss": "0.2517", "code": "void main(String args){ res = run(Configuration(), args);(res);}", "n_tokens": 29, "n_pass": [184, 13, 13]}
+{"time": "2023-09-23 23:43:32.204267", "score": "0.8031", "loss": "0.2517", "code": "void main(String args){res = run(Configuration(), args);(res);}", "n_tokens": 28, "n_pass": [186, 14, 14]}
+{"time": "2023-09-23 23:43:33.986570", "score": "0.8031", "loss": "0.2517", "code": "void main(String args){res= run(Configuration(), args);(res);}", "n_tokens": 27, "n_pass": [188, 15, 15]}
+{"time": "2023-09-23 23:43:35.784101", "score": "0.8031", "loss": "0.2517", "code": "void main(String args){res=run(Configuration(), args);(res);}", "n_tokens": 26, "n_pass": [190, 16, 16]}
+{"time": "2023-09-23 23:43:37.611946", "score": "0.8031", "loss": "0.2517", "code": "void main(String args){res=run(Configuration(),args);(res);}", "n_tokens": 25, "n_pass": [197, 17, 17]}
+
+Minimal simplified code:
+void main(String args){res=run(Configuration(),args);(res);}
+

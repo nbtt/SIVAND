@@ -1,0 +1,39 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AccessControlList_addUser_0.java
+method_name = addUser
+method_body = public void addUser(String user) { if (isWildCardACLValue(user)) { throw new IllegalArgumentException("User " + user + " can not be added"); } if (!isAllAllowed()) { users.add(user); } }
+predict, score, loss = addUser, 0.8996989727020264, 0.4971736669540405
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:45:34.957357", "score": "0.8997", "loss": "0.4972", "code": "public void addUser(String user) { if (isWildCardACLValue(user)) { throw new IllegalArgumentException(\"User \" + user + \" can not be added\"); } if (!isAllAllowed()) { users.add(user); } }", "n_tokens": 78, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:45:37.168862", "score": "0.8946", "loss": "0.7333", "code": "public void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"User \" + user + \" can not be added\"); } if (!isAllAllowed()) { users.add(user); } }", "n_tokens": 73, "n_pass": [49, 2, 2]}
+{"time": "2023-09-24 01:45:38.934614", "score": "0.9246", "loss": "0.503", "code": "public void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"User \" + user + \"  added\"); } if (!isAllAllowed()) { users.add(user); } }", "n_tokens": 68, "n_pass": [53, 3, 3]}
+{"time": "2023-09-24 01:45:40.773501", "score": "0.6356", "loss": "1.8568", "code": "public void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"User \" + user + \"  added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 63, "n_pass": [58, 4, 4]}
+{"time": "2023-09-24 01:45:45.181059", "score": "0.6356", "loss": "1.8568", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"User \" + user + \"  added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 61, "n_pass": [100, 6, 5]}
+{"time": "2023-09-24 01:45:46.964322", "score": "0.6284", "loss": "1.9644", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"\" + user + \"  added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 59, "n_pass": [112, 7, 6]}
+{"time": "2023-09-24 01:45:56.420110", "score": "0.6284", "loss": "1.9644", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+ user + \"  added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 58, "n_pass": [186, 10, 7]}
+{"time": "2023-09-24 01:45:58.120972", "score": "0.6284", "loss": "1.9644", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user + \"  added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 57, "n_pass": [188, 11, 8]}
+{"time": "2023-09-24 01:46:01.604752", "score": "0.6284", "loss": "1.9644", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user+ \"  added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 56, "n_pass": [190, 13, 9]}
+{"time": "2023-09-24 01:46:03.323956", "score": "0.6284", "loss": "1.9644", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user+\"  added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 55, "n_pass": [192, 14, 10]}
+{"time": "2023-09-24 01:46:05.038944", "score": "0.6284", "loss": "1.9644", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user+\" added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 54, "n_pass": [194, 15, 11]}
+{"time": "2023-09-24 01:46:06.737071", "score": "0.6284", "loss": "1.9644", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user+\"added\"); } if (!isAllAllowed()) { users; } }", "n_tokens": 53, "n_pass": [195, 16, 12]}
+{"time": "2023-09-24 01:46:10.354913", "score": "0.6059", "loss": "2.0365", "code": "void addUser(String user) { if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user+\"added\"); } if (!isAllAllowed) { users; } }", "n_tokens": 51, "n_pass": [203, 18, 13]}
+{"time": "2023-09-24 01:46:14.486393", "score": "0.6059", "loss": "2.0365", "code": "void addUser(String user){ if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user+\"added\"); } if (!isAllAllowed) { users; } }", "n_tokens": 50, "n_pass": [217, 20, 14]}
+{"time": "2023-09-24 01:46:16.248220", "score": "0.6059", "loss": "2.0365", "code": "void addUser(String user){if (isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user+\"added\"); } if (!isAllAllowed) { users; } }", "n_tokens": 49, "n_pass": [219, 21, 15]}
+{"time": "2023-09-24 01:46:17.974995", "score": "0.6059", "loss": "2.0365", "code": "void addUser(String user){if(isWildCardACLValue(user)) {IllegalArgumentException(\"\"+user+\"added\"); } if (!isAllAllowed) { users; } }", "n_tokens": 48, "n_pass": [221, 22, 16]}
+{"time": "2023-09-24 01:46:19.737035", "score": "0.7302", "loss": "1.0742", "code": "void addUser(String user){if((user)) {IllegalArgumentException(\"\"+user+\"added\"); } if (!isAllAllowed) { users; } }", "n_tokens": 47, "n_pass": [223, 23, 17]}
+{"time": "2023-09-24 01:46:21.439949", "score": "0.7302", "loss": "1.0742", "code": "void addUser(String user){if((user)){IllegalArgumentException(\"\"+user+\"added\"); } if (!isAllAllowed) { users; } }", "n_tokens": 46, "n_pass": [228, 24, 18]}
+{"time": "2023-09-24 01:46:23.204184", "score": "0.7532", "loss": "1.193", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\"); } if (!isAllAllowed) { users; } }", "n_tokens": 45, "n_pass": [230, 25, 19]}
+{"time": "2023-09-24 01:46:26.587604", "score": "0.6423", "loss": "1.6957", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\"); } if (!isAllAllowed) {  } }", "n_tokens": 43, "n_pass": [247, 27, 20]}
+{"time": "2023-09-24 01:46:33.425228", "score": "0.6423", "loss": "1.6957", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\"); } if (!isAllAllowed) {  }}", "n_tokens": 42, "n_pass": [301, 29, 21]}
+{"time": "2023-09-24 01:46:37.875052", "score": "0.6423", "loss": "1.6957", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\");} if (!isAllAllowed) {  }}", "n_tokens": 41, "n_pass": [329, 31, 22]}
+{"time": "2023-09-24 01:46:39.628655", "score": "0.6423", "loss": "1.6957", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\");}if (!isAllAllowed) {  }}", "n_tokens": 40, "n_pass": [331, 32, 23]}
+{"time": "2023-09-24 01:46:41.295585", "score": "0.6423", "loss": "1.6957", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\");}if(!isAllAllowed) {  }}", "n_tokens": 39, "n_pass": [333, 33, 24]}
+{"time": "2023-09-24 01:46:43.110296", "score": "0.6634", "loss": "1.5677", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\");}if(isAllAllowed) {  }}", "n_tokens": 38, "n_pass": [335, 34, 25]}
+{"time": "2023-09-24 01:46:44.841756", "score": "0.6634", "loss": "1.5677", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\");}if(isAllAllowed){  }}", "n_tokens": 37, "n_pass": [338, 35, 26]}
+{"time": "2023-09-24 01:46:46.606770", "score": "0.6634", "loss": "1.5677", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\");}if(isAllAllowed){ }}", "n_tokens": 36, "n_pass": [340, 36, 27]}
+{"time": "2023-09-24 01:46:48.135764", "score": "0.6634", "loss": "1.5677", "code": "void addUser(String user){if((user)){(\"\"+user+\"added\");}if(isAllAllowed){}}", "n_tokens": 35, "n_pass": [341, 37, 28]}
+
+Minimal simplified code:
+void addUser(String user){if((user)){(""+user+"added");}if(isAllAllowed){}}
+

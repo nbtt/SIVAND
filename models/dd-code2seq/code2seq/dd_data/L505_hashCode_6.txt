@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ContainerRemoteLaunchEvent_hashCode_0.java
+method_name = hashCode
+method_body = public int hashCode() { return super.hashCode(); }
+predict, score, loss = hashCode, 0.9983562231063843, 0.004577462561428547
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:24:07.944436", "score": "0.9984", "loss": "0.0046", "code": "public int hashCode() { return super.hashCode(); }", "n_tokens": 20, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:24:09.690671", "score": "0.9984", "loss": "0.0046", "code": "int hashCode() { return super.hashCode(); }", "n_tokens": 18, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 01:24:15.563808", "score": "0.9984", "loss": "0.0046", "code": "int hashCode(){ return super.hashCode(); }", "n_tokens": 17, "n_pass": [47, 4, 3]}
+{"time": "2023-09-24 01:24:17.100234", "score": "0.9984", "loss": "0.0046", "code": "int hashCode(){return super.hashCode(); }", "n_tokens": 16, "n_pass": [49, 5, 4]}
+{"time": "2023-09-24 01:24:18.735504", "score": "0.9958", "loss": "0.0124", "code": "int hashCode(){ super.hashCode(); }", "n_tokens": 15, "n_pass": [50, 6, 5]}
+{"time": "2023-09-24 01:24:20.362650", "score": "0.9958", "loss": "0.0124", "code": "int hashCode(){super.hashCode(); }", "n_tokens": 14, "n_pass": [51, 7, 6]}
+{"time": "2023-09-24 01:24:21.910727", "score": "0.8662", "loss": "0.4208", "code": "int hashCode(){hashCode(); }", "n_tokens": 12, "n_pass": [52, 8, 7]}
+{"time": "2023-09-24 01:24:24.781178", "score": "0.8662", "loss": "0.4208", "code": "int hashCode(){hashCode();}", "n_tokens": 11, "n_pass": [70, 9, 8]}
+
+Minimal simplified code:
+int hashCode(){hashCode();}
+

@@ -1,0 +1,37 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AsyncDataService_shutdown_0.java
+method_name = shutdown
+method_body = synchronized void shutdown() { if (executor == null) { LOG.warn("AsyncDataService has already shut down."); } else { LOG.info("Shutting down all async data service threads..."); executor.shutdown(); executor = null; LOG.info("All async data service threads have been shut down"); } }
+predict, score, loss = shutdown, 0.5938034057617188, 0.8165920972824097
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:42:23.988049", "score": "0.5938", "loss": "0.8166", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\"AsyncDataService has already shut down.\"); } else { LOG.info(\"Shutting down all async data service threads...\"); executor.shutdown(); executor = null; LOG.info(\"All async data service threads have been shut down\"); } }", "n_tokens": 116, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:42:25.690974", "score": "0.5525", "loss": "0.8906", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\"AsyncDataService async data service threads...\"); executor.shutdown(); executor = null; LOG.info(\"All async data service threads have been shut down\"); } }", "n_tokens": 87, "n_pass": [9, 2, 2]}
+{"time": "2023-09-24 01:42:27.490860", "score": "0.6349", "loss": "0.7009", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\" threads...\"); executor.shutdown(); executor = null; LOG.info(\"All async data service threads have been shut down\"); } }", "n_tokens": 80, "n_pass": [36, 3, 3]}
+{"time": "2023-09-24 01:42:30.914241", "score": "0.7841", "loss": "0.3889", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\" threads...\"); executor.shutdown(); LOG.info(\"All async data service threads have been shut down\"); } }", "n_tokens": 73, "n_pass": [38, 5, 4]}
+{"time": "2023-09-24 01:42:32.628165", "score": "0.664", "loss": "0.6577", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\" threads...\"); executor.shutdown(); LOG.info(\"threads have been shut down\"); } }", "n_tokens": 65, "n_pass": [40, 6, 5]}
+{"time": "2023-09-24 01:42:34.293775", "score": "0.6342", "loss": "0.7302", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\" threads...\"); executor.shutdown(); LOG.info(\"down\"); } }", "n_tokens": 57, "n_pass": [41, 7, 6]}
+{"time": "2023-09-24 01:42:38.365484", "score": "0.5449", "loss": "0.9463", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\" \"); executor.shutdown(); LOG.info(\"down\"); } }", "n_tokens": 53, "n_pass": [77, 9, 7]}
+{"time": "2023-09-24 01:42:41.419018", "score": "0.4184", "loss": "1.3381", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\" \"); shutdown(); LOG.info(\"down\"); } }", "n_tokens": 51, "n_pass": [125, 10, 8]}
+{"time": "2023-09-24 01:42:43.008661", "score": "0.3655", "loss": "1.4306", "code": "synchronized void shutdown() { if (executor == null) { LOG.warn(\" \"); shutdown(); LOG(\"down\"); } }", "n_tokens": 49, "n_pass": [128, 11, 9]}
+{"time": "2023-09-24 01:42:44.717367", "score": "0.3655", "loss": "1.4306", "code": " void shutdown() { if (executor == null) { LOG.warn(\" \"); shutdown(); LOG(\"down\"); } }", "n_tokens": 48, "n_pass": [134, 12, 10]}
+{"time": "2023-09-24 01:42:46.492942", "score": "0.3655", "loss": "1.4306", "code": "void shutdown() { if (executor == null) { LOG.warn(\" \"); shutdown(); LOG(\"down\"); } }", "n_tokens": 47, "n_pass": [135, 13, 11]}
+{"time": "2023-09-24 01:42:48.870553", "score": "0.3872", "loss": "1.4677", "code": "void shutdown() { if (executor == null) { warn(\" \"); shutdown(); LOG(\"down\"); } }", "n_tokens": 45, "n_pass": [149, 14, 12]}
+{"time": "2023-09-24 01:42:50.676873", "score": "0.2607", "loss": "2.0598", "code": "void shutdown() { if (executor == null) { warn(\" \"); shutdown();(\"down\"); } }", "n_tokens": 43, "n_pass": [156, 15, 13]}
+{"time": "2023-09-24 01:42:58.937128", "score": "0.2607", "loss": "2.0598", "code": "void shutdown() { if (executor == null) { warn(\" \"); shutdown();(\"down\");} }", "n_tokens": 42, "n_pass": [224, 17, 14]}
+{"time": "2023-09-24 01:43:00.667206", "score": "0.2607", "loss": "2.0598", "code": "void shutdown() { if (executor == null) { warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 41, "n_pass": [225, 18, 15]}
+{"time": "2023-09-24 01:43:02.975995", "score": "0.2607", "loss": "2.0598", "code": "void shutdown(){ if (executor == null) { warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 40, "n_pass": [232, 19, 16]}
+{"time": "2023-09-24 01:43:04.699209", "score": "0.2607", "loss": "2.0598", "code": "void shutdown(){if (executor == null) { warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 39, "n_pass": [234, 20, 17]}
+{"time": "2023-09-24 01:43:06.405175", "score": "0.2607", "loss": "2.0598", "code": "void shutdown(){if(executor == null) { warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 38, "n_pass": [236, 21, 18]}
+{"time": "2023-09-24 01:43:08.151112", "score": "0.2607", "loss": "2.0598", "code": "void shutdown(){if(executor== null) { warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 37, "n_pass": [239, 22, 19]}
+{"time": "2023-09-24 01:43:09.876727", "score": "0.2963", "loss": "1.7999", "code": "void shutdown(){if(executor= null) { warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 36, "n_pass": [240, 23, 20]}
+{"time": "2023-09-24 01:43:12.412762", "score": "0.2963", "loss": "1.7999", "code": "void shutdown(){if(executor=null) { warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 35, "n_pass": [242, 24, 21]}
+{"time": "2023-09-24 01:43:14.187757", "score": "0.2963", "loss": "1.7999", "code": "void shutdown(){if(executor=null){ warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 34, "n_pass": [245, 25, 22]}
+{"time": "2023-09-24 01:43:16.045597", "score": "0.2963", "loss": "1.7999", "code": "void shutdown(){if(executor=null){warn(\" \"); shutdown();(\"down\");}}", "n_tokens": 33, "n_pass": [247, 26, 23]}
+{"time": "2023-09-24 01:43:17.893488", "score": "0.2549", "loss": "2.0492", "code": "void shutdown(){if(executor=null){(\" \"); shutdown();(\"down\");}}", "n_tokens": 32, "n_pass": [248, 27, 24]}
+{"time": "2023-09-24 01:43:19.624996", "score": "0.2342", "loss": "2.1641", "code": "void shutdown(){if(executor=null){(\"\"); shutdown();(\"down\");}}", "n_tokens": 31, "n_pass": [251, 28, 25]}
+{"time": "2023-09-24 01:43:21.300840", "score": "0.2342", "loss": "2.1641", "code": "void shutdown(){if(executor=null){(\"\");shutdown();(\"down\");}}", "n_tokens": 30, "n_pass": [255, 29, 26]}
+
+Minimal simplified code:
+void shutdown(){if(executor=null){("");shutdown();("down");}}
+

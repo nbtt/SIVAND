@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getRpcMetrics_0.java
+method_name = getRpcMetrics
+method_body = public RpcMetrics getRpcMetrics() { return rpcMetrics; }
+predict, score, loss = getRpcMetrics, 0.9384035468101501, 0.20878787338733673
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:33:09.448774", "score": "0.9384", "loss": "0.2088", "code": "public RpcMetrics getRpcMetrics() { return rpcMetrics; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:33:11.682393", "score": "0.9384", "loss": "0.2088", "code": "RpcMetrics getRpcMetrics() { return rpcMetrics; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:33:13.250281", "score": "0.8972", "loss": "0.4391", "code": "RpcMetrics getRpcMetrics() { rpcMetrics; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:33:15.014262", "score": "0.7482", "loss": "1.2658", "code": "RpcMetrics getRpcMetrics() {  }", "n_tokens": 10, "n_pass": [25, 4, 4]}
+{"time": "2023-09-24 02:33:18.182407", "score": "0.7482", "loss": "1.2658", "code": "RpcMetrics getRpcMetrics() { }", "n_tokens": 9, "n_pass": [41, 5, 5]}
+{"time": "2023-09-24 02:33:20.985161", "score": "0.7482", "loss": "1.2658", "code": "RpcMetrics getRpcMetrics(){ }", "n_tokens": 8, "n_pass": [47, 6, 6]}
+{"time": "2023-09-24 02:33:22.753099", "score": "0.7482", "loss": "1.2658", "code": "RpcMetrics getRpcMetrics(){}", "n_tokens": 7, "n_pass": [49, 7, 7]}
+
+Minimal simplified code:
+RpcMetrics getRpcMetrics(){}
+

@@ -1,0 +1,37 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_setAttribute_0.java
+method_name = setAttribute
+method_body = public void setAttribute(int type, int size) throws IOException { refCount.reference(); boolean exc = true; try { setAttribute0(fd, type, size); exc = false; } finally { unreference(exc); } }
+predict, score, loss = setAttribute, 0.8895913362503052, 0.4027259647846222
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:55:14.707282", "score": "0.8896", "loss": "0.4027", "code": "public void setAttribute(int type, int size) throws IOException { refCount.reference(); boolean exc = true; try { setAttribute0(fd, type, size); exc = false; } finally { unreference(exc); } }", "n_tokens": 77, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:55:19.491782", "score": "0.9361", "loss": "0.2107", "code": "public void setAttribute(int type, int size) throws IOException { ; boolean exc = true; try { setAttribute0(fd, type, size); exc = false; } finally { unreference(exc); } }", "n_tokens": 72, "n_pass": [49, 3, 2]}
+{"time": "2023-09-23 23:55:21.268992", "score": "0.9467", "loss": "0.1704", "code": "public void setAttribute(int type, int size) throws IOException { ; boolean exc = true; try { setAttribute0(fd, type, size); exc = false; } finally {; } }", "n_tokens": 67, "n_pass": [58, 4, 3]}
+{"time": "2023-09-23 23:55:25.599471", "score": "0.9467", "loss": "0.1704", "code": "void setAttribute(int type, int size) throws IOException { ; boolean exc = true; try { setAttribute0(fd, type, size); exc = false; } finally {; } }", "n_tokens": 65, "n_pass": [103, 6, 4]}
+{"time": "2023-09-23 23:55:27.365360", "score": "0.9467", "loss": "0.1704", "code": "void setAttribute(int type, int size) throws IOException { boolean exc = true; try { setAttribute0(fd, type, size); exc = false; } finally {; } }", "n_tokens": 63, "n_pass": [113, 7, 5]}
+{"time": "2023-09-23 23:55:29.109038", "score": "0.8634", "loss": "0.5947", "code": "void setAttribute(int type, int size) throws IOException { exc = true; try { setAttribute0(fd, type, size); exc = false; } finally {; } }", "n_tokens": 61, "n_pass": [114, 8, 6]}
+{"time": "2023-09-23 23:55:30.818656", "score": "0.9018", "loss": "0.425", "code": "void setAttribute(int type, int size) throws IOException { exc = true; try { setAttribute0(type, size); exc = false; } finally {; } }", "n_tokens": 58, "n_pass": [121, 9, 7]}
+{"time": "2023-09-23 23:55:32.540808", "score": "0.7348", "loss": "1.2079", "code": "void setAttribute(int type, int size) throws IOException { exc = true; try { setAttribute0(size); exc = false; } finally {; } }", "n_tokens": 55, "n_pass": [122, 10, 8]}
+{"time": "2023-09-23 23:55:34.211240", "score": "0.608", "loss": "2.2038", "code": "void setAttribute(int type, int size) throws IOException { exc = true; try { setAttribute0(size); exc ; } finally {; } }", "n_tokens": 52, "n_pass": [125, 11, 9]}
+{"time": "2023-09-23 23:55:36.245918", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type, int size) throws IOException { exc = true; try { setAttribute0(size);; } finally {; } }", "n_tokens": 49, "n_pass": [147, 12, 10]}
+{"time": "2023-09-23 23:55:45.029463", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type, int size) throws IOException { exc = true; try { setAttribute0(size);} finally {; } }", "n_tokens": 47, "n_pass": [213, 14, 11]}
+{"time": "2023-09-23 23:55:47.463157", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size) throws IOException { exc = true; try { setAttribute0(size);} finally {; } }", "n_tokens": 46, "n_pass": [227, 15, 12]}
+{"time": "2023-09-23 23:55:49.187652", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException { exc = true; try { setAttribute0(size);} finally {; } }", "n_tokens": 45, "n_pass": [232, 16, 13]}
+{"time": "2023-09-23 23:55:51.064741", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{ exc = true; try { setAttribute0(size);} finally {; } }", "n_tokens": 44, "n_pass": [236, 17, 14]}
+{"time": "2023-09-23 23:55:52.732855", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc = true; try { setAttribute0(size);} finally {; } }", "n_tokens": 43, "n_pass": [238, 18, 15]}
+{"time": "2023-09-23 23:55:54.484922", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc= true; try { setAttribute0(size);} finally {; } }", "n_tokens": 42, "n_pass": [240, 19, 16]}
+{"time": "2023-09-23 23:55:56.156410", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true; try { setAttribute0(size);} finally {; } }", "n_tokens": 41, "n_pass": [242, 20, 17]}
+{"time": "2023-09-23 23:55:57.803518", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try { setAttribute0(size);} finally {; } }", "n_tokens": 40, "n_pass": [245, 21, 18]}
+{"time": "2023-09-23 23:55:59.464716", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try{ setAttribute0(size);} finally {; } }", "n_tokens": 39, "n_pass": [247, 22, 19]}
+{"time": "2023-09-23 23:56:01.039480", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try{setAttribute0(size);} finally {; } }", "n_tokens": 38, "n_pass": [249, 23, 20]}
+{"time": "2023-09-23 23:56:02.703029", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try{setAttribute(size);} finally {; } }", "n_tokens": 37, "n_pass": [251, 24, 21]}
+{"time": "2023-09-23 23:56:12.087105", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try{setAttribute(size);}finally {; } }", "n_tokens": 36, "n_pass": [296, 28, 22]}
+{"time": "2023-09-23 23:56:13.672975", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try{setAttribute(size);}finally{; } }", "n_tokens": 35, "n_pass": [298, 29, 23]}
+{"time": "2023-09-23 23:56:15.436625", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try{setAttribute(size);}finally{ } }", "n_tokens": 34, "n_pass": [300, 30, 24]}
+{"time": "2023-09-23 23:56:17.079572", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try{setAttribute(size);}finally{} }", "n_tokens": 33, "n_pass": [301, 31, 25]}
+{"time": "2023-09-23 23:56:18.707164", "score": "0.8073", "loss": "1.2811", "code": "void setAttribute(int type,int size)throws IOException{exc=true;try{setAttribute(size);}finally{}}", "n_tokens": 32, "n_pass": [303, 32, 26]}
+
+Minimal simplified code:
+void setAttribute(int type,int size)throws IOException{exc=true;try{setAttribute(size);}finally{}}
+

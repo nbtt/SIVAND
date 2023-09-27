@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FifoSchedulerInfo_getCapacity_0.java
+method_name = getCapacity
+method_body = public float getCapacity() { return this.capacity; }
+predict, score, loss = getCapacity, 0.9476568102836609, 0.12188663333654404
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:12:44.023090", "score": "0.9477", "loss": "0.1219", "code": "public float getCapacity() { return this.capacity; }", "n_tokens": 18, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:12:46.038928", "score": "0.9477", "loss": "0.1219", "code": "float getCapacity() { return this.capacity; }", "n_tokens": 16, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:12:47.773740", "score": "0.9768", "loss": "0.1194", "code": "float getCapacity() { this.capacity; }", "n_tokens": 14, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:12:54.328059", "score": "0.9768", "loss": "0.1194", "code": "float getCapacity(){ this.capacity; }", "n_tokens": 13, "n_pass": [52, 6, 4]}
+{"time": "2023-09-24 00:12:56.050134", "score": "0.9768", "loss": "0.1194", "code": "float getCapacity(){this.capacity; }", "n_tokens": 12, "n_pass": [54, 7, 5]}
+{"time": "2023-09-24 00:13:00.743610", "score": "0.9768", "loss": "0.1194", "code": "float getCapacity(){this.capacity;}", "n_tokens": 11, "n_pass": [71, 9, 6]}
+
+Minimal simplified code:
+float getCapacity(){this.capacity;}
+

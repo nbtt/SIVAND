@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/LightWeightLinkedSet_hasNext_0.java
+method_name = hasNext
+method_body = public boolean hasNext() { return next != null; }
+predict, score, loss = hasNext, 0.9620033502578735, 0.08762086182832718
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:08:39.812996", "score": "0.962", "loss": "0.0876", "code": "public boolean hasNext() { return next != null; }", "n_tokens": 21, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:08:41.661288", "score": "0.962", "loss": "0.0876", "code": "boolean hasNext() { return next != null; }", "n_tokens": 19, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 03:08:45.771065", "score": "0.962", "loss": "0.0876", "code": "boolean hasNext(){ return next != null; }", "n_tokens": 18, "n_pass": [47, 3, 3]}
+{"time": "2023-09-24 03:08:47.429493", "score": "0.962", "loss": "0.0876", "code": "boolean hasNext(){return next != null; }", "n_tokens": 17, "n_pass": [49, 4, 4]}
+{"time": "2023-09-24 03:08:53.150690", "score": "0.962", "loss": "0.0876", "code": "boolean hasNext(){return next!= null; }", "n_tokens": 16, "n_pass": [73, 6, 5]}
+{"time": "2023-09-24 03:08:54.718770", "score": "0.962", "loss": "0.0876", "code": "boolean hasNext(){return next!=null; }", "n_tokens": 15, "n_pass": [75, 7, 6]}
+{"time": "2023-09-24 03:08:56.359201", "score": "0.962", "loss": "0.0876", "code": "boolean hasNext(){return next!=null;}", "n_tokens": 14, "n_pass": [78, 8, 7]}
+
+Minimal simplified code:
+boolean hasNext(){return next!=null;}
+

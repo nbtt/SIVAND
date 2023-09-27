@@ -1,0 +1,31 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getCallId_0.java
+method_name = getCallId
+method_body = public static int getCallId() { Call call = CurCall.get(); return call != null ? call.callId : RpcConstants.INVALID_CALL_ID; }
+predict, score, loss = getCallId, 0.9528382420539856, 0.34171855449676514
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:26:32.758471", "score": "0.9528", "loss": "0.3417", "code": "public static int getCallId() { Call call = CurCall.get(); return call != null ? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 52, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:26:34.906841", "score": "0.9713", "loss": "0.2084", "code": "public static int getCallId() { CurCall.get(); return call != null ? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 46, "n_pass": [22, 2, 2]}
+{"time": "2023-09-24 02:26:36.470325", "score": "0.973", "loss": "0.1849", "code": "public static int getCallId() {  return call != null ? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 40, "n_pass": [23, 3, 3]}
+{"time": "2023-09-24 02:26:40.761410", "score": "0.973", "loss": "0.1849", "code": " int getCallId() {  return call != null ? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 37, "n_pass": [50, 5, 4]}
+{"time": "2023-09-24 02:26:45.325170", "score": "0.973", "loss": "0.1849", "code": "int getCallId() {  return call != null ? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 36, "n_pass": [83, 7, 5]}
+{"time": "2023-09-24 02:26:47.510263", "score": "0.973", "loss": "0.1849", "code": "int getCallId(){  return call != null ? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 35, "n_pass": [89, 8, 6]}
+{"time": "2023-09-24 02:26:49.592153", "score": "0.7792", "loss": "1.5374", "code": "int getCallId(){  return call= null ? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 33, "n_pass": [93, 9, 7]}
+{"time": "2023-09-24 02:26:51.230183", "score": "0.8376", "loss": "1.2559", "code": "int getCallId(){  return callnull ? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 31, "n_pass": [94, 10, 8]}
+{"time": "2023-09-24 02:26:52.968732", "score": "0.8617", "loss": "1.0088", "code": "int getCallId(){  return call? call.callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 29, "n_pass": [95, 11, 9]}
+{"time": "2023-09-24 02:26:54.817816", "score": "0.9572", "loss": "0.2786", "code": "int getCallId(){  return call? callId : RpcConstants.INVALID_CALL_ID; }", "n_tokens": 27, "n_pass": [97, 12, 10]}
+{"time": "2023-09-24 02:26:56.479538", "score": "0.972", "loss": "0.1879", "code": "int getCallId(){  return call? callId : INVALID_CALL_ID; }", "n_tokens": 25, "n_pass": [100, 13, 11]}
+{"time": "2023-09-24 02:26:58.015859", "score": "0.9714", "loss": "0.1717", "code": "int getCallId(){  return call? callId : CALL_ID; }", "n_tokens": 23, "n_pass": [101, 14, 12]}
+{"time": "2023-09-24 02:27:04.942935", "score": "0.9528", "loss": "0.2597", "code": "int getCallId(){  return call? callId : CALLID; }", "n_tokens": 22, "n_pass": [134, 16, 13]}
+{"time": "2023-09-24 02:27:06.723305", "score": "0.893", "loss": "0.5213", "code": "int getCallId(){  return call? callId : CALL; }", "n_tokens": 21, "n_pass": [135, 17, 14]}
+{"time": "2023-09-24 02:27:08.544340", "score": "0.893", "loss": "0.5213", "code": "int getCallId(){  return call? callId : CALL;}", "n_tokens": 20, "n_pass": [137, 18, 15]}
+{"time": "2023-09-24 02:27:10.789854", "score": "0.893", "loss": "0.5213", "code": "int getCallId(){ return call? callId : CALL;}", "n_tokens": 19, "n_pass": [145, 19, 16]}
+{"time": "2023-09-24 02:27:12.336979", "score": "0.893", "loss": "0.5213", "code": "int getCallId(){return call? callId : CALL;}", "n_tokens": 18, "n_pass": [146, 20, 17]}
+{"time": "2023-09-24 02:27:14.589698", "score": "0.893", "loss": "0.5213", "code": "int getCallId(){return call?callId : CALL;}", "n_tokens": 17, "n_pass": [151, 21, 18]}
+{"time": "2023-09-24 02:27:16.254362", "score": "0.893", "loss": "0.5213", "code": "int getCallId(){return call?callId: CALL;}", "n_tokens": 16, "n_pass": [153, 22, 19]}
+{"time": "2023-09-24 02:27:17.869375", "score": "0.893", "loss": "0.5213", "code": "int getCallId(){return call?callId:CALL;}", "n_tokens": 15, "n_pass": [155, 23, 20]}
+
+Minimal simplified code:
+int getCallId(){return call?callId:CALL;}
+

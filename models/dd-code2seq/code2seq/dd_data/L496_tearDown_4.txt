@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestViewFileSystemHdfs_tearDown_0.java
+method_name = tearDown
+method_body = public void tearDown() throws Exception { super.tearDown(); }
+predict, score, loss = tearDown, 0.9997577667236328, 0.0014520648401230574
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:22:29.226399", "score": "0.9998", "loss": "0.0015", "code": "public void tearDown() throws Exception { super.tearDown(); }", "n_tokens": 22, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:22:31.329528", "score": "0.9998", "loss": "0.0015", "code": "void tearDown() throws Exception { super.tearDown(); }", "n_tokens": 20, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 01:22:33.277205", "score": "0.981", "loss": "0.0651", "code": "void tearDown() throws Exception {tearDown(); }", "n_tokens": 17, "n_pass": [25, 3, 3]}
+{"time": "2023-09-24 01:22:38.064435", "score": "0.981", "loss": "0.0651", "code": "void tearDown()throws Exception {tearDown(); }", "n_tokens": 16, "n_pass": [53, 5, 4]}
+{"time": "2023-09-24 01:22:41.576353", "score": "0.981", "loss": "0.0651", "code": "void tearDown()throws Exception{tearDown(); }", "n_tokens": 15, "n_pass": [76, 6, 5]}
+{"time": "2023-09-24 01:22:43.166504", "score": "0.981", "loss": "0.0651", "code": "void tearDown()throws Exception{tearDown();}", "n_tokens": 14, "n_pass": [81, 7, 6]}
+
+Minimal simplified code:
+void tearDown()throws Exception{tearDown();}
+

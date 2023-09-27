@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_isOpen_1.java
+method_name = isOpen
+method_body = public boolean isOpen() { return DomainSocket.this.isOpen(); }
+predict, score, loss = isOpen, 0.9845542907714844, 0.042813852429389954
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:53:23.136500", "score": "0.9846", "loss": "0.0428", "code": "public boolean isOpen() { return DomainSocket.this.isOpen(); }", "n_tokens": 22, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:53:26.448777", "score": "0.9846", "loss": "0.0428", "code": "boolean isOpen() { return DomainSocket.this.isOpen(); }", "n_tokens": 20, "n_pass": [20, 3, 2]}
+{"time": "2023-09-23 23:53:28.379068", "score": "0.6851", "loss": "2.1338", "code": "boolean isOpen() { return DomainSocketisOpen(); }", "n_tokens": 17, "n_pass": [25, 4, 3]}
+{"time": "2023-09-23 23:53:36.519152", "score": "0.6851", "loss": "2.1338", "code": "boolean isOpen(){ return DomainSocketisOpen(); }", "n_tokens": 16, "n_pass": [53, 8, 4]}
+{"time": "2023-09-23 23:53:46.490918", "score": "0.701", "loss": "1.7778", "code": "boolean isOpen(){ return isOpen(); }", "n_tokens": 15, "n_pass": [77, 13, 5]}
+{"time": "2023-09-23 23:53:48.171988", "score": "0.701", "loss": "1.7778", "code": "boolean isOpen(){ return isOpen();}", "n_tokens": 14, "n_pass": [82, 14, 6]}
+{"time": "2023-09-23 23:53:50.430110", "score": "0.701", "loss": "1.7778", "code": "boolean isOpen(){return isOpen();}", "n_tokens": 13, "n_pass": [90, 15, 7]}
+
+Minimal simplified code:
+boolean isOpen(){return isOpen();}
+

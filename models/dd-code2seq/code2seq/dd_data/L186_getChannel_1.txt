@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_getChannel_0.java
+method_name = getChannel
+method_body = public DomainChannel getChannel() { return channel; }
+predict, score, loss = getChannel, 0.9693911671638489, 0.08283698558807373
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:54:52.622147", "score": "0.9694", "loss": "0.0828", "code": "public DomainChannel getChannel() { return channel; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:54:55.048528", "score": "0.9694", "loss": "0.0828", "code": "DomainChannel getChannel() { return channel; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:54:56.869677", "score": "0.9292", "loss": "0.2608", "code": "DomainChannel getChannel() { channel; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-23 23:55:03.513961", "score": "0.9292", "loss": "0.2608", "code": "DomainChannel getChannel() { channel;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-23 23:55:06.165084", "score": "0.9292", "loss": "0.2608", "code": "DomainChannel getChannel(){ channel;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-23 23:55:07.696626", "score": "0.9292", "loss": "0.2608", "code": "DomainChannel getChannel(){channel;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+DomainChannel getChannel(){channel;}
+

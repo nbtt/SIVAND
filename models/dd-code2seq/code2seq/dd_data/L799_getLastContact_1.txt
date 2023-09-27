@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getLastContact_0.java
+method_name = getLastContact
+method_body = public long getLastContact() { return lastContact; }
+predict, score, loss = getLastContact, 0.9800127148628235, 0.07734700292348862
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:44:50.810113", "score": "0.98", "loss": "0.0773", "code": "public long getLastContact() { return lastContact; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:44:53.115460", "score": "0.98", "loss": "0.0773", "code": "long getLastContact() { return lastContact; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:44:54.705829", "score": "0.9642", "loss": "0.3392", "code": "long getLastContact() { lastContact; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:45:01.383673", "score": "0.9642", "loss": "0.3392", "code": "long getLastContact() { lastContact;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 02:45:03.741286", "score": "0.9642", "loss": "0.3392", "code": "long getLastContact(){ lastContact;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 02:45:05.405229", "score": "0.9642", "loss": "0.3392", "code": "long getLastContact(){lastContact;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+long getLastContact(){lastContact;}
+

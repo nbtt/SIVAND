@@ -1,0 +1,25 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DistCpV1_main_0.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { JobConf job = new JobConf(DistCpV1.class); DistCpV1 distcp = new DistCpV1(job); int res = ToolRunner.run(distcp, args); System.exit(res); }
+predict, score, loss = main, 0.9967334270477295, 0.0034464793279767036
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:16:55.160997", "score": "0.9967", "loss": "0.0034", "code": "public static void main(String[] args) throws Exception { JobConf job = new JobConf(DistCpV1.class); DistCpV1 distcp = new DistCpV1(job); int res = ToolRunner.run(distcp, args); System.exit(res); }", "n_tokens": 80, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:16:56.918468", "score": "0.9863", "loss": "0.0145", "code": "public static void main(String[] args) throws Exception { distcp = new DistCpV1(job); int res = ToolRunner.run(distcp, args); System.exit(res); }", "n_tokens": 60, "n_pass": [9, 2, 2]}
+{"time": "2023-09-24 01:16:58.653895", "score": "0.978", "loss": "0.023", "code": "public static void main(String[] args) throws Exception {ToolRunner.run(distcp, args); System.exit(res); }", "n_tokens": 40, "n_pass": [10, 3, 3]}
+{"time": "2023-09-24 01:17:00.351424", "score": "0.9975", "loss": "0.0036", "code": "public static void main(String[] args) throws Exception { System.exit(res); }", "n_tokens": 30, "n_pass": [15, 4, 4]}
+{"time": "2023-09-24 01:17:02.322348", "score": "0.9937", "loss": "0.0078", "code": "public static void main(String[] args) throws Exception { (res); }", "n_tokens": 27, "n_pass": [43, 5, 5]}
+{"time": "2023-09-24 01:17:04.092248", "score": "0.9972", "loss": "0.0044", "code": "public static void main(String[] args) throws Exception { ; }", "n_tokens": 24, "n_pass": [44, 6, 6]}
+{"time": "2023-09-24 01:17:05.869249", "score": "0.9972", "loss": "0.0044", "code": "static void main(String[] args) throws Exception { ; }", "n_tokens": 22, "n_pass": [46, 7, 7]}
+{"time": "2023-09-24 01:17:07.508691", "score": "0.9972", "loss": "0.0044", "code": "void main(String[] args) throws Exception { ; }", "n_tokens": 20, "n_pass": [47, 8, 8]}
+{"time": "2023-09-24 01:17:09.417551", "score": "0.9939", "loss": "0.0125", "code": "void main(String[] args)  { ; }", "n_tokens": 17, "n_pass": [53, 9, 9]}
+{"time": "2023-09-24 01:17:12.596343", "score": "0.9939", "loss": "0.0125", "code": "void main(String[] args) { ; }", "n_tokens": 16, "n_pass": [75, 10, 10]}
+{"time": "2023-09-24 01:17:14.156755", "score": "0.9939", "loss": "0.0125", "code": "void main(String[] args) { }", "n_tokens": 14, "n_pass": [77, 11, 11]}
+{"time": "2023-09-24 01:17:16.596329", "score": "0.9939", "loss": "0.0125", "code": "void main(String[]args) { }", "n_tokens": 13, "n_pass": [86, 12, 12]}
+{"time": "2023-09-24 01:17:19.422439", "score": "0.9939", "loss": "0.0125", "code": "void main(String[]args){ }", "n_tokens": 12, "n_pass": [102, 13, 13]}
+{"time": "2023-09-24 01:17:20.995277", "score": "0.9939", "loss": "0.0125", "code": "void main(String[]args){}", "n_tokens": 11, "n_pass": [103, 14, 14]}
+
+Minimal simplified code:
+void main(String[]args){}
+

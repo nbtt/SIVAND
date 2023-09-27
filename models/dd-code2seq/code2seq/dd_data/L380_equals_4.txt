@@ -1,0 +1,45 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/RefreshServiceAclsResponsePBImpl_equals_0.java
+method_name = equals
+method_body = public boolean equals(Object other) { if (other == null) return false; if (other.getClass().isAssignableFrom(this.getClass())) { return this.getProto().equals(this.getClass().cast(other).getProto()); } return false; }
+predict, score, loss = equals, 0.9734109044075012, 0.03458674997091293
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:52:47.620424", "score": "0.9734", "loss": "0.0346", "code": "public boolean equals(Object other) { if (other == null) return false; if (other.getClass().isAssignableFrom(this.getClass())) { return this.getProto().equals(this.getClass().cast(other).getProto()); } return false; }", "n_tokens": 85, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:52:49.695503", "score": "0.983", "loss": "0.0237", "code": "public boolean equals(Object other) { if (other == null) return false; if (other.getClass().isAssignableFrom(this.getClass())) { return this.getProto().equals(this.getClass); } return false; }", "n_tokens": 74, "n_pass": [26, 2, 2]}
+{"time": "2023-09-24 00:52:51.883997", "score": "0.9794", "loss": "0.0266", "code": "public boolean equals(Object other) { if (other == null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto().equals(this.getClass); } return false; }", "n_tokens": 69, "n_pass": [57, 3, 3]}
+{"time": "2023-09-24 00:52:53.628459", "score": "0.5873", "loss": "0.6876", "code": "public boolean equals(Object other) { if (other == null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 63, "n_pass": [60, 4, 4]}
+{"time": "2023-09-24 00:52:57.354783", "score": "0.5873", "loss": "0.6876", "code": "boolean equals(Object other) { if (other == null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 61, "n_pass": [101, 6, 5]}
+{"time": "2023-09-24 00:53:08.076153", "score": "0.5873", "loss": "0.6876", "code": "boolean equals(Object other){ if (other == null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 60, "n_pass": [179, 9, 6]}
+{"time": "2023-09-24 00:53:09.736025", "score": "0.5873", "loss": "0.6876", "code": "boolean equals(Object other){if (other == null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 59, "n_pass": [180, 10, 7]}
+{"time": "2023-09-24 00:53:11.458460", "score": "0.5873", "loss": "0.6876", "code": "boolean equals(Object other){if(other == null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 58, "n_pass": [182, 11, 8]}
+{"time": "2023-09-24 00:53:13.143808", "score": "0.5873", "loss": "0.6876", "code": "boolean equals(Object other){if(other== null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 57, "n_pass": [185, 12, 9]}
+{"time": "2023-09-24 00:53:14.896925", "score": "0.5254", "loss": "0.8498", "code": "boolean equals(Object other){if(other= null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 56, "n_pass": [186, 13, 10]}
+{"time": "2023-09-24 00:53:16.625758", "score": "0.5254", "loss": "0.8498", "code": "boolean equals(Object other){if(other=null) return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 55, "n_pass": [188, 14, 11]}
+{"time": "2023-09-24 00:53:18.348648", "score": "0.5254", "loss": "0.8498", "code": "boolean equals(Object other){if(other=null)return false; if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 54, "n_pass": [191, 15, 12]}
+{"time": "2023-09-24 00:53:25.262918", "score": "0.5254", "loss": "0.8498", "code": "boolean equals(Object other){if(other=null)return false;if (other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 53, "n_pass": [196, 19, 13]}
+{"time": "2023-09-24 00:53:27.037608", "score": "0.5254", "loss": "0.8498", "code": "boolean equals(Object other){if(other=null)return false;if(other.getClass().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 52, "n_pass": [198, 20, 14]}
+{"time": "2023-09-24 00:53:28.764797", "score": "0.4756", "loss": "0.907", "code": "boolean equals(Object other){if(other=null)return false;if(other().isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 50, "n_pass": [201, 21, 15]}
+{"time": "2023-09-24 00:53:30.450699", "score": "0.4698", "loss": "0.954", "code": "boolean equals(Object other){if(other=null)return false;if(other.isAssignableFrom()) { return this.getProto(getClass); } return false; }", "n_tokens": 48, "n_pass": [202, 22, 16]}
+{"time": "2023-09-24 00:53:32.152935", "score": "0.4649", "loss": "1.0141", "code": "boolean equals(Object other){if(other=null)return false;if(other()) { return this.getProto(getClass); } return false; }", "n_tokens": 46, "n_pass": [203, 23, 17]}
+{"time": "2023-09-24 00:53:33.865494", "score": "0.3738", "loss": "1.2609", "code": "boolean equals(Object other){if(other=null)return false;if(other) { return this.getProto(getClass); } return false; }", "n_tokens": 44, "n_pass": [204, 24, 18]}
+{"time": "2023-09-24 00:53:35.627517", "score": "0.3074", "loss": "1.5419", "code": "boolean equals(Object other){if(other=null)return false;if(other) { this.getProto(getClass); } return false; }", "n_tokens": 42, "n_pass": [207, 25, 19]}
+{"time": "2023-09-24 00:53:37.304508", "score": "0.2531", "loss": "1.8162", "code": "boolean equals(Object other){if(other=null)return false;if(other) { getProto(getClass); } return false; }", "n_tokens": 40, "n_pass": [208, 26, 20]}
+{"time": "2023-09-24 00:53:41.513985", "score": "0.2706", "loss": "1.8167", "code": "boolean equals(Object other){if(othernull)return false;if(other) { getProto(getClass); } return false; }", "n_tokens": 39, "n_pass": [228, 28, 21]}
+{"time": "2023-09-24 00:53:43.182877", "score": "0.5471", "loss": "0.9088", "code": "boolean equals(Object other){if(other)return false;if(other) { getProto(getClass); } return false; }", "n_tokens": 38, "n_pass": [229, 29, 22]}
+{"time": "2023-09-24 00:53:44.933865", "score": "0.2845", "loss": "1.791", "code": "boolean equals(Object other){if(other) false;if(other) { getProto(getClass); } return false; }", "n_tokens": 37, "n_pass": [231, 30, 23]}
+{"time": "2023-09-24 00:53:46.574301", "score": "0.2845", "loss": "1.791", "code": "boolean equals(Object other){if(other)false;if(other) { getProto(getClass); } return false; }", "n_tokens": 36, "n_pass": [232, 31, 24]}
+{"time": "2023-09-24 00:53:48.253262", "score": "0.2325", "loss": "1.982", "code": "boolean equals(Object other){if(other);if(other) { getProto(getClass); } return false; }", "n_tokens": 35, "n_pass": [233, 32, 25]}
+{"time": "2023-09-24 00:53:49.955959", "score": "0.3583", "loss": "1.529", "code": "boolean equals(Object other){if(other)if(other) { getProto(getClass); } return false; }", "n_tokens": 34, "n_pass": [234, 33, 26]}
+{"time": "2023-09-24 00:53:56.911867", "score": "0.3583", "loss": "1.529", "code": "boolean equals(Object other){if(other)if(other){ getProto(getClass); } return false; }", "n_tokens": 33, "n_pass": [278, 35, 27]}
+{"time": "2023-09-24 00:53:58.529434", "score": "0.3583", "loss": "1.529", "code": "boolean equals(Object other){if(other)if(other){getProto(getClass); } return false; }", "n_tokens": 32, "n_pass": [280, 36, 28]}
+{"time": "2023-09-24 00:54:00.298930", "score": "0.6234", "loss": "0.7675", "code": "boolean equals(Object other){if(other)if(other){(getClass); } return false; }", "n_tokens": 31, "n_pass": [281, 37, 29]}
+{"time": "2023-09-24 00:54:01.973139", "score": "0.6234", "loss": "0.7675", "code": "boolean equals(Object other){if(other)if(other){(getClass);} return false; }", "n_tokens": 30, "n_pass": [286, 38, 30]}
+{"time": "2023-09-24 00:54:03.703133", "score": "0.6234", "loss": "0.7675", "code": "boolean equals(Object other){if(other)if(other){(getClass);}return false; }", "n_tokens": 29, "n_pass": [288, 39, 31]}
+{"time": "2023-09-24 00:54:05.331474", "score": "0.4979", "loss": "1.4745", "code": "boolean equals(Object other){if(other)if(other){(getClass);} false; }", "n_tokens": 28, "n_pass": [289, 40, 32]}
+{"time": "2023-09-24 00:54:07.029405", "score": "0.4979", "loss": "1.4745", "code": "boolean equals(Object other){if(other)if(other){(getClass);}false; }", "n_tokens": 27, "n_pass": [290, 41, 33]}
+{"time": "2023-09-24 00:54:10.278734", "score": "0.4979", "loss": "1.4745", "code": "boolean equals(Object other){if(other)if(other){(getClass);}false;}", "n_tokens": 26, "n_pass": [293, 43, 34]}
+
+Minimal simplified code:
+boolean equals(Object other){if(other)if(other){(getClass);}false;}
+

@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_setName_0.java
+method_name = setName
+method_body = void setName(String name) { this.name = name; }
+predict, score, loss = setName, 0.9986924529075623, 0.004295634105801582
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:13:44.632396", "score": "0.9987", "loss": "0.0043", "code": "void setName(String name) { this.name = name; }", "n_tokens": 21, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:13:47.075022", "score": "0.8363", "loss": "0.854", "code": "void setName(String name) { this.name ; }", "n_tokens": 18, "n_pass": [26, 2, 2]}
+{"time": "2023-09-24 00:13:49.003709", "score": "0.5671", "loss": "2.9654", "code": "void setName(String name) { this; }", "n_tokens": 15, "n_pass": [32, 3, 3]}
+{"time": "2023-09-24 00:13:51.975122", "score": "0.8028", "loss": "1.4464", "code": "void setName(String name) {  }", "n_tokens": 13, "n_pass": [51, 4, 4]}
+{"time": "2023-09-24 00:13:54.195351", "score": "0.8028", "loss": "1.4464", "code": "void setName(String name){  }", "n_tokens": 12, "n_pass": [61, 5, 5]}
+{"time": "2023-09-24 00:13:57.161675", "score": "0.8028", "loss": "1.4464", "code": "void setName(String name){ }", "n_tokens": 11, "n_pass": [76, 6, 6]}
+{"time": "2023-09-24 00:13:58.715840", "score": "0.8028", "loss": "1.4464", "code": "void setName(String name){}", "n_tokens": 10, "n_pass": [77, 7, 7]}
+
+Minimal simplified code:
+void setName(String name){}
+

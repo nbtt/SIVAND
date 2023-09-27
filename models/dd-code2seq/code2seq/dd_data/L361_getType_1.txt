@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Catalog_getType_0.java
+method_name = getType
+method_body = public String getType() { return type; }
+predict, score, loss = getType, 0.9749841094017029, 0.06818654388189316
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:48:48.285396", "score": "0.975", "loss": "0.0682", "code": "public String getType() { return type; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:48:50.516294", "score": "0.975", "loss": "0.0682", "code": "String getType() { return type; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:48:52.088009", "score": "0.8705", "loss": "0.4818", "code": "String getType() { type; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:48:58.946657", "score": "0.8705", "loss": "0.4818", "code": "String getType() { type;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 00:49:01.522738", "score": "0.8705", "loss": "0.4818", "code": "String getType(){ type;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 00:49:03.080677", "score": "0.8705", "loss": "0.4818", "code": "String getType(){type;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+String getType(){type;}
+

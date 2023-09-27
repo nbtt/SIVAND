@@ -1,0 +1,29 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_createSaslServer_0.java
+method_name = createSaslServer
+method_body = private SaslServer createSaslServer(AuthMethod authMethod) throws IOException, InterruptedException { final Map<String, ?> saslProps = saslPropsResolver.getServerProperties(addr); return new SaslRpcServer(authMethod).create(this, saslProps, secretManager); }
+predict, score, loss = createSaslServer, 0.8901187777519226, 0.4337448477745056
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:47:59.012252", "score": "0.8901", "loss": "0.4337", "code": "private SaslServer createSaslServer(AuthMethod authMethod) throws IOException, InterruptedException { final Map<String, ?> saslProps = saslPropsResolver.getServerProperties(addr); return new SaslRpcServer(authMethod).create(this, saslProps, secretManager); }", "n_tokens": 64, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:48:00.970263", "score": "0.9165", "loss": "0.325", "code": "private SaslServer createSaslServer(AuthMethod authMethod) throws IOException, InterruptedException { final Map<String, ?> saslProps ; return new SaslRpcServer(authMethod).create(this, saslProps, secretManager); }", "n_tokens": 56, "n_pass": [24, 2, 2]}
+{"time": "2023-09-24 02:48:02.553330", "score": "0.7954", "loss": "0.8504", "code": "private SaslServer createSaslServer(AuthMethod authMethod) throws IOException, InterruptedException { final Map<String, ?> saslProps ; return new SaslRpcServer(saslProps, secretManager); }", "n_tokens": 48, "n_pass": [25, 3, 3]}
+{"time": "2023-09-24 02:48:04.378173", "score": "0.7604", "loss": "1.2062", "code": "private SaslServer createSaslServer(AuthMethod authMethod) throws IOException, InterruptedException { final Map<String, ?> saslProps ; return new SaslRpcServer(); }", "n_tokens": 44, "n_pass": [44, 4, 4]}
+{"time": "2023-09-24 02:48:06.729306", "score": "0.7604", "loss": "1.2062", "code": "SaslServer createSaslServer(AuthMethod authMethod) throws IOException, InterruptedException { final Map<String, ?> saslProps ; return new SaslRpcServer(); }", "n_tokens": 42, "n_pass": [79, 5, 5]}
+{"time": "2023-09-24 02:48:08.432390", "score": "0.7897", "loss": "1.021", "code": "SaslServer createSaslServer(AuthMethod authMethod) throws IOExceptionInterruptedException { final Map<String, ?> saslProps ; return new SaslRpcServer(); }", "n_tokens": 40, "n_pass": [85, 6, 6]}
+{"time": "2023-09-24 02:48:10.137561", "score": "0.824", "loss": "0.8525", "code": "SaslServer createSaslServer(AuthMethod authMethod) throws IOException{ final Map<String, ?> saslProps ; return new SaslRpcServer(); }", "n_tokens": 38, "n_pass": [86, 7, 7]}
+{"time": "2023-09-24 02:48:11.752251", "score": "0.824", "loss": "0.8525", "code": "SaslServer createSaslServer(AuthMethod authMethod) throws IOException{ Map<String, ?> saslProps ; return new SaslRpcServer(); }", "n_tokens": 36, "n_pass": [88, 8, 8]}
+{"time": "2023-09-24 02:48:13.366190", "score": "0.8508", "loss": "0.7214", "code": "SaslServer createSaslServer(AuthMethod authMethod) throws IOException{ Map< ?> saslProps ; return new SaslRpcServer(); }", "n_tokens": 34, "n_pass": [90, 9, 9]}
+{"time": "2023-09-24 02:48:14.962925", "score": "0.8532", "loss": "0.7818", "code": "SaslServer createSaslServer(AuthMethod authMethod) throws IOException{ Map< ?> saslProps ; new SaslRpcServer(); }", "n_tokens": 32, "n_pass": [95, 10, 10]}
+{"time": "2023-09-24 02:48:25.378174", "score": "0.7812", "loss": "1.1494", "code": "SaslServer createSaslServer(AuthMethod authMethod) throws IOException{ Map< ?> saslProps ; newSaslRpcServer(); }", "n_tokens": 31, "n_pass": [145, 13, 11]}
+{"time": "2023-09-24 02:48:27.008969", "score": "0.7812", "loss": "1.1494", "code": "SaslServer createSaslServer(AuthMethod authMethod) throws IOException{ Map< ?> saslProps ; newSaslRpcServer();}", "n_tokens": 30, "n_pass": [150, 14, 12]}
+{"time": "2023-09-24 02:48:29.785050", "score": "0.7812", "loss": "1.1494", "code": "SaslServer createSaslServer(AuthMethod authMethod)throws IOException{ Map< ?> saslProps ; newSaslRpcServer();}", "n_tokens": 29, "n_pass": [160, 15, 13]}
+{"time": "2023-09-24 02:48:31.489713", "score": "0.7812", "loss": "1.1494", "code": "SaslServer createSaslServer(AuthMethod authMethod)throws IOException{Map< ?> saslProps ; newSaslRpcServer();}", "n_tokens": 28, "n_pass": [165, 16, 14]}
+{"time": "2023-09-24 02:48:33.120915", "score": "0.7812", "loss": "1.1494", "code": "SaslServer createSaslServer(AuthMethod authMethod)throws IOException{Map<?> saslProps ; newSaslRpcServer();}", "n_tokens": 27, "n_pass": [168, 17, 15]}
+{"time": "2023-09-24 02:48:34.852104", "score": "0.7812", "loss": "1.1494", "code": "SaslServer createSaslServer(AuthMethod authMethod)throws IOException{Map<?>saslProps ; newSaslRpcServer();}", "n_tokens": 26, "n_pass": [171, 18, 16]}
+{"time": "2023-09-24 02:48:36.504862", "score": "0.7812", "loss": "1.1494", "code": "SaslServer createSaslServer(AuthMethod authMethod)throws IOException{Map<?>saslProps; newSaslRpcServer();}", "n_tokens": 25, "n_pass": [173, 19, 17]}
+{"time": "2023-09-24 02:48:38.168556", "score": "0.7812", "loss": "1.1494", "code": "SaslServer createSaslServer(AuthMethod authMethod)throws IOException{Map<?>saslProps;newSaslRpcServer();}", "n_tokens": 24, "n_pass": [175, 20, 18]}
+
+Minimal simplified code:
+SaslServer createSaslServer(AuthMethod authMethod)throws IOException{Map<?>saslProps;newSaslRpcServer();}
+

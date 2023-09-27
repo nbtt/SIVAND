@@ -1,0 +1,29 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/StructureGenerator_main_0.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { StructureGenerator sg = new StructureGenerator(); System.exit(sg.run(args)); }
+predict, score, loss = main, 0.9998358488082886, 0.00026021472876891494
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:49:54.973041", "score": "0.9998", "loss": "0.0003", "code": "public static void main(String[] args) throws Exception { StructureGenerator sg = new StructureGenerator(); System.exit(sg.run(args)); }", "n_tokens": 48, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:49:57.121319", "score": "0.9998", "loss": "0.0004", "code": "public static void main(String[] args) throws Exception { StructureGenerator sg = new StructureGeneratorexit(sg.run(args)); }", "n_tokens": 42, "n_pass": [25, 2, 2]}
+{"time": "2023-09-23 23:49:59.238914", "score": "0.9998", "loss": "0.0004", "code": " void main(String[] args) throws Exception { StructureGenerator sg = new StructureGeneratorexit(sg.run(args)); }", "n_tokens": 39, "n_pass": [50, 3, 3]}
+{"time": "2023-09-23 23:50:00.922755", "score": "0.9999", "loss": "0.0002", "code": " void main(String[] args)  { StructureGenerator sg = new StructureGeneratorexit(sg.run(args)); }", "n_tokens": 36, "n_pass": [54, 4, 4]}
+{"time": "2023-09-23 23:50:02.722509", "score": "0.9974", "loss": "0.0037", "code": " void main(String[] args)  { StructureGenerator sg = exit(sg.run(args)); }", "n_tokens": 33, "n_pass": [58, 5, 5]}
+{"time": "2023-09-23 23:50:06.026717", "score": "0.993", "loss": "0.0118", "code": " void main(String[] args)  { StructureGenerator = exit(sg.run(args)); }", "n_tokens": 31, "n_pass": [92, 6, 6]}
+{"time": "2023-09-23 23:50:07.919822", "score": "0.9879", "loss": "0.0205", "code": " void main(String[] args)  { StructureGenerator = exit(run(args)); }", "n_tokens": 29, "n_pass": [95, 7, 7]}
+{"time": "2023-09-23 23:50:09.564198", "score": "0.9879", "loss": "0.0205", "code": "void main(String[] args)  { StructureGenerator = exit(run(args)); }", "n_tokens": 28, "n_pass": [100, 8, 8]}
+{"time": "2023-09-23 23:50:11.964282", "score": "0.9879", "loss": "0.0205", "code": "void main(String[]args)  { StructureGenerator = exit(run(args)); }", "n_tokens": 27, "n_pass": [108, 9, 9]}
+{"time": "2023-09-23 23:50:13.592246", "score": "0.9879", "loss": "0.0205", "code": "void main(String[]args){ StructureGenerator = exit(run(args)); }", "n_tokens": 25, "n_pass": [111, 10, 10]}
+{"time": "2023-09-23 23:50:17.586667", "score": "0.9879", "loss": "0.0205", "code": "void main(String[]args){ StructureGenerator =exit(run(args)); }", "n_tokens": 24, "n_pass": [146, 11, 11]}
+{"time": "2023-09-23 23:50:19.266686", "score": "0.9396", "loss": "0.0701", "code": "void main(String[]args){ StructureGenerator =(run(args)); }", "n_tokens": 23, "n_pass": [147, 12, 12]}
+{"time": "2023-09-23 23:50:22.789042", "score": "0.9967", "loss": "0.0046", "code": "void main(String[]args){ StructureGenerator =(run()); }", "n_tokens": 22, "n_pass": [151, 14, 13]}
+{"time": "2023-09-23 23:50:24.373881", "score": "0.9967", "loss": "0.0046", "code": "void main(String[]args){ StructureGenerator =(run());}", "n_tokens": 21, "n_pass": [155, 15, 14]}
+{"time": "2023-09-23 23:50:26.787458", "score": "0.9967", "loss": "0.0046", "code": "void main(String[]args){StructureGenerator =(run());}", "n_tokens": 20, "n_pass": [167, 16, 15]}
+{"time": "2023-09-23 23:50:28.372000", "score": "0.9967", "loss": "0.0046", "code": "void main(String[]args){StructureGenerator=(run());}", "n_tokens": 19, "n_pass": [169, 17, 16]}
+{"time": "2023-09-23 23:50:29.967324", "score": "0.9994", "loss": "0.0012", "code": "void main(String[]args){StructureGenerator(run());}", "n_tokens": 18, "n_pass": [170, 18, 17]}
+{"time": "2023-09-23 23:50:32.331635", "score": "0.9994", "loss": "0.001", "code": "void main(String[]args){(run());}", "n_tokens": 17, "n_pass": [188, 19, 18]}
+
+Minimal simplified code:
+void main(String[]args){(run());}
+

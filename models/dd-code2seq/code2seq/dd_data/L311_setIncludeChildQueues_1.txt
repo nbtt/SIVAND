@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_setIncludeChildQueues_0.java
+method_name = setIncludeChildQueues
+method_body = public void setIncludeChildQueues(boolean includeChildQueues) { maybeInitBuilder(); builder.setIncludeChildQueues(includeChildQueues); }
+predict, score, loss = setIncludeChildQueues, 0.9844031929969788, 0.07699628174304962
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:28:00.896906", "score": "0.9844", "loss": "0.077", "code": "public void setIncludeChildQueues(boolean includeChildQueues) { maybeInitBuilder(); builder.setIncludeChildQueues(includeChildQueues); }", "n_tokens": 27, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:28:02.659471", "score": "0.9824", "loss": "0.0943", "code": "public void setIncludeChildQueues(boolean includeChildQueues) { setIncludeChildQueues(includeChildQueues); }", "n_tokens": 20, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 00:28:06.927579", "score": "0.9363", "loss": "0.4139", "code": "public void setIncludeChildQueues(boolean includeChildQueues) {(includeChildQueues); }", "n_tokens": 18, "n_pass": [37, 4, 3]}
+{"time": "2023-09-24 00:28:08.584515", "score": "0.9363", "loss": "0.4139", "code": " void setIncludeChildQueues(boolean includeChildQueues) {(includeChildQueues); }", "n_tokens": 17, "n_pass": [40, 5, 4]}
+{"time": "2023-09-24 00:28:10.273925", "score": "0.9363", "loss": "0.4139", "code": "void setIncludeChildQueues(boolean includeChildQueues) {(includeChildQueues); }", "n_tokens": 16, "n_pass": [41, 6, 5]}
+{"time": "2023-09-24 00:28:14.202948", "score": "0.9363", "loss": "0.4139", "code": "void setIncludeChildQueues(boolean includeChildQueues){(includeChildQueues); }", "n_tokens": 15, "n_pass": [71, 7, 6]}
+{"time": "2023-09-24 00:28:15.823346", "score": "0.9363", "loss": "0.4139", "code": "void setIncludeChildQueues(boolean includeChildQueues){(includeChildQueues);}", "n_tokens": 14, "n_pass": [76, 8, 7]}
+
+Minimal simplified code:
+void setIncludeChildQueues(boolean includeChildQueues){(includeChildQueues);}
+

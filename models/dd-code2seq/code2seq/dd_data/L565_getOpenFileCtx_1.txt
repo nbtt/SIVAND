@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AsyncDataService_getOpenFileCtx_0.java
+method_name = getOpenFileCtx
+method_body = OpenFileCtx getOpenFileCtx() { return openFileCtx; }
+predict, score, loss = getOpenFileCtx, 0.7690609693527222, 1.1984858512878418
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:43:30.381561", "score": "0.7691", "loss": "1.1985", "code": "OpenFileCtx getOpenFileCtx() { return openFileCtx; }", "n_tokens": 14, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:43:36.688438", "score": "0.7691", "loss": "1.1985", "code": "OpenFileCtx getOpenFileCtx(){ return openFileCtx; }", "n_tokens": 13, "n_pass": [43, 3, 2]}
+{"time": "2023-09-24 01:43:38.271047", "score": "0.7691", "loss": "1.1985", "code": "OpenFileCtx getOpenFileCtx(){return openFileCtx; }", "n_tokens": 12, "n_pass": [45, 4, 3]}
+{"time": "2023-09-24 01:43:43.062130", "score": "0.7768", "loss": "1.3053", "code": "OpenFileCtx getOpenFileCtx(){return ; }", "n_tokens": 11, "n_pass": [48, 7, 4]}
+{"time": "2023-09-24 01:43:44.634336", "score": "0.7768", "loss": "1.3053", "code": "OpenFileCtx getOpenFileCtx(){return ;}", "n_tokens": 10, "n_pass": [50, 8, 5]}
+{"time": "2023-09-24 01:43:47.078508", "score": "0.7768", "loss": "1.3053", "code": "OpenFileCtx getOpenFileCtx(){ ;}", "n_tokens": 9, "n_pass": [58, 9, 6]}
+{"time": "2023-09-24 01:43:48.641856", "score": "0.7768", "loss": "1.3053", "code": "OpenFileCtx getOpenFileCtx(){;}", "n_tokens": 8, "n_pass": [59, 10, 7]}
+{"time": "2023-09-24 01:43:50.150899", "score": "0.7768", "loss": "1.3053", "code": "OpenFileCtx getOpenFileCtx(){}", "n_tokens": 7, "n_pass": [60, 11, 8]}
+
+Minimal simplified code:
+OpenFileCtx getOpenFileCtx(){}
+

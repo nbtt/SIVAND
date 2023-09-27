@@ -1,0 +1,28 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_getProto_0.java
+method_name = getProto
+method_body = public GetQueueInfoRequestProto getProto() { proto = viaProto ? proto : builder.build(); viaProto = true; return proto; }
+predict, score, loss = getProto, 0.9981262683868408, 0.006530541926622391
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:30:35.422562", "score": "0.9981", "loss": "0.0065", "code": "public GetQueueInfoRequestProto getProto() { proto = viaProto ? proto : builder.build(); viaProto = true; return proto; }", "n_tokens": 42, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:30:39.176272", "score": "0.9981", "loss": "0.0065", "code": "GetQueueInfoRequestProto getProto() { proto = viaProto ? proto : builder.build(); viaProto = true; return proto; }", "n_tokens": 40, "n_pass": [44, 3, 2]}
+{"time": "2023-09-24 00:30:41.528611", "score": "0.9984", "loss": "0.0067", "code": "GetQueueInfoRequestProto getProto() { proto = viaProto ? proto :build(); viaProto = true; return proto; }", "n_tokens": 37, "n_pass": [53, 4, 3]}
+{"time": "2023-09-24 00:30:43.596732", "score": "0.9966", "loss": "0.0473", "code": "GetQueueInfoRequestProto getProto() { proto = viaProto ? proto :build(); viaPrototrue; return proto; }", "n_tokens": 34, "n_pass": [56, 5, 4]}
+{"time": "2023-09-24 00:30:52.886953", "score": "0.9941", "loss": "0.032", "code": "GetQueueInfoRequestProto getProto() { proto = viaProto ? proto :build(); ; return proto; }", "n_tokens": 32, "n_pass": [97, 8, 5]}
+{"time": "2023-09-24 00:30:54.798063", "score": "0.9941", "loss": "0.032", "code": "GetQueueInfoRequestProto getProto() { proto = viaProto ? proto :build(); return proto; }", "n_tokens": 30, "n_pass": [98, 9, 6]}
+{"time": "2023-09-24 00:30:56.495914", "score": "0.9747", "loss": "0.0729", "code": "GetQueueInfoRequestProto getProto() { proto = viaProto ? proto :build(); proto; }", "n_tokens": 28, "n_pass": [99, 10, 7]}
+{"time": "2023-09-24 00:31:00.896755", "score": "0.9747", "loss": "0.0729", "code": "GetQueueInfoRequestProto getProto(){ proto = viaProto ? proto :build(); proto; }", "n_tokens": 27, "n_pass": [107, 12, 8]}
+{"time": "2023-09-24 00:31:02.551986", "score": "0.9747", "loss": "0.0729", "code": "GetQueueInfoRequestProto getProto(){proto = viaProto ? proto :build(); proto; }", "n_tokens": 26, "n_pass": [109, 13, 9]}
+{"time": "2023-09-24 00:31:04.256247", "score": "0.9747", "loss": "0.0729", "code": "GetQueueInfoRequestProto getProto(){proto= viaProto ? proto :build(); proto; }", "n_tokens": 25, "n_pass": [111, 14, 10]}
+{"time": "2023-09-24 00:31:05.902652", "score": "0.9747", "loss": "0.0729", "code": "GetQueueInfoRequestProto getProto(){proto=viaProto ? proto :build(); proto; }", "n_tokens": 24, "n_pass": [113, 15, 11]}
+{"time": "2023-09-24 00:31:07.572169", "score": "0.9747", "loss": "0.0729", "code": "GetQueueInfoRequestProto getProto(){proto=viaProto? proto :build(); proto; }", "n_tokens": 23, "n_pass": [115, 16, 12]}
+{"time": "2023-09-24 00:31:09.227743", "score": "0.9747", "loss": "0.0729", "code": "GetQueueInfoRequestProto getProto(){proto=viaProto?proto :build(); proto; }", "n_tokens": 22, "n_pass": [117, 17, 13]}
+{"time": "2023-09-24 00:31:10.933124", "score": "0.9747", "loss": "0.0729", "code": "GetQueueInfoRequestProto getProto(){proto=viaProto?proto:build(); proto; }", "n_tokens": 21, "n_pass": [119, 18, 14]}
+{"time": "2023-09-24 00:31:12.585365", "score": "0.9876", "loss": "0.0462", "code": "GetQueueInfoRequestProto getProto(){proto=viaProto?proto:build; proto; }", "n_tokens": 19, "n_pass": [121, 19, 15]}
+{"time": "2023-09-24 00:31:21.785260", "score": "0.9876", "loss": "0.0462", "code": "GetQueueInfoRequestProto getProto(){proto=viaProto?proto:build; proto;}", "n_tokens": 18, "n_pass": [147, 23, 16]}
+{"time": "2023-09-24 00:31:25.037818", "score": "0.9876", "loss": "0.0462", "code": "GetQueueInfoRequestProto getProto(){proto=viaProto?proto:build;proto;}", "n_tokens": 17, "n_pass": [162, 24, 17]}
+
+Minimal simplified code:
+GetQueueInfoRequestProto getProto(){proto=viaProto?proto:build;proto;}
+

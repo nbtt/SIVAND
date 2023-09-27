@@ -1,0 +1,34 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_connect_0.java
+method_name = connect
+method_body = public static DomainSocket connect(String path) throws IOException { if (loadingFailureReason != null) { throw new UnsupportedOperationException(loadingFailureReason); } int fd = connect0(path); return new DomainSocket(path, fd); }
+predict, score, loss = connect, 0.8634621500968933, 0.20954766869544983
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:52:05.725030", "score": "0.8635", "loss": "0.2095", "code": "public static DomainSocket connect(String path) throws IOException { if (loadingFailureReason != null) { throw new UnsupportedOperationException(loadingFailureReason); } int fd = connect0(path); return new DomainSocket(path, fd); }", "n_tokens": 71, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:52:07.927364", "score": "0.8635", "loss": "0.2095", "code": "DomainSocket connect(String path) throws IOException { if (loadingFailureReason != null) { throw new UnsupportedOperationException(loadingFailureReason); } int fd = connect0(path); return new DomainSocket(path, fd); }", "n_tokens": 67, "n_pass": [44, 2, 2]}
+{"time": "2023-09-23 23:52:09.806241", "score": "0.8615", "loss": "0.2233", "code": "DomainSocket connect(String path) { if (loadingFailureReason != null) { throw new UnsupportedOperationException(loadingFailureReason); } int fd = connect0(path); return new DomainSocket(path, fd); }", "n_tokens": 63, "n_pass": [46, 3, 3]}
+{"time": "2023-09-23 23:52:11.745795", "score": "0.8555", "loss": "0.2308", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) { throw new UnsupportedOperationException(loadingFailureReason); } int fd = connect0(path); return new DomainSocket(path, fd); }", "n_tokens": 59, "n_pass": [49, 4, 4]}
+{"time": "2023-09-23 23:52:13.623889", "score": "0.8554", "loss": "0.246", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) { UnsupportedOperationException(loadingFailureReason); } int fd = connect0(path); return new DomainSocket(path, fd); }", "n_tokens": 55, "n_pass": [51, 5, 5]}
+{"time": "2023-09-23 23:52:15.358682", "score": "0.9173", "loss": "0.1483", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  } int fd = connect0(path); return new DomainSocket(path, fd); }", "n_tokens": 50, "n_pass": [52, 6, 6]}
+{"time": "2023-09-23 23:52:17.065401", "score": "0.5513", "loss": "1.0309", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  } int fd = connect0(path);DomainSocket(path, fd); }", "n_tokens": 45, "n_pass": [56, 7, 7]}
+{"time": "2023-09-23 23:52:18.779117", "score": "0.6148", "loss": "1.4154", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  } int fd = connectDomainSocket(path, fd); }", "n_tokens": 40, "n_pass": [66, 8, 8]}
+{"time": "2023-09-23 23:52:20.870736", "score": "0.3772", "loss": "1.5564", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  } fd = connectDomainSocket(path, fd); }", "n_tokens": 38, "n_pass": [109, 9, 9]}
+{"time": "2023-09-23 23:52:26.691599", "score": "0.3772", "loss": "1.5564", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  }fd = connectDomainSocket(path, fd); }", "n_tokens": 37, "n_pass": [161, 10, 10]}
+{"time": "2023-09-23 23:52:28.406539", "score": "0.3772", "loss": "1.5564", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  }fd= connectDomainSocket(path, fd); }", "n_tokens": 36, "n_pass": [162, 11, 11]}
+{"time": "2023-09-23 23:52:30.031012", "score": "0.3772", "loss": "1.5564", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  }fd=connectDomainSocket(path, fd); }", "n_tokens": 35, "n_pass": [164, 12, 12]}
+{"time": "2023-09-23 23:52:33.458563", "score": "0.881", "loss": "0.2122", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  }fd=connect(path, fd); }", "n_tokens": 34, "n_pass": [166, 14, 13]}
+{"time": "2023-09-23 23:52:35.142151", "score": "0.751", "loss": "0.4519", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  }fd=connect( fd); }", "n_tokens": 32, "n_pass": [168, 15, 14]}
+{"time": "2023-09-23 23:52:36.771052", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path) { if (loadingFailureReason ) {  }fd=connect(); }", "n_tokens": 30, "n_pass": [169, 16, 15]}
+{"time": "2023-09-23 23:52:39.483811", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path){ if (loadingFailureReason ) {  }fd=connect(); }", "n_tokens": 29, "n_pass": [180, 17, 16]}
+{"time": "2023-09-23 23:52:41.255060", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path){if (loadingFailureReason ) {  }fd=connect(); }", "n_tokens": 28, "n_pass": [182, 18, 17]}
+{"time": "2023-09-23 23:52:42.830324", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path){if(loadingFailureReason ) {  }fd=connect(); }", "n_tokens": 27, "n_pass": [184, 19, 18]}
+{"time": "2023-09-23 23:52:44.516966", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path){if(loadingFailureReason) {  }fd=connect(); }", "n_tokens": 26, "n_pass": [187, 20, 19]}
+{"time": "2023-09-23 23:52:46.100201", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path){if(loadingFailureReason){  }fd=connect(); }", "n_tokens": 25, "n_pass": [189, 21, 20]}
+{"time": "2023-09-23 23:52:47.773277", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path){if(loadingFailureReason){ }fd=connect(); }", "n_tokens": 24, "n_pass": [191, 22, 21]}
+{"time": "2023-09-23 23:52:49.433776", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path){if(loadingFailureReason){}fd=connect(); }", "n_tokens": 23, "n_pass": [192, 23, 22]}
+{"time": "2023-09-23 23:52:54.527763", "score": "0.4412", "loss": "1.1633", "code": "DomainSocket connect(String path){if(loadingFailureReason){}fd=connect();}", "n_tokens": 22, "n_pass": [220, 25, 23]}
+
+Minimal simplified code:
+DomainSocket connect(String path){if(loadingFailureReason){}fd=connect();}
+

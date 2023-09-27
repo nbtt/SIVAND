@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/CryptoFSDataOutputStream_getPos_0.java
+method_name = getPos
+method_body = public long getPos() { return fsOut.getPos(); }
+predict, score, loss = getPos, 0.8937556743621826, 0.4466986060142517
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:07:32.580231", "score": "0.8938", "loss": "0.4467", "code": "public long getPos() { return fsOut.getPos(); }", "n_tokens": 20, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:07:34.700849", "score": "0.8938", "loss": "0.4467", "code": "long getPos() { return fsOut.getPos(); }", "n_tokens": 18, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:07:42.358780", "score": "0.8938", "loss": "0.4467", "code": "long getPos(){ return fsOut.getPos(); }", "n_tokens": 17, "n_pass": [47, 4, 3]}
+{"time": "2023-09-23 23:07:44.470762", "score": "0.8938", "loss": "0.4467", "code": "long getPos(){return fsOut.getPos(); }", "n_tokens": 16, "n_pass": [49, 5, 4]}
+{"time": "2023-09-23 23:07:46.720017", "score": "0.8609", "loss": "0.731", "code": "long getPos(){ fsOut.getPos(); }", "n_tokens": 15, "n_pass": [50, 6, 5]}
+{"time": "2023-09-23 23:07:49.046261", "score": "0.8609", "loss": "0.731", "code": "long getPos(){fsOut.getPos(); }", "n_tokens": 14, "n_pass": [51, 7, 6]}
+{"time": "2023-09-23 23:07:55.571861", "score": "0.8609", "loss": "0.731", "code": "long getPos(){fsOut.getPos();}", "n_tokens": 13, "n_pass": [74, 9, 7]}
+
+Minimal simplified code:
+long getPos(){fsOut.getPos();}
+

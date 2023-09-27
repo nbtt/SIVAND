@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_setSchedulingInfo_0.java
+method_name = setSchedulingInfo
+method_body = void setSchedulingInfo(Object schedulingInfo) { this.schedulingInfo = schedulingInfo; }
+predict, score, loss = setSchedulingInfo, 0.9913864731788635, 0.033466584980487823
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:15:50.490076", "score": "0.9914", "loss": "0.0335", "code": "void setSchedulingInfo(Object schedulingInfo) { this.schedulingInfo = schedulingInfo; }", "n_tokens": 21, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:15:52.828217", "score": "0.8226", "loss": "1.1292", "code": "void setSchedulingInfo(Object schedulingInfo) { this.schedulingInfo ; }", "n_tokens": 18, "n_pass": [26, 2, 2]}
+{"time": "2023-09-24 00:15:54.983463", "score": "0.8237", "loss": "1.3269", "code": "void setSchedulingInfo(Object schedulingInfo) { this; }", "n_tokens": 15, "n_pass": [32, 3, 3]}
+{"time": "2023-09-24 00:15:58.117206", "score": "0.7726", "loss": "1.8482", "code": "void setSchedulingInfo(Object schedulingInfo) {  }", "n_tokens": 13, "n_pass": [51, 4, 4]}
+{"time": "2023-09-24 00:16:00.451201", "score": "0.7726", "loss": "1.8482", "code": "void setSchedulingInfo(Object schedulingInfo){  }", "n_tokens": 12, "n_pass": [61, 5, 5]}
+{"time": "2023-09-24 00:16:03.229387", "score": "0.7726", "loss": "1.8482", "code": "void setSchedulingInfo(Object schedulingInfo){ }", "n_tokens": 11, "n_pass": [76, 6, 6]}
+{"time": "2023-09-24 00:16:04.818808", "score": "0.7726", "loss": "1.8482", "code": "void setSchedulingInfo(Object schedulingInfo){}", "n_tokens": 10, "n_pass": [77, 7, 7]}
+
+Minimal simplified code:
+void setSchedulingInfo(Object schedulingInfo){}
+

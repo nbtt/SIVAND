@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FifoSchedulerInfo_getAvailNodeCapacity_0.java
+method_name = getAvailNodeCapacity
+method_body = public int getAvailNodeCapacity() { return this.availNodeCapacity; }
+predict, score, loss = getAvailNodeCapacity, 0.8856537342071533, 0.589860200881958
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:11:30.431725", "score": "0.8857", "loss": "0.5899", "code": "public int getAvailNodeCapacity() { return this.availNodeCapacity; }", "n_tokens": 18, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:11:32.348300", "score": "0.8857", "loss": "0.5899", "code": "int getAvailNodeCapacity() { return this.availNodeCapacity; }", "n_tokens": 16, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:11:33.977078", "score": "0.7969", "loss": "1.3635", "code": "int getAvailNodeCapacity() { this.availNodeCapacity; }", "n_tokens": 14, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:11:40.586484", "score": "0.7969", "loss": "1.3635", "code": "int getAvailNodeCapacity(){ this.availNodeCapacity; }", "n_tokens": 13, "n_pass": [52, 6, 4]}
+{"time": "2023-09-24 00:11:42.199633", "score": "0.7969", "loss": "1.3635", "code": "int getAvailNodeCapacity(){this.availNodeCapacity; }", "n_tokens": 12, "n_pass": [54, 7, 5]}
+{"time": "2023-09-24 00:11:46.801462", "score": "0.7969", "loss": "1.3635", "code": "int getAvailNodeCapacity(){this.availNodeCapacity;}", "n_tokens": 11, "n_pass": [71, 9, 6]}
+
+Minimal simplified code:
+int getAvailNodeCapacity(){this.availNodeCapacity;}
+

@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SequenceFileRecordReader_getCurrentValue_0.java
+method_name = getCurrentValue
+method_body = protected synchronized void getCurrentValue(V value) throws IOException { in.getCurrentValue(value); }
+predict, score, loss = getCurrentValue, 0.7491610050201416, 1.302411675453186
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:14:57.551030", "score": "0.7492", "loss": "1.3024", "code": "protected synchronized void getCurrentValue(V value) throws IOException { in.getCurrentValue(value); }", "n_tokens": 28, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:14:59.481782", "score": "0.7492", "loss": "1.3024", "code": " void getCurrentValue(V value) throws IOException { in.getCurrentValue(value); }", "n_tokens": 25, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:15:01.758044", "score": "0.8874", "loss": "0.4835", "code": " void getCurrentValue(V value) { in.getCurrentValue(value); }", "n_tokens": 21, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:15:06.284366", "score": "0.8874", "loss": "0.4835", "code": "void getCurrentValue(V value) { in.getCurrentValue(value); }", "n_tokens": 20, "n_pass": [49, 5, 4]}
+{"time": "2023-09-24 02:15:11.938390", "score": "0.8874", "loss": "0.4835", "code": "void getCurrentValue(V value){ in.getCurrentValue(value); }", "n_tokens": 19, "n_pass": [85, 7, 5]}
+{"time": "2023-09-24 02:15:13.636006", "score": "0.8874", "loss": "0.4835", "code": "void getCurrentValue(V value){in.getCurrentValue(value); }", "n_tokens": 18, "n_pass": [86, 8, 6]}
+{"time": "2023-09-24 02:15:18.704311", "score": "0.8874", "loss": "0.4835", "code": "void getCurrentValue(V value){in.getCurrentValue(value);}", "n_tokens": 17, "n_pass": [94, 11, 7]}
+
+Minimal simplified code:
+void getCurrentValue(V value){in.getCurrentValue(value);}
+

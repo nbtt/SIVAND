@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getServiceClass_0.java
+method_name = getServiceClass
+method_body = public int getServiceClass() { return serviceClass; }
+predict, score, loss = getServiceClass, 0.95979905128479, 0.16331976652145386
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:49:02.454338", "score": "0.9598", "loss": "0.1633", "code": "public int getServiceClass() { return serviceClass; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:49:04.669047", "score": "0.9598", "loss": "0.1633", "code": "int getServiceClass() { return serviceClass; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:49:06.205774", "score": "0.8962", "loss": "0.6271", "code": "int getServiceClass() { serviceClass; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:49:13.114668", "score": "0.8962", "loss": "0.6271", "code": "int getServiceClass() { serviceClass;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 02:49:15.563625", "score": "0.8962", "loss": "0.6271", "code": "int getServiceClass(){ serviceClass;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 02:49:17.262387", "score": "0.8962", "loss": "0.6271", "code": "int getServiceClass(){serviceClass;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+int getServiceClass(){serviceClass;}
+

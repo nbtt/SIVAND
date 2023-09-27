@@ -1,0 +1,33 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestMapOutputType_map_0.java
+method_name = map
+method_body = public void map(WritableComparable key, Writable val, OutputCollector<Text, Text> out, Reporter reporter) throws IOException { out.collect(new Text("Hello"), new Text("World")); }
+predict, score, loss = map, 0.8785611987113953, 0.21119534969329834
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:46:28.470866", "score": "0.8786", "loss": "0.2112", "code": "public void map(WritableComparable key, Writable val, OutputCollector<Text, Text> out, Reporter reporter) throws IOException { out.collect(new Text(\"Hello\"), new Text(\"World\")); }", "n_tokens": 64, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:46:30.646389", "score": "0.8293", "loss": "0.3048", "code": "public void map(WritableComparable  val, OutputCollector<Text, Text> out, Reporter reporter) throws IOException { out.collect(new Text(\"Hello\"), new Text(\"World\")); }", "n_tokens": 60, "n_pass": [46, 2, 2]}
+{"time": "2023-09-24 00:46:32.326759", "score": "0.6651", "loss": "0.6442", "code": "public void map(WritableComparable  val, OutputCollector<Text, Text>  reporter) throws IOException { out.collect(new Text(\"Hello\"), new Text(\"World\")); }", "n_tokens": 56, "n_pass": [49, 3, 3]}
+{"time": "2023-09-24 00:46:34.085456", "score": "0.5566", "loss": "0.91", "code": "public void map(WritableComparable  val, OutputCollector<Text, Text>  reporter) { out.collect(new Text(\"Hello\"), new Text(\"World\")); }", "n_tokens": 52, "n_pass": [51, 4, 4]}
+{"time": "2023-09-24 00:46:36.214686", "score": "0.3111", "loss": "1.5135", "code": "public void map(WritableComparable  val, OutputCollector<Text, Text>  reporter) { collect(new Text(\"Hello\"), new Text(\"World\")); }", "n_tokens": 50, "n_pass": [92, 5, 5]}
+{"time": "2023-09-24 00:46:37.927346", "score": "0.3411", "loss": "1.5123", "code": "public void map(WritableComparable  val, OutputCollector<Text, Text>  reporter) { collect(Text(\"Hello\"), new Text(\"World\")); }", "n_tokens": 48, "n_pass": [94, 6, 6]}
+{"time": "2023-09-24 00:46:39.642196", "score": "0.2874", "loss": "1.781", "code": "public void map(WritableComparable  val, OutputCollector<Text, Text>  reporter) { collect(Text(\"Hello\"), Text(\"World\")); }", "n_tokens": 46, "n_pass": [99, 7, 7]}
+{"time": "2023-09-24 00:46:41.350745", "score": "0.2874", "loss": "1.781", "code": "void map(WritableComparable  val, OutputCollector<Text, Text>  reporter) { collect(Text(\"Hello\"), Text(\"World\")); }", "n_tokens": 44, "n_pass": [105, 8, 8]}
+{"time": "2023-09-24 00:46:43.369384", "score": "0.2674", "loss": "1.7882", "code": "void map(WritableComparable  val, OutputCollector< Text>  reporter) { collect(Text(\"Hello\"), Text(\"World\")); }", "n_tokens": 42, "n_pass": [112, 9, 9]}
+{"time": "2023-09-24 00:46:49.164508", "score": "0.2674", "loss": "1.7882", "code": "void map(WritableComparable  val, OutputCollector<Text>  reporter) { collect(Text(\"Hello\"), Text(\"World\")); }", "n_tokens": 41, "n_pass": [176, 10, 10]}
+{"time": "2023-09-24 00:46:50.887911", "score": "0.2674", "loss": "1.7882", "code": "void map(WritableComparable  val, OutputCollector<Text> reporter) { collect(Text(\"Hello\"), Text(\"World\")); }", "n_tokens": 40, "n_pass": [178, 11, 11]}
+{"time": "2023-09-24 00:46:52.499705", "score": "0.2674", "loss": "1.7882", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter) { collect(Text(\"Hello\"), Text(\"World\")); }", "n_tokens": 39, "n_pass": [179, 12, 12]}
+{"time": "2023-09-24 00:46:54.499657", "score": "0.2674", "loss": "1.7882", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter){ collect(Text(\"Hello\"), Text(\"World\")); }", "n_tokens": 38, "n_pass": [182, 13, 13]}
+{"time": "2023-09-24 00:46:56.279484", "score": "0.2674", "loss": "1.7882", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter){collect(Text(\"Hello\"), Text(\"World\")); }", "n_tokens": 37, "n_pass": [184, 14, 14]}
+{"time": "2023-09-24 00:46:58.108552", "score": "0.4514", "loss": "1.4852", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter){collect((\"Hello\"), Text(\"World\")); }", "n_tokens": 36, "n_pass": [187, 15, 15]}
+{"time": "2023-09-24 00:47:00.017312", "score": "0.4432", "loss": "1.4504", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter){collect((\"\"), Text(\"World\")); }", "n_tokens": 35, "n_pass": [190, 16, 16]}
+{"time": "2023-09-24 00:47:01.674738", "score": "0.4432", "loss": "1.4504", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter){collect((\"\"),Text(\"World\")); }", "n_tokens": 34, "n_pass": [194, 17, 17]}
+{"time": "2023-09-24 00:47:03.353454", "score": "0.4703", "loss": "1.5729", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter){collect((\"\"),(\"World\")); }", "n_tokens": 33, "n_pass": [195, 18, 18]}
+{"time": "2023-09-24 00:47:05.159684", "score": "0.5426", "loss": "1.1854", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter){collect((\"\"),(\"\")); }", "n_tokens": 32, "n_pass": [198, 19, 19]}
+{"time": "2023-09-24 00:47:06.818434", "score": "0.5426", "loss": "1.1854", "code": "void map(WritableComparable  val, OutputCollector<Text>reporter){collect((\"\"),(\"\"));}", "n_tokens": 31, "n_pass": [203, 20, 20]}
+{"time": "2023-09-24 00:47:09.272433", "score": "0.5426", "loss": "1.1854", "code": "void map(WritableComparable val, OutputCollector<Text>reporter){collect((\"\"),(\"\"));}", "n_tokens": 30, "n_pass": [210, 21, 21]}
+{"time": "2023-09-24 00:47:10.869481", "score": "0.5426", "loss": "1.1854", "code": "void map(WritableComparable val,OutputCollector<Text>reporter){collect((\"\"),(\"\"));}", "n_tokens": 29, "n_pass": [214, 22, 22]}
+
+Minimal simplified code:
+void map(WritableComparable val,OutputCollector<Text>reporter){collect((""),(""));}
+

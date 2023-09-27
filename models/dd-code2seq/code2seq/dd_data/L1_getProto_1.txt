@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/CancelDelegationTokenResponsePBImpl_getProto_0.java
+method_name = getProto
+method_body = public CancelDelegationTokenResponseProto getProto() { return proto; }
+predict, score, loss = getProto, 0.9901339411735535, 0.023884493857622147
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:06:59.056884", "score": "0.9901", "loss": "0.0239", "code": "public CancelDelegationTokenResponseProto getProto() { return proto; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:07:02.905538", "score": "0.9901", "loss": "0.0239", "code": "CancelDelegationTokenResponseProto getProto() { return proto; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:07:05.592271", "score": "0.9685", "loss": "0.0915", "code": "CancelDelegationTokenResponseProto getProto() { proto; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-23 23:07:14.624118", "score": "0.9685", "loss": "0.0915", "code": "CancelDelegationTokenResponseProto getProto() { proto;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-23 23:07:17.935889", "score": "0.9685", "loss": "0.0915", "code": "CancelDelegationTokenResponseProto getProto(){ proto;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-23 23:07:20.130614", "score": "0.9685", "loss": "0.0915", "code": "CancelDelegationTokenResponseProto getProto(){proto;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+CancelDelegationTokenResponseProto getProto(){proto;}
+

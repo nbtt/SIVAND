@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SchedulingMonitor_getMonitorInterval_0.java
+method_name = getMonitorInterval
+method_body = public long getMonitorInterval() { return monitorInterval; }
+predict, score, loss = getMonitorInterval, 0.9919052720069885, 0.034823693335056305
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:12:38.011491", "score": "0.9919", "loss": "0.0348", "code": "public long getMonitorInterval() { return monitorInterval; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:12:40.390227", "score": "0.9919", "loss": "0.0348", "code": "long getMonitorInterval() { return monitorInterval; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:12:41.924923", "score": "0.9445", "loss": "0.506", "code": "long getMonitorInterval() { monitorInterval; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-23 23:12:48.384772", "score": "0.9445", "loss": "0.506", "code": "long getMonitorInterval() { monitorInterval;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-23 23:12:50.584509", "score": "0.9445", "loss": "0.506", "code": "long getMonitorInterval(){ monitorInterval;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-23 23:12:52.134008", "score": "0.9445", "loss": "0.506", "code": "long getMonitorInterval(){monitorInterval;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+long getMonitorInterval(){monitorInterval;}
+

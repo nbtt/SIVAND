@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SequenceFileRecordReader_getKeyClass_0.java
+method_name = getKeyClass
+method_body = public Class getKeyClass() { return in.getKeyClass(); }
+predict, score, loss = getKeyClass, 0.8237152695655823, 0.8266363739967346
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:14:06.306404", "score": "0.8237", "loss": "0.8266", "code": "public Class getKeyClass() { return in.getKeyClass(); }", "n_tokens": 20, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:14:08.050176", "score": "0.8237", "loss": "0.8266", "code": "Class getKeyClass() { return in.getKeyClass(); }", "n_tokens": 18, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:14:14.012839", "score": "0.8237", "loss": "0.8266", "code": "Class getKeyClass(){ return in.getKeyClass(); }", "n_tokens": 17, "n_pass": [47, 4, 3]}
+{"time": "2023-09-24 02:14:15.607390", "score": "0.8237", "loss": "0.8266", "code": "Class getKeyClass(){return in.getKeyClass(); }", "n_tokens": 16, "n_pass": [49, 5, 4]}
+{"time": "2023-09-24 02:14:17.262216", "score": "0.8045", "loss": "0.9782", "code": "Class getKeyClass(){ in.getKeyClass(); }", "n_tokens": 15, "n_pass": [50, 6, 5]}
+{"time": "2023-09-24 02:14:18.924717", "score": "0.8045", "loss": "0.9782", "code": "Class getKeyClass(){in.getKeyClass(); }", "n_tokens": 14, "n_pass": [51, 7, 6]}
+{"time": "2023-09-24 02:14:23.748612", "score": "0.8045", "loss": "0.9782", "code": "Class getKeyClass(){in.getKeyClass();}", "n_tokens": 13, "n_pass": [74, 9, 7]}
+
+Minimal simplified code:
+Class getKeyClass(){in.getKeyClass();}
+

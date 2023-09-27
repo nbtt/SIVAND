@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ContainerRemoteLaunchEvent_equals_0.java
+method_name = equals
+method_body = public boolean equals(Object obj) { return super.equals(obj); }
+predict, score, loss = equals, 0.98450767993927, 0.019921746104955673
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:24:28.685035", "score": "0.9845", "loss": "0.0199", "code": "public boolean equals(Object obj) { return super.equals(obj); }", "n_tokens": 24, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:24:30.384836", "score": "0.3651", "loss": "1.565", "code": "public boolean equals(Object obj) {(obj); }", "n_tokens": 18, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 01:24:36.309731", "score": "0.3651", "loss": "1.565", "code": " boolean equals(Object obj) {(obj); }", "n_tokens": 17, "n_pass": [41, 5, 3]}
+{"time": "2023-09-24 01:24:37.807869", "score": "0.3651", "loss": "1.565", "code": "boolean equals(Object obj) {(obj); }", "n_tokens": 16, "n_pass": [42, 6, 4]}
+{"time": "2023-09-24 01:24:41.147512", "score": "0.3651", "loss": "1.565", "code": "boolean equals(Object obj){(obj); }", "n_tokens": 15, "n_pass": [68, 7, 5]}
+{"time": "2023-09-24 01:24:42.788268", "score": "0.3651", "loss": "1.565", "code": "boolean equals(Object obj){(obj);}", "n_tokens": 14, "n_pass": [73, 8, 6]}
+
+Minimal simplified code:
+boolean equals(Object obj){(obj);}
+

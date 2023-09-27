@@ -1,0 +1,30 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_flushBuffer_0.java
+method_name = flushBuffer
+method_body = private void flushBuffer() throws IOException { if (count > 0) { writeChunk(buf, 0, count, false); count = 0; } }
+predict, score, loss = flushBuffer, 0.6139004230499268, 1.2853537797927856
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:39:23.735173", "score": "0.6139", "loss": "1.2854", "code": "private void flushBuffer() throws IOException { if (count > 0) { writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 51, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:39:35.582779", "score": "0.6139", "loss": "1.2854", "code": " void flushBuffer() throws IOException { if (count > 0) { writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 50, "n_pass": [92, 6, 2]}
+{"time": "2023-09-24 00:39:37.262010", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer() throws IOException { if (count > 0) { writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 49, "n_pass": [93, 7, 3]}
+{"time": "2023-09-24 00:39:39.394139", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException { if (count > 0) { writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 48, "n_pass": [98, 8, 4]}
+{"time": "2023-09-24 00:39:41.069578", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count > 0) { writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 47, "n_pass": [102, 9, 5]}
+{"time": "2023-09-24 00:39:53.602623", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count> 0) { writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 46, "n_pass": [170, 13, 6]}
+{"time": "2023-09-24 00:39:55.280033", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0) { writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 45, "n_pass": [172, 14, 7]}
+{"time": "2023-09-24 00:39:56.934441", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){ writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 44, "n_pass": [175, 15, 8]}
+{"time": "2023-09-24 00:39:58.668331", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf, 0, count, false); count = 0; } }", "n_tokens": 43, "n_pass": [177, 16, 9]}
+{"time": "2023-09-24 00:40:00.420648", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf,0, count, false); count = 0; } }", "n_tokens": 42, "n_pass": [182, 17, 10]}
+{"time": "2023-09-24 00:40:02.228882", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf,0,count, false); count = 0; } }", "n_tokens": 41, "n_pass": [185, 18, 11]}
+{"time": "2023-09-24 00:40:04.006267", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf,0,count,false); count = 0; } }", "n_tokens": 40, "n_pass": [188, 19, 12]}
+{"time": "2023-09-24 00:40:05.797940", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf,0,count,false);count = 0; } }", "n_tokens": 39, "n_pass": [192, 20, 13]}
+{"time": "2023-09-24 00:40:07.516011", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf,0,count,false);count= 0; } }", "n_tokens": 38, "n_pass": [194, 21, 14]}
+{"time": "2023-09-24 00:40:09.200321", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf,0,count,false);count=0; } }", "n_tokens": 37, "n_pass": [196, 22, 15]}
+{"time": "2023-09-24 00:40:10.825162", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf,0,count,false);count=0;} }", "n_tokens": 36, "n_pass": [199, 23, 16]}
+{"time": "2023-09-24 00:40:12.538384", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{ if (count>0){writeChunk(buf,0,count,false);count=0;}}", "n_tokens": 35, "n_pass": [201, 24, 17]}
+{"time": "2023-09-24 00:40:14.982934", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{if (count>0){writeChunk(buf,0,count,false);count=0;}}", "n_tokens": 34, "n_pass": [212, 25, 18]}
+{"time": "2023-09-24 00:40:16.666586", "score": "0.6139", "loss": "1.2854", "code": "void flushBuffer()throws IOException{if(count>0){writeChunk(buf,0,count,false);count=0;}}", "n_tokens": 33, "n_pass": [214, 26, 19]}
+
+Minimal simplified code:
+void flushBuffer()throws IOException{if(count>0){writeChunk(buf,0,count,false);count=0;}}
+

@@ -1,0 +1,36 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DistCpV1_setConf_0.java
+method_name = setConf
+method_body = public void setConf(Configuration conf) { if (conf instanceof JobConf) { this.conf = (JobConf) conf; } else { this.conf = new JobConf(conf); } }
+predict, score, loss = setConf, 0.8766356706619263, 0.3094506561756134
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:01:24.089981", "score": "0.8766", "loss": "0.3095", "code": "public void setConf(Configuration conf) { if (conf instanceof JobConf) { this.conf = (JobConf) conf; } else { this.conf = new JobConf(conf); } }", "n_tokens": 61, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:01:28.591919", "score": "0.8197", "loss": "0.4772", "code": "public void setConf(Configuration conf) { if (conf) { this.conf = (JobConf) conf; } else { this.conf = new JobConf(conf); } }", "n_tokens": 57, "n_pass": [49, 3, 2]}
+{"time": "2023-09-24 01:01:30.376843", "score": "0.9291", "loss": "0.1698", "code": "public void setConf(Configuration conf) { if (conf) { this.conf = (JobConf) conf; } else { this.conf =(conf); } }", "n_tokens": 53, "n_pass": [57, 4, 3]}
+{"time": "2023-09-24 01:01:34.962210", "score": "0.9291", "loss": "0.1698", "code": " void setConf(Configuration conf) { if (conf) { this.conf = (JobConf) conf; } else { this.conf =(conf); } }", "n_tokens": 52, "n_pass": [104, 6, 4]}
+{"time": "2023-09-24 01:01:36.554953", "score": "0.9291", "loss": "0.1698", "code": "void setConf(Configuration conf) { if (conf) { this.conf = (JobConf) conf; } else { this.conf =(conf); } }", "n_tokens": 51, "n_pass": [105, 7, 5]}
+{"time": "2023-09-24 01:01:38.361149", "score": "0.8891", "loss": "0.2812", "code": "void setConf(Configuration conf) { if (conf) { conf = (JobConf) conf; } else { this.conf =(conf); } }", "n_tokens": 49, "n_pass": [115, 8, 6]}
+{"time": "2023-09-24 01:01:40.169066", "score": "0.9004", "loss": "0.242", "code": "void setConf(Configuration conf) { if (conf) { conf = (JobConf) conf; } { this.conf =(conf); } }", "n_tokens": 47, "n_pass": [122, 9, 7]}
+{"time": "2023-09-24 01:01:42.205838", "score": "0.6687", "loss": "1.226", "code": "void setConf(Configuration conf) { if (conf) { conf = (JobConf) conf; } { this.conf(conf); } }", "n_tokens": 45, "n_pass": [126, 10, 8]}
+{"time": "2023-09-24 01:01:49.821903", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf) { if (conf) { conf = (JobConf) conf; } { this.conf(); } }", "n_tokens": 44, "n_pass": [195, 11, 9]}
+{"time": "2023-09-24 01:01:51.518114", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf) { if (conf) { conf = (JobConf) conf; } { this.conf();} }", "n_tokens": 43, "n_pass": [198, 12, 10]}
+{"time": "2023-09-24 01:01:53.093662", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf) { if (conf) { conf = (JobConf) conf; } { this.conf();}}", "n_tokens": 42, "n_pass": [200, 13, 11]}
+{"time": "2023-09-24 01:01:55.543520", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf){ if (conf) { conf = (JobConf) conf; } { this.conf();}}", "n_tokens": 41, "n_pass": [210, 14, 12]}
+{"time": "2023-09-24 01:01:57.328479", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf){if (conf) { conf = (JobConf) conf; } { this.conf();}}", "n_tokens": 40, "n_pass": [212, 15, 13]}
+{"time": "2023-09-24 01:01:58.966276", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf){if(conf) { conf = (JobConf) conf; } { this.conf();}}", "n_tokens": 39, "n_pass": [214, 16, 14]}
+{"time": "2023-09-24 01:02:00.599369", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf){if(conf){ conf = (JobConf) conf; } { this.conf();}}", "n_tokens": 38, "n_pass": [218, 17, 15]}
+{"time": "2023-09-24 01:02:02.254403", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf){if(conf){conf = (JobConf) conf; } { this.conf();}}", "n_tokens": 37, "n_pass": [220, 18, 16]}
+{"time": "2023-09-24 01:02:03.822033", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf){if(conf){conf= (JobConf) conf; } { this.conf();}}", "n_tokens": 36, "n_pass": [222, 19, 17]}
+{"time": "2023-09-24 01:02:05.504479", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf){if(conf){conf=(JobConf) conf; } { this.conf();}}", "n_tokens": 35, "n_pass": [224, 20, 18]}
+{"time": "2023-09-24 01:02:07.221642", "score": "0.6239", "loss": "1.4421", "code": "void setConf(Configuration conf){if(conf){conf=(JobConf)conf; } { this.conf();}}", "n_tokens": 34, "n_pass": [228, 21, 19]}
+{"time": "2023-09-24 01:02:08.807791", "score": "0.7091", "loss": "1.01", "code": "void setConf(Configuration conf){if(conf){conf=(JobConf); } { this.conf();}}", "n_tokens": 33, "n_pass": [229, 22, 20]}
+{"time": "2023-09-24 01:02:10.432644", "score": "0.7091", "loss": "1.01", "code": "void setConf(Configuration conf){if(conf){conf=(JobConf);} { this.conf();}}", "n_tokens": 32, "n_pass": [231, 23, 21]}
+{"time": "2023-09-24 01:02:12.083545", "score": "0.7091", "loss": "1.01", "code": "void setConf(Configuration conf){if(conf){conf=(JobConf);}{ this.conf();}}", "n_tokens": 31, "n_pass": [233, 24, 22]}
+{"time": "2023-09-24 01:02:13.671041", "score": "0.7091", "loss": "1.01", "code": "void setConf(Configuration conf){if(conf){conf=(JobConf);}{this.conf();}}", "n_tokens": 30, "n_pass": [235, 25, 23]}
+{"time": "2023-09-24 01:02:15.310154", "score": "0.8088", "loss": "0.5773", "code": "void setConf(Configuration conf){if(conf){conf=(JobConf);}{thisconf();}}", "n_tokens": 29, "n_pass": [237, 26, 24]}
+{"time": "2023-09-24 01:02:19.707781", "score": "0.7628", "loss": "0.7397", "code": "void setConf(Configuration conf){if(conf){conf=(JobConf);}{conf();}}", "n_tokens": 28, "n_pass": [266, 28, 25]}
+
+Minimal simplified code:
+void setConf(Configuration conf){if(conf){conf=(JobConf);}{conf();}}
+

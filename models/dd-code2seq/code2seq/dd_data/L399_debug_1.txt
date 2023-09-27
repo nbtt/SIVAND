@@ -1,0 +1,29 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SwiftUtils_debug_0.java
+method_name = debug
+method_body = public static void debug(Log log, String text, Object... args) { if (log.isDebugEnabled()) { log.debug(String.format(text, args)); } }
+predict, score, loss = debug, 0.9794932007789612, 0.06180503964424133
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:59:42.131495", "score": "0.9795", "loss": "0.0618", "code": "public static void debug(Log log, String text, Object... args) { if (log.isDebugEnabled()) { log.debug(String.format(text, args)); } }", "n_tokens": 59, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:59:43.914552", "score": "0.9795", "loss": "0.0618", "code": " void debug(Log log, String text, Object... args) { if (log.isDebugEnabled()) { log.debug(String.format(text, args)); } }", "n_tokens": 56, "n_pass": [44, 2, 2]}
+{"time": "2023-09-24 00:59:45.978904", "score": "0.9598", "loss": "0.1015", "code": " void debug(Log log, String ... args) { if (log.isDebugEnabled()) { log.debug(String.format(text, args)); } }", "n_tokens": 52, "n_pass": [49, 3, 3]}
+{"time": "2023-09-24 00:59:47.679400", "score": "0.9598", "loss": "0.1015", "code": " void debug(Log log, String args) { if (log.isDebugEnabled()) { log.debug(String.format(text, args)); } }", "n_tokens": 48, "n_pass": [50, 4, 4]}
+{"time": "2023-09-24 00:59:49.400922", "score": "0.4717", "loss": "1.0608", "code": " void debug(Log log, String args) { if (log.isDebugEnabled()) {(String.format(text, args)); } }", "n_tokens": 44, "n_pass": [55, 5, 5]}
+{"time": "2023-09-24 00:59:52.038272", "score": "0.6968", "loss": "0.6501", "code": " void debug(Log log, String args) { if (log.isDebugEnabled()) {(String(text, args)); } }", "n_tokens": 42, "n_pass": [93, 6, 6]}
+{"time": "2023-09-24 00:59:55.495883", "score": "0.6968", "loss": "0.6501", "code": "void debug(Log log, String args) { if (log.isDebugEnabled()) {(String(text, args)); } }", "n_tokens": 41, "n_pass": [100, 8, 7]}
+{"time": "2023-09-24 00:59:57.806855", "score": "0.8828", "loss": "0.4259", "code": "void debug(Log log, String args) { if (isDebugEnabled()) {(String(text, args)); } }", "n_tokens": 39, "n_pass": [112, 9, 8]}
+{"time": "2023-09-24 00:59:59.465948", "score": "0.6486", "loss": "0.8952", "code": "void debug(Log log, String args) { if (isDebugEnabled()) {(String(textargs)); } }", "n_tokens": 37, "n_pass": [118, 10, 9]}
+{"time": "2023-09-24 01:00:05.104507", "score": "0.7521", "loss": "0.6399", "code": "void debug(Log log, String args) { if (isDebugEnabled()) {(String(text)); } }", "n_tokens": 36, "n_pass": [173, 11, 10]}
+{"time": "2023-09-24 01:00:06.923961", "score": "0.7521", "loss": "0.6399", "code": "void debug(Log log, String args) { if (isDebugEnabled()) {(String(text));} }", "n_tokens": 35, "n_pass": [176, 12, 11]}
+{"time": "2023-09-24 01:00:08.677414", "score": "0.7521", "loss": "0.6399", "code": "void debug(Log log, String args) { if (isDebugEnabled()) {(String(text));}}", "n_tokens": 34, "n_pass": [178, 13, 12]}
+{"time": "2023-09-24 01:00:11.024109", "score": "0.7521", "loss": "0.6399", "code": "void debug(Log log,String args) { if (isDebugEnabled()) {(String(text));}}", "n_tokens": 33, "n_pass": [188, 14, 13]}
+{"time": "2023-09-24 01:00:12.653732", "score": "0.7521", "loss": "0.6399", "code": "void debug(Log log,String args){ if (isDebugEnabled()) {(String(text));}}", "n_tokens": 32, "n_pass": [193, 15, 14]}
+{"time": "2023-09-24 01:00:14.372672", "score": "0.7521", "loss": "0.6399", "code": "void debug(Log log,String args){if (isDebugEnabled()) {(String(text));}}", "n_tokens": 31, "n_pass": [195, 16, 15]}
+{"time": "2023-09-24 01:00:15.953436", "score": "0.7521", "loss": "0.6399", "code": "void debug(Log log,String args){if(isDebugEnabled()) {(String(text));}}", "n_tokens": 30, "n_pass": [197, 17, 16]}
+{"time": "2023-09-24 01:00:17.679471", "score": "0.7521", "loss": "0.6399", "code": "void debug(Log log,String args){if(isDebugEnabled()){(String(text));}}", "n_tokens": 29, "n_pass": [203, 18, 17]}
+{"time": "2023-09-24 01:00:19.298701", "score": "0.4706", "loss": "1.1386", "code": "void debug(Log log,String args){if(isDebugEnabled()){((text));}}", "n_tokens": 28, "n_pass": [206, 19, 18]}
+
+Minimal simplified code:
+void debug(Log log,String args){if(isDebugEnabled()){((text));}}
+

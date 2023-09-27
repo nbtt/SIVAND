@@ -1,0 +1,28 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_setQueueName_0.java
+method_name = setQueueName
+method_body = public void setQueueName(String queueName) { maybeInitBuilder(); if (queueName == null) { builder.clearQueueName(); return; } builder.setQueueName((queueName)); }
+predict, score, loss = setQueueName, 0.94529128074646, 0.3149886727333069
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:28:20.174882", "score": "0.9453", "loss": "0.315", "code": "public void setQueueName(String queueName) { maybeInitBuilder(); if (queueName == null) { builder.clearQueueName(); return; } builder.setQueueName((queueName)); }", "n_tokens": 54, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:28:24.496243", "score": "0.9084", "loss": "0.5184", "code": "public void setQueueName(String queueName) { maybeInitBuilder(); if (queueName == null) { builder.clearQueueNamereturn; } builder.setQueueName((queueName)); }", "n_tokens": 50, "n_pass": [55, 3, 2]}
+{"time": "2023-09-24 00:28:26.408658", "score": "0.6611", "loss": "2.0167", "code": "public void setQueueName(String queueName) { maybeInitBuilder(); if (queueName == null) { builder.clearQueueNamereturn; }((queueName)); }", "n_tokens": 46, "n_pass": [57, 4, 3]}
+{"time": "2023-09-24 00:28:30.163605", "score": "0.7605", "loss": "1.6866", "code": "public void setQueueName(String queueName) { maybeInitBuilder(); if (queueName == null) {return; }((queueName)); }", "n_tokens": 42, "n_pass": [70, 6, 4]}
+{"time": "2023-09-24 00:28:35.262053", "score": "0.7605", "loss": "1.6866", "code": "public void setQueueName(String queueName) { maybeInitBuilder(); if (queueName == null) { }((queueName)); }", "n_tokens": 40, "n_pass": [110, 8, 5]}
+{"time": "2023-09-24 00:28:36.873038", "score": "0.7605", "loss": "1.6866", "code": " void setQueueName(String queueName) { maybeInitBuilder(); if (queueName == null) { }((queueName)); }", "n_tokens": 39, "n_pass": [115, 9, 6]}
+{"time": "2023-09-24 00:28:38.736791", "score": "0.7605", "loss": "1.6866", "code": "void setQueueName(String queueName) { maybeInitBuilder(); if (queueName == null) { }((queueName)); }", "n_tokens": 38, "n_pass": [116, 10, 7]}
+{"time": "2023-09-24 00:28:42.929905", "score": "0.8658", "loss": "0.9046", "code": "void setQueueName(String queueName) { maybeInitBuilder(); if (queueName= null) { }((queueName)); }", "n_tokens": 36, "n_pass": [131, 12, 8]}
+{"time": "2023-09-24 00:28:44.519171", "score": "0.7796", "loss": "1.5309", "code": "void setQueueName(String queueName) { maybeInitBuilder(); if (queueNamenull) { }((queueName)); }", "n_tokens": 34, "n_pass": [132, 13, 9]}
+{"time": "2023-09-24 00:28:51.416561", "score": "0.7796", "loss": "1.5309", "code": "void setQueueName(String queueName) { maybeInitBuilder(); if (queueNamenull){ }((queueName)); }", "n_tokens": 33, "n_pass": [180, 15, 10]}
+{"time": "2023-09-24 00:28:53.085642", "score": "0.7796", "loss": "1.5309", "code": "void setQueueName(String queueName) { maybeInitBuilder(); if (queueNamenull){}((queueName)); }", "n_tokens": 32, "n_pass": [181, 16, 11]}
+{"time": "2023-09-24 00:28:54.712596", "score": "0.7796", "loss": "1.5309", "code": "void setQueueName(String queueName) { maybeInitBuilder(); if (queueNamenull){}((queueName));}", "n_tokens": 31, "n_pass": [189, 17, 12]}
+{"time": "2023-09-24 00:28:57.111885", "score": "0.7796", "loss": "1.5309", "code": "void setQueueName(String queueName){ maybeInitBuilder(); if (queueNamenull){}((queueName));}", "n_tokens": 30, "n_pass": [199, 18, 13]}
+{"time": "2023-09-24 00:28:58.698080", "score": "0.7796", "loss": "1.5309", "code": "void setQueueName(String queueName){maybeInitBuilder(); if (queueNamenull){}((queueName));}", "n_tokens": 29, "n_pass": [201, 19, 14]}
+{"time": "2023-09-24 00:29:00.389541", "score": "0.7796", "loss": "1.5309", "code": "void setQueueName(String queueName){maybeInitBuilder();if (queueNamenull){}((queueName));}", "n_tokens": 28, "n_pass": [206, 20, 15]}
+{"time": "2023-09-24 00:29:02.033613", "score": "0.7796", "loss": "1.5309", "code": "void setQueueName(String queueName){maybeInitBuilder();if(queueNamenull){}((queueName));}", "n_tokens": 27, "n_pass": [208, 21, 16]}
+{"time": "2023-09-24 00:29:05.479225", "score": "0.7542", "loss": "1.813", "code": "void setQueueName(String queueName){maybeInitBuilder();if(queueName){}((queueName));}", "n_tokens": 26, "n_pass": [211, 23, 17]}
+
+Minimal simplified code:
+void setQueueName(String queueName){maybeInitBuilder();if(queueName){}((queueName));}
+

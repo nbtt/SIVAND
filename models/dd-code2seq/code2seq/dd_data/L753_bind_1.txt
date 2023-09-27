@@ -1,0 +1,25 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_bind_0.java
+method_name = bind
+method_body = public static void bind(ServerSocket socket, InetSocketAddress address, int backlog) throws IOException { bind(socket, address, backlog, null, null); }
+predict, score, loss = bind, 0.9984758496284485, 0.009605280123651028
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:28:03.169385", "score": "0.9985", "loss": "0.0096", "code": "public static void bind(ServerSocket socket, InetSocketAddress address, int backlog) throws IOException { bind(socket, address, backlog, null, null); }", "n_tokens": 48, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:28:05.280070", "score": "0.9962", "loss": "0.0123", "code": "public static void bind(ServerSocket socket,int backlog) throws IOException { bind(socket, address, backlog, null, null); }", "n_tokens": 42, "n_pass": [22, 2, 2]}
+{"time": "2023-09-24 02:28:06.894497", "score": "0.9981", "loss": "0.0087", "code": "public static void bind(ServerSocket socket,int backlog) throws IOException { bind(socket, address, null); }", "n_tokens": 36, "n_pass": [25, 3, 3]}
+{"time": "2023-09-24 02:28:08.959824", "score": "0.9981", "loss": "0.0087", "code": " void bind(ServerSocket socket,int backlog) throws IOException { bind(socket, address, null); }", "n_tokens": 33, "n_pass": [46, 4, 4]}
+{"time": "2023-09-24 02:28:10.705170", "score": "0.9927", "loss": "0.0192", "code": " void bind(ServerSocketint backlog) throws IOException { bind(socket, address, null); }", "n_tokens": 30, "n_pass": [48, 5, 5]}
+{"time": "2023-09-24 02:28:13.234347", "score": "0.9932", "loss": "0.0163", "code": " void bind(ServerSocketint backlog) throws IOException { bind(socket, null); }", "n_tokens": 27, "n_pass": [54, 6, 6]}
+{"time": "2023-09-24 02:28:16.254000", "score": "0.9377", "loss": "0.1376", "code": " void bind(ServerSocketint backlog) throws IOException { bind( null); }", "n_tokens": 25, "n_pass": [82, 7, 7]}
+{"time": "2023-09-24 02:28:17.888805", "score": "0.8384", "loss": "0.3792", "code": " void bind(ServerSocketint backlog) throws IOException { bind(); }", "n_tokens": 23, "n_pass": [83, 8, 8]}
+{"time": "2023-09-24 02:28:19.541663", "score": "0.8384", "loss": "0.3792", "code": "void bind(ServerSocketint backlog) throws IOException { bind(); }", "n_tokens": 22, "n_pass": [86, 9, 9]}
+{"time": "2023-09-24 02:28:23.541374", "score": "0.8811", "loss": "0.2597", "code": "void bind(ServerSocket backlog) throws IOException { bind(); }", "n_tokens": 21, "n_pass": [92, 11, 10]}
+{"time": "2023-09-24 02:28:27.642381", "score": "0.8811", "loss": "0.2597", "code": "void bind(ServerSocket backlog)throws IOException { bind(); }", "n_tokens": 20, "n_pass": [122, 12, 11]}
+{"time": "2023-09-24 02:28:29.305884", "score": "0.8811", "loss": "0.2597", "code": "void bind(ServerSocket backlog)throws IOException{ bind(); }", "n_tokens": 19, "n_pass": [126, 13, 12]}
+{"time": "2023-09-24 02:28:30.868153", "score": "0.8811", "loss": "0.2597", "code": "void bind(ServerSocket backlog)throws IOException{bind(); }", "n_tokens": 18, "n_pass": [128, 14, 13]}
+{"time": "2023-09-24 02:28:32.616591", "score": "0.8811", "loss": "0.2597", "code": "void bind(ServerSocket backlog)throws IOException{bind();}", "n_tokens": 17, "n_pass": [133, 15, 14]}
+
+Minimal simplified code:
+void bind(ServerSocket backlog)throws IOException{bind();}
+

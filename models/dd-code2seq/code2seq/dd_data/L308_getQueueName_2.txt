@@ -1,0 +1,27 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_getQueueName_0.java
+method_name = getQueueName
+method_body = public String getQueueName() { GetQueueInfoRequestProtoOrBuilder p = viaProto ? proto : builder; return (p.hasQueueName()) ? p.getQueueName() : null; }
+predict, score, loss = getQueueName, 0.987534761428833, 0.06567452847957611
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:26:25.992001", "score": "0.9875", "loss": "0.0657", "code": "public String getQueueName() { GetQueueInfoRequestProtoOrBuilder p = viaProto ? proto : builder; return (p.hasQueueName()) ? p.getQueueName() : null; }", "n_tokens": 51, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:26:27.724299", "score": "0.9284", "loss": "0.344", "code": "public String getQueueName() { GetQueueInfoRequestProtoOrBuilder ; return (p.hasQueueName()) ? p.getQueueName() : null; }", "n_tokens": 38, "n_pass": [9, 2, 2]}
+{"time": "2023-09-24 00:26:30.025163", "score": "0.9816", "loss": "0.0976", "code": "public String getQueueName() {; return (p.hasQueueName()) ? p.getQueueName() : null; }", "n_tokens": 35, "n_pass": [47, 3, 3]}
+{"time": "2023-09-24 00:26:33.773039", "score": "0.9816", "loss": "0.0976", "code": "public String getQueueName(){; return (p.hasQueueName()) ? p.getQueueName() : null; }", "n_tokens": 34, "n_pass": [81, 4, 4]}
+{"time": "2023-09-24 00:26:35.534802", "score": "0.9816", "loss": "0.0976", "code": "public String getQueueName(){return (p.hasQueueName()) ? p.getQueueName() : null; }", "n_tokens": 32, "n_pass": [83, 5, 5]}
+{"time": "2023-09-24 00:26:37.506208", "score": "0.982", "loss": "0.1053", "code": "public String getQueueName(){return (p()) ? p.getQueueName() : null; }", "n_tokens": 30, "n_pass": [86, 6, 6]}
+{"time": "2023-09-24 00:26:39.212098", "score": "0.9839", "loss": "0.0941", "code": "public String getQueueName(){return (p) ? p.getQueueName() : null; }", "n_tokens": 28, "n_pass": [87, 7, 7]}
+{"time": "2023-09-24 00:26:40.863021", "score": "0.9533", "loss": "0.3794", "code": "public String getQueueName(){return (p) ? getQueueName() : null; }", "n_tokens": 26, "n_pass": [90, 8, 8]}
+{"time": "2023-09-24 00:26:42.463212", "score": "0.9533", "loss": "0.3794", "code": " String getQueueName(){return (p) ? getQueueName() : null; }", "n_tokens": 25, "n_pass": [96, 9, 9]}
+{"time": "2023-09-24 00:26:44.058369", "score": "0.9533", "loss": "0.3794", "code": "String getQueueName(){return (p) ? getQueueName() : null; }", "n_tokens": 24, "n_pass": [97, 10, 10]}
+{"time": "2023-09-24 00:26:49.534829", "score": "0.9533", "loss": "0.3794", "code": "String getQueueName(){return(p) ? getQueueName() : null; }", "n_tokens": 23, "n_pass": [132, 11, 11]}
+{"time": "2023-09-24 00:26:51.161453", "score": "0.9533", "loss": "0.3794", "code": "String getQueueName(){return(p)? getQueueName() : null; }", "n_tokens": 22, "n_pass": [136, 12, 12]}
+{"time": "2023-09-24 00:26:52.871652", "score": "0.9533", "loss": "0.3794", "code": "String getQueueName(){return(p)?getQueueName() : null; }", "n_tokens": 21, "n_pass": [138, 13, 13]}
+{"time": "2023-09-24 00:26:54.547626", "score": "0.9533", "loss": "0.3794", "code": "String getQueueName(){return(p)?getQueueName(): null; }", "n_tokens": 20, "n_pass": [142, 14, 14]}
+{"time": "2023-09-24 00:26:56.111532", "score": "0.9533", "loss": "0.3794", "code": "String getQueueName(){return(p)?getQueueName():null; }", "n_tokens": 19, "n_pass": [144, 15, 15]}
+{"time": "2023-09-24 00:26:57.741990", "score": "0.9533", "loss": "0.3794", "code": "String getQueueName(){return(p)?getQueueName():null;}", "n_tokens": 18, "n_pass": [147, 16, 16]}
+
+Minimal simplified code:
+String getQueueName(){return(p)?getQueueName():null;}
+

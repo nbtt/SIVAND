@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/GetQueueInfoRequestPBImpl_setIncludeApplications_0.java
+method_name = setIncludeApplications
+method_body = public void setIncludeApplications(boolean includeApplications) { maybeInitBuilder(); builder.setIncludeApplications(includeApplications); }
+predict, score, loss = setIncludeApplications, 0.9866725206375122, 0.0454409196972847
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:27:42.360868", "score": "0.9867", "loss": "0.0454", "code": "public void setIncludeApplications(boolean includeApplications) { maybeInitBuilder(); builder.setIncludeApplications(includeApplications); }", "n_tokens": 27, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:27:44.071633", "score": "0.9719", "loss": "0.1081", "code": "public void setIncludeApplications(boolean includeApplications) { setIncludeApplications(includeApplications); }", "n_tokens": 20, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 00:27:48.312862", "score": "0.8709", "loss": "0.6063", "code": "public void setIncludeApplications(boolean includeApplications) {(includeApplications); }", "n_tokens": 18, "n_pass": [37, 4, 3]}
+{"time": "2023-09-24 00:27:49.850403", "score": "0.8709", "loss": "0.6063", "code": " void setIncludeApplications(boolean includeApplications) {(includeApplications); }", "n_tokens": 17, "n_pass": [40, 5, 4]}
+{"time": "2023-09-24 00:27:51.538782", "score": "0.8709", "loss": "0.6063", "code": "void setIncludeApplications(boolean includeApplications) {(includeApplications); }", "n_tokens": 16, "n_pass": [41, 6, 5]}
+{"time": "2023-09-24 00:27:55.167057", "score": "0.8709", "loss": "0.6063", "code": "void setIncludeApplications(boolean includeApplications){(includeApplications); }", "n_tokens": 15, "n_pass": [71, 7, 6]}
+{"time": "2023-09-24 00:27:56.761758", "score": "0.8709", "loss": "0.6063", "code": "void setIncludeApplications(boolean includeApplications){(includeApplications);}", "n_tokens": 14, "n_pass": [76, 8, 7]}
+
+Minimal simplified code:
+void setIncludeApplications(boolean includeApplications){(includeApplications);}
+

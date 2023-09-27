@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ProportionalCapacityPreemptionPolicy_getMonitoringInterval_0.java
+method_name = getMonitoringInterval
+method_body = public long getMonitoringInterval() { return monitoringInterval; }
+predict, score, loss = getMonitoringInterval, 0.9900626540184021, 0.03637096658349037
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:17:50.728718", "score": "0.9901", "loss": "0.0364", "code": "public long getMonitoringInterval() { return monitoringInterval; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:17:53.098246", "score": "0.9901", "loss": "0.0364", "code": "long getMonitoringInterval() { return monitoringInterval; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:17:54.821384", "score": "0.9683", "loss": "0.2374", "code": "long getMonitoringInterval() { monitoringInterval; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-23 23:18:02.123911", "score": "0.9683", "loss": "0.2374", "code": "long getMonitoringInterval() { monitoringInterval;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-23 23:18:05.125523", "score": "0.9683", "loss": "0.2374", "code": "long getMonitoringInterval(){ monitoringInterval;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-23 23:18:06.874846", "score": "0.9683", "loss": "0.2374", "code": "long getMonitoringInterval(){monitoringInterval;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+long getMonitoringInterval(){monitoringInterval;}
+

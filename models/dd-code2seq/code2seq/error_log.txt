@@ -1,0 +1,312 @@
+command: java 2>> error_log.txt -Xmx100g -XX:MaxNewSize=60g -cp JavaExtractor/JPredict/target/JavaExtractor-0.0.1-SNAPSHOT.jar JavaExtractor.App --max_path_length 8 --max_path_width 2 --dir /Users/lap13494/workspace/ppl-extra-final/SIVAND/models/dd-code2seq/code2seq/data/tmp --num_threads 64
+dir: /Users/lap13494/workspace/ppl-extra-final/SIVAND/models/dd-code2seq/code2seq/data/tmp was not completed in time
+  File "JavaExtractor/extract.py", line 76
+    if __name__ == '__main__':
+    ^
+IndentationError: expected an indented block
+Process ForkPoolWorker-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 47, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "JavaExtractor/extract.py", line 22, in ParallelExtractDir
+    ExtractFeaturesForDir(args, dir, "")
+  File "JavaExtractor/extract.py", line 41, in ExtractFeaturesForDir
+    stdout, stderr = sleeper.communicate()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 954, in communicate
+    stderr = self.stderr.read()
+KeyboardInterrupt
+Process ForkPoolWorker-4:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-5:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-3:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-6:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-2:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 352, in get
+    res = self._reader.recv_bytes()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "JavaExtractor/extract.py", line 95, in <module>
+    ExtractFeaturesForDirsList(args, subdirs)
+  File "JavaExtractor/extract.py", line 67, in ExtractFeaturesForDirsList
+    p.starmap(ParallelExtractDir, zip(itertools.repeat(args), dirs))
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 276, in starmap
+    return self._map_async(func, iterable, starmapstar, chunksize).get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 651, in get
+    self.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 648, in wait
+    self._event.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 296, in wait
+    waiter.acquire()
+KeyboardInterrupt
+Process ForkPoolWorker-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 47, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "JavaExtractor/extract.py", line 22, in ParallelExtractDir
+    ExtractFeaturesForDir(args, dir, "")
+  File "JavaExtractor/extract.py", line 41, in ExtractFeaturesForDir
+    stdout, stderr = sleeper.communicate()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 954, in communicate
+    stderr = self.stderr.read()
+KeyboardInterrupt
+Process ForkPoolWorker-5:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-3:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-4:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-6:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-2:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 352, in get
+    res = self._reader.recv_bytes()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "JavaExtractor/extract.py", line 95, in <module>
+    ExtractFeaturesForDirsList(args, subdirs)
+  File "JavaExtractor/extract.py", line 67, in ExtractFeaturesForDirsList
+    p.starmap(ParallelExtractDir, zip(itertools.repeat(args), dirs))
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 276, in starmap
+    return self._map_async(func, iterable, starmapstar, chunksize).get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 651, in get
+    self.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 648, in wait
+    self._event.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 296, in wait
+    waiter.acquire()
+KeyboardInterrupt
+Process ForkPoolWorker-4:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-5:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 47, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "JavaExtractor/extract.py", line 22, in ParallelExtractDir
+    ExtractFeaturesForDir(args, dir, "")
+  File "JavaExtractor/extract.py", line 41, in ExtractFeaturesForDir
+    stdout, stderr = sleeper.communicate()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 954, in communicate
+    stderr = self.stderr.read()
+KeyboardInterrupt
+Process ForkPoolWorker-6:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-3:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process ForkPoolWorker-2:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/queues.py", line 352, in get
+    res = self._reader.recv_bytes()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "JavaExtractor/extract.py", line 95, in <module>
+    ExtractFeaturesForDirsList(args, subdirs)
+  File "JavaExtractor/extract.py", line 67, in ExtractFeaturesForDirsList
+    p.starmap(ParallelExtractDir, zip(itertools.repeat(args), dirs))
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 276, in starmap
+    return self._map_async(func, iterable, starmapstar, chunksize).get()
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 651, in get
+    self.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/pool.py", line 648, in wait
+    self._event.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/local/Cellar/python@3.7/3.7.16/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 296, in wait
+    waiter.acquire()
+KeyboardInterrupt

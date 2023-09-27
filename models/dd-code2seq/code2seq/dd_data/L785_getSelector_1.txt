@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getSelector_0.java
+method_name = getSelector
+method_body = synchronized Selector getSelector() { return selector; }
+predict, score, loss = getSelector, 0.9731289148330688, 0.07622925192117691
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:43:38.835892", "score": "0.9731", "loss": "0.0762", "code": "synchronized Selector getSelector() { return selector; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:43:41.196243", "score": "0.9731", "loss": "0.0762", "code": "Selector getSelector() { return selector; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:43:42.757123", "score": "0.7917", "loss": "0.6835", "code": "Selector getSelector() { selector; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:43:44.312076", "score": "0.7604", "loss": "0.9373", "code": "Selector getSelector() {  }", "n_tokens": 10, "n_pass": [25, 4, 4]}
+{"time": "2023-09-24 02:43:47.387420", "score": "0.7604", "loss": "0.9373", "code": "Selector getSelector() { }", "n_tokens": 9, "n_pass": [41, 5, 5]}
+{"time": "2023-09-24 02:43:49.962645", "score": "0.7604", "loss": "0.9373", "code": "Selector getSelector(){ }", "n_tokens": 8, "n_pass": [47, 6, 6]}
+{"time": "2023-09-24 02:43:51.589213", "score": "0.7604", "loss": "0.9373", "code": "Selector getSelector(){}", "n_tokens": 7, "n_pass": [49, 7, 7]}
+
+Minimal simplified code:
+Selector getSelector(){}
+

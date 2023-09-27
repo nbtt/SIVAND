@@ -1,0 +1,16 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestCombineOutputCollector_write_0.java
+method_name = write
+method_body = public void write(DataOutput out) throws IOException { }
+predict, score, loss = write, 0.8879939317703247, 0.7440177798271179
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:05:21.225993", "score": "0.888", "loss": "0.744", "code": "public void write(DataOutput out) throws IOException { }", "n_tokens": 18, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:05:23.756621", "score": "0.888", "loss": "0.744", "code": "void write(DataOutput out) throws IOException { }", "n_tokens": 16, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 03:05:27.432516", "score": "0.888", "loss": "0.744", "code": "void write(DataOutput out)throws IOException { }", "n_tokens": 15, "n_pass": [49, 3, 3]}
+{"time": "2023-09-24 03:05:30.360203", "score": "0.888", "loss": "0.744", "code": "void write(DataOutput out)throws IOException{ }", "n_tokens": 14, "n_pass": [66, 4, 4]}
+{"time": "2023-09-24 03:05:31.891869", "score": "0.888", "loss": "0.744", "code": "void write(DataOutput out)throws IOException{}", "n_tokens": 13, "n_pass": [67, 5, 5]}
+
+Minimal simplified code:
+void write(DataOutput out)throws IOException{}
+

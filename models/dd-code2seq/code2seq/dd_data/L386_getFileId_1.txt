@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FileHandle_getFileId_0.java
+method_name = getFileId
+method_body = public long getFileId() { return fileId; }
+predict, score, loss = getFileId, 0.9913583993911743, 0.03248969465494156
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:54:47.929199", "score": "0.9914", "loss": "0.0325", "code": "public long getFileId() { return fileId; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:54:50.497289", "score": "0.9914", "loss": "0.0325", "code": "long getFileId() { return fileId; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:54:52.074488", "score": "0.9704", "loss": "0.153", "code": "long getFileId() { fileId; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:54:58.646500", "score": "0.9704", "loss": "0.153", "code": "long getFileId() { fileId;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 00:55:00.866240", "score": "0.9704", "loss": "0.153", "code": "long getFileId(){ fileId;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 00:55:02.437543", "score": "0.9704", "loss": "0.153", "code": "long getFileId(){fileId;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+long getFileId(){fileId;}
+

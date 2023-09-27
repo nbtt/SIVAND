@@ -1,0 +1,30 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_equals_0.java
+method_name = equals
+method_body = public boolean equals(Object o) { if (o == this) { return true; } if (!(o instanceof Queue)) { return false; } return ((Queue) o).getName().equals(name); }
+predict, score, loss = equals, 0.99458909034729, 0.007121148053556681
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:22:58.800963", "score": "0.9946", "loss": "0.0071", "code": "public boolean equals(Object o) { if (o == this) { return true; } if (!(o instanceof Queue)) { return false; } return ((Queue) o).getName().equals(name); }", "n_tokens": 76, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:23:00.633916", "score": "0.9762", "loss": "0.035", "code": "public boolean equals(Object o) { if (o == this) { return true; } if (!(o instanceof Queue))  ((Queue) o).getName().equals(name); }", "n_tokens": 66, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 00:23:02.789666", "score": "0.9174", "loss": "0.1468", "code": "public boolean equals(Object o) { if (this) { return true; } if (!(o instanceof Queue))  ((Queue) o).getName().equals(name); }", "n_tokens": 61, "n_pass": [55, 3, 3]}
+{"time": "2023-09-24 00:23:04.526524", "score": "0.897", "loss": "0.1773", "code": "public boolean equals(Object o) { if (this) { } if (!(o instanceof Queue))  ((Queue) o).getName().equals(name); }", "n_tokens": 56, "n_pass": [57, 4, 4]}
+{"time": "2023-09-24 00:23:06.701342", "score": "0.8564", "loss": "0.2667", "code": "public boolean equals(Object o) { if (this) { } if (!(o instanceof Queue))  ( o).getName().equals(name); }", "n_tokens": 53, "n_pass": [102, 5, 5]}
+{"time": "2023-09-24 00:23:08.599404", "score": "0.8875", "loss": "0.1947", "code": "public boolean equals(Object o) { if (this) { } if (!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 50, "n_pass": [106, 6, 6]}
+{"time": "2023-09-24 00:23:10.684335", "score": "0.8875", "loss": "0.1947", "code": "boolean equals(Object o) { if (this) { } if (!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 48, "n_pass": [108, 7, 7]}
+{"time": "2023-09-24 00:23:18.266994", "score": "0.8875", "loss": "0.1947", "code": "boolean equals(Object o){ if (this) { } if (!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 47, "n_pass": [180, 8, 8]}
+{"time": "2023-09-24 00:23:19.968799", "score": "0.8875", "loss": "0.1947", "code": "boolean equals(Object o){if (this) { } if (!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 46, "n_pass": [181, 9, 9]}
+{"time": "2023-09-24 00:23:21.722484", "score": "0.8875", "loss": "0.1947", "code": "boolean equals(Object o){if(this) { } if (!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 45, "n_pass": [183, 10, 10]}
+{"time": "2023-09-24 00:23:23.665851", "score": "0.8875", "loss": "0.1947", "code": "boolean equals(Object o){if(this){ } if (!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 44, "n_pass": [187, 11, 11]}
+{"time": "2023-09-24 00:23:25.455038", "score": "0.8875", "loss": "0.1947", "code": "boolean equals(Object o){if(this){} if (!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 43, "n_pass": [189, 12, 12]}
+{"time": "2023-09-24 00:23:27.101811", "score": "0.8875", "loss": "0.1947", "code": "boolean equals(Object o){if(this){}if (!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 42, "n_pass": [191, 13, 13]}
+{"time": "2023-09-24 00:23:28.837601", "score": "0.8875", "loss": "0.1947", "code": "boolean equals(Object o){if(this){}if(!(o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 41, "n_pass": [193, 14, 14]}
+{"time": "2023-09-24 00:23:30.423049", "score": "0.8122", "loss": "0.3519", "code": "boolean equals(Object o){if(this){}if((o instanceof Queue))  ( o).getName().equals; }", "n_tokens": 40, "n_pass": [195, 15, 15]}
+{"time": "2023-09-24 00:23:32.097249", "score": "0.8122", "loss": "0.3519", "code": "boolean equals(Object o){if(this){}if((o instanceof Queue)) ( o).getName().equals; }", "n_tokens": 39, "n_pass": [204, 16, 16]}
+{"time": "2023-09-24 00:23:33.831098", "score": "0.8122", "loss": "0.3519", "code": "boolean equals(Object o){if(this){}if((o instanceof Queue))( o).getName().equals; }", "n_tokens": 38, "n_pass": [205, 17, 17]}
+{"time": "2023-09-24 00:23:37.693091", "score": "0.8122", "loss": "0.3519", "code": "boolean equals(Object o){if(this){}if((o instanceof Queue))( o).getName().equals;}", "n_tokens": 37, "n_pass": [257, 18, 18]}
+{"time": "2023-09-24 00:23:40.062766", "score": "0.8122", "loss": "0.3519", "code": "boolean equals(Object o){if(this){}if((o instanceof Queue))(o).getName().equals;}", "n_tokens": 36, "n_pass": [284, 19, 19]}
+
+Minimal simplified code:
+boolean equals(Object o){if(this){}if((o instanceof Queue))(o).getName().equals;}
+

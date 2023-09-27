@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/IPFailoverProxyProvider_getInterface_0.java
+method_name = getInterface
+method_body = public Class<T> getInterface() { return xface; }
+predict, score, loss = getInterface, 0.9271090030670166, 0.36089327931404114
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:29:42.535219", "score": "0.9271", "loss": "0.3609", "code": "public Class<T> getInterface() { return xface; }", "n_tokens": 19, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:29:44.216030", "score": "0.9271", "loss": "0.3609", "code": "Class<T> getInterface() { return xface; }", "n_tokens": 17, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 03:29:48.688476", "score": "0.9271", "loss": "0.3609", "code": "Class<T>getInterface() { return xface; }", "n_tokens": 16, "n_pass": [45, 4, 3]}
+{"time": "2023-09-24 03:29:50.343762", "score": "0.9271", "loss": "0.3609", "code": "Class<T>getInterface(){ return xface; }", "n_tokens": 15, "n_pass": [48, 5, 4]}
+{"time": "2023-09-24 03:29:51.931042", "score": "0.9271", "loss": "0.3609", "code": "Class<T>getInterface(){return xface; }", "n_tokens": 14, "n_pass": [50, 6, 5]}
+{"time": "2023-09-24 03:29:53.643469", "score": "0.7745", "loss": "1.0851", "code": "Class<T>getInterface(){xface; }", "n_tokens": 12, "n_pass": [51, 7, 6]}
+{"time": "2023-09-24 03:29:57.732775", "score": "0.7745", "loss": "1.0851", "code": "Class<T>getInterface(){xface;}", "n_tokens": 11, "n_pass": [67, 9, 7]}
+
+Minimal simplified code:
+Class<T>getInterface(){xface;}
+

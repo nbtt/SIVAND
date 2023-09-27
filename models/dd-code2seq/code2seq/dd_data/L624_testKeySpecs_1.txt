@@ -1,0 +1,21 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestKeyFieldHelper_testKeySpecs_0.java
+method_name = testKeySpecs
+method_body = private void testKeySpecs(String input, String expectedOutput, KeyFieldHelper helper) { testKeySpecs(input, expectedOutput, helper, 0, -1); }
+predict, score, loss = testKeySpecs, 0.8593370318412781, 0.6152319312095642
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:04:21.391071", "score": "0.8593", "loss": "0.6152", "code": "private void testKeySpecs(String input, String expectedOutput, KeyFieldHelper helper) { testKeySpecs(input, expectedOutput, helper, 0, -1); }", "n_tokens": 43, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:04:23.459593", "score": "0.9336", "loss": "0.3445", "code": "private void testKeySpecs(String input, KeyFieldHelper helper) { testKeySpecs(input, expectedOutput, helper, 0, -1); }", "n_tokens": 38, "n_pass": [22, 2, 2]}
+{"time": "2023-09-24 02:04:25.190118", "score": "0.9425", "loss": "0.2727", "code": "private void testKeySpecs(String input, KeyFieldHelper helper) { testKeySpecs(helper, 0, -1); }", "n_tokens": 32, "n_pass": [25, 3, 3]}
+{"time": "2023-09-24 02:04:26.794915", "score": "0.8022", "loss": "1.4356", "code": "private void testKeySpecs(String input, KeyFieldHelper helper) { testKeySpecs(-1); }", "n_tokens": 26, "n_pass": [26, 4, 4]}
+{"time": "2023-09-24 02:04:28.498677", "score": "0.8022", "loss": "1.4356", "code": "void testKeySpecs(String input, KeyFieldHelper helper) { testKeySpecs(-1); }", "n_tokens": 24, "n_pass": [44, 5, 5]}
+{"time": "2023-09-24 02:04:32.387581", "score": "0.8022", "loss": "1.4356", "code": "void testKeySpecs(String input,KeyFieldHelper helper) { testKeySpecs(-1); }", "n_tokens": 23, "n_pass": [80, 6, 6]}
+{"time": "2023-09-24 02:04:37.672639", "score": "0.8022", "loss": "1.4356", "code": "void testKeySpecs(String input,KeyFieldHelper helper){ testKeySpecs(-1); }", "n_tokens": 22, "n_pass": [111, 8, 7]}
+{"time": "2023-09-24 02:04:39.242631", "score": "0.8022", "loss": "1.4356", "code": "void testKeySpecs(String input,KeyFieldHelper helper){testKeySpecs(-1); }", "n_tokens": 21, "n_pass": [113, 9, 8]}
+{"time": "2023-09-24 02:04:42.608810", "score": "0.685", "loss": "2.0275", "code": "void testKeySpecs(String input,KeyFieldHelper helper){testKeySpecs(1); }", "n_tokens": 20, "n_pass": [116, 11, 9]}
+{"time": "2023-09-24 02:04:45.924942", "score": "0.685", "loss": "2.0275", "code": "void testKeySpecs(String input,KeyFieldHelper helper){testKeySpecs(1);}", "n_tokens": 19, "n_pass": [120, 13, 10]}
+
+Minimal simplified code:
+void testKeySpecs(String input,KeyFieldHelper helper){testKeySpecs(1);}
+

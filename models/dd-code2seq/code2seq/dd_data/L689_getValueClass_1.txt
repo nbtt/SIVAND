@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SequenceFileRecordReader_getValueClass_0.java
+method_name = getValueClass
+method_body = public Class getValueClass() { return in.getValueClass(); }
+predict, score, loss = getValueClass, 0.8400882482528687, 0.7600761651992798
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:14:29.590489", "score": "0.8401", "loss": "0.7601", "code": "public Class getValueClass() { return in.getValueClass(); }", "n_tokens": 20, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:14:31.303661", "score": "0.8401", "loss": "0.7601", "code": "Class getValueClass() { return in.getValueClass(); }", "n_tokens": 18, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:14:37.046957", "score": "0.8401", "loss": "0.7601", "code": "Class getValueClass(){ return in.getValueClass(); }", "n_tokens": 17, "n_pass": [47, 4, 3]}
+{"time": "2023-09-24 02:14:38.671933", "score": "0.8401", "loss": "0.7601", "code": "Class getValueClass(){return in.getValueClass(); }", "n_tokens": 16, "n_pass": [49, 5, 4]}
+{"time": "2023-09-24 02:14:40.338946", "score": "0.8225", "loss": "0.8196", "code": "Class getValueClass(){ in.getValueClass(); }", "n_tokens": 15, "n_pass": [50, 6, 5]}
+{"time": "2023-09-24 02:14:41.958119", "score": "0.8225", "loss": "0.8196", "code": "Class getValueClass(){in.getValueClass(); }", "n_tokens": 14, "n_pass": [51, 7, 6]}
+{"time": "2023-09-24 02:14:43.572682", "score": "0.5869", "loss": "3.1761", "code": "Class getValueClass(){getValueClass(); }", "n_tokens": 12, "n_pass": [52, 8, 7]}
+{"time": "2023-09-24 02:14:46.743038", "score": "0.5869", "loss": "3.1761", "code": "Class getValueClass(){getValueClass();}", "n_tokens": 11, "n_pass": [70, 9, 8]}
+
+Minimal simplified code:
+Class getValueClass(){getValueClass();}
+

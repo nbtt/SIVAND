@@ -1,0 +1,37 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_sendFileDescriptors_0.java
+method_name = sendFileDescriptors
+method_body = public void sendFileDescriptors(FileDescriptor[] descriptors, byte[] jbuf, int offset, int length) throws IOException { refCount.reference(); boolean exc = true; try { sendFileDescriptors0(fd, descriptors, jbuf, offset, length); exc = false; } finally { unreference(exc); } }
+predict, score, loss = sendFileDescriptors, 0.9328420162200928, 0.3395797312259674
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:00:51.645067", "score": "0.9328", "loss": "0.3396", "code": "public void sendFileDescriptors(FileDescriptor[] descriptors, byte[] jbuf, int offset, int length) throws IOException { refCount.reference(); boolean exc = true; try { sendFileDescriptors0(fd, descriptors, jbuf, offset, length); exc = false; } finally { unreference(exc); } }", "n_tokens": 97, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:00:53.414008", "score": "0.7352", "loss": "1.7245", "code": "public void sendFileDescriptors(FileDescriptor[] descriptors, int length) throws IOException { refCount.reference(); boolean exc = true; try { sendFileDescriptors0(fd, descriptors, jbuf, offset, length); exc = false; } finally { unreference(exc); } }", "n_tokens": 85, "n_pass": [21, 2, 2]}
+{"time": "2023-09-24 00:00:56.857912", "score": "0.8894", "loss": "0.5202", "code": "public void sendFileDescriptors(FileDescriptor[] descriptors, int length) throws IOException { refCount.reference(); boolean exc = true; try { sendFileDescriptors0(fd); exc = false; } finally { unreference(exc); } }", "n_tokens": 73, "n_pass": [25, 4, 3]}
+{"time": "2023-09-24 00:00:58.584124", "score": "0.8675", "loss": "0.6462", "code": "public void sendFileDescriptors(FileDescriptor[] descriptors, int length) throws IOException {  true; try { sendFileDescriptors0(fd); exc = false; } finally { unreference(exc); } }", "n_tokens": 61, "n_pass": [30, 5, 4]}
+{"time": "2023-09-24 00:01:00.342606", "score": "0.5839", "loss": "2.6481", "code": "public void sendFileDescriptors( int length) throws IOException {  true; try { sendFileDescriptors0(fd); exc = false; } finally { unreference(exc); } }", "n_tokens": 55, "n_pass": [53, 6, 5]}
+{"time": "2023-09-24 00:01:02.175582", "score": "0.6686", "loss": "2.3636", "code": "public void sendFileDescriptors( int length)  {  true; try { sendFileDescriptors0(fd); exc = false; } finally { unreference(exc); } }", "n_tokens": 52, "n_pass": [82, 7, 6]}
+{"time": "2023-09-24 00:01:03.859240", "score": "0.6771", "loss": "2.3415", "code": "public void sendFileDescriptors( int length)  {  try { sendFileDescriptors0(fd); exc = false; } finally { unreference(exc); } }", "n_tokens": 49, "n_pass": [83, 8, 7]}
+{"time": "2023-09-24 00:01:05.537801", "score": "0.612", "loss": "2.7862", "code": "public void sendFileDescriptors( int length)  {  try { sendFileDescriptors0(fd);  false; } finally { unreference(exc); } }", "n_tokens": 46, "n_pass": [88, 9, 8]}
+{"time": "2023-09-24 00:01:07.093001", "score": "0.6449", "loss": "2.6865", "code": "public void sendFileDescriptors( int length)  {  try { sendFileDescriptors0(fd);  } finally { unreference(exc); } }", "n_tokens": 43, "n_pass": [89, 10, 9]}
+{"time": "2023-09-24 00:01:11.418647", "score": "0.7632", "loss": "1.4892", "code": "public void sendFileDescriptors( int length)  {  try { sendFileDescriptors0(fd);  } finally {(exc); } }", "n_tokens": 41, "n_pass": [137, 11, 10]}
+{"time": "2023-09-24 00:01:13.022189", "score": "0.7632", "loss": "1.4892", "code": " void sendFileDescriptors( int length)  {  try { sendFileDescriptors0(fd);  } finally {(exc); } }", "n_tokens": 40, "n_pass": [142, 12, 11]}
+{"time": "2023-09-24 00:01:14.675133", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors( int length)  {  try { sendFileDescriptors0(fd);  } finally {(exc); } }", "n_tokens": 39, "n_pass": [143, 13, 12]}
+{"time": "2023-09-24 00:01:17.013917", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length)  {  try { sendFileDescriptors0(fd);  } finally {(exc); } }", "n_tokens": 38, "n_pass": [148, 14, 13]}
+{"time": "2023-09-24 00:01:18.658029", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length) {  try { sendFileDescriptors0(fd);  } finally {(exc); } }", "n_tokens": 37, "n_pass": [153, 15, 14]}
+{"time": "2023-09-24 00:01:20.290851", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try { sendFileDescriptors0(fd);  } finally {(exc); } }", "n_tokens": 36, "n_pass": [154, 16, 15]}
+{"time": "2023-09-24 00:01:26.460115", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try {sendFileDescriptors0(fd);  } finally {(exc); } }", "n_tokens": 35, "n_pass": [206, 17, 16]}
+{"time": "2023-09-24 00:01:28.210909", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try {sendFileDescriptors(fd);  } finally {(exc); } }", "n_tokens": 34, "n_pass": [207, 18, 17]}
+{"time": "2023-09-24 00:01:31.707055", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try {sendFileDescriptors(fd); } finally {(exc); } }", "n_tokens": 33, "n_pass": [212, 20, 18]}
+{"time": "2023-09-24 00:01:33.328357", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try {sendFileDescriptors(fd);} finally {(exc); } }", "n_tokens": 32, "n_pass": [213, 21, 19]}
+{"time": "2023-09-24 00:01:34.938140", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try {sendFileDescriptors(fd);}finally {(exc); } }", "n_tokens": 31, "n_pass": [215, 22, 20]}
+{"time": "2023-09-24 00:01:36.786935", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try {sendFileDescriptors(fd);}finally{(exc); } }", "n_tokens": 30, "n_pass": [217, 23, 21]}
+{"time": "2023-09-24 00:01:38.614945", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try {sendFileDescriptors(fd);}finally{(exc);} }", "n_tokens": 29, "n_pass": [223, 24, 22]}
+{"time": "2023-09-24 00:01:40.365742", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){  try {sendFileDescriptors(fd);}finally{(exc);}}", "n_tokens": 28, "n_pass": [225, 25, 23]}
+{"time": "2023-09-24 00:01:42.687041", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){ try {sendFileDescriptors(fd);}finally{(exc);}}", "n_tokens": 27, "n_pass": [236, 26, 24]}
+{"time": "2023-09-24 00:01:44.291706", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){try {sendFileDescriptors(fd);}finally{(exc);}}", "n_tokens": 26, "n_pass": [237, 27, 25]}
+{"time": "2023-09-24 00:01:45.932015", "score": "0.7632", "loss": "1.4892", "code": "void sendFileDescriptors(int length){try{sendFileDescriptors(fd);}finally{(exc);}}", "n_tokens": 25, "n_pass": [239, 28, 26]}
+
+Minimal simplified code:
+void sendFileDescriptors(int length){try{sendFileDescriptors(fd);}finally{(exc);}}
+

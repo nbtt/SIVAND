@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_setServiceClass_0.java
+method_name = setServiceClass
+method_body = public void setServiceClass(int serviceClass) { this.serviceClass = serviceClass; }
+predict, score, loss = setServiceClass, 0.989056408405304, 0.04198352247476578
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:49:22.765760", "score": "0.9891", "loss": "0.042", "code": "public void setServiceClass(int serviceClass) { this.serviceClass = serviceClass; }", "n_tokens": 23, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:49:24.745400", "score": "0.9891", "loss": "0.042", "code": "void setServiceClass(int serviceClass) { this.serviceClass = serviceClass; }", "n_tokens": 21, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:49:26.728143", "score": "0.8504", "loss": "0.9852", "code": "void setServiceClass(int serviceClass) { this.serviceClass ; }", "n_tokens": 18, "n_pass": [25, 3, 3]}
+{"time": "2023-09-24 02:49:28.306315", "score": "0.6474", "loss": "4.0326", "code": "void setServiceClass(int serviceClass) { this; }", "n_tokens": 15, "n_pass": [31, 4, 4]}
+{"time": "2023-09-24 02:49:30.252474", "score": "0.7744", "loss": "1.8612", "code": "void setServiceClass(int serviceClass) {  }", "n_tokens": 13, "n_pass": [47, 5, 5]}
+{"time": "2023-09-24 02:49:33.696268", "score": "0.7744", "loss": "1.8612", "code": "void setServiceClass(int serviceClass) { }", "n_tokens": 12, "n_pass": [65, 6, 6]}
+{"time": "2023-09-24 02:49:35.945121", "score": "0.7744", "loss": "1.8612", "code": "void setServiceClass(int serviceClass){ }", "n_tokens": 11, "n_pass": [74, 7, 7]}
+{"time": "2023-09-24 02:49:37.503264", "score": "0.7744", "loss": "1.8612", "code": "void setServiceClass(int serviceClass){}", "n_tokens": 10, "n_pass": [76, 8, 8]}
+
+Minimal simplified code:
+void setServiceClass(int serviceClass){}
+

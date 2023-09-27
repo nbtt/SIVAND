@@ -1,0 +1,39 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SequenceFileRecordReader_getProgress_0.java
+method_name = getProgress
+method_body = public float getProgress() throws IOException { if (end == start) { return 0.0f; } else { return Math.min(1.0f, (in.getPosition() - start) / (float) (end - start)); } }
+predict, score, loss = getProgress, 0.8037126064300537, 0.8839398622512817
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:15:26.154311", "score": "0.8037", "loss": "0.8839", "code": "public float getProgress() throws IOException { if (end == start) { return 0.0f; } else { return Math.min(1.0f, (in.getPosition() - start) / (float) (end - start)); } }", "n_tokens": 84, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:15:29.762706", "score": "0.8008", "loss": "0.9297", "code": "public float getProgress() throws IOException { if (end == start) { return 0.0f;  return Math.min(1.0f, (in.getPosition() - start) / (float) (end - start)); } }", "n_tokens": 79, "n_pass": [51, 3, 2]}
+{"time": "2023-09-24 02:15:31.476357", "score": "0.683", "loss": "1.2517", "code": "public float getProgress() throws IOException { if (end == start) { return 0.0f; min(1.0f, (in.getPosition() - start) / (float) (end - start)); } }", "n_tokens": 74, "n_pass": [52, 4, 3]}
+{"time": "2023-09-24 02:15:33.210399", "score": "0.7595", "loss": "0.9005", "code": "public float getProgress() throws IOException { if (end == start) { return 0.0f; min(1.0f, (in- start) / (float) (end - start)); } }", "n_tokens": 69, "n_pass": [55, 5, 4]}
+{"time": "2023-09-24 02:15:35.002048", "score": "0.703", "loss": "1.1425", "code": "public float getProgress() throws IOException { if (end == start) { return 0.0f; min(1.0f, (in) / (float) (end - start)); } }", "n_tokens": 66, "n_pass": [95, 6, 5]}
+{"time": "2023-09-24 02:15:36.715362", "score": "0.8057", "loss": "1.0583", "code": "public float getProgress() throws IOException { if (end == start) { return 0.0f; min(1.0f, (in) / (floatend - start)); } }", "n_tokens": 63, "n_pass": [97, 7, 6]}
+{"time": "2023-09-24 02:15:38.468069", "score": "0.8057", "loss": "1.0583", "code": "float getProgress() throws IOException { if (end == start) { return 0.0f; min(1.0f, (in) / (floatend - start)); } }", "n_tokens": 61, "n_pass": [102, 8, 7]}
+{"time": "2023-09-24 02:15:42.104667", "score": "0.7339", "loss": "1.3208", "code": "float getProgress() throws IOException { if (end == start) { return 0; min(1.0f, (in) / (floatend - start)); } }", "n_tokens": 58, "n_pass": [115, 10, 8]}
+{"time": "2023-09-24 02:15:49.966799", "score": "0.7339", "loss": "1.3208", "code": "float getProgress() throws IOException { if (end == start) {return 0; min(1.0f, (in) / (floatend - start)); } }", "n_tokens": 57, "n_pass": [182, 12, 9]}
+{"time": "2023-09-24 02:15:57.139961", "score": "0.7339", "loss": "1.3208", "code": "float getProgress() throws IOException { if (end == start) {return 0;min(1.0f, (in) / (floatend - start)); } }", "n_tokens": 56, "n_pass": [187, 16, 10]}
+{"time": "2023-09-24 02:15:58.955590", "score": "0.7419", "loss": "1.2028", "code": "float getProgress() throws IOException { if (end == start) {return 0;min(0f, (in) / (floatend - start)); } }", "n_tokens": 54, "n_pass": [189, 17, 11]}
+{"time": "2023-09-24 02:16:00.705156", "score": "0.5596", "loss": "2.0197", "code": "float getProgress() throws IOException { if (end == start) {return 0;min(0f, (in) (floatend - start)); } }", "n_tokens": 52, "n_pass": [194, 18, 12]}
+{"time": "2023-09-24 02:16:03.187351", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException { if (end == start) {return 0;min(0f, (in) (floatend - start)); } }", "n_tokens": 51, "n_pass": [207, 19, 13]}
+{"time": "2023-09-24 02:16:04.947354", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{ if (end == start) {return 0;min(0f, (in) (floatend - start)); } }", "n_tokens": 50, "n_pass": [211, 20, 14]}
+{"time": "2023-09-24 02:16:06.711007", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if (end == start) {return 0;min(0f, (in) (floatend - start)); } }", "n_tokens": 49, "n_pass": [213, 21, 15]}
+{"time": "2023-09-24 02:16:08.481280", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end == start) {return 0;min(0f, (in) (floatend - start)); } }", "n_tokens": 48, "n_pass": [215, 22, 16]}
+{"time": "2023-09-24 02:16:10.239264", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end== start) {return 0;min(0f, (in) (floatend - start)); } }", "n_tokens": 47, "n_pass": [218, 23, 17]}
+{"time": "2023-09-24 02:16:15.386440", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end==start) {return 0;min(0f, (in) (floatend - start)); } }", "n_tokens": 46, "n_pass": [221, 26, 18]}
+{"time": "2023-09-24 02:16:17.005695", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f, (in) (floatend - start)); } }", "n_tokens": 45, "n_pass": [224, 27, 19]}
+{"time": "2023-09-24 02:16:33.749948", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in) (floatend - start)); } }", "n_tokens": 44, "n_pass": [287, 35, 20]}
+{"time": "2023-09-24 02:16:35.517062", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(floatend - start)); } }", "n_tokens": 43, "n_pass": [291, 36, 21]}
+{"time": "2023-09-24 02:16:39.010950", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(floatend- start)); } }", "n_tokens": 42, "n_pass": [295, 38, 22]}
+{"time": "2023-09-24 02:16:40.855108", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(floatend-start)); } }", "n_tokens": 41, "n_pass": [297, 39, 23]}
+{"time": "2023-09-24 02:16:42.703611", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(floatend-start));} }", "n_tokens": 40, "n_pass": [302, 40, 24]}
+{"time": "2023-09-24 02:16:44.542947", "score": "0.5596", "loss": "2.0197", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(floatend-start));}}", "n_tokens": 39, "n_pass": [304, 41, 25]}
+{"time": "2023-09-24 02:17:00.803349", "score": "0.5414", "loss": "2.2133", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(floatendstart));}}", "n_tokens": 38, "n_pass": [338, 50, 26]}
+{"time": "2023-09-24 02:17:02.529754", "score": "0.5414", "loss": "2.2133", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(floatend));}}", "n_tokens": 37, "n_pass": [339, 51, 27]}
+{"time": "2023-09-24 02:17:17.124001", "score": "0.4919", "loss": "2.1418", "code": "float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(end));}}", "n_tokens": 36, "n_pass": [375, 59, 28]}
+
+Minimal simplified code:
+float getProgress()throws IOException{if(end==start){return 0;min(0f,(in)(end));}}
+

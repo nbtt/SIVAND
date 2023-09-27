@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FifoSchedulerInfo_getNumContainers_0.java
+method_name = getNumContainers
+method_body = public int getNumContainers() { return this.numContainers; }
+predict, score, loss = getNumContainers, 0.9640265107154846, 0.1333884745836258
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:12:14.802302", "score": "0.964", "loss": "0.1334", "code": "public int getNumContainers() { return this.numContainers; }", "n_tokens": 18, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:12:16.797441", "score": "0.964", "loss": "0.1334", "code": "int getNumContainers() { return this.numContainers; }", "n_tokens": 16, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:12:18.531411", "score": "0.9556", "loss": "0.2302", "code": "int getNumContainers() { this.numContainers; }", "n_tokens": 14, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:12:25.198556", "score": "0.9556", "loss": "0.2302", "code": "int getNumContainers(){ this.numContainers; }", "n_tokens": 13, "n_pass": [52, 6, 4]}
+{"time": "2023-09-24 00:12:26.879846", "score": "0.9556", "loss": "0.2302", "code": "int getNumContainers(){this.numContainers; }", "n_tokens": 12, "n_pass": [54, 7, 5]}
+{"time": "2023-09-24 00:12:31.391087", "score": "0.9556", "loss": "0.2302", "code": "int getNumContainers(){this.numContainers;}", "n_tokens": 11, "n_pass": [71, 9, 6]}
+
+Minimal simplified code:
+int getNumContainers(){this.numContainers;}
+

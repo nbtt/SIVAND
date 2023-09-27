@@ -1,0 +1,25 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/MetricsSinkAdapter_start_0.java
+method_name = start
+method_body = void start() { sinkThread.start(); LOG.info("Sink " + name + " started"); }
+predict, score, loss = start, 0.9687525033950806, 0.09640353173017502
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:11:54.029119", "score": "0.9688", "loss": "0.0964", "code": "void start() { sinkThread.start(); LOG.info(\"Sink \" + name + \" started\"); }", "n_tokens": 38, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:11:55.653769", "score": "0.7949", "loss": "0.6844", "code": "void start() { sinkThread(\"Sink \" + name + \" started\"); }", "n_tokens": 29, "n_pass": [9, 2, 2]}
+{"time": "2023-09-24 03:12:03.306052", "score": "0.5492", "loss": "1.6707", "code": "void start() { (\"Sink \" + name + \" started\"); }", "n_tokens": 28, "n_pass": [73, 5, 3]}
+{"time": "2023-09-24 03:12:04.873064", "score": "0.5284", "loss": "1.8305", "code": "void start() { (\" \" + name + \" started\"); }", "n_tokens": 27, "n_pass": [75, 6, 4]}
+{"time": "2023-09-24 03:12:06.614220", "score": "0.4956", "loss": "1.9311", "code": "void start() { (\"\" + name + \" started\"); }", "n_tokens": 26, "n_pass": [76, 7, 5]}
+{"time": "2023-09-24 03:12:08.366651", "score": "0.4956", "loss": "1.9311", "code": "void start() { (\"\"+ name + \" started\"); }", "n_tokens": 25, "n_pass": [78, 8, 6]}
+{"time": "2023-09-24 03:12:10.111264", "score": "0.4956", "loss": "1.9311", "code": "void start() { (\"\"+name + \" started\"); }", "n_tokens": 24, "n_pass": [80, 9, 7]}
+{"time": "2023-09-24 03:12:11.960208", "score": "0.3336", "loss": "2.6303", "code": "void start() { (\"\"+ + \" started\"); }", "n_tokens": 23, "n_pass": [81, 10, 8]}
+{"time": "2023-09-24 03:12:13.637791", "score": "0.5379", "loss": "1.6376", "code": "void start() { (\"\"+ \" started\"); }", "n_tokens": 21, "n_pass": [83, 11, 9]}
+{"time": "2023-09-24 03:12:15.989907", "score": "0.5379", "loss": "1.6376", "code": "void start(){ (\"\"+ \" started\"); }", "n_tokens": 20, "n_pass": [93, 12, 10]}
+{"time": "2023-09-24 03:12:17.537636", "score": "0.5379", "loss": "1.6376", "code": "void start(){(\"\"+ \" started\"); }", "n_tokens": 19, "n_pass": [95, 13, 11]}
+{"time": "2023-09-24 03:12:19.176638", "score": "0.5379", "loss": "1.6376", "code": "void start(){(\"\"+\" started\"); }", "n_tokens": 18, "n_pass": [100, 14, 12]}
+{"time": "2023-09-24 03:12:24.096857", "score": "0.5379", "loss": "1.6376", "code": "void start(){(\"\"+\" started\");}", "n_tokens": 17, "n_pass": [127, 16, 13]}
+{"time": "2023-09-24 03:12:26.384882", "score": "0.5379", "loss": "1.6376", "code": "void start(){(\"\"+\"started\");}", "n_tokens": 16, "n_pass": [139, 17, 14]}
+
+Minimal simplified code:
+void start(){(""+"started");}
+

@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getMaxQueueSize_0.java
+method_name = getMaxQueueSize
+method_body = public int getMaxQueueSize() { return maxQueueSize; }
+predict, score, loss = getMaxQueueSize, 0.9681646823883057, 0.14758937060832977
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:55:28.782142", "score": "0.9682", "loss": "0.1476", "code": "public int getMaxQueueSize() { return maxQueueSize; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:55:31.271214", "score": "0.9682", "loss": "0.1476", "code": "int getMaxQueueSize() { return maxQueueSize; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:55:32.831045", "score": "0.9557", "loss": "0.2946", "code": "int getMaxQueueSize() { maxQueueSize; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 02:55:39.584398", "score": "0.9557", "loss": "0.2946", "code": "int getMaxQueueSize() { maxQueueSize;}", "n_tokens": 11, "n_pass": [45, 6, 4]}
+{"time": "2023-09-24 02:55:41.779334", "score": "0.9557", "loss": "0.2946", "code": "int getMaxQueueSize(){ maxQueueSize;}", "n_tokens": 10, "n_pass": [51, 7, 5]}
+{"time": "2023-09-24 02:55:43.401633", "score": "0.9557", "loss": "0.2946", "code": "int getMaxQueueSize(){maxQueueSize;}", "n_tokens": 9, "n_pass": [53, 8, 6]}
+
+Minimal simplified code:
+int getMaxQueueSize(){maxQueueSize;}
+

@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_getRemain_0.java
+method_name = getRemain
+method_body = public int getRemain() throws IOException { checkEOF(); return remain; }
+predict, score, loss = getRemain, 0.5935289859771729, 3.398399829864502
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:34:45.424920", "score": "0.5935", "loss": "3.3984", "code": "public int getRemain() throws IOException { checkEOF(); return remain; }", "n_tokens": 25, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:34:50.369485", "score": "0.5935", "loss": "3.3984", "code": " int getRemain() throws IOException { checkEOF(); return remain; }", "n_tokens": 24, "n_pass": [44, 3, 2]}
+{"time": "2023-09-24 00:34:51.976145", "score": "0.5935", "loss": "3.3984", "code": "int getRemain() throws IOException { checkEOF(); return remain; }", "n_tokens": 23, "n_pass": [45, 4, 3]}
+{"time": "2023-09-24 00:34:53.949089", "score": "0.7557", "loss": "2.1684", "code": "int getRemain() throws IOException { checkEOF; return remain; }", "n_tokens": 21, "n_pass": [54, 5, 4]}
+{"time": "2023-09-24 00:34:59.519301", "score": "0.6226", "loss": "3.5213", "code": "int getRemain() throws IOException {; return remain; }", "n_tokens": 19, "n_pass": [67, 8, 5]}
+{"time": "2023-09-24 00:35:01.138617", "score": "0.6226", "loss": "3.5213", "code": "int getRemain() throws IOException {return remain; }", "n_tokens": 17, "n_pass": [68, 9, 6]}
+{"time": "2023-09-24 00:35:10.013271", "score": "0.6226", "loss": "3.5213", "code": "int getRemain() throws IOException {return remain;}", "n_tokens": 16, "n_pass": [95, 13, 7]}
+{"time": "2023-09-24 00:35:12.196697", "score": "0.6226", "loss": "3.5213", "code": "int getRemain()throws IOException {return remain;}", "n_tokens": 15, "n_pass": [101, 14, 8]}
+{"time": "2023-09-24 00:35:14.124077", "score": "0.6226", "loss": "3.5213", "code": "int getRemain()throws IOException{return remain;}", "n_tokens": 14, "n_pass": [105, 15, 9]}
+
+Minimal simplified code:
+int getRemain()throws IOException{return remain;}
+

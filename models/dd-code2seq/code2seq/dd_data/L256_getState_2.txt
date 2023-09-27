@@ -1,0 +1,16 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_getState_0.java
+method_name = getState
+method_body = QueueState getState() { return state; }
+predict, score, loss = getState, 0.9614501595497131, 0.10863856226205826
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:14:53.310289", "score": "0.9615", "loss": "0.1086", "code": "QueueState getState() { return state; }", "n_tokens": 14, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:14:55.991525", "score": "0.9011", "loss": "0.445", "code": "QueueState getState() { state; }", "n_tokens": 12, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 00:15:02.909097", "score": "0.9011", "loss": "0.445", "code": "QueueState getState() { state;}", "n_tokens": 11, "n_pass": [44, 5, 3]}
+{"time": "2023-09-24 00:15:05.539645", "score": "0.9011", "loss": "0.445", "code": "QueueState getState(){ state;}", "n_tokens": 10, "n_pass": [50, 6, 4]}
+{"time": "2023-09-24 00:15:07.102204", "score": "0.9011", "loss": "0.445", "code": "QueueState getState(){state;}", "n_tokens": 9, "n_pass": [52, 7, 5]}
+
+Minimal simplified code:
+QueueState getState(){state;}
+

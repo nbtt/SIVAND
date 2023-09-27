@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/AvroSerialization_close_0.java
+method_name = close
+method_body = public void close() throws IOException { encoder.flush(); outStream.close(); }
+predict, score, loss = close, 0.7740998864173889, 0.3056710362434387
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:24:14.603429", "score": "0.7741", "loss": "0.3057", "code": "public void close() throws IOException { encoder.flush(); outStream.close(); }", "n_tokens": 29, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:24:16.576966", "score": "0.9855", "loss": "0.0766", "code": "public void close() throws IOException { outStream.close(); }", "n_tokens": 22, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 00:24:18.842263", "score": "0.8575", "loss": "0.3491", "code": "public void close() throws IOException { close(); }", "n_tokens": 20, "n_pass": [37, 3, 3]}
+{"time": "2023-09-24 00:24:20.533962", "score": "0.8575", "loss": "0.3491", "code": " void close() throws IOException { close(); }", "n_tokens": 19, "n_pass": [40, 4, 4]}
+{"time": "2023-09-24 00:24:22.106878", "score": "0.8575", "loss": "0.3491", "code": "void close() throws IOException { close(); }", "n_tokens": 18, "n_pass": [41, 5, 5]}
+{"time": "2023-09-24 00:24:26.821133", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException { close(); }", "n_tokens": 17, "n_pass": [74, 6, 6]}
+{"time": "2023-09-24 00:24:28.558742", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException{ close(); }", "n_tokens": 16, "n_pass": [78, 7, 7]}
+{"time": "2023-09-24 00:24:30.152464", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException{close(); }", "n_tokens": 15, "n_pass": [80, 8, 8]}
+{"time": "2023-09-24 00:24:31.737066", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException{close();}", "n_tokens": 14, "n_pass": [85, 9, 9]}
+
+Minimal simplified code:
+void close()throws IOException{close();}
+

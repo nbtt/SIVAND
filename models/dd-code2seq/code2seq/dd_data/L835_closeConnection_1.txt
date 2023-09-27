@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_closeConnection_0.java
+method_name = closeConnection
+method_body = private void closeConnection(Connection connection) { connectionManager.close(connection); }
+predict, score, loss = closeConnection, 0.8487738370895386, 2.400670289993286
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:49:49.019421", "score": "0.8488", "loss": "2.4007", "code": "private void closeConnection(Connection connection) { connectionManager.close(connection); }", "n_tokens": 22, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:49:50.984966", "score": "0.8488", "loss": "2.4007", "code": "void closeConnection(Connection connection) { connectionManager.close(connection); }", "n_tokens": 20, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 02:49:54.632536", "score": "0.625", "loss": "1.3732", "code": "void closeConnection(Connection connection) { connectionManager.close; }", "n_tokens": 17, "n_pass": [26, 4, 3]}
+{"time": "2023-09-24 02:50:02.939665", "score": "0.625", "loss": "1.3732", "code": "void closeConnection(Connection connection) { connectionManager.close;}", "n_tokens": 16, "n_pass": [68, 7, 4]}
+{"time": "2023-09-24 02:50:05.388134", "score": "0.625", "loss": "1.3732", "code": "void closeConnection(Connection connection){ connectionManager.close;}", "n_tokens": 15, "n_pass": [77, 8, 5]}
+{"time": "2023-09-24 02:50:07.054863", "score": "0.625", "loss": "1.3732", "code": "void closeConnection(Connection connection){connectionManager.close;}", "n_tokens": 14, "n_pass": [79, 9, 6]}
+
+Minimal simplified code:
+void closeConnection(Connection connection){connectionManager.close;}
+

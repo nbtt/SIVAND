@@ -1,0 +1,23 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DistCpV1_write_0.java
+method_name = write
+method_body = public void write(DataOutput out) throws IOException { input.write(out); Text.writeString(out, output); }
+predict, score, loss = write, 0.8482456207275391, 0.3290106952190399
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:03:23.619041", "score": "0.8482", "loss": "0.329", "code": "public void write(DataOutput out) throws IOException { input.write(out); Text.writeString(out, output); }", "n_tokens": 37, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:03:27.491002", "score": "0.8482", "loss": "0.329", "code": "void write(DataOutput out) throws IOException { input.write(out); Text.writeString(out, output); }", "n_tokens": 35, "n_pass": [44, 3, 2]}
+{"time": "2023-09-24 01:03:29.214658", "score": "0.7915", "loss": "0.4677", "code": "void write(DataOutput out) throws IOException { input(out); Text.writeString(out, output); }", "n_tokens": 33, "n_pass": [52, 4, 3]}
+{"time": "2023-09-24 01:03:31.305593", "score": "0.8348", "loss": "0.3743", "code": "void write(DataOutput out) throws IOException {(out); Text.writeString(out, output); }", "n_tokens": 31, "n_pass": [66, 5, 4]}
+{"time": "2023-09-24 01:03:35.949678", "score": "0.8348", "loss": "0.3743", "code": "void write(DataOutput out) throws IOException {(out);Text.writeString(out, output); }", "n_tokens": 30, "n_pass": [110, 6, 5]}
+{"time": "2023-09-24 01:03:39.205561", "score": "0.8535", "loss": "0.3957", "code": "void write(DataOutput out) throws IOException {(out);Text.writeString( output); }", "n_tokens": 28, "n_pass": [114, 8, 6]}
+{"time": "2023-09-24 01:03:40.826968", "score": "0.8761", "loss": "0.6636", "code": "void write(DataOutput out) throws IOException {(out);Text.writeString(); }", "n_tokens": 26, "n_pass": [115, 9, 7]}
+{"time": "2023-09-24 01:03:43.357635", "score": "0.8761", "loss": "0.6636", "code": "void write(DataOutput out)throws IOException {(out);Text.writeString(); }", "n_tokens": 25, "n_pass": [126, 10, 8]}
+{"time": "2023-09-24 01:03:45.067579", "score": "0.8761", "loss": "0.6636", "code": "void write(DataOutput out)throws IOException{(out);Text.writeString(); }", "n_tokens": 24, "n_pass": [130, 11, 9]}
+{"time": "2023-09-24 01:03:47.205475", "score": "0.7504", "loss": "1.4923", "code": "void write(DataOutput out)throws IOException{(out);TextwriteString(); }", "n_tokens": 23, "n_pass": [137, 12, 10]}
+{"time": "2023-09-24 01:03:49.909082", "score": "0.9145", "loss": "0.9003", "code": "void write(DataOutput out)throws IOException{(out);writeString(); }", "n_tokens": 22, "n_pass": [157, 13, 11]}
+{"time": "2023-09-24 01:03:53.193910", "score": "0.9145", "loss": "0.9003", "code": "void write(DataOutput out)throws IOException{(out);writeString();}", "n_tokens": 21, "n_pass": [185, 14, 12]}
+
+Minimal simplified code:
+void write(DataOutput out)throws IOException{(out);writeString();}
+

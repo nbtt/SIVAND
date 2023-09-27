@@ -1,0 +1,38 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestStickyBit_writeFile_0.java
+method_name = writeFile
+method_body = static private void writeFile(FileSystem hdfs, Path p) throws IOException { FSDataOutputStream o = null; try { o = hdfs.create(p); o.write("some file contents".getBytes()); o.close(); o = null; } finally { IOUtils.cleanup(null, o); } }
+predict, score, loss = writeFile, 0.690273106098175, 1.4734973907470703
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:54:55.494058", "score": "0.6903", "loss": "1.4735", "code": "static private void writeFile(FileSystem hdfs, Path p) throws IOException { FSDataOutputStream o = null; try { o = hdfs.create(p); o.write(\"some file contents\".getBytes()); o.close(); o = null; } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 101, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:54:59.016331", "score": "0.6729", "loss": "1.6241", "code": "static private void writeFile(FileSystem hdfs, Path p) throws IOException { FSDataOutputStream o = null; try {o.write(\"some file contents\".getBytes()); o.close(); o = null; } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 88, "n_pass": [23, 3, 2]}
+{"time": "2023-09-24 01:55:00.832308", "score": "0.7372", "loss": "1.33", "code": "static private void writeFile(FileSystem hdfs, Path p) throws IOException { FSDataOutputStream o = null; try {o.write(\"some file contents\".getBytes());  o = null; } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 82, "n_pass": [48, 4, 3]}
+{"time": "2023-09-24 01:55:02.637930", "score": "0.7822", "loss": "1.0192", "code": "static private void writeFile(FileSystem hdfs, Path p) throws IOException { FSDataOutputStream o = null; try {o.write(\"some file contents\".getBytes());  } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 75, "n_pass": [49, 5, 4]}
+{"time": "2023-09-24 01:55:04.888546", "score": "0.7458", "loss": "1.2647", "code": "static private void writeFile(FileSystem hdfs, Path p) throws IOException { null; try {o.write(\"some file contents\".getBytes());  } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 69, "n_pass": [57, 6, 5]}
+{"time": "2023-09-24 01:55:07.252458", "score": "0.7559", "loss": "1.1538", "code": "static private void writeFile(FileSystem hdfs, Path p) throws IOException { try {o.write(\"some file contents\".getBytes());  } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 66, "n_pass": [91, 7, 6]}
+{"time": "2023-09-24 01:55:10.707027", "score": "0.6048", "loss": "1.9623", "code": "static private void writeFile(FileSystem hdfs, Path p) throws IOException { try {o.write(\"somecontents\".getBytes());  } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 63, "n_pass": [94, 9, 7]}
+{"time": "2023-09-24 01:55:14.148987", "score": "0.6048", "loss": "1.9623", "code": " void writeFile(FileSystem hdfs, Path p) throws IOException { try {o.write(\"somecontents\".getBytes());  } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 60, "n_pass": [104, 11, 8]}
+{"time": "2023-09-24 01:55:16.162433", "score": "0.5025", "loss": "2.4457", "code": " void writeFile(FileSystem hdfs, Path p)  { try {o.write(\"somecontents\".getBytes());  } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 57, "n_pass": [110, 12, 9]}
+{"time": "2023-09-24 01:55:24.082181", "score": "0.5025", "loss": "2.4457", "code": " void writeFile(FileSystem hdfs, Path p) { try {o.write(\"somecontents\".getBytes());  } finally { IOUtils.cleanup(null, o); } }", "n_tokens": 56, "n_pass": [169, 15, 10]}
+{"time": "2023-09-24 01:55:29.209721", "score": "0.5025", "loss": "2.4457", "code": " void writeFile(FileSystem hdfs, Path p) { try {o.write(\"somecontents\".getBytes());} finally { IOUtils.cleanup(null, o); } }", "n_tokens": 54, "n_pass": [180, 18, 11]}
+{"time": "2023-09-24 01:55:32.738810", "score": "0.5576", "loss": "3.478", "code": " void writeFile(FileSystem hdfs, Path p) { try {o.write(\"somecontents\".getBytes());} finally { IOUtils.cleanup( o); } }", "n_tokens": 52, "n_pass": [186, 20, 12]}
+{"time": "2023-09-24 01:55:34.425558", "score": "0.5631", "loss": "3.084", "code": " void writeFile(FileSystem hdfs, Path p) { try {o.write(\"somecontents\".getBytes());} finally { IOUtils.cleanup(); } }", "n_tokens": 50, "n_pass": [187, 21, 13]}
+{"time": "2023-09-24 01:55:36.093077", "score": "0.5631", "loss": "3.084", "code": "void writeFile(FileSystem hdfs, Path p) { try {o.write(\"somecontents\".getBytes());} finally { IOUtils.cleanup(); } }", "n_tokens": 49, "n_pass": [191, 22, 14]}
+{"time": "2023-09-24 01:55:38.413166", "score": "0.5631", "loss": "3.084", "code": "void writeFile(FileSystem hdfs,Path p) { try {o.write(\"somecontents\".getBytes());} finally { IOUtils.cleanup(); } }", "n_tokens": 48, "n_pass": [200, 23, 15]}
+{"time": "2023-09-24 01:55:41.752529", "score": "0.5263", "loss": "2.1987", "code": "void writeFile(FileSystem hdfs,Path p) { try {o.write(\"somecontents\".getBytes);} finally { IOUtils.cleanup(); } }", "n_tokens": 46, "n_pass": [213, 25, 16]}
+{"time": "2023-09-24 01:55:47.926608", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p) { try {o.write(\"somecontents\");} finally { IOUtils.cleanup(); } }", "n_tokens": 44, "n_pass": [242, 28, 17]}
+{"time": "2023-09-24 01:55:56.739602", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p) { try {o.write(\"somecontents\");}finally { IOUtils.cleanup(); } }", "n_tokens": 43, "n_pass": [303, 31, 18]}
+{"time": "2023-09-24 01:55:58.532242", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p) { try {o.write(\"somecontents\");}finally{ IOUtils.cleanup(); } }", "n_tokens": 42, "n_pass": [305, 32, 19]}
+{"time": "2023-09-24 01:56:00.400781", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p) { try {o.write(\"somecontents\");}finally{IOUtils.cleanup(); } }", "n_tokens": 41, "n_pass": [307, 33, 20]}
+{"time": "2023-09-24 01:56:04.060999", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p) { try {o.write(\"somecontents\");}finally{IOUtils.cleanup();} }", "n_tokens": 40, "n_pass": [314, 35, 21]}
+{"time": "2023-09-24 01:56:05.707716", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p) { try {o.write(\"somecontents\");}finally{IOUtils.cleanup();}}", "n_tokens": 39, "n_pass": [316, 36, 22]}
+{"time": "2023-09-24 01:56:08.106568", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p){ try {o.write(\"somecontents\");}finally{IOUtils.cleanup();}}", "n_tokens": 38, "n_pass": [330, 37, 23]}
+{"time": "2023-09-24 01:56:09.746037", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p){try {o.write(\"somecontents\");}finally{IOUtils.cleanup();}}", "n_tokens": 37, "n_pass": [332, 38, 24]}
+{"time": "2023-09-24 01:56:11.451774", "score": "0.3778", "loss": "3.2229", "code": "void writeFile(FileSystem hdfs,Path p){try{o.write(\"somecontents\");}finally{IOUtils.cleanup();}}", "n_tokens": 36, "n_pass": [334, 39, 25]}
+{"time": "2023-09-24 01:56:16.650299", "score": "0.4578", "loss": "2.5917", "code": "void writeFile(FileSystem hdfs,Path p){try{o.write(\"some\");}finally{IOUtils.cleanup();}}", "n_tokens": 35, "n_pass": [342, 42, 26]}
+{"time": "2023-09-24 01:56:22.438341", "score": "0.3736", "loss": "2.8888", "code": "void writeFile(FileSystem hdfs,Path p){try{o.write(\"\");}finally{IOUtils.cleanup();}}", "n_tokens": 34, "n_pass": [377, 45, 27]}
+
+Minimal simplified code:
+void writeFile(FileSystem hdfs,Path p){try{o.write("");}finally{IOUtils.cleanup();}}
+

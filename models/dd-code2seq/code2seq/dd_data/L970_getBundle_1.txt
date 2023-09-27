@@ -1,0 +1,23 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ResourceBundles_getBundle_0.java
+method_name = getBundle
+method_body = public static ResourceBundle getBundle(String bundleName) { return ResourceBundle.getBundle(bundleName.replace('$', '_'), Locale.getDefault(), Thread.currentThread().getContextClassLoader()); }
+predict, score, loss = getBundle, 0.9348158240318298, 0.5341478586196899
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:17:14.163354", "score": "0.9348", "loss": "0.5341", "code": "public static ResourceBundle getBundle(String bundleName) { return ResourceBundle.getBundle(bundleName.replace('$', '_'), Locale.getDefault(), Thread.currentThread().getContextClassLoader()); }", "n_tokens": 56, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:17:16.079696", "score": "0.9172", "loss": "0.7386", "code": "public static ResourceBundle getBundle(String bundleName) { return ResourceBundle.getBundle(bundleName.replace('$', '_'), Thread.currentThread().getContextClassLoader()); }", "n_tokens": 49, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 03:17:17.875302", "score": "0.8842", "loss": "0.9475", "code": "public static ResourceBundle getBundle(String bundleName) { return ResourceBundle.getBundle(bundleName.replace('$', '_'),getContextClassLoader()); }", "n_tokens": 42, "n_pass": [26, 3, 3]}
+{"time": "2023-09-24 03:17:19.536733", "score": "0.8614", "loss": "1.1791", "code": "public static ResourceBundle getBundle(String bundleName) { return ResourceBundle.getBundle(bundleName.replace('$', '_')); }", "n_tokens": 38, "n_pass": [45, 4, 4]}
+{"time": "2023-09-24 03:17:21.131330", "score": "0.8614", "loss": "1.1791", "code": " ResourceBundle getBundle(String bundleName) { return ResourceBundle.getBundle(bundleName.replace('$', '_')); }", "n_tokens": 35, "n_pass": [47, 5, 5]}
+{"time": "2023-09-24 03:17:23.757121", "score": "0.8614", "loss": "1.1791", "code": "ResourceBundle getBundle(String bundleName) { return ResourceBundle.getBundle(bundleName.replace('$', '_')); }", "n_tokens": 34, "n_pass": [78, 6, 6]}
+{"time": "2023-09-24 03:17:26.595568", "score": "0.7424", "loss": "1.7147", "code": "ResourceBundle getBundle(String bundleName) { ResourceBundle.getBundle(bundleName.replace('$', '_')); }", "n_tokens": 32, "n_pass": [86, 7, 7]}
+{"time": "2023-09-24 03:17:29.714956", "score": "0.8212", "loss": "1.3302", "code": "ResourceBundle getBundle(String bundleName) { ResourceBundle.getBundle(bundleName('$', '_')); }", "n_tokens": 30, "n_pass": [90, 9, 8]}
+{"time": "2023-09-24 03:17:36.375763", "score": "0.8212", "loss": "1.3302", "code": "ResourceBundle getBundle(String bundleName) { ResourceBundle.getBundle(bundleName('$','_')); }", "n_tokens": 29, "n_pass": [138, 11, 9]}
+{"time": "2023-09-24 03:17:38.307492", "score": "0.8212", "loss": "1.3302", "code": "ResourceBundle getBundle(String bundleName) { ResourceBundle.getBundle(bundleName('$','_'));}", "n_tokens": 28, "n_pass": [145, 12, 10]}
+{"time": "2023-09-24 03:17:41.084357", "score": "0.8212", "loss": "1.3302", "code": "ResourceBundle getBundle(String bundleName){ ResourceBundle.getBundle(bundleName('$','_'));}", "n_tokens": 27, "n_pass": [155, 13, 11]}
+{"time": "2023-09-24 03:17:42.682157", "score": "0.8212", "loss": "1.3302", "code": "ResourceBundle getBundle(String bundleName){ResourceBundle.getBundle(bundleName('$','_'));}", "n_tokens": 26, "n_pass": [157, 14, 12]}
+
+Minimal simplified code:
+ResourceBundle getBundle(String bundleName){ResourceBundle.getBundle(bundleName('$','_'));}
+

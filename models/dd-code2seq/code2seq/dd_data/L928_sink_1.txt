@@ -1,0 +1,16 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/MetricsSinkAdapter_sink_0.java
+method_name = sink
+method_body = MetricsSink sink() { return sink; }
+predict, score, loss = sink, 0.7504003047943115, 0.3093527555465698
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:14:21.101233", "score": "0.7504", "loss": "0.3094", "code": "MetricsSink sink() { return sink; }", "n_tokens": 14, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:14:23.639634", "score": "0.862", "loss": "0.2166", "code": "MetricsSink sink() { sink; }", "n_tokens": 12, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 03:14:30.320272", "score": "0.862", "loss": "0.2166", "code": "MetricsSink sink() { sink;}", "n_tokens": 11, "n_pass": [44, 5, 3]}
+{"time": "2023-09-24 03:14:33.009696", "score": "0.862", "loss": "0.2166", "code": "MetricsSink sink(){ sink;}", "n_tokens": 10, "n_pass": [50, 6, 4]}
+{"time": "2023-09-24 03:14:34.611429", "score": "0.862", "loss": "0.2166", "code": "MetricsSink sink(){sink;}", "n_tokens": 9, "n_pass": [52, 7, 5]}
+
+Minimal simplified code:
+MetricsSink sink(){sink;}
+

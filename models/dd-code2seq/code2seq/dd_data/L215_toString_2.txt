@@ -1,0 +1,24 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_toString_0.java
+method_name = toString
+method_body = public String toString() { return String.format("DomainSocket(fd=%d,path=%s)", fd, path); }
+predict, score, loss = toString, 0.8378387689590454, 0.4942445158958435
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:08:45.950207", "score": "0.8378", "loss": "0.4942", "code": "public String toString() { return String.format(\"DomainSocket(fd=%d,path=%s)\", fd, path); }", "n_tokens": 40, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:08:47.647889", "score": "0.8378", "loss": "0.4942", "code": "public String toString() { return String.format(\"DomainSocket(fd=%s)\", fd, path); }", "n_tokens": 35, "n_pass": [24, 2, 2]}
+{"time": "2023-09-24 00:08:49.373816", "score": "0.9205", "loss": "0.25", "code": "public String toString() { return String.format(\"=%s)\", fd, path); }", "n_tokens": 32, "n_pass": [45, 3, 3]}
+{"time": "2023-09-24 00:08:51.063638", "score": "0.9522", "loss": "0.1521", "code": "public String toString() { return String.format(\")\", fd, path); }", "n_tokens": 29, "n_pass": [46, 4, 4]}
+{"time": "2023-09-24 00:08:52.808394", "score": "0.8702", "loss": "0.3765", "code": "public String toString() { return String.format(\")\", path); }", "n_tokens": 26, "n_pass": [48, 5, 5]}
+{"time": "2023-09-24 00:08:54.411904", "score": "0.8702", "loss": "0.3765", "code": "String toString() { return String.format(\")\", path); }", "n_tokens": 24, "n_pass": [51, 6, 6]}
+{"time": "2023-09-24 00:08:56.326644", "score": "0.9255", "loss": "0.2484", "code": "String toString() { String.format(\")\", path); }", "n_tokens": 22, "n_pass": [56, 7, 7]}
+{"time": "2023-09-24 00:08:57.967327", "score": "0.8915", "loss": "0.4069", "code": "String toString() { format(\")\", path); }", "n_tokens": 20, "n_pass": [57, 8, 8]}
+{"time": "2023-09-24 00:09:00.854781", "score": "0.7872", "loss": "0.7407", "code": "String toString() { format(\"\", path); }", "n_tokens": 19, "n_pass": [85, 9, 9]}
+{"time": "2023-09-24 00:09:03.440192", "score": "0.7872", "loss": "0.7407", "code": "String toString(){ format(\"\", path); }", "n_tokens": 18, "n_pass": [94, 10, 10]}
+{"time": "2023-09-24 00:09:05.152946", "score": "0.7872", "loss": "0.7407", "code": "String toString(){format(\"\", path); }", "n_tokens": 17, "n_pass": [96, 11, 11]}
+{"time": "2023-09-24 00:09:08.704376", "score": "0.7872", "loss": "0.7407", "code": "String toString(){format(\"\",path); }", "n_tokens": 16, "n_pass": [120, 12, 12]}
+{"time": "2023-09-24 00:09:10.397430", "score": "0.7872", "loss": "0.7407", "code": "String toString(){format(\"\",path);}", "n_tokens": 15, "n_pass": [123, 13, 13]}
+
+Minimal simplified code:
+String toString(){format("",path);}
+

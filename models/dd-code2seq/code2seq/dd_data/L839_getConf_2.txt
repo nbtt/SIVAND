@@ -1,0 +1,16 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getConf_0.java
+method_name = getConf
+method_body = Configuration getConf() { return conf; }
+predict, score, loss = getConf, 0.9328361749649048, 0.15746831893920898
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:50:18.226576", "score": "0.9328", "loss": "0.1575", "code": "Configuration getConf() { return conf; }", "n_tokens": 14, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:50:20.886095", "score": "0.7934", "loss": "0.6219", "code": "Configuration getConf() { conf; }", "n_tokens": 12, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 02:50:27.510480", "score": "0.7934", "loss": "0.6219", "code": "Configuration getConf() { conf;}", "n_tokens": 11, "n_pass": [44, 5, 3]}
+{"time": "2023-09-24 02:50:30.299561", "score": "0.7934", "loss": "0.6219", "code": "Configuration getConf(){ conf;}", "n_tokens": 10, "n_pass": [50, 6, 4]}
+{"time": "2023-09-24 02:50:31.928532", "score": "0.7934", "loss": "0.6219", "code": "Configuration getConf(){conf;}", "n_tokens": 9, "n_pass": [52, 7, 5]}
+
+Minimal simplified code:
+Configuration getConf(){conf;}
+

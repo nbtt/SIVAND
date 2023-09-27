@@ -1,0 +1,17 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/FifoSchedulerInfo_getNumNodes_0.java
+method_name = getNumNodes
+method_body = public int getNumNodes() { return this.numNodes; }
+predict, score, loss = getNumNodes, 0.9217885732650757, 0.28362399339675903
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:11:06.649302", "score": "0.9218", "loss": "0.2836", "code": "public int getNumNodes() { return this.numNodes; }", "n_tokens": 18, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:11:08.558468", "score": "0.9218", "loss": "0.2836", "code": "int getNumNodes() { return this.numNodes; }", "n_tokens": 16, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:11:10.236381", "score": "0.9261", "loss": "0.3498", "code": "int getNumNodes() { this.numNodes; }", "n_tokens": 14, "n_pass": [24, 3, 3]}
+{"time": "2023-09-24 00:11:16.965754", "score": "0.9261", "loss": "0.3498", "code": "int getNumNodes(){ this.numNodes; }", "n_tokens": 13, "n_pass": [52, 6, 4]}
+{"time": "2023-09-24 00:11:18.562220", "score": "0.9261", "loss": "0.3498", "code": "int getNumNodes(){this.numNodes; }", "n_tokens": 12, "n_pass": [54, 7, 5]}
+{"time": "2023-09-24 00:11:23.151721", "score": "0.9261", "loss": "0.3498", "code": "int getNumNodes(){this.numNodes;}", "n_tokens": 11, "n_pass": [71, 9, 6]}
+
+Minimal simplified code:
+int getNumNodes(){this.numNodes;}
+

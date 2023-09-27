@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_close_3.java
+method_name = close
+method_body = public void close() throws IOException { DomainSocket.this.close(); }
+predict, score, loss = close, 0.9440891742706299, 0.11230701208114624
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:00:25.035194", "score": "0.9441", "loss": "0.1123", "code": "public void close() throws IOException { DomainSocket.this.close(); }", "n_tokens": 24, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:00:29.860509", "score": "0.9441", "loss": "0.1123", "code": " void close() throws IOException { DomainSocket.this.close(); }", "n_tokens": 23, "n_pass": [44, 3, 2]}
+{"time": "2023-09-24 00:00:31.533187", "score": "0.9441", "loss": "0.1123", "code": "void close() throws IOException { DomainSocket.this.close(); }", "n_tokens": 22, "n_pass": [45, 4, 3]}
+{"time": "2023-09-24 00:00:33.452065", "score": "0.9441", "loss": "0.1123", "code": "void close()throws IOException { DomainSocket.this.close(); }", "n_tokens": 21, "n_pass": [50, 5, 4]}
+{"time": "2023-09-24 00:00:34.988667", "score": "0.8788", "loss": "0.3257", "code": "void close()throws IOException { this.close(); }", "n_tokens": 19, "n_pass": [54, 6, 5]}
+{"time": "2023-09-24 00:00:36.640942", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException { close(); }", "n_tokens": 17, "n_pass": [55, 7, 6]}
+{"time": "2023-09-24 00:00:40.493796", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException { close();}", "n_tokens": 16, "n_pass": [82, 8, 7]}
+{"time": "2023-09-24 00:00:43.000529", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException{ close();}", "n_tokens": 15, "n_pass": [91, 9, 8]}
+{"time": "2023-09-24 00:00:44.651052", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException{close();}", "n_tokens": 14, "n_pass": [93, 10, 9]}
+
+Minimal simplified code:
+void close()throws IOException{close();}
+

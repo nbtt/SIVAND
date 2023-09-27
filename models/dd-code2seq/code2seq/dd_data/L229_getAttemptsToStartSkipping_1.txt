@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/SkipBadRecords_getAttemptsToStartSkipping_0.java
+method_name = getAttemptsToStartSkipping
+method_body = public static int getAttemptsToStartSkipping(Configuration conf) { return conf.getInt(ATTEMPTS_TO_START_SKIPPING, 2); }
+predict, score, loss = getAttemptsToStartSkipping, 0.7474050521850586, 15.218504905700684
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:09:24.793847", "score": "0.7474", "loss": "15.2185", "code": "public static int getAttemptsToStartSkipping(Configuration conf) { return conf.getInt(ATTEMPTS_TO_START_SKIPPING, 2); }", "n_tokens": 35, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:09:26.484450", "score": "0.7474", "loss": "15.2185", "code": "int getAttemptsToStartSkipping(Configuration conf) { return conf.getInt(ATTEMPTS_TO_START_SKIPPING, 2); }", "n_tokens": 31, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 00:09:30.161269", "score": "0.6155", "loss": "16.4425", "code": "int getAttemptsToStartSkipping(Configuration conf) { conf.getInt(ATTEMPTS_TO_START_SKIPPING, 2); }", "n_tokens": 29, "n_pass": [46, 4, 3]}
+{"time": "2023-09-24 00:09:38.928175", "score": "0.6155", "loss": "16.4425", "code": "int getAttemptsToStartSkipping(Configuration conf) {conf.getInt(ATTEMPTS_TO_START_SKIPPING, 2); }", "n_tokens": 28, "n_pass": [85, 8, 4]}
+{"time": "2023-09-24 00:09:54.484495", "score": "0.6155", "loss": "16.4425", "code": "int getAttemptsToStartSkipping(Configuration conf){conf.getInt(ATTEMPTS_TO_START_SKIPPING, 2); }", "n_tokens": 27, "n_pass": [108, 17, 5]}
+{"time": "2023-09-24 00:10:10.915711", "score": "0.6155", "loss": "16.4425", "code": "int getAttemptsToStartSkipping(Configuration conf){conf.getInt(ATTEMPTS_TO_START_SKIPPING,2); }", "n_tokens": 26, "n_pass": [139, 26, 6]}
+{"time": "2023-09-24 00:10:12.548540", "score": "0.6155", "loss": "16.4425", "code": "int getAttemptsToStartSkipping(Configuration conf){conf.getInt(ATTEMPTS_TO_START_SKIPPING,2);}", "n_tokens": 25, "n_pass": [142, 27, 7]}
+{"time": "2023-09-24 00:10:28.891395", "score": "0.6305", "loss": "15.7775", "code": "int getAttemptsToStartSkipping(Configuration conf){conf.getInt(ATTEMPTS_TO_START_SKIPPING2);}", "n_tokens": 24, "n_pass": [164, 36, 8]}
+{"time": "2023-09-24 00:10:30.474121", "score": "0.6305", "loss": "15.7775", "code": "int getAttemptsToStartSkipping(Configuration conf){conf.getInt(ATTEMPTS_TO_START_SKIPPING);}", "n_tokens": 23, "n_pass": [165, 37, 9]}
+
+Minimal simplified code:
+int getAttemptsToStartSkipping(Configuration conf){conf.getInt(ATTEMPTS_TO_START_SKIPPING);}
+

@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ProportionalCapacityPreemptionPolicy_getResourceCalculator_0.java
+method_name = getResourceCalculator
+method_body = public ResourceCalculator getResourceCalculator() { return rc; }
+predict, score, loss = getResourceCalculator, 0.9430528879165649, 0.3570749759674072
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:17:13.118909", "score": "0.9431", "loss": "0.3571", "code": "public ResourceCalculator getResourceCalculator() { return rc; }", "n_tokens": 16, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:17:15.466647", "score": "0.9431", "loss": "0.3571", "code": "ResourceCalculator getResourceCalculator() { return rc; }", "n_tokens": 14, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:17:17.171129", "score": "0.9273", "loss": "0.504", "code": "ResourceCalculator getResourceCalculator() { rc; }", "n_tokens": 12, "n_pass": [24, 3, 3]}
+{"time": "2023-09-23 23:17:18.664006", "score": "0.9438", "loss": "0.4815", "code": "ResourceCalculator getResourceCalculator() {  }", "n_tokens": 10, "n_pass": [25, 4, 4]}
+{"time": "2023-09-23 23:17:21.789954", "score": "0.9438", "loss": "0.4815", "code": "ResourceCalculator getResourceCalculator() { }", "n_tokens": 9, "n_pass": [41, 5, 5]}
+{"time": "2023-09-23 23:17:24.378008", "score": "0.9438", "loss": "0.4815", "code": "ResourceCalculator getResourceCalculator(){ }", "n_tokens": 8, "n_pass": [47, 6, 6]}
+{"time": "2023-09-23 23:17:25.938128", "score": "0.9438", "loss": "0.4815", "code": "ResourceCalculator getResourceCalculator(){}", "n_tokens": 7, "n_pass": [49, 7, 7]}
+
+Minimal simplified code:
+ResourceCalculator getResourceCalculator(){}
+

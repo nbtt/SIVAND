@@ -1,0 +1,38 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/DomainSocket_accept_0.java
+method_name = accept
+method_body = public DomainSocket accept() throws IOException { refCount.reference(); boolean exc = true; try { DomainSocket ret = new DomainSocket(path, accept0(fd)); exc = false; return ret; } finally { unreference(exc); } }
+predict, score, loss = accept, 0.826982855796814, 0.2602386176586151
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:50:52.244326", "score": "0.827", "loss": "0.2602", "code": "public DomainSocket accept() throws IOException { refCount.reference(); boolean exc = true; try { DomainSocket ret = new DomainSocket(path, accept0(fd)); exc = false; return ret; } finally { unreference(exc); } }", "n_tokens": 82, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:50:54.406495", "score": "0.6133", "loss": "0.6621", "code": "public DomainSocket accept() throws IOException { refCount.reference();try { DomainSocket ret = new DomainSocket(path, accept0(fd)); exc = false; return ret; } finally { unreference(exc); } }", "n_tokens": 72, "n_pass": [22, 2, 2]}
+{"time": "2023-09-23 23:50:56.228069", "score": "0.3639", "loss": "1.2245", "code": "public DomainSocket accept() throws IOException { refCount.reference();try { DomainSocket ret = new DomainSocket(path, accept0(fd)); ; return ret; } finally { unreference(exc); } }", "n_tokens": 67, "n_pass": [48, 3, 3]}
+{"time": "2023-09-23 23:51:00.114901", "score": "0.4374", "loss": "1.062", "code": "public DomainSocket accept() throws IOException { refCount.reference();try { DomainSocket ret = new DomainSocket(path, accept0(fd)); ;ret; } finally { unreference(exc); } }", "n_tokens": 64, "n_pass": [88, 5, 4]}
+{"time": "2023-09-23 23:51:03.618269", "score": "0.4374", "loss": "1.062", "code": "DomainSocket accept() throws IOException { refCount.reference();try { DomainSocket ret = new DomainSocket(path, accept0(fd)); ;ret; } finally { unreference(exc); } }", "n_tokens": 62, "n_pass": [95, 7, 5]}
+{"time": "2023-09-23 23:51:05.690428", "score": "0.5852", "loss": "0.7324", "code": "DomainSocket accept() throws IOException { reference();try { DomainSocket ret = new DomainSocket(path, accept0(fd)); ;ret; } finally { unreference(exc); } }", "n_tokens": 60, "n_pass": [102, 8, 6]}
+{"time": "2023-09-23 23:51:07.395126", "score": "0.4061", "loss": "1.2922", "code": "DomainSocket accept() throws IOException { reference();try { DomainSocket= new DomainSocket(path, accept0(fd)); ;ret; } finally { unreference(exc); } }", "n_tokens": 57, "n_pass": [107, 9, 7]}
+{"time": "2023-09-23 23:51:09.083552", "score": "0.8019", "loss": "0.3418", "code": "DomainSocket accept() throws IOException { reference();try { DomainSocket= new DomainSocket(accept0(fd)); ;ret; } finally { unreference(exc); } }", "n_tokens": 54, "n_pass": [110, 10, 8]}
+{"time": "2023-09-23 23:51:10.708523", "score": "0.6781", "loss": "0.5241", "code": "DomainSocket accept() throws IOException { reference();try { DomainSocket= new DomainSocket(accept0(fd)); ;} finally { unreference(exc); } }", "n_tokens": 51, "n_pass": [114, 11, 9]}
+{"time": "2023-09-23 23:51:16.411389", "score": "0.6781", "loss": "0.5241", "code": "DomainSocket accept() throws IOException { reference();try { DomainSocket= new DomainSocket(accept0(fd));} finally { unreference(exc); } }", "n_tokens": 49, "n_pass": [176, 12, 10]}
+{"time": "2023-09-23 23:51:18.141594", "score": "0.4215", "loss": "1.2003", "code": "DomainSocket accept() throws IOException { reference();try { DomainSocket= new DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 47, "n_pass": [180, 13, 11]}
+{"time": "2023-09-23 23:51:20.892565", "score": "0.4215", "loss": "1.2003", "code": "DomainSocket accept()throws IOException { reference();try { DomainSocket= new DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 46, "n_pass": [190, 14, 12]}
+{"time": "2023-09-23 23:51:22.596188", "score": "0.4215", "loss": "1.2003", "code": "DomainSocket accept()throws IOException{ reference();try { DomainSocket= new DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 45, "n_pass": [194, 15, 13]}
+{"time": "2023-09-23 23:51:24.304616", "score": "0.4215", "loss": "1.2003", "code": "DomainSocket accept()throws IOException{reference();try { DomainSocket= new DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 44, "n_pass": [196, 16, 14]}
+{"time": "2023-09-23 23:51:26.009032", "score": "0.4215", "loss": "1.2003", "code": "DomainSocket accept()throws IOException{reference();try{ DomainSocket= new DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 43, "n_pass": [202, 17, 15]}
+{"time": "2023-09-23 23:51:27.790332", "score": "0.4215", "loss": "1.2003", "code": "DomainSocket accept()throws IOException{reference();try{DomainSocket= new DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 42, "n_pass": [204, 18, 16]}
+{"time": "2023-09-23 23:51:29.615734", "score": "0.4215", "loss": "1.2003", "code": "DomainSocket accept()throws IOException{reference();try{DomainSocket=new DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 41, "n_pass": [207, 19, 17]}
+{"time": "2023-09-23 23:51:31.441996", "score": "0.2137", "loss": "2.004", "code": "DomainSocket accept()throws IOException{reference();try{DomainSocket= DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 40, "n_pass": [208, 20, 18]}
+{"time": "2023-09-23 23:51:33.304224", "score": "0.2137", "loss": "2.004", "code": "DomainSocket accept()throws IOException{reference();try{DomainSocket=DomainSocket(accept0(fd));} finally {(exc); } }", "n_tokens": 39, "n_pass": [209, 21, 19]}
+{"time": "2023-09-23 23:51:36.712603", "score": "0.2137", "loss": "2.004", "code": "DomainSocket accept()throws IOException{reference();try{DomainSocket=DomainSocket(accept(fd));} finally {(exc); } }", "n_tokens": 38, "n_pass": [213, 23, 20]}
+{"time": "2023-09-23 23:51:39.400289", "score": "0.8458", "loss": "0.2753", "code": "DomainSocket accept()throws IOException{reference();try{DomainSocketDomainSocket(accept(fd));} finally {(exc); } }", "n_tokens": 37, "n_pass": [239, 24, 21]}
+{"time": "2023-09-23 23:51:41.040178", "score": "0.4609", "loss": "0.9881", "code": "DomainSocket accept()throws IOException{reference();try{DomainSocket(accept(fd));} finally {(exc); } }", "n_tokens": 36, "n_pass": [240, 25, 22]}
+{"time": "2023-09-23 23:51:45.391990", "score": "0.3278", "loss": "1.6706", "code": "DomainSocket accept()throws IOException{reference();try{(accept(fd));} finally {(exc); } }", "n_tokens": 35, "n_pass": [267, 27, 23]}
+{"time": "2023-09-23 23:51:51.931736", "score": "0.3278", "loss": "1.6706", "code": "DomainSocket accept()throws IOException{reference();try{(accept(fd));}finally {(exc); } }", "n_tokens": 34, "n_pass": [315, 29, 24]}
+{"time": "2023-09-23 23:51:53.564146", "score": "0.3278", "loss": "1.6706", "code": "DomainSocket accept()throws IOException{reference();try{(accept(fd));}finally{(exc); } }", "n_tokens": 33, "n_pass": [316, 30, 25]}
+{"time": "2023-09-23 23:51:55.121373", "score": "0.3278", "loss": "1.6706", "code": "DomainSocket accept()throws IOException{reference();try{(accept(fd));}finally{(exc);} }", "n_tokens": 32, "n_pass": [322, 31, 26]}
+{"time": "2023-09-23 23:51:56.853352", "score": "0.3278", "loss": "1.6706", "code": "DomainSocket accept()throws IOException{reference();try{(accept(fd));}finally{(exc);}}", "n_tokens": 31, "n_pass": [324, 32, 27]}
+
+Minimal simplified code:
+DomainSocket accept()throws IOException{reference();try{(accept(fd));}finally{(exc);}}
+

@@ -1,0 +1,21 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_compareTo_0.java
+method_name = compareTo
+method_body = public int compareTo(Queue queue) { return name.compareTo(queue.getName()); }
+predict, score, loss = compareTo, 0.9790050983428955, 0.06105905771255493
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:22:27.472975", "score": "0.979", "loss": "0.0611", "code": "public int compareTo(Queue queue) { return name.compareTo(queue.getName()); }", "n_tokens": 28, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:22:31.395421", "score": "0.9922", "loss": "0.0297", "code": "public int compareTo(Queue queue) { return name.compareTo(queue); }", "n_tokens": 24, "n_pass": [26, 3, 2]}
+{"time": "2023-09-24 00:22:33.545567", "score": "0.9277", "loss": "0.2071", "code": "public int compareTo() { return name.compareTo(queue); }", "n_tokens": 21, "n_pass": [30, 4, 3]}
+{"time": "2023-09-24 00:22:36.106480", "score": "0.9713", "loss": "0.1483", "code": "public int compareTo() { name.compareTo(queue); }", "n_tokens": 19, "n_pass": [51, 5, 4]}
+{"time": "2023-09-24 00:22:39.264956", "score": "0.9713", "loss": "0.1483", "code": " int compareTo() { name.compareTo(queue); }", "n_tokens": 18, "n_pass": [56, 7, 5]}
+{"time": "2023-09-24 00:22:40.939287", "score": "0.9713", "loss": "0.1483", "code": "int compareTo() { name.compareTo(queue); }", "n_tokens": 17, "n_pass": [57, 8, 6]}
+{"time": "2023-09-24 00:22:46.427150", "score": "0.9713", "loss": "0.1483", "code": "int compareTo(){ name.compareTo(queue); }", "n_tokens": 16, "n_pass": [87, 10, 7]}
+{"time": "2023-09-24 00:22:48.170747", "score": "0.9713", "loss": "0.1483", "code": "int compareTo(){name.compareTo(queue); }", "n_tokens": 15, "n_pass": [88, 11, 8]}
+{"time": "2023-09-24 00:22:51.326527", "score": "0.9917", "loss": "0.0377", "code": "int compareTo(){name.compareTo(); }", "n_tokens": 14, "n_pass": [93, 13, 9]}
+{"time": "2023-09-24 00:22:52.938415", "score": "0.9917", "loss": "0.0377", "code": "int compareTo(){name.compareTo();}", "n_tokens": 13, "n_pass": [96, 14, 10]}
+
+Minimal simplified code:
+int compareTo(){name.compareTo();}
+

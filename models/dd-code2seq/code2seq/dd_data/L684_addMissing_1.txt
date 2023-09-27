@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/NamenodeFsck_addMissing_0.java
+method_name = addMissing
+method_body = void addMissing(String id, long size) { missingIds.add(id); missingSize += size; }
+predict, score, loss = addMissing, 0.9759618043899536, 0.3118027448654175
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:12:08.607793", "score": "0.976", "loss": "0.3118", "code": "void addMissing(String id, long size) { missingIds.add(id); missingSize += size; }", "n_tokens": 33, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:12:10.346046", "score": "0.7982", "loss": "1.5058", "code": "void addMissing(String id, long size) { missingSize += size; }", "n_tokens": 25, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 02:12:20.313021", "score": "0.7982", "loss": "1.5058", "code": "void addMissing(String id, long size) { missingSize+= size; }", "n_tokens": 24, "n_pass": [74, 6, 3]}
+{"time": "2023-09-24 02:12:23.936144", "score": "0.7982", "loss": "1.5058", "code": "void addMissing(String id, long size) { missingSize+=size; }", "n_tokens": 23, "n_pass": [77, 8, 4]}
+{"time": "2023-09-24 02:12:26.201009", "score": "0.7982", "loss": "1.5058", "code": "void addMissing(String id,long size) { missingSize+=size; }", "n_tokens": 22, "n_pass": [89, 9, 5]}
+{"time": "2023-09-24 02:12:27.856784", "score": "0.7982", "loss": "1.5058", "code": "void addMissing(String id,long size){ missingSize+=size; }", "n_tokens": 21, "n_pass": [94, 10, 6]}
+{"time": "2023-09-24 02:12:29.447284", "score": "0.7982", "loss": "1.5058", "code": "void addMissing(String id,long size){missingSize+=size; }", "n_tokens": 20, "n_pass": [96, 11, 7]}
+{"time": "2023-09-24 02:12:34.108585", "score": "0.7982", "loss": "1.5058", "code": "void addMissing(String id,long size){missingSize+=size;}", "n_tokens": 19, "n_pass": [118, 13, 8]}
+
+Minimal simplified code:
+void addMissing(String id,long size){missingSize+=size;}
+

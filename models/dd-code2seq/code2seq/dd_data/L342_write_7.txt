@@ -1,0 +1,42 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_write_5.java
+method_name = write
+method_body = public void write(byte[] b, int off, int len) throws IOException { if (remain >= len) { out.write(b, off, len); remain -= len; } else { throw new IOException("Writing more bytes than advertised size."); } }
+predict, score, loss = write, 0.9838657975196838, 0.10549371689558029
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:44:34.290096", "score": "0.9839", "loss": "0.1055", "code": "public void write(byte[] b, int off, int len) throws IOException { if (remain >= len) { out.write(b, off, len); remain -= len; } else { throw new IOException(\"Writing more bytes than advertised size.\"); } }", "n_tokens": 96, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:44:36.106723", "score": "0.9835", "loss": "0.2531", "code": "public void write(byte[] b, int off, int len) throws IOException { if (remain >= len) { out.write(b, off, len); remain -=new IOException(\"Writing more bytes than advertised size.\"); } }", "n_tokens": 84, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 00:44:37.888058", "score": "0.9846", "loss": "0.1693", "code": "public void write(byte[] b, int off, int len) throws IOException { if (remain >= len) { out.write(b, off, len); remain -=new IOException(\"Writing advertised size.\"); } }", "n_tokens": 78, "n_pass": [47, 3, 3]}
+{"time": "2023-09-24 00:44:39.627082", "score": "0.9899", "loss": "0.1096", "code": "public void write( int off, int len) throws IOException { if (remain >= len) { out.write(b, off, len); remain -=new IOException(\"Writing advertised size.\"); } }", "n_tokens": 72, "n_pass": [51, 4, 4]}
+{"time": "2023-09-24 00:44:41.327074", "score": "0.9804", "loss": "0.2091", "code": "public void write(int len) throws IOException { if (remain >= len) { out.write(b, off, len); remain -=new IOException(\"Writing advertised size.\"); } }", "n_tokens": 66, "n_pass": [52, 5, 5]}
+{"time": "2023-09-24 00:44:43.099334", "score": "0.7023", "loss": "1.7181", "code": "public void write() throws IOException { if (remain >= len) { out.write(b, off, len); remain -=new IOException(\"Writing advertised size.\"); } }", "n_tokens": 63, "n_pass": [86, 6, 6]}
+{"time": "2023-09-24 00:44:44.870392", "score": "0.6695", "loss": "2.0732", "code": "public void write() throws IOException { if (remain >= len) { out.write(b, len); remain -=new IOException(\"Writing advertised size.\"); } }", "n_tokens": 60, "n_pass": [95, 7, 7]}
+{"time": "2023-09-24 00:44:48.705817", "score": "0.5649", "loss": "1.7218", "code": "public void write() throws IOException { if (remain >= len) { out.write(b, len); remain -=new IOException(\"Writingsize.\"); } }", "n_tokens": 57, "n_pass": [101, 9, 8]}
+{"time": "2023-09-24 00:44:51.123571", "score": "0.6697", "loss": "1.5752", "code": "public void write() throws IOException { if (remain >= len) { out.write(b, len); remain -=(\"Writingsize.\"); } }", "n_tokens": 54, "n_pass": [119, 10, 9]}
+{"time": "2023-09-24 00:44:53.618021", "score": "0.7766", "loss": "1.1743", "code": "public void write() throws IOException { if (remain >= len) { out.write(b, len); remain(\"Writingsize.\"); } }", "n_tokens": 51, "n_pass": [137, 11, 10]}
+{"time": "2023-09-24 00:44:57.874766", "score": "0.7412", "loss": "1.424", "code": "public void write() throws IOException { if (remain >= len) { out.write(b, len);(\"Writingsize.\"); } }", "n_tokens": 49, "n_pass": [190, 12, 11]}
+{"time": "2023-09-24 00:44:59.613419", "score": "0.8259", "loss": "0.911", "code": "public void write() throws IOException { if (remain >= len) { out.write(b, len);(\".\"); } }", "n_tokens": 47, "n_pass": [192, 13, 12]}
+{"time": "2023-09-24 00:45:01.249353", "score": "0.8259", "loss": "0.911", "code": " void write() throws IOException { if (remain >= len) { out.write(b, len);(\".\"); } }", "n_tokens": 46, "n_pass": [197, 14, 13]}
+{"time": "2023-09-24 00:45:02.931848", "score": "0.8259", "loss": "0.911", "code": "void write() throws IOException { if (remain >= len) { out.write(b, len);(\".\"); } }", "n_tokens": 45, "n_pass": [198, 15, 14]}
+{"time": "2023-09-24 00:45:05.357346", "score": "0.8259", "loss": "0.911", "code": "void write()throws IOException { if (remain >= len) { out.write(b, len);(\".\"); } }", "n_tokens": 44, "n_pass": [204, 16, 15]}
+{"time": "2023-09-24 00:45:07.048834", "score": "0.8259", "loss": "0.911", "code": "void write()throws IOException{ if (remain >= len) { out.write(b, len);(\".\"); } }", "n_tokens": 43, "n_pass": [208, 17, 16]}
+{"time": "2023-09-24 00:45:08.771836", "score": "0.8259", "loss": "0.911", "code": "void write()throws IOException{if (remain >= len) { out.write(b, len);(\".\"); } }", "n_tokens": 42, "n_pass": [210, 18, 17]}
+{"time": "2023-09-24 00:45:10.503112", "score": "0.8259", "loss": "0.911", "code": "void write()throws IOException{if(remain >= len) { out.write(b, len);(\".\"); } }", "n_tokens": 41, "n_pass": [212, 19, 18]}
+{"time": "2023-09-24 00:45:12.206620", "score": "0.8343", "loss": "1.0427", "code": "void write()throws IOException{if(remain >= len) { write(b, len);(\".\"); } }", "n_tokens": 39, "n_pass": [219, 20, 19]}
+{"time": "2023-09-24 00:45:14.025274", "score": "0.752", "loss": "1.6802", "code": "void write()throws IOException{if(remain >= len) { write( len);(\".\"); } }", "n_tokens": 37, "n_pass": [221, 21, 20]}
+{"time": "2023-09-24 00:45:15.740854", "score": "0.5785", "loss": "1.9763", "code": "void write()throws IOException{if(remain >= len) { write();(\".\"); } }", "n_tokens": 35, "n_pass": [222, 22, 21]}
+{"time": "2023-09-24 00:45:20.802592", "score": "0.3715", "loss": "3.3497", "code": "void write()throws IOException{if(remain >= len) { write();(\"\"); } }", "n_tokens": 34, "n_pass": [272, 23, 22]}
+{"time": "2023-09-24 00:45:22.693652", "score": "0.3715", "loss": "3.3497", "code": "void write()throws IOException{if(remain >= len) { write();(\"\");} }", "n_tokens": 33, "n_pass": [275, 24, 23]}
+{"time": "2023-09-24 00:45:24.412299", "score": "0.3715", "loss": "3.3497", "code": "void write()throws IOException{if(remain >= len) { write();(\"\");}}", "n_tokens": 32, "n_pass": [277, 25, 24]}
+{"time": "2023-09-24 00:45:26.856852", "score": "0.3715", "loss": "3.3497", "code": "void write()throws IOException{if(remain>= len) { write();(\"\");}}", "n_tokens": 31, "n_pass": [291, 26, 25]}
+{"time": "2023-09-24 00:45:30.313292", "score": "0.3796", "loss": "3.5605", "code": "void write()throws IOException{if(remain> len) { write();(\"\");}}", "n_tokens": 30, "n_pass": [293, 28, 26]}
+{"time": "2023-09-24 00:45:32.021972", "score": "0.3796", "loss": "3.5605", "code": "void write()throws IOException{if(remain>len) { write();(\"\");}}", "n_tokens": 29, "n_pass": [294, 29, 27]}
+{"time": "2023-09-24 00:45:33.739300", "score": "0.3796", "loss": "3.5605", "code": "void write()throws IOException{if(remain>len){ write();(\"\");}}", "n_tokens": 28, "n_pass": [297, 30, 28]}
+{"time": "2023-09-24 00:45:35.432708", "score": "0.3796", "loss": "3.5605", "code": "void write()throws IOException{if(remain>len){write();(\"\");}}", "n_tokens": 27, "n_pass": [299, 31, 29]}
+{"time": "2023-09-24 00:45:37.812056", "score": "0.4617", "loss": "4.0935", "code": "void write()throws IOException{if(remainlen){write();(\"\");}}", "n_tokens": 26, "n_pass": [323, 32, 30]}
+{"time": "2023-09-24 00:45:39.377310", "score": "0.5086", "loss": "3.132", "code": "void write()throws IOException{if(remain){write();(\"\");}}", "n_tokens": 25, "n_pass": [324, 33, 31]}
+
+Minimal simplified code:
+void write()throws IOException{if(remain){write();("");}}
+

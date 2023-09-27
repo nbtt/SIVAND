@@ -1,0 +1,36 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Chunk_skip_0.java
+method_name = skip
+method_body = public long skip(long n) throws IOException { if (!checkEOF()) { long ret = in.skip(Math.min(remain, n)); remain -= ret; return ret; } return 0; }
+predict, score, loss = skip, 0.9896194338798523, 0.025630544871091843
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:36:03.188394", "score": "0.9896", "loss": "0.0256", "code": "public long skip(long n) throws IOException { if (!checkEOF()) { long ret = in.skip(Math.min(remain, n)); remain -= ret; return ret; } return 0; }", "n_tokens": 71, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:36:06.894869", "score": "0.9962", "loss": "0.018", "code": "public long skip(long n) throws IOException { { long ret = in.skip(Math.min(remain, n)); remain -= ret; return ret; } return 0; }", "n_tokens": 62, "n_pass": [22, 3, 2]}
+{"time": "2023-09-24 00:36:08.790587", "score": "0.399", "loss": "1.3836", "code": "public long skip(long n) throws IOException { { long ret =(Math.min(remain, n)); remain -= ret; return ret; } return 0; }", "n_tokens": 58, "n_pass": [45, 4, 3]}
+{"time": "2023-09-24 00:36:12.225440", "score": "0.5111", "loss": "1.1971", "code": "public long skip(long n) throws IOException { { long ret =(Math.min(remain, n)); remain -= ret; } return 0; }", "n_tokens": 53, "n_pass": [50, 6, 4]}
+{"time": "2023-09-24 00:36:16.075048", "score": "0.8095", "loss": "0.5802", "code": "public long skip(long n) throws IOException { { long ret =(Math.min(remain, n)); remain -= ret; } ; }", "n_tokens": 50, "n_pass": [89, 8, 5]}
+{"time": "2023-09-24 00:36:17.686885", "score": "0.8095", "loss": "0.5802", "code": "long skip(long n) throws IOException { { long ret =(Math.min(remain, n)); remain -= ret; } ; }", "n_tokens": 48, "n_pass": [91, 9, 6]}
+{"time": "2023-09-24 00:36:19.774757", "score": "0.6235", "loss": "1.0271", "code": "long skip(long n) throws IOException { { ret =(Math.min(remain, n)); remain -= ret; } ; }", "n_tokens": 46, "n_pass": [100, 10, 7]}
+{"time": "2023-09-24 00:36:21.477393", "score": "0.5856", "loss": "0.8745", "code": "long skip(long n) throws IOException { { ret(Math.min(remain, n)); remain -= ret; } ; }", "n_tokens": 44, "n_pass": [102, 11, 8]}
+{"time": "2023-09-24 00:36:23.234176", "score": "0.6376", "loss": "1.0411", "code": "long skip(long n) throws IOException { { ret(Math(remain, n)); remain -= ret; } ; }", "n_tokens": 42, "n_pass": [104, 12, 9]}
+{"time": "2023-09-24 00:36:25.018709", "score": "0.5082", "loss": "1.5975", "code": "long skip(long n) throws IOException { { ret(Math(remainn)); remain -= ret; } ; }", "n_tokens": 40, "n_pass": [106, 13, 10]}
+{"time": "2023-09-24 00:36:28.789494", "score": "0.6297", "loss": "1.3514", "code": "long skip(long n) throws IOException { {(Math(remainn)); remain -= ret; } ; }", "n_tokens": 38, "n_pass": [122, 15, 11]}
+{"time": "2023-09-24 00:36:36.057150", "score": "0.7063", "loss": "1.08", "code": "long skip(long n) throws IOException { {((remainn)); remain -= ret; } ; }", "n_tokens": 37, "n_pass": [175, 17, 12]}
+{"time": "2023-09-24 00:36:37.782194", "score": "0.8189", "loss": "0.6139", "code": "long skip(long n) throws IOException { {((n)); remain -= ret; } ; }", "n_tokens": 36, "n_pass": [177, 18, 13]}
+{"time": "2023-09-24 00:36:39.457993", "score": "0.8189", "loss": "0.6139", "code": "long skip(long n) throws IOException { {((n));remain -= ret; } ; }", "n_tokens": 35, "n_pass": [182, 19, 14]}
+{"time": "2023-09-24 00:36:41.042441", "score": "0.8189", "loss": "0.6139", "code": "long skip(long n) throws IOException { {((n));remain-= ret; } ; }", "n_tokens": 34, "n_pass": [184, 20, 15]}
+{"time": "2023-09-24 00:36:42.763891", "score": "0.7093", "loss": "0.7462", "code": "long skip(long n) throws IOException { {((n));remain= ret; } ; }", "n_tokens": 33, "n_pass": [185, 21, 16]}
+{"time": "2023-09-24 00:36:44.436487", "score": "0.4463", "loss": "1.7474", "code": "long skip(long n) throws IOException { {((n));remain ret; } ; }", "n_tokens": 32, "n_pass": [186, 22, 17]}
+{"time": "2023-09-24 00:36:46.096019", "score": "0.4113", "loss": "1.6445", "code": "long skip(long n) throws IOException { {((n));remainret; } ; }", "n_tokens": 31, "n_pass": [187, 23, 18]}
+{"time": "2023-09-24 00:36:47.757758", "score": "0.4113", "loss": "1.6445", "code": "long skip(long n) throws IOException { {((n));remainret; } }", "n_tokens": 29, "n_pass": [190, 24, 19]}
+{"time": "2023-09-24 00:36:50.074309", "score": "0.4113", "loss": "1.6445", "code": "long skip(long n)throws IOException { {((n));remainret; } }", "n_tokens": 28, "n_pass": [200, 25, 20]}
+{"time": "2023-09-24 00:36:51.633810", "score": "0.4113", "loss": "1.6445", "code": "long skip(long n)throws IOException{ {((n));remainret; } }", "n_tokens": 27, "n_pass": [204, 26, 21]}
+{"time": "2023-09-24 00:36:53.325054", "score": "0.4113", "loss": "1.6445", "code": "long skip(long n)throws IOException{{((n));remainret; } }", "n_tokens": 26, "n_pass": [206, 27, 22]}
+{"time": "2023-09-24 00:36:55.054940", "score": "0.3784", "loss": "1.5556", "code": "long skip(long n)throws IOException{{((n));ret; } }", "n_tokens": 25, "n_pass": [214, 28, 23]}
+{"time": "2023-09-24 00:37:00.102427", "score": "0.3784", "loss": "1.5556", "code": "long skip(long n)throws IOException{{((n));ret;} }", "n_tokens": 24, "n_pass": [243, 30, 24]}
+{"time": "2023-09-24 00:37:01.874383", "score": "0.3784", "loss": "1.5556", "code": "long skip(long n)throws IOException{{((n));ret;}}", "n_tokens": 23, "n_pass": [244, 31, 25]}
+
+Minimal simplified code:
+long skip(long n)throws IOException{{((n));ret;}}
+

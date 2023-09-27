@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestCombineOutputCollector_increment_0.java
+method_name = increment
+method_body = public void increment(long incr) { this.value += incr; }
+predict, score, loss = increment, 0.3764559030532837, 1.2116312980651855
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:04:08.768941", "score": "0.3765", "loss": "1.2116", "code": "public void increment(long incr) { this.value += incr; }", "n_tokens": 24, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:04:10.891007", "score": "0.5638", "loss": "0.7103", "code": "public void increment() { this.value += incr; }", "n_tokens": 21, "n_pass": [22, 2, 2]}
+{"time": "2023-09-24 03:04:12.659530", "score": "0.5861", "loss": "0.7496", "code": "public void increment() {value += incr; }", "n_tokens": 18, "n_pass": [23, 3, 3]}
+{"time": "2023-09-24 03:04:17.232115", "score": "0.5861", "loss": "0.7496", "code": " void increment() {value += incr; }", "n_tokens": 17, "n_pass": [48, 5, 4]}
+{"time": "2023-09-24 03:04:18.884319", "score": "0.5861", "loss": "0.7496", "code": "void increment() {value += incr; }", "n_tokens": 16, "n_pass": [49, 6, 5]}
+{"time": "2023-09-24 03:04:24.285338", "score": "0.5861", "loss": "0.7496", "code": "void increment(){value += incr; }", "n_tokens": 15, "n_pass": [72, 8, 6]}
+{"time": "2023-09-24 03:04:25.996350", "score": "0.5861", "loss": "0.7496", "code": "void increment(){value+= incr; }", "n_tokens": 14, "n_pass": [75, 9, 7]}
+{"time": "2023-09-24 03:04:29.653003", "score": "0.5861", "loss": "0.7496", "code": "void increment(){value+=incr; }", "n_tokens": 13, "n_pass": [78, 11, 8]}
+{"time": "2023-09-24 03:04:31.381051", "score": "0.5861", "loss": "0.7496", "code": "void increment(){value+=incr;}", "n_tokens": 12, "n_pass": [81, 12, 9]}
+
+Minimal simplified code:
+void increment(){value+=incr;}
+

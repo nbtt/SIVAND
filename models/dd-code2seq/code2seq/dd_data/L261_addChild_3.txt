@@ -1,0 +1,25 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_addChild_0.java
+method_name = addChild
+method_body = void addChild(Queue child) { if (children == null) { children = new TreeSet<Queue>(); } children.add(child); }
+predict, score, loss = addChild, 0.9453163146972656, 0.1351071000099182
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:18:16.056979", "score": "0.9453", "loss": "0.1351", "code": "void addChild(Queue child) { if (children == null) { children = new TreeSet<Queue>(); } children.add(child); }", "n_tokens": 49, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:18:17.930907", "score": "0.9259", "loss": "0.1879", "code": "void addChild(Queue child) { if (children == null) { ; } children.add(child); }", "n_tokens": 37, "n_pass": [10, 2, 2]}
+{"time": "2023-09-24 00:18:19.674514", "score": "0.7693", "loss": "0.6778", "code": "void addChild(Queue child) { if (children == null) { ; }add(child); }", "n_tokens": 34, "n_pass": [38, 3, 3]}
+{"time": "2023-09-24 00:18:23.516897", "score": "0.7693", "loss": "0.6778", "code": "void addChild(Queue child){ if (children == null) { ; }add(child); }", "n_tokens": 33, "n_pass": [83, 4, 4]}
+{"time": "2023-09-24 00:18:25.334562", "score": "0.7693", "loss": "0.6778", "code": "void addChild(Queue child){ if (children == null) { }add(child); }", "n_tokens": 31, "n_pass": [92, 5, 5]}
+{"time": "2023-09-24 00:18:32.074640", "score": "0.8018", "loss": "0.7053", "code": "void addChild(Queue child){ if (children == null) { }add(); }", "n_tokens": 30, "n_pass": [137, 7, 6]}
+{"time": "2023-09-24 00:18:33.641242", "score": "0.8018", "loss": "0.7053", "code": "void addChild(Queue child){ if (children == null) { }add();}", "n_tokens": 29, "n_pass": [140, 8, 7]}
+{"time": "2023-09-24 00:18:35.973738", "score": "0.8018", "loss": "0.7053", "code": "void addChild(Queue child){if (children == null) { }add();}", "n_tokens": 28, "n_pass": [151, 9, 8]}
+{"time": "2023-09-24 00:18:37.706086", "score": "0.8018", "loss": "0.7053", "code": "void addChild(Queue child){if(children == null) { }add();}", "n_tokens": 27, "n_pass": [153, 10, 9]}
+{"time": "2023-09-24 00:18:39.264671", "score": "0.8018", "loss": "0.7053", "code": "void addChild(Queue child){if(children== null) { }add();}", "n_tokens": 26, "n_pass": [156, 11, 10]}
+{"time": "2023-09-24 00:18:40.887416", "score": "0.6411", "loss": "1.3074", "code": "void addChild(Queue child){if(children= null) { }add();}", "n_tokens": 25, "n_pass": [157, 12, 11]}
+{"time": "2023-09-24 00:18:42.588813", "score": "0.6411", "loss": "1.3074", "code": "void addChild(Queue child){if(children=null) { }add();}", "n_tokens": 24, "n_pass": [159, 13, 12]}
+{"time": "2023-09-24 00:18:44.200890", "score": "0.6411", "loss": "1.3074", "code": "void addChild(Queue child){if(children=null){ }add();}", "n_tokens": 23, "n_pass": [162, 14, 13]}
+{"time": "2023-09-24 00:18:45.829710", "score": "0.6411", "loss": "1.3074", "code": "void addChild(Queue child){if(children=null){}add();}", "n_tokens": 22, "n_pass": [164, 15, 14]}
+
+Minimal simplified code:
+void addChild(Queue child){if(children=null){}add();}
+

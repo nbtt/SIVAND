@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestSequenceFile_close_0.java
+method_name = close
+method_body = public void close() throws IOException { closed = true; super.close(); }
+predict, score, loss = close, 0.996853768825531, 0.007723565213382244
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:31:17.040979", "score": "0.9969", "loss": "0.0077", "code": "public void close() throws IOException { closed = true; super.close(); }", "n_tokens": 29, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:31:18.637030", "score": "0.9689", "loss": "0.0816", "code": "public void close() throws IOException { super.close(); }", "n_tokens": 22, "n_pass": [10, 2, 2]}
+{"time": "2023-09-23 23:31:20.935606", "score": "0.8575", "loss": "0.3491", "code": "public void close() throws IOException { close(); }", "n_tokens": 20, "n_pass": [37, 3, 3]}
+{"time": "2023-09-23 23:31:22.463202", "score": "0.8575", "loss": "0.3491", "code": " void close() throws IOException { close(); }", "n_tokens": 19, "n_pass": [40, 4, 4]}
+{"time": "2023-09-23 23:31:24.003532", "score": "0.8575", "loss": "0.3491", "code": "void close() throws IOException { close(); }", "n_tokens": 18, "n_pass": [41, 5, 5]}
+{"time": "2023-09-23 23:31:28.793313", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException { close(); }", "n_tokens": 17, "n_pass": [74, 6, 6]}
+{"time": "2023-09-23 23:31:30.330386", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException{ close(); }", "n_tokens": 16, "n_pass": [78, 7, 7]}
+{"time": "2023-09-23 23:31:31.947252", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException{close(); }", "n_tokens": 15, "n_pass": [80, 8, 8]}
+{"time": "2023-09-23 23:31:33.544461", "score": "0.8575", "loss": "0.3491", "code": "void close()throws IOException{close();}", "n_tokens": 14, "n_pass": [85, 9, 9]}
+
+Minimal simplified code:
+void close()throws IOException{close();}
+

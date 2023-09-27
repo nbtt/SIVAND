@@ -1,0 +1,28 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestViewFileSystemHdfs_setupMountPoints_0.java
+method_name = setupMountPoints
+method_body = void setupMountPoints() { super.setupMountPoints(); ConfigUtil.addLink(conf, "/mountOnNn2", new Path(targetTestRoot2, "mountOnNn2").toUri()); }
+predict, score, loss = setupMountPoints, 0.9880788922309875, 0.04109973460435867
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:22:47.272816", "score": "0.9881", "loss": "0.0411", "code": "void setupMountPoints() { super.setupMountPoints(); ConfigUtil.addLink(conf, \"/mountOnNn2\", new Path(targetTestRoot2, \"mountOnNn2\").toUri()); }", "n_tokens": 50, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:22:49.512666", "score": "0.9895", "loss": "0.0366", "code": "void setupMountPoints() { super.setupMountPoints(); ConfigUtil.addLink(conf, \"/mountOnNn2\", new Path( \"mountOnNn2\").toUri()); }", "n_tokens": 47, "n_pass": [55, 2, 2]}
+{"time": "2023-09-24 01:22:51.198818", "score": "0.9922", "loss": "0.0276", "code": "void setupMountPoints() { super.setupMountPoints(); ConfigUtil.addLink(conf, \"/mountOnNn2\", new Path( \"mountOnNn2\")); }", "n_tokens": 43, "n_pass": [58, 3, 3]}
+{"time": "2023-09-24 01:22:54.890252", "score": "0.9922", "loss": "0.0276", "code": "void setupMountPoints(){ super.setupMountPoints(); ConfigUtil.addLink(conf, \"/mountOnNn2\", new Path( \"mountOnNn2\")); }", "n_tokens": 42, "n_pass": [108, 4, 4]}
+{"time": "2023-09-24 01:22:56.541644", "score": "0.9922", "loss": "0.0276", "code": "void setupMountPoints(){super.setupMountPoints(); ConfigUtil.addLink(conf, \"/mountOnNn2\", new Path( \"mountOnNn2\")); }", "n_tokens": 41, "n_pass": [110, 5, 5]}
+{"time": "2023-09-24 01:22:59.773799", "score": "0.9937", "loss": "0.022", "code": "void setupMountPoints(){super.setupMountPoints(); addLink(conf, \"/mountOnNn2\", new Path( \"mountOnNn2\")); }", "n_tokens": 39, "n_pass": [117, 7, 6]}
+{"time": "2023-09-24 01:23:01.354096", "score": "0.9946", "loss": "0.0189", "code": "void setupMountPoints(){super.setupMountPoints(); addLink( \"/mountOnNn2\", new Path( \"mountOnNn2\")); }", "n_tokens": 37, "n_pass": [119, 8, 7]}
+{"time": "2023-09-24 01:23:02.975805", "score": "0.9937", "loss": "0.0215", "code": "void setupMountPoints(){super.setupMountPoints(); addLink( \"2\", new Path( \"mountOnNn2\")); }", "n_tokens": 35, "n_pass": [121, 9, 8]}
+{"time": "2023-09-24 01:23:04.595595", "score": "0.9922", "loss": "0.0261", "code": "void setupMountPoints(){super.setupMountPoints(); addLink( \"2\", Path( \"mountOnNn2\")); }", "n_tokens": 33, "n_pass": [124, 10, 9]}
+{"time": "2023-09-24 01:23:06.304848", "score": "0.9894", "loss": "0.0348", "code": "void setupMountPoints(){super.setupMountPoints(); addLink( \"2\", Path( \"\")); }", "n_tokens": 31, "n_pass": [127, 11, 10]}
+{"time": "2023-09-24 01:23:12.415817", "score": "0.9894", "loss": "0.0348", "code": "void setupMountPoints(){super.setupMountPoints(); addLink( \"2\", Path( \"\"));}", "n_tokens": 30, "n_pass": [172, 13, 11]}
+{"time": "2023-09-24 01:23:16.348899", "score": "0.9894", "loss": "0.0348", "code": "void setupMountPoints(){super.setupMountPoints();addLink( \"2\", Path( \"\"));}", "n_tokens": 29, "n_pass": [185, 15, 12]}
+{"time": "2023-09-24 01:23:18.044736", "score": "0.9894", "loss": "0.0348", "code": "void setupMountPoints(){super.setupMountPoints();addLink(\"2\", Path( \"\"));}", "n_tokens": 28, "n_pass": [188, 16, 13]}
+{"time": "2023-09-24 01:23:19.860010", "score": "0.9893", "loss": "0.0349", "code": "void setupMountPoints(){super.setupMountPoints();addLink(\"\", Path( \"\"));}", "n_tokens": 27, "n_pass": [190, 17, 14]}
+{"time": "2023-09-24 01:23:21.701676", "score": "0.9893", "loss": "0.0349", "code": "void setupMountPoints(){super.setupMountPoints();addLink(\"\",Path( \"\"));}", "n_tokens": 26, "n_pass": [193, 18, 15]}
+{"time": "2023-09-24 01:23:23.455511", "score": "0.988", "loss": "0.0387", "code": "void setupMountPoints(){super.setupMountPoints();addLink(\"\",( \"\"));}", "n_tokens": 25, "n_pass": [194, 19, 16]}
+{"time": "2023-09-24 01:23:25.078893", "score": "0.988", "loss": "0.0387", "code": "void setupMountPoints(){super.setupMountPoints();addLink(\"\",(\"\"));}", "n_tokens": 24, "n_pass": [196, 20, 17]}
+
+Minimal simplified code:
+void setupMountPoints(){super.setupMountPoints();addLink("",(""));}
+

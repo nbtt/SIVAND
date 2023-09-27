@@ -1,0 +1,19 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Server_getHandlers_0.java
+method_name = getHandlers
+method_body = Iterable<? extends Thread> getHandlers() { return Arrays.asList(handlers); }
+predict, score, loss = getHandlers, 0.8493947982788086, 0.6804978847503662
+
+Trace of simplified code(s):
+{"time": "2023-09-24 02:33:28.615077", "score": "0.8494", "loss": "0.6805", "code": "Iterable<? extends Thread> getHandlers() { return Arrays.asList(handlers); }", "n_tokens": 26, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 02:33:31.378440", "score": "0.8494", "loss": "0.6805", "code": "Iterable<?extends Thread> getHandlers() { return Arrays.asList(handlers); }", "n_tokens": 25, "n_pass": [47, 2, 2]}
+{"time": "2023-09-24 02:33:34.674574", "score": "0.6547", "loss": "1.7502", "code": "Iterable<?extends Thread> getHandlers() { return Arrays(handlers); }", "n_tokens": 23, "n_pass": [56, 4, 3]}
+{"time": "2023-09-24 02:33:37.965166", "score": "0.9213", "loss": "0.233", "code": "Iterable<?extends Thread> getHandlers() { return(handlers); }", "n_tokens": 21, "n_pass": [70, 6, 4]}
+{"time": "2023-09-24 02:33:42.799711", "score": "0.9213", "loss": "0.233", "code": "Iterable<?extends Thread> getHandlers() { return(handlers);}", "n_tokens": 20, "n_pass": [103, 8, 5]}
+{"time": "2023-09-24 02:33:44.370860", "score": "0.9213", "loss": "0.233", "code": "Iterable<?extends Thread>getHandlers() { return(handlers);}", "n_tokens": 19, "n_pass": [111, 9, 6]}
+{"time": "2023-09-24 02:33:45.965894", "score": "0.9213", "loss": "0.233", "code": "Iterable<?extends Thread>getHandlers(){ return(handlers);}", "n_tokens": 18, "n_pass": [115, 10, 7]}
+{"time": "2023-09-24 02:33:47.593265", "score": "0.9213", "loss": "0.233", "code": "Iterable<?extends Thread>getHandlers(){return(handlers);}", "n_tokens": 17, "n_pass": [117, 11, 8]}
+
+Minimal simplified code:
+Iterable<?extends Thread>getHandlers(){return(handlers);}
+

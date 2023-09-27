@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/StructureGenerator_addChild_0.java
+method_name = addChild
+method_body = private void addChild(INode child) { children.add(child); }
+predict, score, loss = addChild, 0.9680076837539673, 0.08758368343114853
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:43:47.005318", "score": "0.968", "loss": "0.0876", "code": "private void addChild(INode child) { children.add(child); }", "n_tokens": 22, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:43:49.051482", "score": "0.968", "loss": "0.0876", "code": "void addChild(INode child) { children.add(child); }", "n_tokens": 20, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:43:52.834119", "score": "0.6749", "loss": "0.976", "code": "void addChild(INode child) { children.add; }", "n_tokens": 17, "n_pass": [26, 4, 3]}
+{"time": "2023-09-23 23:43:54.715675", "score": "0.575", "loss": "2.4586", "code": "void addChild(INode child) { ; }", "n_tokens": 14, "n_pass": [32, 5, 4]}
+{"time": "2023-09-23 23:43:57.631297", "score": "0.575", "loss": "2.4586", "code": "void addChild(INode child) { }", "n_tokens": 12, "n_pass": [48, 6, 5]}
+{"time": "2023-09-23 23:44:00.547989", "score": "0.575", "loss": "2.4586", "code": "void addChild(INode child) {}", "n_tokens": 11, "n_pass": [64, 7, 6]}
+{"time": "2023-09-23 23:44:02.753283", "score": "0.575", "loss": "2.4586", "code": "void addChild(INode child){}", "n_tokens": 10, "n_pass": [73, 8, 7]}
+
+Minimal simplified code:
+void addChild(INode child){}
+

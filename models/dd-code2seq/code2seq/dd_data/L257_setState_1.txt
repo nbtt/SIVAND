@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_setState_0.java
+method_name = setState
+method_body = void setState(QueueState state) { this.state = state; }
+predict, score, loss = setState, 0.9940136671066284, 0.023790236562490463
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:15:13.105565", "score": "0.994", "loss": "0.0238", "code": "void setState(QueueState state) { this.state = state; }", "n_tokens": 21, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:15:15.436749", "score": "0.8166", "loss": "0.8715", "code": "void setState(QueueState state) { this.state ; }", "n_tokens": 18, "n_pass": [26, 2, 2]}
+{"time": "2023-09-24 00:15:17.304679", "score": "0.5766", "loss": "2.6055", "code": "void setState(QueueState state) { this; }", "n_tokens": 15, "n_pass": [32, 3, 3]}
+{"time": "2023-09-24 00:15:20.281771", "score": "0.4976", "loss": "3.4189", "code": "void setState(QueueState state) {  }", "n_tokens": 13, "n_pass": [51, 4, 4]}
+{"time": "2023-09-24 00:15:22.529053", "score": "0.4976", "loss": "3.4189", "code": "void setState(QueueState state){  }", "n_tokens": 12, "n_pass": [61, 5, 5]}
+{"time": "2023-09-24 00:15:25.553561", "score": "0.4976", "loss": "3.4189", "code": "void setState(QueueState state){ }", "n_tokens": 11, "n_pass": [76, 6, 6]}
+{"time": "2023-09-24 00:15:27.113167", "score": "0.4976", "loss": "3.4189", "code": "void setState(QueueState state){}", "n_tokens": 10, "n_pass": [77, 7, 7]}
+
+Minimal simplified code:
+void setState(QueueState state){}
+

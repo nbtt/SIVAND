@@ -1,0 +1,33 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/CopyCommands_processOptions_4.java
+method_name = processOptions
+method_body = protected void processOptions(LinkedList<String> args) throws IOException { if (args.size() < 2) { throw new IOException("missing destination argument"); } getRemoteDestination(args); super.processOptions(args); }
+predict, score, loss = processOptions, 0.9904685616493225, 0.023326558992266655
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:08:21.914244", "score": "0.9905", "loss": "0.0233", "code": "protected void processOptions(LinkedList<String> args) throws IOException { if (args.size() < 2) { throw new IOException(\"missing destination argument\"); } getRemoteDestination(args); super.processOptions(args); }", "n_tokens": 69, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:08:25.516064", "score": "0.9899", "loss": "0.0246", "code": "protected void processOptions(LinkedList<String> args) throws IOException { if (args < 2) { throw new IOException(\"missing destination argument\"); } getRemoteDestination(args); super.processOptions(args); }", "n_tokens": 65, "n_pass": [50, 2, 2]}
+{"time": "2023-09-23 23:08:28.106773", "score": "0.9903", "loss": "0.0241", "code": "protected void processOptions(LinkedList<String> args) throws IOException { if (args) { throw new IOException(\"missing destination argument\"); } getRemoteDestination(args); super.processOptions(args); }", "n_tokens": 61, "n_pass": [51, 3, 3]}
+{"time": "2023-09-23 23:08:30.579826", "score": "0.9917", "loss": "0.0211", "code": "protected void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing destination argument\"); } getRemoteDestination(args); super.processOptions(args); }", "n_tokens": 57, "n_pass": [53, 4, 4]}
+{"time": "2023-09-23 23:08:33.293184", "score": "0.9885", "loss": "0.0285", "code": "protected void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing destination argument\"); }  super.processOptions(args); }", "n_tokens": 52, "n_pass": [57, 5, 5]}
+{"time": "2023-09-23 23:08:39.038631", "score": "0.8065", "loss": "0.6054", "code": "protected void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing destination argument\"); }  super.processOptions; }", "n_tokens": 49, "n_pass": [96, 7, 6]}
+{"time": "2023-09-23 23:08:41.317436", "score": "0.8065", "loss": "0.6054", "code": "void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing destination argument\"); }  super.processOptions; }", "n_tokens": 47, "n_pass": [98, 8, 7]}
+{"time": "2023-09-23 23:08:44.234677", "score": "0.7998", "loss": "0.6216", "code": "void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing argument\"); }  super.processOptions; }", "n_tokens": 45, "n_pass": [114, 9, 8]}
+{"time": "2023-09-23 23:08:46.616632", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing\"); }  super.processOptions; }", "n_tokens": 43, "n_pass": [115, 10, 9]}
+{"time": "2023-09-23 23:08:57.612265", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing\");}  super.processOptions; }", "n_tokens": 42, "n_pass": [179, 12, 10]}
+{"time": "2023-09-23 23:08:59.896410", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing\");} super.processOptions; }", "n_tokens": 41, "n_pass": [181, 13, 11]}
+{"time": "2023-09-23 23:09:02.260742", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String> args) throws IOException { if (args) { IOException(\"missing\");}super.processOptions; }", "n_tokens": 40, "n_pass": [182, 14, 12]}
+{"time": "2023-09-23 23:09:08.010040", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String>args) throws IOException { if (args) { IOException(\"missing\");}super.processOptions; }", "n_tokens": 39, "n_pass": [194, 16, 13]}
+{"time": "2023-09-23 23:09:11.205599", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String>args)throws IOException { if (args) { IOException(\"missing\");}super.processOptions; }", "n_tokens": 38, "n_pass": [197, 17, 14]}
+{"time": "2023-09-23 23:09:13.572510", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String>args)throws IOException{ if (args) { IOException(\"missing\");}super.processOptions; }", "n_tokens": 37, "n_pass": [201, 18, 15]}
+{"time": "2023-09-23 23:09:15.903926", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String>args)throws IOException{if (args) { IOException(\"missing\");}super.processOptions; }", "n_tokens": 36, "n_pass": [203, 19, 16]}
+{"time": "2023-09-23 23:09:17.623782", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String>args)throws IOException{if(args) { IOException(\"missing\");}super.processOptions; }", "n_tokens": 35, "n_pass": [205, 20, 17]}
+{"time": "2023-09-23 23:09:19.354820", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String>args)throws IOException{if(args){ IOException(\"missing\");}super.processOptions; }", "n_tokens": 34, "n_pass": [209, 21, 18]}
+{"time": "2023-09-23 23:09:21.086427", "score": "0.8223", "loss": "0.5807", "code": "void processOptions(LinkedList<String>args)throws IOException{if(args){IOException(\"missing\");}super.processOptions; }", "n_tokens": 33, "n_pass": [211, 22, 19]}
+{"time": "2023-09-23 23:09:22.821634", "score": "0.5216", "loss": "1.8954", "code": "void processOptions(LinkedList<String>args)throws IOException{if(args){(\"missing\");}super.processOptions; }", "n_tokens": 32, "n_pass": [212, 23, 20]}
+{"time": "2023-09-23 23:09:24.639266", "score": "0.5173", "loss": "1.9375", "code": "void processOptions(LinkedList<String>args)throws IOException{if(args){(\"\");}super.processOptions; }", "n_tokens": 31, "n_pass": [215, 24, 21]}
+{"time": "2023-09-23 23:09:31.064597", "score": "0.5173", "loss": "1.9375", "code": "void processOptions(LinkedList<String>args)throws IOException{if(args){(\"\");}super.processOptions;}", "n_tokens": 30, "n_pass": [254, 27, 22]}
+
+Minimal simplified code:
+void processOptions(LinkedList<String>args)throws IOException{if(args){("");}super.processOptions;}
+

@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_setProperties_0.java
+method_name = setProperties
+method_body = void setProperties(Properties props) { this.props = props; }
+predict, score, loss = setProperties, 0.7676800489425659, 0.6314882636070251
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:19:11.210339", "score": "0.7677", "loss": "0.6315", "code": "void setProperties(Properties props) { this.props = props; }", "n_tokens": 21, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:19:13.512870", "score": "0.7022", "loss": "0.9768", "code": "void setProperties(Properties props) { this.props ; }", "n_tokens": 18, "n_pass": [26, 2, 2]}
+{"time": "2023-09-24 00:19:15.465852", "score": "0.7503", "loss": "1.2466", "code": "void setProperties(Properties props) { this; }", "n_tokens": 15, "n_pass": [32, 3, 3]}
+{"time": "2023-09-24 00:19:18.410367", "score": "0.6692", "loss": "1.464", "code": "void setProperties(Properties props) {  }", "n_tokens": 13, "n_pass": [51, 4, 4]}
+{"time": "2023-09-24 00:19:20.923905", "score": "0.6692", "loss": "1.464", "code": "void setProperties(Properties props){  }", "n_tokens": 12, "n_pass": [61, 5, 5]}
+{"time": "2023-09-24 00:19:24.086271", "score": "0.6692", "loss": "1.464", "code": "void setProperties(Properties props){ }", "n_tokens": 11, "n_pass": [76, 6, 6]}
+{"time": "2023-09-24 00:19:25.722812", "score": "0.6692", "loss": "1.464", "code": "void setProperties(Properties props){}", "n_tokens": 10, "n_pass": [77, 7, 7]}
+
+Minimal simplified code:
+void setProperties(Properties props){}
+

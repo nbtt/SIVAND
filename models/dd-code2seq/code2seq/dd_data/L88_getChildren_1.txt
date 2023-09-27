@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/ProportionalCapacityPreemptionPolicy_getChildren_0.java
+method_name = getChildren
+method_body = public ArrayList<TempQueue> getChildren() { return children; }
+predict, score, loss = getChildren, 0.9606683850288391, 0.12461932748556137
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:18:52.499159", "score": "0.9607", "loss": "0.1246", "code": "public ArrayList<TempQueue> getChildren() { return children; }", "n_tokens": 19, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:18:54.186477", "score": "0.9607", "loss": "0.1246", "code": "ArrayList<TempQueue> getChildren() { return children; }", "n_tokens": 17, "n_pass": [20, 2, 2]}
+{"time": "2023-09-23 23:18:59.098982", "score": "0.9607", "loss": "0.1246", "code": "ArrayList<TempQueue>getChildren() { return children; }", "n_tokens": 16, "n_pass": [45, 4, 3]}
+{"time": "2023-09-23 23:19:00.725436", "score": "0.9607", "loss": "0.1246", "code": "ArrayList<TempQueue>getChildren(){ return children; }", "n_tokens": 15, "n_pass": [48, 5, 4]}
+{"time": "2023-09-23 23:19:02.482033", "score": "0.9607", "loss": "0.1246", "code": "ArrayList<TempQueue>getChildren(){return children; }", "n_tokens": 14, "n_pass": [50, 6, 5]}
+{"time": "2023-09-23 23:19:04.202149", "score": "0.8192", "loss": "0.8733", "code": "ArrayList<TempQueue>getChildren(){children; }", "n_tokens": 12, "n_pass": [51, 7, 6]}
+{"time": "2023-09-23 23:19:08.399761", "score": "0.8192", "loss": "0.8733", "code": "ArrayList<TempQueue>getChildren(){children;}", "n_tokens": 11, "n_pass": [67, 9, 7]}
+
+Minimal simplified code:
+ArrayList<TempQueue>getChildren(){children;}
+

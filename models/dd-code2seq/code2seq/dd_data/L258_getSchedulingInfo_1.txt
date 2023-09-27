@@ -1,0 +1,16 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/Queue_getSchedulingInfo_0.java
+method_name = getSchedulingInfo
+method_body = Object getSchedulingInfo() { return schedulingInfo; }
+predict, score, loss = getSchedulingInfo, 0.9914360046386719, 0.047078363597393036
+
+Trace of simplified code(s):
+{"time": "2023-09-24 00:15:31.071274", "score": "0.9914", "loss": "0.0471", "code": "Object getSchedulingInfo() { return schedulingInfo; }", "n_tokens": 14, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 00:15:33.674912", "score": "0.85", "loss": "1.8422", "code": "Object getSchedulingInfo() { schedulingInfo; }", "n_tokens": 12, "n_pass": [25, 2, 2]}
+{"time": "2023-09-24 00:15:40.479664", "score": "0.85", "loss": "1.8422", "code": "Object getSchedulingInfo() { schedulingInfo;}", "n_tokens": 11, "n_pass": [44, 5, 3]}
+{"time": "2023-09-24 00:15:43.019993", "score": "0.85", "loss": "1.8422", "code": "Object getSchedulingInfo(){ schedulingInfo;}", "n_tokens": 10, "n_pass": [50, 6, 4]}
+{"time": "2023-09-24 00:15:44.613586", "score": "0.85", "loss": "1.8422", "code": "Object getSchedulingInfo(){schedulingInfo;}", "n_tokens": 9, "n_pass": [52, 7, 5]}
+
+Minimal simplified code:
+Object getSchedulingInfo(){schedulingInfo;}
+

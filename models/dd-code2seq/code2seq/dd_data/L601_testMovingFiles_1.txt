@@ -1,0 +1,18 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestStickyBit_testMovingFiles_0.java
+method_name = testMovingFiles
+method_body = public void testMovingFiles() throws Exception { testMovingFiles(false); }
+predict, score, loss = testMovingFiles, 0.9708208441734314, 0.9894362688064575
+
+Trace of simplified code(s):
+{"time": "2023-09-24 01:54:24.146263", "score": "0.9708", "loss": "0.9894", "code": "public void testMovingFiles() throws Exception { testMovingFiles(false); }", "n_tokens": 21, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 01:54:25.789332", "score": "0.9708", "loss": "0.9894", "code": "void testMovingFiles() throws Exception { testMovingFiles(false); }", "n_tokens": 19, "n_pass": [20, 2, 2]}
+{"time": "2023-09-24 01:54:27.701878", "score": "0.8823", "loss": "0.905", "code": "void testMovingFiles() throws Exception { testMovingFiles; }", "n_tokens": 16, "n_pass": [26, 3, 3]}
+{"time": "2023-09-24 01:54:32.819621", "score": "0.8823", "loss": "0.905", "code": "void testMovingFiles()throws Exception { testMovingFiles; }", "n_tokens": 15, "n_pass": [52, 5, 4]}
+{"time": "2023-09-24 01:54:37.892961", "score": "0.8823", "loss": "0.905", "code": "void testMovingFiles()throws Exception{ testMovingFiles; }", "n_tokens": 14, "n_pass": [73, 7, 5]}
+{"time": "2023-09-24 01:54:39.581987", "score": "0.8823", "loss": "0.905", "code": "void testMovingFiles()throws Exception{testMovingFiles; }", "n_tokens": 13, "n_pass": [75, 8, 6]}
+{"time": "2023-09-24 01:54:42.839404", "score": "0.8823", "loss": "0.905", "code": "void testMovingFiles()throws Exception{testMovingFiles;}", "n_tokens": 12, "n_pass": [78, 10, 7]}
+
+Minimal simplified code:
+void testMovingFiles()throws Exception{testMovingFiles;}
+

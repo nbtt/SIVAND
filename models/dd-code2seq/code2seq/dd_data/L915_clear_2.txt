@@ -1,0 +1,25 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/LightWeightLinkedSet_clear_0.java
+method_name = clear
+method_body = public void clear() { super.clear(); this.head = null; this.tail = null; this.resetBookmark(); }
+predict, score, loss = clear, 0.9524732232093811, 0.05403492972254753
+
+Trace of simplified code(s):
+{"time": "2023-09-24 03:10:47.614324", "score": "0.9525", "loss": "0.054", "code": "public void clear() { super.clear(); this.head = null; this.tail = null; this.resetBookmark(); }", "n_tokens": 43, "n_pass": [1, 1, 1]}
+{"time": "2023-09-24 03:10:49.472906", "score": "0.5726", "loss": "0.83", "code": "public void clear() { ; this.head = null; this.tail = null; this.resetBookmark(); }", "n_tokens": 38, "n_pass": [22, 2, 2]}
+{"time": "2023-09-24 03:10:54.670936", "score": "0.4831", "loss": "1.1667", "code": "public void clear() { ;head = null; this.tail = null; this.resetBookmark(); }", "n_tokens": 35, "n_pass": [45, 5, 3]}
+{"time": "2023-09-24 03:10:56.360547", "score": "0.4577", "loss": "1.365", "code": "public void clear() { ; null; this.tail = null; this.resetBookmark(); }", "n_tokens": 32, "n_pass": [46, 6, 4]}
+{"time": "2023-09-24 03:10:58.071959", "score": "0.3739", "loss": "1.7526", "code": "public void clear() { ; this.tail = null; this.resetBookmark(); }", "n_tokens": 29, "n_pass": [47, 7, 5]}
+{"time": "2023-09-24 03:11:03.169128", "score": "0.3547", "loss": "1.9535", "code": "public void clear() { ; this.tail = null;resetBookmark(); }", "n_tokens": 26, "n_pass": [51, 10, 6]}
+{"time": "2023-09-24 03:11:06.542794", "score": "0.3547", "loss": "1.9535", "code": "void clear() { ; this.tail = null;resetBookmark(); }", "n_tokens": 24, "n_pass": [54, 12, 7]}
+{"time": "2023-09-24 03:11:16.073748", "score": "0.3547", "loss": "1.9535", "code": "void clear(){ ; this.tail = null;resetBookmark(); }", "n_tokens": 23, "n_pass": [87, 16, 8]}
+{"time": "2023-09-24 03:11:17.852986", "score": "0.3547", "loss": "1.9535", "code": "void clear(){; this.tail = null;resetBookmark(); }", "n_tokens": 22, "n_pass": [89, 17, 9]}
+{"time": "2023-09-24 03:11:19.730992", "score": "0.3547", "loss": "1.9535", "code": "void clear(){ this.tail = null;resetBookmark(); }", "n_tokens": 21, "n_pass": [90, 18, 10]}
+{"time": "2023-09-24 03:11:21.444891", "score": "0.3547", "loss": "1.9535", "code": "void clear(){this.tail = null;resetBookmark(); }", "n_tokens": 20, "n_pass": [91, 19, 11]}
+{"time": "2023-09-24 03:11:28.777787", "score": "0.3547", "loss": "1.9535", "code": "void clear(){this.tail= null;resetBookmark(); }", "n_tokens": 19, "n_pass": [119, 22, 12]}
+{"time": "2023-09-24 03:11:30.566047", "score": "0.3547", "loss": "1.9535", "code": "void clear(){this.tail=null;resetBookmark(); }", "n_tokens": 18, "n_pass": [121, 23, 13]}
+{"time": "2023-09-24 03:11:33.935250", "score": "0.3547", "loss": "1.9535", "code": "void clear(){this.tail=null;resetBookmark();}", "n_tokens": 17, "n_pass": [128, 25, 14]}
+
+Minimal simplified code:
+void clear(){this.tail=null;resetBookmark();}
+

@@ -1,0 +1,20 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestSwiftContractMkdir_createContract_0.java
+method_name = createContract
+method_body = protected AbstractFSContract createContract(Configuration conf) { return new SwiftContract(conf); }
+predict, score, loss = createContract, 0.8515383005142212, 0.44188034534454346
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:11:09.786097", "score": "0.8515", "loss": "0.4419", "code": "protected AbstractFSContract createContract(Configuration conf) { return new SwiftContract(conf); }", "n_tokens": 24, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:11:13.607359", "score": "0.8153", "loss": "0.5067", "code": "protected AbstractFSContract createContract() { return new SwiftContract(conf); }", "n_tokens": 21, "n_pass": [22, 3, 2]}
+{"time": "2023-09-23 23:11:15.374670", "score": "0.8342", "loss": "0.4888", "code": "protected AbstractFSContract createContract() {new SwiftContract(conf); }", "n_tokens": 18, "n_pass": [23, 4, 3]}
+{"time": "2023-09-23 23:11:19.740874", "score": "0.8342", "loss": "0.4888", "code": " AbstractFSContract createContract() {new SwiftContract(conf); }", "n_tokens": 17, "n_pass": [48, 6, 4]}
+{"time": "2023-09-23 23:11:22.112254", "score": "0.8342", "loss": "0.4888", "code": "AbstractFSContract createContract() {new SwiftContract(conf); }", "n_tokens": 16, "n_pass": [49, 7, 5]}
+{"time": "2023-09-23 23:11:26.152609", "score": "0.8342", "loss": "0.4888", "code": "AbstractFSContract createContract(){new SwiftContract(conf); }", "n_tokens": 15, "n_pass": [72, 8, 6]}
+{"time": "2023-09-23 23:11:27.814468", "score": "0.6464", "loss": "1.5062", "code": "AbstractFSContract createContract(){ SwiftContract(conf); }", "n_tokens": 14, "n_pass": [74, 9, 7]}
+{"time": "2023-09-23 23:11:29.588430", "score": "0.6464", "loss": "1.5062", "code": "AbstractFSContract createContract(){SwiftContract(conf); }", "n_tokens": 13, "n_pass": [75, 10, 8]}
+{"time": "2023-09-23 23:11:35.857332", "score": "0.6464", "loss": "1.5062", "code": "AbstractFSContract createContract(){SwiftContract(conf);}", "n_tokens": 12, "n_pass": [81, 13, 9]}
+
+Minimal simplified code:
+AbstractFSContract createContract(){SwiftContract(conf);}
+

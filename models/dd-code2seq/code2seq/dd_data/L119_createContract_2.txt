@@ -1,0 +1,21 @@
+
+path = /Users/lap13494/workspace/ppl-extra-final/java-small/test/hadoop-splitted/TestHDFSContractCreate_createContract_0.java
+method_name = createContract
+method_body = protected AbstractFSContract createContract(Configuration conf) { return new HDFSContract(conf); }
+predict, score, loss = createContract, 0.7382739782333374, 0.8051019906997681
+
+Trace of simplified code(s):
+{"time": "2023-09-23 23:30:17.159928", "score": "0.7383", "loss": "0.8051", "code": "protected AbstractFSContract createContract(Configuration conf) { return new HDFSContract(conf); }", "n_tokens": 24, "n_pass": [1, 1, 1]}
+{"time": "2023-09-23 23:30:20.743578", "score": "0.7426", "loss": "0.8139", "code": "protected AbstractFSContract createContract() { return new HDFSContract(conf); }", "n_tokens": 21, "n_pass": [22, 3, 2]}
+{"time": "2023-09-23 23:30:22.451189", "score": "0.778", "loss": "0.7312", "code": "protected AbstractFSContract createContract() {new HDFSContract(conf); }", "n_tokens": 18, "n_pass": [23, 4, 3]}
+{"time": "2023-09-23 23:30:26.580534", "score": "0.778", "loss": "0.7312", "code": " AbstractFSContract createContract() {new HDFSContract(conf); }", "n_tokens": 17, "n_pass": [48, 6, 4]}
+{"time": "2023-09-23 23:30:28.212766", "score": "0.778", "loss": "0.7312", "code": "AbstractFSContract createContract() {new HDFSContract(conf); }", "n_tokens": 16, "n_pass": [49, 7, 5]}
+{"time": "2023-09-23 23:30:31.743743", "score": "0.778", "loss": "0.7312", "code": "AbstractFSContract createContract(){new HDFSContract(conf); }", "n_tokens": 15, "n_pass": [72, 8, 6]}
+{"time": "2023-09-23 23:30:34.969622", "score": "0.4634", "loss": "2.4524", "code": "AbstractFSContract createContract(){newHDFSContract(conf); }", "n_tokens": 14, "n_pass": [75, 10, 7]}
+{"time": "2023-09-23 23:30:36.529480", "score": "0.5007", "loss": "2.2564", "code": "AbstractFSContract createContract(){newHDFSContract(); }", "n_tokens": 13, "n_pass": [78, 11, 8]}
+{"time": "2023-09-23 23:30:38.082551", "score": "0.5007", "loss": "2.2564", "code": "AbstractFSContract createContract(){newHDFSContract();}", "n_tokens": 12, "n_pass": [81, 12, 9]}
+{"time": "2023-09-23 23:30:40.750804", "score": "0.5097", "loss": "2.6493", "code": "AbstractFSContract createContract(){HDFSContract();}", "n_tokens": 11, "n_pass": [89, 13, 10]}
+
+Minimal simplified code:
+AbstractFSContract createContract(){HDFSContract();}
+
